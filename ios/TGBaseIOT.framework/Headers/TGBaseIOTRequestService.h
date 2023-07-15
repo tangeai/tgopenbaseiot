@@ -23,11 +23,24 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)cleanHubInfo;
 - (void)switchToEnvType:(TGBaseIOTServerEnvType)env;
 - (void)requestWithUrl:(NSString *)url params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
-- (void)requestWithUrl:(NSString *)url needToken:(BOOL)needToken isRetry:(BOOL)isRetry params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 - (void)downloadFileWithUrl:(NSString *)url params:(nullable id)params savePath:(NSString *)savePath successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 - (void)uploadFileWithUrl:(NSString *)url fileData:(NSData *)fileData name:(NSString *)name fileName:(NSString *)fileName mimeType:(NSString *)mimeType successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 - (void)sendSetWifiInfoToDeviceWithUrl:(NSString *)url params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
+- (void)requestlogWithUrl:(NSString *)url params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+#pragma mark - POST
+- (void)requestWithUrl:(NSString *)url needToken:(BOOL)needToken isRetry:(BOOL)isRetry params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+#pragma mark - PAT
+
+- (void)patRequestWithUrl:(NSString *)url params:(nullable id)params needToken:(BOOL)needToken successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+#pragma mark - Delete
+- (void)deleteRequestWithUrl:(NSString *)url params:(nullable id)params needToken:(BOOL)needToken successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+#pragma mark - Get
+- (void)getRequestWithUrl:(NSString *)url params:(nullable id)params needToken:(BOOL)needToken successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 @end
 
