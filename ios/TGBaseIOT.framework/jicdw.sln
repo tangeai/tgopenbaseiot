@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jicdw", "jicdw.vcproj", "{C4A7A92D-73AA-4F32-AEC9-F0C0CE8620C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jicdtest", "jicdtest.vcproj", "{DF19CFE7-0D0E-4299-AED4-7D67273FE495}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4A7A92D-73AA-4F32-AEC9-F0C0CE8620C6} = {C4A7A92D-73AA-4F32-AEC9-F0C0CE8620C6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4A7A92D-73AA-4F32-AEC9-F0C0CE8620C6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4A7A92D-73AA-4F32-AEC9-F0C0CE8620C6}.Debug|Win32.Build.0 = Debug|Win32
+		{C4A7A92D-73AA-4F32-AEC9-F0C0CE8620C6}.Release|Win32.ActiveCfg = Release|Win32
+		{C4A7A92D-73AA-4F32-AEC9-F0C0CE8620C6}.Release|Win32.Build.0 = Release|Win32
+		{DF19CFE7-0D0E-4299-AED4-7D67273FE495}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DF19CFE7-0D0E-4299-AED4-7D67273FE495}.Debug|Win32.Build.0 = Debug|Win32
+		{DF19CFE7-0D0E-4299-AED4-7D67273FE495}.Release|Win32.ActiveCfg = Release|Win32
+		{DF19CFE7-0D0E-4299-AED4-7D67273FE495}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

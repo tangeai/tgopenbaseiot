@@ -64,9 +64,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL birdServiceAvaiable;
 /* 设备列表更多 */
 @property (nonatomic, strong, readonly) NSArray *moreModelArray;
-@property (nonatomic, assign, readonly) BOOL isUse0x7DP2PMode;
-@property (nonatomic, assign, readonly) BOOL isUse0x7EP2PMode;
-@property (nonatomic, assign, readonly) BOOL isUse0x7CP2PMode;
 /* 是否是内建服务 */
 @property (nonatomic, assign, readonly) BOOL isBuiltInService;
 /* 是否支持呼叫 */
