@@ -148,6 +148,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL capAIHwMoveTrackEnable;
 /* 是否支持硬件AI特写追踪 */
 @property (nonatomic, assign, readonly) BOOL capAIHwCloseUpTrackEnable;
+/* 是否支持硬件AI人形放大 */
+@property (nonatomic, assign, readonly) BOOL capAIHwHumanEnlargeEnable;
 /* 是否需要APP选择画面 */
 @property (nonatomic, assign, readonly) BOOL isNeedAppRotateVideo;
 /* APP选择画面角度 */
