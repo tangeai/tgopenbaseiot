@@ -171,7 +171,8 @@ typedef NS_ENUM(NSInteger, TGDevicePTZStyle) {
 
 #define TGBaseIOT_CurrentEnvType                        @"TG_CurrentEnvType"
 #define TGBaseIOT_LastEpReturnRegion                    @"TG_LastEpReturnRegion"
-#define TGBaseIOT_CloudDownloadDataPlayOver             @"TG_CloudDownloadDataPlayOver"
+#define TGBaseIOT_AccountStatusChanged                  @"TG_AccountStatusDidChanged"
+#define TG_CloudDownloadDataPlayOver                    @"TG_CloudDownloadDataPlayOver"
 #define TGBaseIOT_DeviceReceivedWebRTCInfo              @"TG_DeviceReceivedWebRTCInfo"
 #define TGBaseIOT_SocketIODidConnectSuccess             @"TG_SocketIODidConnectSuccess"
 #define TGBaseIOT_DeviceOnlineStatusChanged             @"TG_DeviceOnlineStatusDidChanged"

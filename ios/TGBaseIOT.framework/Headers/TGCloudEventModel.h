@@ -19,7 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - cloudVideo&event
 
-@property (nonatomic, copy) NSString *timeZone;                 //时区 "GMT+8,Asia/Shanghai"
 @property (nonatomic, copy) NSString *startTime;                //2019-01-16 16:18:07 (云录像开始时间)
 @property (nonatomic, copy) NSString *endTime;                  //2019-01-16 19:24:47 (云录像结束时间)
 @property (nonatomic, copy) NSString *id;                       //云事件id
@@ -49,16 +48,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 初始化
 /// - Parameter info: info (云事件或云录像)
 + (instancetype)modelWithInfo:(NSDictionary *)info;
-// 建议使用下面替代
-+ (instancetype)modelWithInfo:(NSDictionary *)info timeZone:(NSString *)timeZone;
 
-/// 初始化(单独使用云录像API时可使用此初始化方法，可获得deviceId) (将废弃)
+/// 初始化(单独使用云录像API时可使用此初始化方法，可获得deviceId)
 /// - Parameters:
 ///   - info: info (云事件或云录像)
 ///   - deviceId: deviceId
 + (instancetype)modelWithInfo:(NSDictionary *)info deviceId:(NSString *)deviceId;
-// 建议使用下面替代
-+ (instancetype)modelWithInfo:(NSDictionary *)info deviceId:(NSString *)deviceId timeZone:(NSString *)timeZone;
 
 @end
 
