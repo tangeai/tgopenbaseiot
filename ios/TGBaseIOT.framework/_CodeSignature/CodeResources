@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		4ejoC/pcObQDdH37SuxKfdjuCA4=
+		UyWwounp8O9Pp2w442uBX1PcO/I=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		Nah7zOvMphKVtQMApahsNZYc+wU=
+		w56SXW9rCz4q1D+tVwCpi8qGBWs=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		kxIJW3YHJID28CCuTyyj2fsaAwY=
+		AZI7Sprtw17VPQqpq2iecKmHq6A=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/TGCloudEventModel.h</key>
 		<data>
-		P44qp0mZRkd5UfO+QPKNuzfYQoY=
+		xsMoffL0nxpuF2d0DYfQPWhvE+Y=
 		</data>
 		<key>Headers/TGDeviceAlarmSoundModel.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R0xdGSOMV9kwJ5n0823GJlXAc9Y=
+		Ota65WNbEEx3qngMbudThNKVXws=
 		</data>
 		<key>NTESVerifyCodeResources.bundle/Rectangle@1x.png</key>
 		<data>
@@ -259,22 +259,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4ejoC/pcObQDdH37SuxKfdjuCA4=
+			UyWwounp8O9Pp2w442uBX1PcO/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			X/aBzAufwKB1z/flEUGtvztRI0WImLZJ8I+hL1Qk8Pc=
+			fe/hLEpd1WDKJ3L9HBGBqxxoWLVIOhXsd5XKOEihLXg=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nah7zOvMphKVtQMApahsNZYc+wU=
+			w56SXW9rCz4q1D+tVwCpi8qGBWs=
 			</data>
 			<key>hash2</key>
 			<data>
-			5L++3IKgOfdaXAwlKur5ioyQVO/lTMEIAITYIEjlWdQ=
+			pVRKUMVEWr1bApGcjL+bhmiDIuYyXostZTGVnYntdD4=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -347,11 +347,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kxIJW3YHJID28CCuTyyj2fsaAwY=
+			AZI7Sprtw17VPQqpq2iecKmHq6A=
 			</data>
 			<key>hash2</key>
 			<data>
-			ODqlXa9iJmkFCUhcfGJGwuzL0vCYJKPu4OIkY7yDLRY=
+			SIJO1Unqh3IkVPIkTS/nWfVKSFET1bFw7WrtM+Hz5Jg=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -369,11 +369,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P44qp0mZRkd5UfO+QPKNuzfYQoY=
+			xsMoffL0nxpuF2d0DYfQPWhvE+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			U4UNVl0Ry1hInam+qpvMnxVeG6rZh8QHknFioSm+YMk=
+			IVy1iPj9OZTKMtuJqRtS2dDS6ggaYKVj7UqECrN8q18=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceAlarmSoundModel.h</key>

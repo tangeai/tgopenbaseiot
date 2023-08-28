@@ -32,6 +32,8 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 - (void)cloudDeviceManagerDidPlayDecoderVideoData:(DACameraP2PVideoData *)videoData;
 // 返回门铃录制存储地址
 - (void)cloudDeviceManagerDidDoorbellMsgRecordWithFilePath:(NSString *)filePath;
+// 返回下载地址
+- (void)cloudDeviceManagerDownloadFilePath:(NSString *)filePath;
 // 录制时长
 - (void)cloudDeviceManagerDidRecordVideoWithDuration:(NSInteger)duration;
 
@@ -64,6 +66,14 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - model: 云事件&云录像model
 ///   - errorCallBack:返回错误
 - (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval   model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
+
+/// 下载
+/// - Parameters:
+///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
+///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
+///   - model: 云事件&云录像model
+///   - errorCallBack:返回错误
+- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval   model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
 // 下载并播放
 - (void)downloadAndPlayCloudFileWithModel:(TGCloudDownloadModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;

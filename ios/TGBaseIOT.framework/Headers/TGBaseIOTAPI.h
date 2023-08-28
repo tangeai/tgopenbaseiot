@@ -533,6 +533,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - areaCode: 区号（账号为手机时必传）
 ///   - token: 绑定令牌（绑定账号时必传）
 ///   - robotBackView: 承载人机校验的view（连续发短信超过次数，弹出图形验证码，不传可能造成黑屏）
+///   - robotState:yes，开始校验，no校验结束
 ///   - successBlock: 成功返回
 ///   - failureBlock: 失败返回
 - (void)tg_getSendCodeWithScene:(NSString *)scene account:(NSString *)account areaCode:(NSString *)areaCode token:(NSString *)token robotBackView:(UIView *)robotBackView robotState:(void(^)(BOOL state))stateBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
