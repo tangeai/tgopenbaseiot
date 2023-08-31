@@ -16,88 +16,28 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGCameraDeviceModel : NSObject<TGDeviceFeatureProtocols,TGDeviceStatesProtocols,TGDeviceCacheProtocols,TGDeviceExtensionProtocols>
 
 @property (nonatomic, copy) NSString *uuid;
-
-
-#pragma mark - listData
-@property (nonatomic, copy) NSString *deviceId;
-@property (nonatomic, copy) NSString *deviceName;
-@property (nonatomic, copy) NSString *productName;
-@property (nonatomic, strong) NSDictionary *attrs;
-@property (nonatomic, strong) NSDictionary *abilities;
-@property (nonatomic, assign) BOOL is_owner;
-@property (nonatomic, strong) NSString *p2pType;
-
-#pragma mark - timezone
-
-@property (nonatomic, copy) NSString *timeZone;
-@property (nonatomic, copy) NSString *time;
-
-#pragma mark - updateInfor
-
-@property (nonatomic, copy) NSString *currentVersion;
-@property (nonatomic, copy) NSString *currentModelId;
-@property (nonatomic, copy) NSString *currentSdkver;
-@property (nonatomic, copy) NSString *targetVersion;
-@property (nonatomic, copy) NSString *targetContent;
-@property (nonatomic, copy) NSString *targetDownload_link;
-@property (nonatomic, assign) double targetFileSize;
-@property (nonatomic, copy) NSString *md5;
-
-#pragma mark - onlineInfor
-
-@property (nonatomic, assign) BOOL isOnline;
-@property (nonatomic, copy) NSString *up_at;
-@property (nonatomic, copy) NSString *down_at;
-
-#pragma mark - connectInfor
-
-@property (nonatomic, copy) NSString *connectInfor;
-@property (nonatomic, copy) NSString *p2p_platform;
-@property (nonatomic, copy) NSString *p2pId;
-@property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *relay;
-@property (nonatomic, copy) NSString *webrtc;
 
-#pragma mark - coreImage
-
-@property (nonatomic, strong) UIImage *coverImage;
-@property (nonatomic, copy) NSString *imagePath;
-@property (nonatomic, copy) NSString *imgTimeStamp;
-
-#pragma mark - des_key
-
-@property (nonatomic, strong) NSString *des_key;
-
-#pragma mark - V2-Action
-
-// 设备列表实例方法
-+ (instancetype)modelWithDeviceInfo:(NSDictionary *)deviceInfo;
-// 更新设备时区
-- (void)updateTimeZone:(NSDictionary *)timeZoneDic;
-// 更新设备升级信息
-- (void)updateInfor:(NSDictionary *)updateDic;
-// 更新设备连接信息
-- (void)updateConnectInfor:(NSString *)connectInfor;
-// 更新设备在线信息
-- (void)updateOnlineInfor:(NSDictionary *)onlineInfor;
-// 更新设备封面信息
-- (void)updateImageInfor:(NSDictionary *)imageInfo;
-
-
-#pragma mark - other
-
-@property (nonatomic, copy) NSString *ipAddress;
+@property (nonatomic, copy) NSString *deviceId;
 @property (nonatomic, copy) NSString *actived;
 @property (nonatomic, copy) NSString *expireTime;
-
+@property (nonatomic, copy) NSString *imagePath;
+@property (nonatomic, copy) NSString *imgTimeStamp;
+@property (nonatomic, assign) BOOL isOnline;
+@property (nonatomic, copy) NSString *deviceName;
+@property (nonatomic, copy) NSString *p2pId;
+@property (nonatomic, copy) NSString *p2pType;
+@property (nonatomic, copy) NSString *p2p_platform;
+@property (nonatomic, copy) NSString *p2pStateServer;
+@property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *privateKey;
 @property (nonatomic, copy) NSString *publicKey;
 @property (nonatomic, assign) TGDeviceBindType bindType;
 @property (nonatomic, copy) NSString *desKey;
-//@property (nonatomic, copy) NSString *currentVersion;
+@property (nonatomic, copy) NSString *currentVersion;
 @property (nonatomic, copy) NSString *currentVersionCode;
 @property (nonatomic, copy) NSString *firmwareId;
-
+@property (nonatomic, copy) NSString *timeZone;
 @property (nonatomic, copy) NSString *country;
 @property (nonatomic, copy) NSString *city;
 @property (nonatomic, copy) NSString *connectType;
@@ -106,7 +46,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *connectWay;
 @property (nonatomic, copy) NSString *iccid;//sim卡标识，imei4G模块标识
 @property (nonatomic, assign) BOOL isOpen;
-
 @property (nonatomic, assign) BOOL simAboutToExpire;
 @property (nonatomic, assign) BOOL driveAboutToExpire;
 @property (nonatomic, assign) BOOL isNotice;
@@ -128,7 +67,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *foreignServiceHook;
 
 @property (nonatomic, strong) NSDictionary *deviceNotice;
+@property (nonatomic, strong) NSDictionary *attrs;
 @property (nonatomic, strong) NSDictionary *batteryInfo;
+@property (nonatomic, strong) NSDictionary *abilities;
 @property (nonatomic, strong) NSArray *thirdPushArray;
 
 @property (nonatomic, strong) NSMutableDictionary *serverInfo;
@@ -159,11 +100,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 设备直连缓存*/
 @property (nonatomic, copy) NSString *ssid;
-//@property (nonatomic, strong, nullable) UIImage *coverImage;
+@property (nonatomic, strong, nullable) UIImage *coverImage;
 @property (nonatomic, strong, nullable) UIImage *livePIPCoverImage;
 @property (nonatomic, strong, nullable) UIImageView *imageView;
 
-
++ (instancetype)modelWithDeviceInfo:(NSDictionary *)deviceInfo;
 - (void)updateDataWithNewDevice:(TGCameraDeviceModel *)device;
 
 @end

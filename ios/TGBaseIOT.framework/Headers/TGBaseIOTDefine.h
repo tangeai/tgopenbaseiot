@@ -135,43 +135,62 @@ typedef NS_ENUM(NSInteger, TGDevicePTZStyle) {
     TGDevicePTZStyle_Vertical
 };
 
-#define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
-#define TGBaseIOT_SCREENHEIGHT                          (MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
-#define TGBaseIOT_RelativeWidthX(value)                 (TGBaseIOT_SCREENWIDTH * value / 375.0f)
-#define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
-#define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
+#define TGBaseIOT_SCREENWIDTH                       (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
+#define TGBaseIOT_SCREENHEIGHT                      (MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
+#define TGBaseIOT_RelativeWidthX(value)             (TGBaseIOT_SCREENWIDTH * value / 375.0f)
+#define TGBaseIOT_RelativeHeightX(value)            (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
+#define TGBaseIOT_OEMSVGIconSize50                  (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"210"
-#define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
+#define TGBaseIOTSDKVersion                         @"608"
+#define TG_CurrentLogLevel                          @"TG_CurrentLogLevel"
 
-#define TG_CameraZoomDefaultStep                        50
-#define TG_DefaultBroadcastPort                         7997
-#define TG_DefaultBroadcastString                       @"SEARCH * CTP/1.0\r\n\r\n\\"
-#define TG_BroadcastResponsePrefix                      @"REPLY * CTP/1.0"
+#define TG_CameraZoomDefaultStep                    50
+#define TG_DefaultBroadcastPort                     7997
+#define TG_DefaultBroadcastString                   @"SEARCH * CTP/1.0\r\n\r\n\\"
+#define TG_BroadcastResponsePrefix                  @"REPLY * CTP/1.0"
 
-#define TG_DeviceType_DrSim                             @"drsim"
-#define TG_DeviceType_LpDrSim                           @"lpdrsim"
-#define TG_DeviceType_Sim                               @"sim"
-#define TG_DeviceType_LpSim                             @"lpsim"
-#define TG_DeviceType_Wifi                              @"wifi"
-#define TG_DeviceType_DrWifi                            @"drwifi"
-#define TG_DeviceType_LpWifi                            @"lpwifi"
-#define TG_DeviceType_DoorbellWifi                      @"doorbellwifi"
-#define TG_DeviceType_LpDoorbellWifi                    @"lpdoorbellwifi"
-#define TG_DeviceType_Lockbell                          @"lockbell"
-#define TG_DeviceType_LpLockbell                        @"lplockbell"
-#define TG_DeviceType_LampWifi                          @"lampcamwifi"
-#define TG_DeviceType_BirdFeederWifi                    @"birdfeederwifi"
-#define TG_DeviceType_LpBirdFeederWifi                  @"lpbirdfeederwifi"
-#define TG_DeviceType_BirdFeederSim                     @"birdfeedersim"
-#define TG_DeviceType_LpBirdFeederSim                   @"lpbirdfeedersim"
+#define TG_DeviceType_DrSim                         @"drsim"
+#define TG_DeviceType_LpDrSim                       @"lpdrsim"
+#define TG_DeviceType_Sim                           @"sim"
+#define TG_DeviceType_LpSim                         @"lpsim"
+#define TG_DeviceType_Wifi                          @"wifi"
+#define TG_DeviceType_DrWifi                        @"drwifi"
+#define TG_DeviceType_LpWifi                        @"lpwifi"
+#define TG_DeviceType_DoorbellWifi                  @"doorbellwifi"
+#define TG_DeviceType_LpDoorbellWifi                @"lpdoorbellwifi"
+#define TG_DeviceType_Lockbell                      @"lockbell"
+#define TG_DeviceType_LpLockbell                    @"lplockbell"
+#define TG_DeviceType_LampWifi                      @"lampcamwifi"
+#define TG_DeviceType_BirdFeederWifi                @"birdfeederwifi"
+#define TG_DeviceType_LpBirdFeederWifi              @"lpbirdfeederwifi"
+#define TG_DeviceType_BirdFeederSim                 @"birdfeedersim"
+#define TG_DeviceType_LpBirdFeederSim               @"lpbirdfeedersim"
 
-#define TG_LocalConnectP2PId                            @"TANGE-000500-CYEEJ"
-#define TG_LocalConnectPwd                              @"12345"
+#define TG_LocalConnectP2PId                        @"TANGE-000500-CYEEJ"
+#define TG_LocalConnectPwd                          @"12345"
 
+#define TGBaseIOT_CurrentEnvType                    @"TG_CurrentEnvType"
+#define TGBaseIOT_LastEpReturnRegion                @"TG_LastEpReturnRegion"
+#define TGBaseIOT_AccountStatusChanged              @"TG_AccountStatusDidChanged"
+#define TGBaseIOT_DeviceReceivedWebRTCInfo          @"TG_DeviceReceivedWebRTCInfo"
+#define TGBaseIOT_SocketIODidConnectSuccess         @"TG_SocketIODidConnectSuccess"
+
+// 门铃门锁设备呼叫事件
+#define TGBaseIOT_DeviceDoorbellTag                        @"doorbell"
+
+//设备状态
+#define TGBaseIOT_DeviceOnlineStatusChanged                @"TG_DeviceOnlineStatusDidChanged"
+//添加设备
+#define TGBaseIOT_DeviceAddStatusChanged                   @"TG_DeviceAddStatusDidChanged"
+//账号异地登录
+#define TGBaseIOT_AccountStatusChanged                     @"TG_AccountStatusDidChanged"
+//设备升级
+#define TGBaseIOT_DeviceUpdateStatusChanged                @"TG_DeviceUpdateStatusDidChanged"
+//设备分享
 #define TGBaseIOT_CurrentEnvType                        @"TG_CurrentEnvType"
 #define TGBaseIOT_LastEpReturnRegion                    @"TG_LastEpReturnRegion"
-#define TGBaseIOT_CloudDownloadDataPlayOver             @"TG_CloudDownloadDataPlayOver"
+#define TGBaseIOT_AccountStatusChanged                  @"TG_AccountStatusDidChanged"
+#define TG_CloudDownloadDataPlayOver                    @"TG_CloudDownloadDataPlayOver"
 #define TGBaseIOT_DeviceReceivedWebRTCInfo              @"TG_DeviceReceivedWebRTCInfo"
 #define TGBaseIOT_SocketIODidConnectSuccess             @"TG_SocketIODidConnectSuccess"
 #define TGBaseIOT_DeviceOnlineStatusChanged             @"TG_DeviceOnlineStatusDidChanged"
