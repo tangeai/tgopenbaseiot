@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name = "TGBaseIOT"
-  s.version = "1.3.6"
+  s.version = "1.3.7"
   s.summary = "A short description of TGCommonBaseModule."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"liubin"=>"liubin361163@163.com"}
-  s.homepage = "https://gitee.com/tange-ai/tgopenbaseiot.git"
+  s.homepage = "https://gitee.com/tange-ai/tgopenbaseiot2x.git"
   s.description = "TODO: Add long description of the pod here."
   s.xcconfig = {"ENABLE_BITCODE"=>"NO"}
-  s.source           = { :git => 'https://gitee.com/tange-ai/tgopenbaseiot.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://gitee.com/tange-ai/tgopenbaseiot2x.git', :tag => s.version.to_s }
   s.compiler_flags ='-DLINUX','-D__MAC_OS__'
   s.ios.deployment_target    = '11.0'
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
