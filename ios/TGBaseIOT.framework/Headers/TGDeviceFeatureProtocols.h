@@ -106,8 +106,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL deviceSpeedEnable;
 /* 是否支持设置警戒语音 */
 @property (nonatomic, assign, readonly) BOOL alarmToneEnable;
-/* 是否支持警戒语音定时设置 */
-@property (nonatomic, assign, readonly) BOOL alarmSoundTimerEnable;
 /* 是否是低功耗设备 */
 @property (nonatomic, assign, readonly) BOOL isBatteryDevice;
 /* 是否是支持休眠唤醒低功耗设备 */

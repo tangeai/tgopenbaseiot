@@ -2460,7 +2460,8 @@ struct Tcis_TimerTask {
 /** 定时任务对象 */
 typedef enum ETgTimerTarget {
     TTT_ALL = 0,       ///< 不限(全部对象)
-    TTT_LIGHT          ///< 灯光定时任务
+    TTT_LIGHT,         ///< 灯光定时任务
+    TTT_ALARM_TONE     ///< 警戒语音
 } ETGTIMERTARGET;
 
 /** \struct Tcis_GetTimerTask
