@@ -141,7 +141,7 @@ typedef NS_ENUM(NSInteger, TGDevicePTZStyle) {
 #define TGBaseIOT_RelativeHeightX(value)            (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                  (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                         @"1370"
+#define TGBaseIOTSDKVersion                         @"608"
 #define TG_CurrentLogLevel                          @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                    50
