@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		Oq0mHHr0qQfPPLItF8Dx4rTW3bM=
+		fqnwAsRSnzxIebPm4hZ0YjqdNCU=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		Mwut8+qPqO7/zrDFxeqEi42pJ9E=
+		/9ORQO+gRZlG/9M7LgtnGvxoXGU=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -123,6 +123,14 @@
 		<key>Headers/TGTimerTaskModel.h</key>
 		<data>
 		T26jDjvPosZb+uR5PIw0PCIrzuY=
+		</data>
+		<key>Headers/TGVideoCamera.h</key>
+		<data>
+		oDAKMhckH6jKXdClCwoq3xM3914=
+		</data>
+		<key>Headers/TGVideoConfigModel.h</key>
+		<data>
+		wvx5FNP77z9N250w9ZKXzdj89f0=
 		</data>
 		<key>Headers/TGWatchPosModel.h</key>
 		<data>
@@ -274,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Oq0mHHr0qQfPPLItF8Dx4rTW3bM=
+			fqnwAsRSnzxIebPm4hZ0YjqdNCU=
 			</data>
 			<key>hash2</key>
 			<data>
-			p6npXjMyXOzzth1jo5749PJO7nyCxCB677JtijmUKdM=
+			XsBol2dWodwWfrBfkRfZhX2LpztIW5tqA8MCcAozNaM=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -472,11 +480,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mwut8+qPqO7/zrDFxeqEi42pJ9E=
+			/9ORQO+gRZlG/9M7LgtnGvxoXGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			lrSWH70ZXfVlljR5Bmut3y/9oxUnm5h+GqsM1zifRM0=
+			F1oqrPnKuA8frfl4o6Qyz9wRW+WDDo0JsmwoFVLgGbc=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -587,6 +595,28 @@
 			<key>hash2</key>
 			<data>
 			JfO5xJe/u9OFNZdZrfoEBm6dDtQ1/8MbcofDfJMZtfI=
+			</data>
+		</dict>
+		<key>Headers/TGVideoCamera.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oDAKMhckH6jKXdClCwoq3xM3914=
+			</data>
+			<key>hash2</key>
+			<data>
+			XDZaAqZdrPMdZdkJ/uzpZQwcH6de/4T6yUdqD/VOi7o=
+			</data>
+		</dict>
+		<key>Headers/TGVideoConfigModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wvx5FNP77z9N250w9ZKXzdj89f0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Uut0y51rE+kiumXt8jbaWYouwLF7Xxp+ORkeqALXsnE=
 			</data>
 		</dict>
 		<key>Headers/TGWatchPosModel.h</key>

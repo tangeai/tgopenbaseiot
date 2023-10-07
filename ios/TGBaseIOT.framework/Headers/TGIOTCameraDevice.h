@@ -11,6 +11,7 @@
 #import "TGCameraDefine.h"
 #import "TGBaseIOTDefine.h"
 #import <DAAudioVideo/DAAudioVideo.h>
+#import "TGVideoCamera.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -100,9 +101,9 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)startCameraLiveRecordWithFileName:(NSString *)fileName ;
 // 关闭录制
 - (void)stopCameraLiveRecord;
-// 开启双向视频对讲
-- (void)startDeviceLiveSpeakAndVideo;
-// 关闭双向视频对讲
+// 开启双向视频
+- (void)startDeviceLiveSpeakAndVideo:(TGVideoConfigModel *)model;
+// 关闭双向视频
 - (void)stopDeviceLiveSpeakAndVideo;
 
 #pragma mark - sd卡
