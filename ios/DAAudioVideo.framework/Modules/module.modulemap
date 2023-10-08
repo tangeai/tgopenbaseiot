@@ -1,0 +1,6 @@
+framework module DAAudioVideo {
+  umbrella header "DAAudioVideo.h"
+
+  export *
+  module * { export * }
+}
