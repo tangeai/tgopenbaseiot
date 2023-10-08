@@ -12,17 +12,13 @@
 		<data>
 		CbW9mGqtGpQWcRsODh1FvmnB04c=
 		</data>
-		<key>Headers/NSString+TGSecurity.h</key>
-		<data>
-		rbdezXSG1ZmCg8ks/hHMbQ3pFtI=
-		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
 		N3jfPd7Opq1nM0JEzOVQoKBcGr4=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		J1VjXrqtvDVnaV8+cGIGdDhAZEQ=
+		BWeNqYcgZYlvZTrE/3E/5mvbOJc=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -249,17 +245,6 @@
 			beJhzql+V3zgYiVb+sMgbVRBu8MSySP7wfQR0HBAU7o=
 			</data>
 		</dict>
-		<key>Headers/NSString+TGSecurity.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rbdezXSG1ZmCg8ks/hHMbQ3pFtI=
-			</data>
-			<key>hash2</key>
-			<data>
-			CyljKJnGmIJaN91PJUMSbxygslDSrtnQXW932zkj4dA=
-			</data>
-		</dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<dict>
 			<key>hash</key>
@@ -275,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J1VjXrqtvDVnaV8+cGIGdDhAZEQ=
+			BWeNqYcgZYlvZTrE/3E/5mvbOJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			aznqAAYP4/eFntAXi1+EJiGURoXDCUcPxie/uCrGmhg=
+			/ejWGTSmZhiEZV3ubSKEuqBZZWz4PtjpxnkiKcopeOM=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
