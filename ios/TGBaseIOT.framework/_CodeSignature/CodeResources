@@ -4,25 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/NSDate+TGBaseIOTCustomDate.h</key>
-		<data>
-		ssEMBIdLwKCFm54mkOZ7qgdTQho=
-		</data>
-		<key>Headers/NSString+TGBaseIOTCustomString.h</key>
-		<data>
-		CbW9mGqtGpQWcRsODh1FvmnB04c=
-		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		N3jfPd7Opq1nM0JEzOVQoKBcGr4=
+		0J/oZ+6rk/Hz8E/eWkLm/L6nEKs=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		BWeNqYcgZYlvZTrE/3E/5mvbOJc=
+		9fE6R3NgBj+b2cBnp8nmJKEn5jQ=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
-		IToMv3yIoOD9Ie9V3u51h9twyrY=
+		hpmw68aLUzwPkleWWmU7L67Zi2Y=
 		</data>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
 		<data>
@@ -30,15 +22,19 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		IYsu8KX8IvT71ALOCvJxTUihwcE=
+		W0IEoNG9BbFuAcx0gMw/h8UpxY4=
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		AGFfnDqSXOXlxZeq5gQC3vwFI0g=
+		KYDTUHkbhdLNgdHLpgwby1w96PI=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
 		nKdBVYXl+z3SNQsVonnOBhWskS8=
+		</data>
+		<key>Headers/TGCardEventModel.h</key>
+		<data>
+		Vo38g3vWhvgS+fXa6zYzJrVZa1A=
 		</data>
 		<key>Headers/TGClockTimeModel.h</key>
 		<data>
@@ -46,43 +42,27 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		6wFmkm4AvtYHYxPDtmjrcy1wXj8=
+		w35TEXj+3u0/L0xcG9qsD2rKoBs=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
-		hh1oBivc+UI15hL4Zd1dHT4Q3Ck=
+		64DZjPCAosSuGXTahZSaPsUNDEs=
+		</data>
+		<key>Headers/TGCloudEventModel.h</key>
+		<data>
+		HwkeGeTo9Eiu9F0KQQceJjm36rk=
+		</data>
+		<key>Headers/TGCloudVideoCommonTool.h</key>
+		<data>
+		IQNgHLhxsODTmusXj1TCIRaBlrk=
 		</data>
 		<key>Headers/TGDeviceAlarmSoundModel.h</key>
 		<data>
-		sfrV3SirB0kXD6R3bHtyP4CGT78=
-		</data>
-		<key>Headers/TGDeviceCacheProtocols.h</key>
-		<data>
-		vpjSZZgwT7bwITqZjt1nQvL/mAI=
-		</data>
-		<key>Headers/TGDeviceExtension.h</key>
-		<data>
-		9X25SQ1Sku8nLQNdlvGa9sR6Zi0=
-		</data>
-		<key>Headers/TGDeviceExtensionProtocols.h</key>
-		<data>
-		c6KlwxNwAU05RrOSJyygAauSdTQ=
-		</data>
-		<key>Headers/TGDeviceFeatureProtocols.h</key>
-		<data>
-		Nkq2VgEx98ObI0yrx884h78z6I0=
-		</data>
-		<key>Headers/TGDeviceInforRequestService.h</key>
-		<data>
-		zXNNio66AHBbFRRstDElWAWtHFk=
+		VJ+lSAcY9ooGzZIUR+FpHBpZ/W4=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
 		KQF0YOh62tGnB8Ipjs7gZwNFoIc=
-		</data>
-		<key>Headers/TGDeviceMoreInfoModel.h</key>
-		<data>
-		gMiOrgaDXuEo9YvZ0waf2NATUEs=
 		</data>
 		<key>Headers/TGDevicePSPModel.h</key>
 		<data>
@@ -92,9 +72,9 @@
 		<data>
 		U0rintcDqQsNBFWGTrEOQHEB1Ws=
 		</data>
-		<key>Headers/TGDeviceStatesProtocols.h</key>
+		<key>Headers/TGDeviceServicePlansModel.h</key>
 		<data>
-		RKckgOWlwx7Br2W4MMiF8Gsz/g4=
+		Z203lX0qxA3T8VoOkH6mm5eTD0s=
 		</data>
 		<key>Headers/TGDeviceTrackModel.h</key>
 		<data>
@@ -106,35 +86,11 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		nUvoqZn7OVmGUqPq/ylkgzcxNv8=
-		</data>
-		<key>Headers/TGIOTCameraManager.h</key>
-		<data>
-		L6ZUCTpQJhfp6YM1Ph+MEWMPn4U=
-		</data>
-		<key>Headers/TGIOTCommandModel.h</key>
-		<data>
-		u1aTIVpWMD3sMEVTvG3Zli6BbHY=
-		</data>
-		<key>Headers/TGIOTWakeUpManager.h</key>
-		<data>
-		t2Lf9SqcwhmZ2otAbUVeWDE+4C8=
+		/9ORQO+gRZlG/9M7LgtnGvxoXGU=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
 		oX3A4uKzZbmTH9MBHp0+h39kLtU=
-		</data>
-		<key>Headers/TGMessageManager.h</key>
-		<data>
-		TWn8mYKgqUW1y34479rI7VsTPIU=
-		</data>
-		<key>Headers/TGMessageService.h</key>
-		<data>
-		aqy+CH7qtoQd9PLOWLY1Y1LVFfA=
-		</data>
-		<key>Headers/TGMessageUrlDefine.h</key>
-		<data>
-		7HP7tjzU21jqUcK6HUINlcOdbwQ=
 		</data>
 		<key>Headers/TGMoveDetectPointModel.h</key>
 		<data>
@@ -150,23 +106,15 @@
 		</data>
 		<key>Headers/TGNetworkManager.h</key>
 		<data>
-		4wZdiaCtbEOsdvswpaG8jYL+CpE=
-		</data>
-		<key>Headers/TGNormalEventModel.h</key>
-		<data>
-		cMQObwkSls5MxbNpUzhDDJL8LgU=
-		</data>
-		<key>Headers/TGOSSCloudData.h</key>
-		<data>
-		u4WknWy5xBaLAahAoF2ds8h0130=
+		3WOuE/Hjzn2zm2Wi8UdW90fX5yY=
 		</data>
 		<key>Headers/TGObjectStorageService.h</key>
 		<data>
-		nZ+6EIV+y2k8CRy/InOD/zzv+x8=
+		kztespY9MdPcZ5inN7qGK9NXXsw=
 		</data>
-		<key>Headers/TGReportManager.h</key>
+		<key>Headers/TGPeripheralInfo.h</key>
 		<data>
-		SwA3rtxAkF+MZ6bIwRRmEimP1tM=
+		20Eatcpc8JH7wcrPQoUnE63lyyk=
 		</data>
 		<key>Headers/TGResolutionModel.h</key>
 		<data>
@@ -180,6 +128,14 @@
 		<data>
 		T26jDjvPosZb+uR5PIw0PCIrzuY=
 		</data>
+		<key>Headers/TGVideoCamera.h</key>
+		<data>
+		oDAKMhckH6jKXdClCwoq3xM3914=
+		</data>
+		<key>Headers/TGVideoConfigModel.h</key>
+		<data>
+		wvx5FNP77z9N250w9ZKXzdj89f0=
+		</data>
 		<key>Headers/TGWatchPosModel.h</key>
 		<data>
 		r8tiqq+m5pbgCVG8eNnr46JKuWI=
@@ -192,90 +148,164 @@
 		<data>
 		o2AsFFU39BAz5/Ln7zccUaNPW2A=
 		</data>
-		<key>Headers/relayer.h</key>
-		<data>
-		2TksLFjIqk1eQVxnfglFsEYy68k=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		65w5rlH+ewKrFM4FKHhE3WVcRdU=
+		DWHHdevBN9ChEhiXh2NuyZoutDE=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/Rectangle@1x.png</key>
+		<data>
+		5HNZYkEvZek3vq2IdAmmRIPcEZo=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/Rectangle@2x.png</key>
+		<data>
+		qFpvYOWlzGjZOtniqVaEBXRwlKU=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/Rectangle@3x.png</key>
+		<data>
+		ENs2m2CxPEDLJF7jg0YUQd4ZhRI=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@1x.png</key>
+		<data>
+		sIWXzJSsBEfkNVBwp0TDgkzymRA=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@2x.png</key>
+		<data>
+		BzuK9pGbmGeABPJW0TvwzAfC8os=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@3x.png</key>
+		<data>
+		pI13qRfOxLTQV8sxdy4/SjQG5rY=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/bg@1x.png</key>
+		<data>
+		OLOexupwzgdpqWfqE0LlDjyrEDo=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/bg@2x.png</key>
+		<data>
+		azBcRvJisT9EZSESNR4WGMfXPU0=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/bg@3x.png</key>
+		<data>
+		4aOQaWmEStPDQPH59H9N6svLtQ8=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/bg_dark@1x.png</key>
+		<data>
+		pwwYSc4bBZBsS2FE4hoQ9F7lJL0=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/bg_dark@2x.png</key>
+		<data>
+		h66UGqfJ6cX0Q9s8i9+3BeK+Jj4=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/bg_dark@3x.png</key>
+		<data>
+		feo1g+jXDsPFhogi5Pc51zjlPy0=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_close2@1x.png</key>
+		<data>
+		W/naGxuc1YgSLPP4nCTCURlHSzQ=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_close2@2x.png</key>
+		<data>
+		H7mMqG4RQViSWbhfORiOyn6gEuo=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_close2@3x.png</key>
+		<data>
+		e0cojzQLvdueJWIMZYYAOw585i8=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_error@1x.png</key>
+		<data>
+		zCUeVIPWg9ZtTq0VXs82NT+WfGs=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_error@2x.png</key>
+		<data>
+		+N8NKE43yrFUwsfEQusuhBamzDY=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_error@3x.png</key>
+		<data>
+		zlL3WDZUQmwZevuGYWjXxx4M104=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_error_dark@1x.png</key>
+		<data>
+		+NWtjtdJohfq5fBDK9UPsrbFSp4=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_error_dark@2x.png</key>
+		<data>
+		9j1MjUdN0gM4N1MvX1kdEeMYQLw=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_error_dark@3x.png</key>
+		<data>
+		LypanagcEd2z4MBloBb7ebzZyds=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_loading@1x.png</key>
+		<data>
+		EZwcded8F4tKEfTwl/5jmvkLVCo=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_loading@2x.png</key>
+		<data>
+		NaPKJxYAGmoCFgE8PKjfXZlbU5M=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/ico_loading@3x.png</key>
+		<data>
+		NAA0talvMqlvAN8Kdx3CzyLKmzI=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/icon_close_dark@1x.png</key>
+		<data>
+		NHQvEZHtkrhp+oHzgEhfs0Wx33c=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/icon_close_dark@2x.png</key>
+		<data>
+		pf6vlzCDey1xD1rqkPmzweISmu8=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/icon_close_dark@3x.png</key>
+		<data>
+		4zbCx7g5YptxgQFfQBxC1OipFyE=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/loading.gif</key>
+		<data>
+		CGPi1gO+FzRgXNKo2eXlqQhv6A0=
+		</data>
+		<key>NTESVerifyCodeResources.bundle/mobile.v2.13.6.html</key>
+		<data>
+		mu3SU07GHtfGS55bztDreExuOqM=
 		</data>
 		<key>README.md</key>
 		<data>
 		b4o4S0FFOnqaiWjuqd9NaH3FnyY=
 		</data>
-		<key>jicdtest.vcproj</key>
-		<data>
-		L54rNa1mvPgP9Ake+NXgqcFovGM=
-		</data>
-		<key>jicdw.rc</key>
-		<data>
-		QtYT+RvwCsVPWebc4qFC2bW5Svw=
-		</data>
-		<key>jicdw.sln</key>
-		<data>
-		/+GYGusf82Om/XrtKGLlAZmvb0A=
-		</data>
-		<key>jicdw.vcproj</key>
-		<data>
-		guSvWwJmqxnT9d2TdPZJ15C0B/c=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/NSDate+TGBaseIOTCustomDate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ssEMBIdLwKCFm54mkOZ7qgdTQho=
-			</data>
-			<key>hash2</key>
-			<data>
-			2gNxmE0QWpYfxgu+1JC+qrGo2Za2x32UYCRR2x5BVrY=
-			</data>
-		</dict>
-		<key>Headers/NSString+TGBaseIOTCustomString.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CbW9mGqtGpQWcRsODh1FvmnB04c=
-			</data>
-			<key>hash2</key>
-			<data>
-			beJhzql+V3zgYiVb+sMgbVRBu8MSySP7wfQR0HBAU7o=
-			</data>
-		</dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N3jfPd7Opq1nM0JEzOVQoKBcGr4=
+			0J/oZ+6rk/Hz8E/eWkLm/L6nEKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AWTQwn1bdK7Wt7nnlW3SE1isPte3mM3SzxP5BiQfF5Y=
+			msWicy84WZuTLjFL0wMNGz7OHotyAJZuciPo7ynuyCA=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BWeNqYcgZYlvZTrE/3E/5mvbOJc=
+			9fE6R3NgBj+b2cBnp8nmJKEn5jQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/ejWGTSmZhiEZV3ubSKEuqBZZWz4PtjpxnkiKcopeOM=
+			d5UgSRwoUlRnQ+VueE8FhPIX6rcLVWAnbbLtO+GAOpQ=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IToMv3yIoOD9Ie9V3u51h9twyrY=
+			hpmw68aLUzwPkleWWmU7L67Zi2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			12lcIDRWh5fBlNnD1eGHhFrNqed2CqnFGdEotAdg02I=
+			TRJ2gTYb1ZNlDYM6CCoa4WRwKSaJYivYbnAAkPCcuFs=
 			</data>
 		</dict>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
@@ -293,22 +323,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IYsu8KX8IvT71ALOCvJxTUihwcE=
+			W0IEoNG9BbFuAcx0gMw/h8UpxY4=
 			</data>
 			<key>hash2</key>
 			<data>
-			HY9eKM6hoEah0YXEpkFFUIc1zI0XmqbPtHlhqtOrHZk=
+			Sj3zC/WVdYCSUxcS1P8X5U/lhaox3zmg1Wf7J7hZHaw=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AGFfnDqSXOXlxZeq5gQC3vwFI0g=
+			KYDTUHkbhdLNgdHLpgwby1w96PI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0Zl+0OnQK6+n369GmPAX4mYhcrfi3YCjDSo1rdbe20c=
+			nLSfiYh4vG4C4uTpj7lBblXUOr/QeVLcrORacNOhwWE=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
@@ -320,6 +350,17 @@
 			<key>hash2</key>
 			<data>
 			nOsLoe8LkBOS7gxcrv9IbSECSOPxTPB4buDEtQbQXWY=
+			</data>
+		</dict>
+		<key>Headers/TGCardEventModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vo38g3vWhvgS+fXa6zYzJrVZa1A=
+			</data>
+			<key>hash2</key>
+			<data>
+			eU7Y+1P12miTeiRl3QU+BCi3T7v1EXkBb9vXLnreUVE=
 			</data>
 		</dict>
 		<key>Headers/TGClockTimeModel.h</key>
@@ -337,88 +378,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6wFmkm4AvtYHYxPDtmjrcy1wXj8=
+			w35TEXj+3u0/L0xcG9qsD2rKoBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			NyDe6JowexA0XVcfiU1oCMoqXDRGaH2lMbZryyqk7uc=
+			eygCMyApjepcNgLAr5T+TpuQQhvU6DLZARjLUJbObEg=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hh1oBivc+UI15hL4Zd1dHT4Q3Ck=
+			64DZjPCAosSuGXTahZSaPsUNDEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			h43FBkfhYsbP9r0UrDYihfc0oKegLYwgTTI7TRgQdYI=
+			s7pD98hBU9xDHLLqWbyMZ5C4a72aICthj+UVDkiCX94=
+			</data>
+		</dict>
+		<key>Headers/TGCloudEventModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HwkeGeTo9Eiu9F0KQQceJjm36rk=
+			</data>
+			<key>hash2</key>
+			<data>
+			8t0nQdT4Pu0lnYXEZnCi2Qk/2W3oW0hNa78UIWQVHxA=
+			</data>
+		</dict>
+		<key>Headers/TGCloudVideoCommonTool.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IQNgHLhxsODTmusXj1TCIRaBlrk=
+			</data>
+			<key>hash2</key>
+			<data>
+			cmXFEOYVE9QoomQVwZM4z0lycluqwoP857pHmMMSZA0=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceAlarmSoundModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sfrV3SirB0kXD6R3bHtyP4CGT78=
+			VJ+lSAcY9ooGzZIUR+FpHBpZ/W4=
 			</data>
 			<key>hash2</key>
 			<data>
-			S9IjLXWHtQO7ttxEOXMKfNS3rhyRS1oEmxtDbix1iEA=
-			</data>
-		</dict>
-		<key>Headers/TGDeviceCacheProtocols.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vpjSZZgwT7bwITqZjt1nQvL/mAI=
-			</data>
-			<key>hash2</key>
-			<data>
-			VWcFrAxroMc7NWDxNS1UNt3XoE4olo4AzRKnIBcqf18=
-			</data>
-		</dict>
-		<key>Headers/TGDeviceExtension.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9X25SQ1Sku8nLQNdlvGa9sR6Zi0=
-			</data>
-			<key>hash2</key>
-			<data>
-			ncLNqAdQ9OlfCz7+viu4sE+DorFPiweFYjcuf4JfnIU=
-			</data>
-		</dict>
-		<key>Headers/TGDeviceExtensionProtocols.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c6KlwxNwAU05RrOSJyygAauSdTQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			vXaxTrkiDzN7dMTsmufTxgIaruR6KN4rnOfzplKMq8Q=
-			</data>
-		</dict>
-		<key>Headers/TGDeviceFeatureProtocols.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Nkq2VgEx98ObI0yrx884h78z6I0=
-			</data>
-			<key>hash2</key>
-			<data>
-			93EgEO7iL0qSarbYrB2TgwETLdvjGyvKn8diERZNOLA=
-			</data>
-		</dict>
-		<key>Headers/TGDeviceInforRequestService.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zXNNio66AHBbFRRstDElWAWtHFk=
-			</data>
-			<key>hash2</key>
-			<data>
-			A4AiMCjQjqBcuF+a80j9xfdhEkVe22tptFyCeGgsA1s=
+			Kddhe8BUuoOmaBxa3bBoOpKGYfLMMzsxcy1M69Ndnb8=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -430,17 +438,6 @@
 			<key>hash2</key>
 			<data>
 			sx7FZADkh7Gh3vYdpwtC3WAHkvwXewY5Cmpu00XhMfo=
-			</data>
-		</dict>
-		<key>Headers/TGDeviceMoreInfoModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gMiOrgaDXuEo9YvZ0waf2NATUEs=
-			</data>
-			<key>hash2</key>
-			<data>
-			4bfv2lZP26uiv3j+NeJjnEVUj88Y9MTQ5Hyi+yiPNWg=
 			</data>
 		</dict>
 		<key>Headers/TGDevicePSPModel.h</key>
@@ -465,15 +462,15 @@
 			RtzbtAvROikzMiq6BdTK9UBQu3LFEHXy5rCgbb4uz9o=
 			</data>
 		</dict>
-		<key>Headers/TGDeviceStatesProtocols.h</key>
+		<key>Headers/TGDeviceServicePlansModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RKckgOWlwx7Br2W4MMiF8Gsz/g4=
+			Z203lX0qxA3T8VoOkH6mm5eTD0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jk9Z+SuyQxEDIU4AZq/Yu/PefHZKM++1sPuHu9fT8bA=
+			VHvEC74WdUoorbHi2hQ+3P2u2EGBiVoAbY6Il6AllZQ=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceTrackModel.h</key>
@@ -502,44 +499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nUvoqZn7OVmGUqPq/ylkgzcxNv8=
+			/9ORQO+gRZlG/9M7LgtnGvxoXGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			yzHljySukaBulsYpeQfioRddg7V8j8wTCXuF1yi9rsU=
-			</data>
-		</dict>
-		<key>Headers/TGIOTCameraManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			L6ZUCTpQJhfp6YM1Ph+MEWMPn4U=
-			</data>
-			<key>hash2</key>
-			<data>
-			oUSUPrvKN6DYUT5TRPqPO9SSYeRfRg6Y0CYI2kZPP2Q=
-			</data>
-		</dict>
-		<key>Headers/TGIOTCommandModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			u1aTIVpWMD3sMEVTvG3Zli6BbHY=
-			</data>
-			<key>hash2</key>
-			<data>
-			20qD0cfONspb4FJEEd4IS8w4/u4llbNwfY6GG44Sk8w=
-			</data>
-		</dict>
-		<key>Headers/TGIOTWakeUpManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			t2Lf9SqcwhmZ2otAbUVeWDE+4C8=
-			</data>
-			<key>hash2</key>
-			<data>
-			P3U/ti0x6/tsOovPdWLvnqLI99UcpN2ehhV/HmXUcTU=
+			F1oqrPnKuA8frfl4o6Qyz9wRW+WDDo0JsmwoFVLgGbc=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -551,39 +515,6 @@
 			<key>hash2</key>
 			<data>
 			N3XaROhHjLzCRm7btLKShogxws32pR4E9TuzJgou58g=
-			</data>
-		</dict>
-		<key>Headers/TGMessageManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TWn8mYKgqUW1y34479rI7VsTPIU=
-			</data>
-			<key>hash2</key>
-			<data>
-			56kSi6EdKaxvofFxAlvuRKJ/gf/zDY9ZfnY8/C5meNo=
-			</data>
-		</dict>
-		<key>Headers/TGMessageService.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aqy+CH7qtoQd9PLOWLY1Y1LVFfA=
-			</data>
-			<key>hash2</key>
-			<data>
-			UBDiFUF/MXnctNxaQuAsZkvAO2o/iLFpaV0j49as8oI=
-			</data>
-		</dict>
-		<key>Headers/TGMessageUrlDefine.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7HP7tjzU21jqUcK6HUINlcOdbwQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			qBeGRPw7J9Augqu43bbZRrP9gppb/E8YktISkhAZgMk=
 			</data>
 		</dict>
 		<key>Headers/TGMoveDetectPointModel.h</key>
@@ -623,55 +554,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4wZdiaCtbEOsdvswpaG8jYL+CpE=
+			3WOuE/Hjzn2zm2Wi8UdW90fX5yY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qYS534oDyA42rkivy45k4HmceuCNkOL9B7wPXlVLUvQ=
-			</data>
-		</dict>
-		<key>Headers/TGNormalEventModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cMQObwkSls5MxbNpUzhDDJL8LgU=
-			</data>
-			<key>hash2</key>
-			<data>
-			fVJ3eQp1atowG87HFnCRbNsO1WtLIGuj3xMCH/vk71U=
-			</data>
-		</dict>
-		<key>Headers/TGOSSCloudData.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			u4WknWy5xBaLAahAoF2ds8h0130=
-			</data>
-			<key>hash2</key>
-			<data>
-			gMFiSqAsHTeLfs6Y1CfqeG/qAYSDbN/9yp4Op3BT8GU=
+			D/GGN4lU7GN7Jc9KtYcjRFJRcx2z6wOO1vncwHE8GjU=
 			</data>
 		</dict>
 		<key>Headers/TGObjectStorageService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nZ+6EIV+y2k8CRy/InOD/zzv+x8=
+			kztespY9MdPcZ5inN7qGK9NXXsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			WxJvKo2+zknehHKRl2ifUIZuR4cDGAFZCAgdvm0Drio=
+			ORWvCRrxtbGnguOEgHK2c74JTHJqIEUe3CKD1eRInek=
 			</data>
 		</dict>
-		<key>Headers/TGReportManager.h</key>
+		<key>Headers/TGPeripheralInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SwA3rtxAkF+MZ6bIwRRmEimP1tM=
+			20Eatcpc8JH7wcrPQoUnE63lyyk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZmuGSDOfyjHHp114XZ+PADudQ/5oxTJPECcEwEmM0O8=
+			syCbSYuo14OR3cMA7e5mU69Ze8bfD0WG56/l2nvz99w=
 			</data>
 		</dict>
 		<key>Headers/TGResolutionModel.h</key>
@@ -707,6 +616,28 @@
 			JfO5xJe/u9OFNZdZrfoEBm6dDtQ1/8MbcofDfJMZtfI=
 			</data>
 		</dict>
+		<key>Headers/TGVideoCamera.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oDAKMhckH6jKXdClCwoq3xM3914=
+			</data>
+			<key>hash2</key>
+			<data>
+			XDZaAqZdrPMdZdkJ/uzpZQwcH6de/4T6yUdqD/VOi7o=
+			</data>
+		</dict>
+		<key>Headers/TGVideoConfigModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wvx5FNP77z9N250w9ZKXzdj89f0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Uut0y51rE+kiumXt8jbaWYouwLF7Xxp+ORkeqALXsnE=
+			</data>
+		</dict>
 		<key>Headers/TGWatchPosModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -740,15 +671,323 @@
 			3a72x+JBQTo+KHxjM1DItCrHpOCN9r6p+RwPdPbKSyk=
 			</data>
 		</dict>
-		<key>Headers/relayer.h</key>
+		<key>NTESVerifyCodeResources.bundle/Rectangle@1x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2TksLFjIqk1eQVxnfglFsEYy68k=
+			5HNZYkEvZek3vq2IdAmmRIPcEZo=
 			</data>
 			<key>hash2</key>
 			<data>
-			9SU3g5VBDcxrmuxmul7uBO7bmEjluIj1hA4ZA7Pv21M=
+			/oj13R5KdfQt3390zE6K5+fAPD1EdfgiQdKAT66mg40=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/Rectangle@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qFpvYOWlzGjZOtniqVaEBXRwlKU=
+			</data>
+			<key>hash2</key>
+			<data>
+			qanIxm1W/GQO1+I8htBxmgypaVK/gb51OlzN+RtsoPI=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/Rectangle@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ENs2m2CxPEDLJF7jg0YUQd4ZhRI=
+			</data>
+			<key>hash2</key>
+			<data>
+			40aOslY4OnVMDv92AuXdvzIEH4S9EAEZZBSeJF3RwtU=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sIWXzJSsBEfkNVBwp0TDgkzymRA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ut3hFbDrgNc88djRhKVf8phYx/PSXlUzd7AgV9vRMsQ=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BzuK9pGbmGeABPJW0TvwzAfC8os=
+			</data>
+			<key>hash2</key>
+			<data>
+			YjLtFWZIk9Nl/ejQ4rw8dIHG4gOxMpMU6JQzrubmlW4=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pI13qRfOxLTQV8sxdy4/SjQG5rY=
+			</data>
+			<key>hash2</key>
+			<data>
+			FMAK0LPqv7FZTi1Zl88ryazxKo1kwXG7wyl2IuufmPw=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/bg@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OLOexupwzgdpqWfqE0LlDjyrEDo=
+			</data>
+			<key>hash2</key>
+			<data>
+			p4g9jW8GHeQQbRGbXSVl9afCMlh3wS/BrxeJEZ4Zrvg=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/bg@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			azBcRvJisT9EZSESNR4WGMfXPU0=
+			</data>
+			<key>hash2</key>
+			<data>
+			G4no3K4VoID150s4yndgezFKsx30FNd06CKu5wcTX40=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/bg@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4aOQaWmEStPDQPH59H9N6svLtQ8=
+			</data>
+			<key>hash2</key>
+			<data>
+			CTRUbn6HFTKuPepjmNLgdNkYjIkjs6K3pi9OPPgR6ww=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/bg_dark@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pwwYSc4bBZBsS2FE4hoQ9F7lJL0=
+			</data>
+			<key>hash2</key>
+			<data>
+			3s0rQ3bzYknMJYlOLn+7R3Ud6YF8afm2NpdtRz4c4o4=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/bg_dark@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h66UGqfJ6cX0Q9s8i9+3BeK+Jj4=
+			</data>
+			<key>hash2</key>
+			<data>
+			gzhcE7AWp+OJNVJjcAv+YKfOSoSJ+MJFw7RdiYfGUFw=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/bg_dark@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			feo1g+jXDsPFhogi5Pc51zjlPy0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Bq5xArg11y6Rm2GngsvY9XSUmy8MlPQC3z2mdMg+XtM=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_close2@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W/naGxuc1YgSLPP4nCTCURlHSzQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			Uy4ANTLuWP1zRSQzDx9qfrk/EVJ+qhzTR/+YklEsOuw=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_close2@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H7mMqG4RQViSWbhfORiOyn6gEuo=
+			</data>
+			<key>hash2</key>
+			<data>
+			SsgdkeNn4xX6IhM1+59OcAfLdJlRLAGV5OFfbh/3j8Y=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_close2@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e0cojzQLvdueJWIMZYYAOw585i8=
+			</data>
+			<key>hash2</key>
+			<data>
+			6Y+pA8OoVFmarjqjw1tcuvWcn3qeWzeKb7NWjqjsP9E=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_error@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zCUeVIPWg9ZtTq0VXs82NT+WfGs=
+			</data>
+			<key>hash2</key>
+			<data>
+			DNRotsbr9KNCrzZAUS/a3FjuTEhGmtySWxx653SYYkU=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_error@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+N8NKE43yrFUwsfEQusuhBamzDY=
+			</data>
+			<key>hash2</key>
+			<data>
+			sh6O/9I2/z7xW+b/d/RHFP5j3kfmOwf1Qm3sjVgESs8=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_error@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zlL3WDZUQmwZevuGYWjXxx4M104=
+			</data>
+			<key>hash2</key>
+			<data>
+			efp2AEDLFS0kLdi8xerb5oMrH+xpiw5f+eyA0r7DmGg=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_error_dark@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+NWtjtdJohfq5fBDK9UPsrbFSp4=
+			</data>
+			<key>hash2</key>
+			<data>
+			d7vWBC6IN11/n5cVLG39OfkCReC1AYGD+6A9qMx4Mxw=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_error_dark@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9j1MjUdN0gM4N1MvX1kdEeMYQLw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Okgmr5kLL4BoHxp4/nE/6pUNh2hk/0DY4TVblKt7eT8=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_error_dark@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LypanagcEd2z4MBloBb7ebzZyds=
+			</data>
+			<key>hash2</key>
+			<data>
+			1DMLnNOq8tDCRjdlmUYwNj6UHdhH3o+Jqfev21MmgRo=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_loading@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EZwcded8F4tKEfTwl/5jmvkLVCo=
+			</data>
+			<key>hash2</key>
+			<data>
+			snO5qtu1DcB2rm2yGF6mBNP0BaBT2LOK3jyydOfvM44=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_loading@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NaPKJxYAGmoCFgE8PKjfXZlbU5M=
+			</data>
+			<key>hash2</key>
+			<data>
+			f2ISNLUTn7qyaxTm3u50azmBhRN8Ao82ffYDQbxNn34=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/ico_loading@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NAA0talvMqlvAN8Kdx3CzyLKmzI=
+			</data>
+			<key>hash2</key>
+			<data>
+			URkL/Ivx/06MqZrAlnD80b5Gb2sZgx34jj7rpdAuPqw=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/icon_close_dark@1x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NHQvEZHtkrhp+oHzgEhfs0Wx33c=
+			</data>
+			<key>hash2</key>
+			<data>
+			lMUSLoWbNqHxjWgKw101VFyAIymaEoHg7jhMY4sqdoI=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/icon_close_dark@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pf6vlzCDey1xD1rqkPmzweISmu8=
+			</data>
+			<key>hash2</key>
+			<data>
+			aDXpamTpCPT5k0uFk9RZ18voBLqSssrRVqwWboY4JWc=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/icon_close_dark@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4zbCx7g5YptxgQFfQBxC1OipFyE=
+			</data>
+			<key>hash2</key>
+			<data>
+			yudqx7/EtgauMOyUZ7Ofc5NZGaeXAhI5g4EygAp2OMs=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/loading.gif</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CGPi1gO+FzRgXNKo2eXlqQhv6A0=
+			</data>
+			<key>hash2</key>
+			<data>
+			1MdlQrpWQNKVE76dLcOlMnChq5ku8gB3cbxqkFMEGKc=
+			</data>
+		</dict>
+		<key>NTESVerifyCodeResources.bundle/mobile.v2.13.6.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mu3SU07GHtfGS55bztDreExuOqM=
+			</data>
+			<key>hash2</key>
+			<data>
+			w/WO6mA7yYR8Pb9P7vMQHqYmNlTvccgKciDDdGE/910=
 			</data>
 		</dict>
 		<key>README.md</key>
@@ -760,50 +999,6 @@
 			<key>hash2</key>
 			<data>
 			eRWRNJLjwmW2taLZPVS/Gcf0u793A7KhazH+3slaw1Y=
-			</data>
-		</dict>
-		<key>jicdtest.vcproj</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			L54rNa1mvPgP9Ake+NXgqcFovGM=
-			</data>
-			<key>hash2</key>
-			<data>
-			ibWwy35HElAWtm1PEOCSymWP6AIlKBZgfAljm6WENXQ=
-			</data>
-		</dict>
-		<key>jicdw.rc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QtYT+RvwCsVPWebc4qFC2bW5Svw=
-			</data>
-			<key>hash2</key>
-			<data>
-			4AoQxdvv702hGMT5aZ1N9/Uie0i1pCyAknB2rIJCIrs=
-			</data>
-		</dict>
-		<key>jicdw.sln</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/+GYGusf82Om/XrtKGLlAZmvb0A=
-			</data>
-			<key>hash2</key>
-			<data>
-			S5iTX6204L30orX/PBoAw6zzsuqfc8v71KXWydArLxQ=
-			</data>
-		</dict>
-		<key>jicdw.vcproj</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			guSvWwJmqxnT9d2TdPZJ15C0B/c=
-			</data>
-			<key>hash2</key>
-			<data>
-			zeuNIjwXCQWCUusQx09yJCYuCie+u+Bxw/GCQc4LZy0=
 			</data>
 		</dict>
 	</dict>
