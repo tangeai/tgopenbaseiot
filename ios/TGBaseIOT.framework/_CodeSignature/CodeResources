@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		+yXLXGeEqaft1mqM45JMuV9yMf0=
+		9fE6R3NgBj+b2cBnp8nmJKEn5jQ=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		w35TEXj+3u0/L0xcG9qsD2rKoBs=
+		yA/D7cC+mVyKV31r0k0S8yTjqd8=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -290,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+yXLXGeEqaft1mqM45JMuV9yMf0=
+			9fE6R3NgBj+b2cBnp8nmJKEn5jQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jJriw3MQUO0SLNa1Ljf9zx7yjgnfPhROAsPqpCQhCV8=
+			d5UgSRwoUlRnQ+VueE8FhPIX6rcLVWAnbbLtO+GAOpQ=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -378,11 +378,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w35TEXj+3u0/L0xcG9qsD2rKoBs=
+			yA/D7cC+mVyKV31r0k0S8yTjqd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			eygCMyApjepcNgLAr5T+TpuQQhvU6DLZARjLUJbObEg=
+			NghsiEKkK2CjdBBXoBZf/DQO5bLSpP3UU4t6ITfSvaM=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>

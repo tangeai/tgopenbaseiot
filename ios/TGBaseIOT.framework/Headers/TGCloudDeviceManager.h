@@ -70,6 +70,16 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - errorCallBack:返回错误
 - (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval   model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
+/// 播放一个start->end的视频  开始播放
+/// - Parameters:
+///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
+///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
+///   - model: 云事件&云录像model
+///   - errorCallBack:返回错误
+///   - successDownLoadBlock 返回该时间段下载成功的所有文件名称
+///   - failureDownLoadBlock 返回该时间段下载失败的所有报错信息
+- (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval   model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack successDownLoadInfor:(void(^)(NSArray *successInforArray))successDownLoadBlock failureDownLoadErrorInfor:(void(^)(NSArray *failureInforArray))failureDownLoadBlock;
+
 /// 下载
 /// - Parameters:
 ///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
