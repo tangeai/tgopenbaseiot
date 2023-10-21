@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		9fE6R3NgBj+b2cBnp8nmJKEn5jQ=
+		r6h1QRAFNVhGep3J9zi4JJtu3Qk=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		KYDTUHkbhdLNgdHLpgwby1w96PI=
+		dEMs5QfBte6FpeU8LwCM8P+bzkI=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		yA/D7cC+mVyKV31r0k0S8yTjqd8=
+		3TaogFjmpeEj2jDs/JkE2wFt/Rk=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		/9ORQO+gRZlG/9M7LgtnGvxoXGU=
+		hjIJsyNoDUiAYUlKJWW9XSR3Sv8=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/TGVideoConfigModel.h</key>
 		<data>
-		wvx5FNP77z9N250w9ZKXzdj89f0=
+		x9BzWDMgkTWCfL/JcTWaFYASu+8=
 		</data>
 		<key>Headers/TGWatchPosModel.h</key>
 		<data>
@@ -290,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9fE6R3NgBj+b2cBnp8nmJKEn5jQ=
+			r6h1QRAFNVhGep3J9zi4JJtu3Qk=
 			</data>
 			<key>hash2</key>
 			<data>
-			d5UgSRwoUlRnQ+VueE8FhPIX6rcLVWAnbbLtO+GAOpQ=
+			cYATR1a5zzFpUDoMQRrRf8MK93Pf7Vvy63eLK9q1lZ4=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -334,11 +334,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KYDTUHkbhdLNgdHLpgwby1w96PI=
+			dEMs5QfBte6FpeU8LwCM8P+bzkI=
 			</data>
 			<key>hash2</key>
 			<data>
-			nLSfiYh4vG4C4uTpj7lBblXUOr/QeVLcrORacNOhwWE=
+			BqqnV+1gh0dKjjuefZ6z1fkvAAdVgsg//fWbZgdRSRg=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
@@ -378,11 +378,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yA/D7cC+mVyKV31r0k0S8yTjqd8=
+			3TaogFjmpeEj2jDs/JkE2wFt/Rk=
 			</data>
 			<key>hash2</key>
 			<data>
-			NghsiEKkK2CjdBBXoBZf/DQO5bLSpP3UU4t6ITfSvaM=
+			XdlB7pCDxHjvz4T2yqCcV4yNkmWcEeeieZKgiId0RuQ=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -499,11 +499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/9ORQO+gRZlG/9M7LgtnGvxoXGU=
+			hjIJsyNoDUiAYUlKJWW9XSR3Sv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			F1oqrPnKuA8frfl4o6Qyz9wRW+WDDo0JsmwoFVLgGbc=
+			eGgzlx3W15B90vyye2CKzEFq21sWTXsdnATYZmSEaNM=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -631,11 +631,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wvx5FNP77z9N250w9ZKXzdj89f0=
+			x9BzWDMgkTWCfL/JcTWaFYASu+8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uut0y51rE+kiumXt8jbaWYouwLF7Xxp+ORkeqALXsnE=
+			OPJ36+ECT7c15G271jaLEwdhOMNE98axI3/FmSO2jnA=
 			</data>
 		</dict>
 		<key>Headers/TGWatchPosModel.h</key>

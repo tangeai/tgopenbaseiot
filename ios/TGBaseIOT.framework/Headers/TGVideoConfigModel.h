@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int32_t fps;      //帧率
 @property (nonatomic, assign) int32_t bitrate;  //码率
 @property (nonatomic, assign) int32_t keyFrameIntervalSec; // 关键帧间隔
-@property (nonatomic, assign) DAMediaCodeID codecId; 
-@property (nonatomic, strong) UIView *cameraView;
+@property (nonatomic, assign) DAMediaCodeID codecId;  // 编码格式
+@property (nonatomic, strong) UIView *cameraView;     // 绑定预览画面view
 @property (nonatomic, assign) BOOL frontOrBack; //yes 为前置摄像头 no为后置，默认前置
 
 @end

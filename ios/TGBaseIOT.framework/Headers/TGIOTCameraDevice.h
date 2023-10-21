@@ -38,7 +38,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 /// 直播流更新速率
 /// - Parameters:
 ///   - camera: 设备交互实例
-///   - bitRate: 字节每秒
+///   - bitRate: 字节每秒（B）
 ///   - frameRate: 帧每秒
 - (void)camera:(TGIOTCameraDevice *)camera didLiveVideoBpsUpdateWithBitRate:(unsigned int)bitRate frameRate:(unsigned int)frameRate;
 

@@ -85,22 +85,22 @@ NS_ASSUME_NONNULL_BEGIN
 /* 云录像是否静音 */
 @property (nonatomic, assign, readonly) BOOL isCloudPlaybackAudioMute;  // *
 @property (nonatomic, assign, readonly) BOOL isSupportFlagsFixPosition;   // *
-/* 是否是4G微功耗摄像机、4G电池摄像机 */
-@property (nonatomic, assign, readonly) BOOL isLpSimDevice;   // *
 /* 是否是4G摄像机 */
 @property (nonatomic, assign, readonly) BOOL isSimDevice;
+/* 是否是4G微功耗摄像机、4G电池摄像机 */
+@property (nonatomic, assign, readonly) BOOL isLpSimDevice;   // *
 /* 是否是WiFi电池摄像机 */
 @property (nonatomic, assign, readonly) BOOL isLpWifiDevice;  // *
 /* 是否是WiFi门铃 */
 @property (nonatomic, assign, readonly) BOOL isDoorBellWifiDevice;  // *
-/* 通道1画面默认清晰度，返回-1表示为配置 */
-@property (nonatomic, assign, readonly) int channelOneDefaultQuality; // **
 /* 是否支持侦测区域设置 */
 @property (nonatomic, assign, readonly) BOOL moveDetectZonesEnable;   // *
 /* 是否是低功耗设备 */
 @property (nonatomic, assign, readonly) BOOL isBatteryDevice;    // *
 /* 是否是支持休眠唤醒低功耗设备 */
 @property (nonatomic, assign, readonly) BOOL isBatterySupportAwake;  // *
+/* 是否是支持边放电边充电低功耗设备 */
+@property (nonatomic, assign, readonly) BOOL isBatterySolarEnable;
 /* 是否支持画中画 */
 @property (nonatomic, assign, readonly) BOOL isPictureInPictureEnable; // *
 /* 是否需要APP选择画面 */

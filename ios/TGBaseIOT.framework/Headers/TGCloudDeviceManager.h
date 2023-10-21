@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 @protocol TGCloudDeviceManagerDelegate <NSObject>
 
 @optional
+
 // 播放回调
 - (void)cloudDeviceManagerDidPlayDecoderVideoData:(DACameraP2PVideoData *)videoData;
 // 返回门铃录制存储地址
