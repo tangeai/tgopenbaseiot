@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   s.ios.vendored_libraries = 'ios/**/*.a'
   s.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
   s.libraries = 'c++','sqlite3.0','z','iconv','xml2'
-  s.dependency 'DAAudioVideo'
   s.dependency 'JSONKit','1.0.0'
   s.dependency 'ZXingObjC'
   s.dependency 'Masonry'
