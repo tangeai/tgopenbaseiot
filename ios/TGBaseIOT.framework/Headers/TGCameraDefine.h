@@ -225,9 +225,6 @@ typedef enum{
     IOTYPE_USER_IPCAM_FORMATEXTSTORAGE_REQ              = 0x0380,   // Format external storage
     IOTYPE_USER_IPCAM_FORMATEXTSTORAGE_RESP             = 0x0381,
     
-    TCI_CMD_GET_EXTERNAL_STORAGE_REQ                    = 0x8030,  // 查询设备sd卡状态
-    TCI_CMD_GET_EXTERNAL_STORAGE_RESP                   = 0x8031,
-    
     TCI_CMD_GET_RUNTIME_STATE_REQ                       = 0x0388,   // 获取设备端运行状态
     TCI_CMD_GET_RUNTIME_STATE_RESP                      = 0x0389,
     
@@ -1049,19 +1046,6 @@ typedef struct{
     unsigned char reserved[3];
 } __attribute__((__packed__)) SMsgAVIoctrlFormatExtStorageResp;
 
-/*
- TCI_CMD_GET_EXTERNAL_STORAGE_REQ        =   0x8030,
-** @struct TCI_CMD_GET_EXTERNAL_STORAGE_RESP   =   0x8031
-*/
-typedef struct{
-    unsigned int  channel;                  // 0
-    int  total;                             // 总容量，单位 M, >0: total space size of sdcard (MBytes), 0: 无卡, -1: 卡状态错，需要格式化,-2: SD卡状态为只读(可回放但不能继续写入), -3: 正在格式化
-    int free;                               // Free space size of sdcard (MBytes)
-    unsigned char reserved[8];
-} __attribute__((__packed__)) SMsgAVIoctrlStorageResp;
-
-
-
 /* IOTYPE_USER_IPCAM_GET_TIMEZONE_REQ               = 0x3A0
  * IOTYPE_USER_IPCAM_GET_TIMEZONE_RESP              = 0x3A1
  * IOTYPE_USER_IPCAM_SET_TIMEZONE_REQ               = 0x3B0
@@ -1216,55 +1200,6 @@ typedef NS_ENUM(unsigned char,ECEVENT) {
     ECEVENT_SPEED_DOWN,                         ///< speed burstly down
     ECEVENT_MAX
 };
-
-/** 上报事件类型.
- * 事件可能需要携带额外参数。参数通过 EVENTPARAM::evt_data 传递，内容与具体事件相关
- */
-//typedef enum ECEVENT {
-//    ECEVENT_NONE = 0,             ///< [] none
-//    ECEVENT_MOTION_DETECTED,      ///< [motion] is detected (=1)
-//    ECEVENT_HUMAN_BODY,           ///< [body] human body is detected (=2)
-//    ECEVENT_SOUND,                ///< [sound] (=3)
-//    ECEVENT_PIR,                  ///< [pir](=4)
-//
-//    ECEVENT_SMOKE,                ///< [smoke] (=5)
-//    ECEVENT_TEMPERATURE_L,        ///< [tempL] temperature low(=6). 参数: MKEVTDATA_Temperatur()
-//    ECEVENT_TEMPERATURE_H,        ///< [tempH] temperature high(=7). 参数: MKEVTDATA_Temperatur()
-//    ECEVENT_HUMIDITY_L,           ///< [humidL] humidity low(=8). 参数: MKEVTDATA_Humidity()
-//    ECEVENT_HUMIDITY_H,           ///< [humidH] humidity high(=9). 参数: MKEVTDATA_Humidity()
-//    ECEVENT_GENERIC_SENSOR,       ///< [generic] 通用传感器类消息 (=10)
-//
-//    ECEVENT_DR_BEGIN,             ///< 行车记录仪事件范围开始(=11)
-//    ECEVENT_G_SENSOR = ECEVENT_DR_BEGIN,   ///< [g-sensor] G-Sensor(碰撞事件)(=11). 参数: NULL or EVTDATA_SERIOUS_COLLISION
-//    ECEVENT_COLLISION = ECEVENT_G_SENSOR,  ///< = @ref ECEVENT_G_SENSOR(=11)
-//    ECEVENT_SETOFF,                 ///< [set-off] set off car (=12)
-//    ECEVENT_PARK,                   ///< [park] car parked(=13)
-//    ECEVENT_SPEED_UP,             ///< [speed-up] speed burstly up(=14)
-//    ECEVENT_SPEED_DOWN,           ///< [speed-down] speed burstly down(=15)
-//    ECEVENT_DR_END = ECEVENT_SPEED_DOWN, ///< 行车记录仪事件范围结束(=15)
-//
-//    ECEVENT_DOORBELL,              ///< [doorbell] (=16)
-//    ECEVENT_PASSBY,                ///< [passby] 有人路过(=17)
-//    ECEVENT_STAY,                  ///< [stay] 有人停留(=18)
-//
-//    //ECEVENT_OBJECT,                ///< object recognization
-//    //ECEVENT_CAR = ECEVENT_OBJECT,                   ///<
-//
-//    ECEVENT_LOCK,                 ///< [lock] 门锁消息(大类)(=19). 细分消息在data部分
-//
-//    ECEVENT_CRY,                  ///< [cry] 检测到哭声(=20)
-//    ECEVENT_ENTER,                ///< [enter] 进入区域(=21)
-//    //参数: MKEVTDAT_SitPoseSens()。这个在sdk内部处理
-//    ECEVENT_SITPOSE,              ///< [bad_posture] sitting pose. 坐姿检测.(=22)
-//
-//    ECEVENT_LEAVE,                ///< [leave] 离开区域 "leave". 由sdk生成?(=23)
-//    ECEVENT_TUMBLE,               ///< [tumble] 摔倒(=24)
-//
-//    ECEVENT_SNAPSHOT,             ///< [snapshot] 手动抓拍(=25)
-//
-//    ECEVENT_MAX,
-//    ECEVENT_USER_DEFINED = 255
-//} ECEVENT;
 
 typedef struct  {
     STimeDay        start_time;//事件开始时间

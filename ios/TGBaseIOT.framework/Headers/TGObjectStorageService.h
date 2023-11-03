@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithDeviceId:(NSString *)deviceId ossId:(NSString *)ossId callBack:(void(^)(id error))callBack;
 - (void)downLoadFileWithObjectKey:(NSString *)objectKey ossId:(NSString *)ossId block:(void(^)(NSData *data,NSError *error))block;
 - (void)cancleTask;
-- (void)uploadAppLogWithSuccessBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)uploadAppLogWithSuccessBlock:(void(^)(NSString *objectKey))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 @end
 
