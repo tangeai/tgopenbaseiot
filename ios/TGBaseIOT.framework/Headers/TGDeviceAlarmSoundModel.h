@@ -15,15 +15,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGDeviceAlarmSoundModel : NSObject
 
+#pragma mark -- set命令所需参数
 @property (nonatomic, copy) NSString *bellID;
-@property (nonatomic, assign) int type;
 @property (nonatomic, assign) AUDIOFILEFMT fileFormat;
 @property (nonatomic, assign) TCMEDIA codecId;
-@property (nonatomic, assign) BOOL isCustomAudio;
+@property (nonatomic, strong, nullable) NSData *fileData;
 
+#pragma mark -- 其他参数
+@property (nonatomic, assign) int type;
+@property (nonatomic, assign) BOOL isCustomAudio;
 @property (nonatomic, copy) NSString *describe;
 @property (nonatomic, strong, nullable) NSURL *url;//带协议类型
-@property (nonatomic, strong, nullable) NSData *fileData;
+
 @property (nonatomic, assign) BOOL hasCreateAudio;
 
 @property (nonatomic, assign) BOOL isSelect;
