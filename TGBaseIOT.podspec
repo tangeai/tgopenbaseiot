@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TGBaseIOT"
-  s.version = "2.3.4.2"
+  s.version = "2.3.4.3"
   s.summary = "A short description of TGCommonBaseModule."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"liubin"=>"liubin361163@163.com"}
@@ -13,8 +13,11 @@ Pod::Spec.new do |s|
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__' }
   s.source_files = 'ios/TGBaseIOT.framework/Headers/*.h'
-  s.ios.vendored_frameworks   = 'ios/**/*.framework'
-  s.ios.vendored_libraries = 'ios/**/*.a'
+  s.resource_bundles = {
+    'TGBaseIOT' => ['ios/Assets/*']
+  }
+  s.ios.vendored_frameworks   = 'ios/Classes/**/*.framework'
+  s.ios.vendored_libraries = 'ios/Classes/**/*.a'
   s.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
   s.libraries = 'c++','sqlite3.0','z','iconv','xml2'
   s.dependency 'DAAudioVideo'
@@ -31,4 +34,6 @@ Pod::Spec.new do |s|
   s.dependency 'MJExtension'
   s.dependency 'Socket.IO-Client-Swift','~> 15.2.0'
   s.dependency 'BabyBluetooth','~> 0.7.0'
+  s.dependency 'TensorFlowLiteObjC/CoreML'
+  s.dependency 'libyuv-iOS'
 end
