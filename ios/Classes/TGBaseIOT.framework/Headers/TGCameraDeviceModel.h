@@ -101,8 +101,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)updateDataWithNewDevice:(TGCameraDeviceModel *)device;
 
-+ (UIImage *)tempImage;
-
 @end
 
 NS_ASSUME_NONNULL_END
