@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)switchToEnvType:(TGBaseIOTServerEnvType)env;
 - (void)requestWithUrl:(NSString *)url params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 - (void)downloadFileWithUrl:(NSString *)url params:(nullable id)params savePath:(NSString *)savePath successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)downloadFileWithUrl:(NSString *)url headers:(nullable id)headers savePath:(NSString *)savePath successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)cancelAllOperations;
 - (void)uploadFileWithUrl:(NSString *)url fileData:(NSData *)fileData name:(NSString *)name fileName:(NSString *)fileName mimeType:(NSString *)mimeType successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 - (void)sendSetWifiInfoToDeviceWithUrl:(NSString *)url params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 

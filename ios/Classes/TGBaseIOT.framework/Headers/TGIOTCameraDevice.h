@@ -81,29 +81,39 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 
 #pragma mark - 实时直播
 
-// 使用0通道进行直播
-- (void)startLiveChannelZeroVideoWithResolution:(TGResolutionModel *)resolution;
-// 停止0通道直播
-- (void)stopLiveChannelZeroVideo;
+/**
+ * 指定清晰度播放视频通道0实时视频，请搭配使用stopLiveChannelZeroVideo方法停止播放
+ * @param resolution 清晰度
+ * 已废弃，请使用新接口startLiveVideoWithResolution:channel:，指定播放通道，不指定默认TGPlayChannelType_LiveChannelZero
+ */
+- (void)startLiveChannelZeroVideoWithResolution:(TGResolutionModel *)resolution DEPRECATED_MSG_ATTRIBUTE("Use -startLiveVideoWithResolution:channel: instead");
+/**
+ * 停止播放视频通道0实时视频，请搭配使用startLiveChannelZeroVideoWithResolution:方法
+ * 已废弃，请使用新接口stopLiveVideoWithChannel:，指定播放通道
+ */
+- (void)stopLiveChannelZeroVideo DEPRECATED_MSG_ATTRIBUTE("Use -stopLiveVideoWithChannel: instead");
+
 // 开启音频直播
 - (void)startCameraLiveAudio;
 // 关闭音频直播
 - (void)stopCameraLiveAudio;
-// 开启1通道视频直播 （一般双摄会使用到）
-- (void)startLiveChannelOneVideoWithResolution:(TGResolutionModel *)resolution;
-// 关闭1通道视频直播
-- (void)stopLiveChannelOneVideo;
+
+/**
+ * 指定清晰度播放视频通道1实时视频，请搭配使用stopLiveChannelOneVideo方法停止播放
+ * @param resolution 清晰度
+ * 已废弃，请使用新接口startLiveVideoWithResolution:channel:，指定播放通道，不指定默认TGPlayChannelType_LiveChannelZero
+ */
+- (void)startLiveChannelOneVideoWithResolution:(TGResolutionModel *)resolution DEPRECATED_MSG_ATTRIBUTE("Use -startLiveVideoWithResolution:channel: instead");
+/**
+ * 停止播放视频通道1实时视频，请搭配使用startLiveChannelOneVideoWithResolution:方法
+ * 已废弃，请使用新接口stopLiveVideoWithChannel:，指定播放通道
+ */
+- (void)stopLiveChannelOneVideo DEPRECATED_MSG_ATTRIBUTE("Use -stopLiveVideoWithChannel: instead");
+
 // 开启对讲
 - (void)startDeviceLiveSpeak;
 // 关闭对讲
 - (void)stopDeviceLiveSpeak;
-
-// 开始实时录制，请搭配使用stopCameraLiveRecord停止录制
-// 已废弃，请使用新接口startCameraVideoRecordWithFileName，指定录制通道，不指定默认TGVideoRecordType_LiveChannelZero
-- (void)startCameraLiveRecordWithFileName:(NSString *)fileName;
-// 停止实时录制，请搭配使用startCameraLiveRecordWithFileName
-// 已废弃，请使用新接口stopCameraVideoRecord停止录制
-- (void)stopCameraLiveRecord;
 
 // 开启双向视频
 - (void)startDeviceLiveSpeakAndVideo:(TGVideoConfigModel *)model;
@@ -126,12 +136,61 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 // 停止卡录像播放
 - (void)stopCameraSDCardPlay;
 
-// 开始卡回放录制，请搭配使用stopCameraSDCardRecord停止录制
-// 已废弃，请使用新接口startCameraVideoRecordWithFileName，指定录制通道，不指定默认TGVideoRecordType_SDCardChannelZero
-- (void)startCameraSDCardRecordWithFileName:(NSString *)fileName;
-// 停止卡回放录制，请搭配使用stopCameraSDCardRecord
-// 已废弃，请使用新接口stopCameraVideoRecord停止录制
-- (void)stopCameraSDCardRecord;
+/**
+ * 开始实时录制，请搭配使用stopCameraLiveRecord方法停止录制
+ * 已废弃，请使用新接口startCameraVideoRecordWithFileName:recordType:，指定录制通道，不指定默认TGVideoRecordType_LiveChannelZero
+ */
+- (void)startCameraLiveRecordWithFileName:(NSString *)fileName DEPRECATED_MSG_ATTRIBUTE("Use -startCameraVideoRecordWithFileName:recordType: instead");
+/**
+ * 停止实时录制，请搭配使用startCameraLiveRecordWithFileName:方法
+ * 已废弃，请使用新接口stopCameraVideoRecord停止录制
+ */
+- (void)stopCameraLiveRecord DEPRECATED_MSG_ATTRIBUTE("Use -stopCameraVideoRecord instead");
+
+/**
+ * 开始卡回放录制，请搭配使用stopCameraSDCardRecord方法停止录制
+ * 已废弃，请使用新接口startCameraVideoRecordWithFileName:recordType:，指定录制通道，不指定默认TGVideoRecordType_SDCardChannelZero
+ */
+- (void)startCameraSDCardRecordWithFileName:(NSString *)fileName DEPRECATED_MSG_ATTRIBUTE("Use -startCameraVideoRecordWithFileName:recordType: instead");
+/**
+ * 停止卡回放录制，请搭配使用startCameraSDCardRecordWithFileName:方法
+ * 已废弃，请使用新接口stopCameraVideoRecord停止录制
+ */
+- (void)stopCameraSDCardRecord DEPRECATED_MSG_ATTRIBUTE("Use -stopCameraVideoRecord instead");
+
+
+/**
+ * 开始录制视频
+ * @param fileName 文件名称
+ * @param recordType 录制类型
+ */
+- (void)startCameraVideoRecordWithFileName:(NSString *)fileName recordType:(TGVideoRecordType)recordType;
+
+/**
+ * 停止录制
+ */
+- (void)stopCameraVideoRecord;
+
+/**
+ * 按照指定清晰度播放指定通道实时视频
+ * @param resolution 视频清晰度
+ * @param channel 视频通道
+ */
+- (void)startLiveVideoWithResolution:(TGResolutionModel *)resolution channel:(TGPlayChannelType)channel;
+
+/**
+ * 设置指定通道实时视频清晰度
+ * @param resolution 视频清晰度
+ * @param channel 视频通道
+ */
+- (void)setLiveVideoResolution:(TGResolutionModel *)resolution channel:(TGPlayChannelType)channel;
+
+/**
+ * 停止播放指定通道实时视频
+ * @param channel 视频通道
+ */
+- (void)stopLiveVideoWithChannel:(TGPlayChannelType)channel;
+
 
 // 静音
 - (void)cameraSDCardMute;
@@ -152,11 +211,6 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 // 倍数播放 卡录像1、2、4倍
 - (void)setSDCardPlaySpeedLevel:(TGCameraPlaySpeedLevel)level;
 
-// 开始录制
-- (void)startCameraVideoRecordWithFileName:(NSString *)fileName recordType:(TGVideoRecordType)recordType;
-// 停止录制
-- (void)stopCameraVideoRecord;
-
 #pragma mark - deviceSetting 设置
 // 设备信息
 - (void)getDeviceInfoCMD;
@@ -171,11 +225,19 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 // 设置50HZ，60HZ
 - (void)setDeviceFrequency:(ENUM_ENVIRONMENT_MODE)mode;
 
-// 设置视频高清低清-0通道
-- (void)setLiveVideoQuality:(ENUM_QUALITY_LEVEL)level;
-// 设置视频高清低清-1通道，画中画
-- (void)setLivePIPVideoQuality:(ENUM_QUALITY_LEVEL)level;
-// 设置屏幕翻转（0-3） 
+/**
+ * 设置视频通道0视频清晰度
+ * @param level 视频清晰度
+ * 已废弃，请使用新接口setLiveVideoResolution:channel:方法设置视频清晰度
+ */
+- (void)setLiveVideoQuality:(ENUM_QUALITY_LEVEL)level DEPRECATED_MSG_ATTRIBUTE("Use -setLiveVideoResolution:channel instead");
+/**
+ * 设置视频通道1视频清晰度
+ * @param level 视频清晰度
+ * 已废弃，请使用新接口setLiveVideoResolution:channel:方法设置视频清晰度
+ */
+- (void)setLivePIPVideoQuality:(ENUM_QUALITY_LEVEL)level DEPRECATED_MSG_ATTRIBUTE("Use -setLiveVideoResolution:channel instead");
+// 设置屏幕翻转（0-3）
 - (void)setVideoFlipMode:(int)mode;
 // 获取Wifi列表
 - (void)getWifiList;

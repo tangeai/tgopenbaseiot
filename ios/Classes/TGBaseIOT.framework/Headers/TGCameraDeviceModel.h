@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "TGBaseIOTDefine.h"
-#import "TGDeviceCapacityModel.h"
+//#import "TGDeviceCapacityModel.h"
 #import <DAAudioVideo/DAAudioVideo.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -23,10 +23,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *deviceId;
 @property (nonatomic, copy) NSString *deviceName;
 @property (nonatomic, copy) NSString *productName;
-@property (nonatomic, strong) NSDictionary *attrs;
-@property (nonatomic, strong) NSDictionary *abilities;
+@property (nonatomic, strong) NSString *categoryName;
+@property (nonatomic, strong) NSString *categoryKey;
+@property (nonatomic, strong) NSString *connectWay;
 @property (nonatomic, assign) BOOL is_owner;
 @property (nonatomic, strong) NSString *p2pType;
+
+@property (nonatomic, strong) NSDictionary *attrs;
+@property (nonatomic, strong) NSDictionary *abilities;
+@property (nonatomic, strong) NSDictionary *extAttrs;
 
 #pragma mark - timezone
 
@@ -71,7 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *des_key;
 
-@property (nonatomic, strong) TGDeviceCapacityModel *capacityModel;
+//@property (nonatomic, strong) TGDeviceCapacityModel *capacityModel;
 
 #pragma mark - other 以下参数均为定制兼容请勿使用，如需使用请自己实现其方法
 

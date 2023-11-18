@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		wJ3hjwOs2+NYYTSwJ1xJgfqjah4=
+		s+AqgQ9OOTY7ZkpJHZRkRzeNzQg=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
-		hpmw68aLUzwPkleWWmU7L67Zi2Y=
+		tRYu1fAYCIj4khJ5NdV4zsHRw8k=
 		</data>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		YCZN7OaYs6i+VVv3PtwfYImlwWE=
+		Hc5mZKeV80PofPpk/qPnC3k3Qgc=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
@@ -60,10 +60,6 @@
 		<data>
 		VJ+lSAcY9ooGzZIUR+FpHBpZ/W4=
 		</data>
-		<key>Headers/TGDeviceCapacityModel.h</key>
-		<data>
-		51DELVI4d/ANFA4YN53Il29XkBo=
-		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
 		KQF0YOh62tGnB8Ipjs7gZwNFoIc=
@@ -90,7 +86,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		CK8Lhp0fM2HSNYTpSsKDienwzvY=
+		DNMxdrv0wOTe4h7Xz8onQnbLTvI=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -134,7 +130,7 @@
 		</data>
 		<key>Headers/TGVideoCamera.h</key>
 		<data>
-		oDAKMhckH6jKXdClCwoq3xM3914=
+		XK30BGeoKBAjYm0wgPvo6kSe0cM=
 		</data>
 		<key>Headers/TGVideoConfigModel.h</key>
 		<data>
@@ -294,22 +290,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wJ3hjwOs2+NYYTSwJ1xJgfqjah4=
+			s+AqgQ9OOTY7ZkpJHZRkRzeNzQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/GOb6zh7swyLlS+xVcttjayOmQ/kp+TDsAW9/3w08V8=
+			sWc0ho4EOxZx6RhslaYR1wZeW4cOc/Yyy9cOuYi5xqU=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hpmw68aLUzwPkleWWmU7L67Zi2Y=
+			tRYu1fAYCIj4khJ5NdV4zsHRw8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			TRJ2gTYb1ZNlDYM6CCoa4WRwKSaJYivYbnAAkPCcuFs=
+			Ap5XZy1RYOQXlFRvUsKPCydbkmxC3K57zfv+nAh61Rk=
 			</data>
 		</dict>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
@@ -338,11 +334,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YCZN7OaYs6i+VVv3PtwfYImlwWE=
+			Hc5mZKeV80PofPpk/qPnC3k3Qgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			XVLRJabCsr2EEL6ryksEmDTRA1mbRckofY3fdqiCIS8=
+			sjuAOzrPCz80YPQ+qneChrkNf+BhHWKncI9a5Cacf1A=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
@@ -433,17 +429,6 @@
 			Kddhe8BUuoOmaBxa3bBoOpKGYfLMMzsxcy1M69Ndnb8=
 			</data>
 		</dict>
-		<key>Headers/TGDeviceCapacityModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			51DELVI4d/ANFA4YN53Il29XkBo=
-			</data>
-			<key>hash2</key>
-			<data>
-			4z2RHlccpKK2o2AhfbJXIhuE+pmHmJGiZpWCeJx4KQ4=
-			</data>
-		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -514,11 +499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CK8Lhp0fM2HSNYTpSsKDienwzvY=
+			DNMxdrv0wOTe4h7Xz8onQnbLTvI=
 			</data>
 			<key>hash2</key>
 			<data>
-			XhvTf04Hrq2IzDzGsQU3El1clgF3VHRsZD/4BWQjfxM=
+			z5tYDhbvC2r+5pGe6A+K+LXRhIWiciw1/Wm7i1KxkD8=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -635,11 +620,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oDAKMhckH6jKXdClCwoq3xM3914=
+			XK30BGeoKBAjYm0wgPvo6kSe0cM=
 			</data>
 			<key>hash2</key>
 			<data>
-			XDZaAqZdrPMdZdkJ/uzpZQwcH6de/4T6yUdqD/VOi7o=
+			FwvFrPlB3v44dp2lEcP3fSy8DO2rx+pql1ZABD/M20o=
 			</data>
 		</dict>
 		<key>Headers/TGVideoConfigModel.h</key>

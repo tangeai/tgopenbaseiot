@@ -85,10 +85,13 @@ typedef NS_ENUM(NSInteger,TGDeviceButtonListFlag) {
 typedef NS_ENUM(NSInteger, TGPlayChannelType) {
     TGPlayChannelType_LiveChannelZero = 0,
     TGPlayChannelType_LiveChannelOne = 1,
+    TGPlayChannelType_LiveChannelTwo = 2,
     TGPlayChannelType_CloudChannelZero = 0,
     TGPlayChannelType_CloudChannelOne = 1,
+    TGPlayChannelType_CloudChannelTwo = 2,
     TGPlayChannelType_SDCardChannelZero = 0,
-    TGPlayChannelType_SDCardChannelOne = 1
+    TGPlayChannelType_SDCardChannelOne = 1,
+    TGPlayChannelType_SDCardChannelTwo = 2
 };
 
 typedef NS_ENUM(NSInteger,TGVideoPlayDirection) {
@@ -107,10 +110,13 @@ typedef NS_ENUM(NSInteger,TGVideoRecordType) {
     TGVideoRecordType_Unknown,
     TGVideoRecordType_LiveChannelZero,
     TGVideoRecordType_LiveChannelOne,
+    TGVideoRecordType_LiveChannelTwo,
     TGVideoRecordType_CloudChannelZero,
     TGVideoRecordType_CloudChannelOne,
+    TGVideoRecordType_CloudChannelTwo,
     TGVideoRecordType_SDCardChannelZero,
-    TGVideoRecordType_SDCardChannelOne
+    TGVideoRecordType_SDCardChannelOne,
+    TGVideoRecordType_SDCardChannelTwo
 };
 
 typedef NS_ENUM(NSInteger,TGPTZViewTurnDirection) {
@@ -148,7 +154,7 @@ typedef NS_ENUM(NSInteger, TGBluetoothConnectState) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"2343"
+#define TGBaseIOTSDKVersion                             @"2350"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50

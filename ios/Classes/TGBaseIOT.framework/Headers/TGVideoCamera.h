@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 结束采样
 - (void)stop;
 
++ (BOOL)tg_isHardwareDecodeSupportedH265 ;
+
 @end
 
 NS_ASSUME_NONNULL_END
