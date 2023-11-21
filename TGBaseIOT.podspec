@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target    = '12.1'
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__' }
-  s.source_files = 'ios/TGBaseIOT.framework/Headers/*.h'
+  s.source_files = 'ios/Classes/TGBaseIOT.framework/Headers/*.h'
   s.ios.vendored_frameworks   = 'ios/Classes/**/*.framework'
   s.ios.vendored_libraries = 'ios/Classes/**/*.a'
   s.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
