@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int channel;      //通道数
 @property (nonatomic, assign) int32_t width;    //分辨率-采集宽
 @property (nonatomic, assign) int32_t height;   //分辨率-采集高
-@property (nonatomic, assign) int32_t fps;      //帧率
-@property (nonatomic, assign) int32_t bitrate;  //码率
+@property (nonatomic, assign) int32_t fps;      //帧率 非jpeg
+@property (nonatomic, assign) int32_t bitrate;  //码率 非jpeg
+@property (nonatomic, assign) int32_t cameraFPS;  //摄像头帧率 默认是30
 @property (nonatomic, assign) int32_t keyFrameIntervalSec; // 关键帧间隔
 @property (nonatomic, assign) DAMediaCodeID codecId;  // 编码格式
 @property (nonatomic, strong) UIView *cameraView;     // 绑定预览画面view
