@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		97YlUiLsrVXeousrwmXi0kgHSAk=
+		LzktlpWL5Qn14f1jRdE4sQG6+QE=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		DNMxdrv0wOTe4h7Xz8onQnbLTvI=
+		TZ21+39mQ/ibuw0DBM1alr/nvsE=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -290,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			97YlUiLsrVXeousrwmXi0kgHSAk=
+			LzktlpWL5Qn14f1jRdE4sQG6+QE=
 			</data>
 			<key>hash2</key>
 			<data>
-			WE0ORtXf/MIuJJHVpLVOgyaFCp4BmnSeXlBOFk4EWV8=
+			SNl73a6+NCv/2uo2sLYkUQHCjzz2jp/Yw0wAFB5j6dM=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -499,11 +499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DNMxdrv0wOTe4h7Xz8onQnbLTvI=
+			TZ21+39mQ/ibuw0DBM1alr/nvsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			z5tYDhbvC2r+5pGe6A+K+LXRhIWiciw1/Wm7i1KxkD8=
+			ilOUXvogCwEaqCtD8pnp1VV8RIyf2iV4ZLhyGZgh5MI=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
