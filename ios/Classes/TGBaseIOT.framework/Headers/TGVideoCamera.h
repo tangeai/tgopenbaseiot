@@ -1,6 +1,6 @@
 //
 //  TGVideoCamera.h
-//  AFNetworking
+//  TGBaseIOT
 //
 //  Created by liubin on 2023/10/1.
 //

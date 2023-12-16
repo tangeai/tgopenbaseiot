@@ -1,6 +1,6 @@
 //
 //  TGBaseIOTDefine.h
-//  Pods
+//  TGBaseIOT
 //
 //  Created by liubin on 2022/11/22.
 //
@@ -10,11 +10,6 @@
 
 #ifndef TGBaseIOTDefine_h
 #define TGBaseIOTDefine_h
-
-typedef NS_ENUM(NSInteger,TGCardRecordOrderType) {
-    TGCardRecordOrderType_Desc,    //降序
-    TGCardRecordOrderType_Asce     //升序
-};
 
 typedef NS_ENUM(NSInteger,TGDeviceRecordType) {
     TGDeviceRecordType_NoRecord,
@@ -159,7 +154,7 @@ typedef NS_ENUM(NSInteger, TGBluetoothConnectState) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"2352"
+#define TGBaseIOTSDKVersion                             @"2360"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50

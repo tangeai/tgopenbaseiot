@@ -1,6 +1,6 @@
 //
 //  TGCloudDownloadModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2022/8/30.
 //

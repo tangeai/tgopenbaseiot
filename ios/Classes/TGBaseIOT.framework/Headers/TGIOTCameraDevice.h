@@ -1,6 +1,6 @@
 //
 //  TGIOTCameraDevice.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2018/12/25.
 //  Copyright © 2018年 Darren. All rights reserved.
@@ -121,8 +121,6 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)stopDeviceLiveSpeakAndVideo;
 
 #pragma mark - sd卡
-// 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像
-- (void)getCameraSDCardRecordModelListWithDate:(NSString *)date cardRecordOrderType:(TGCardRecordOrderType)type successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
 // 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像
 - (void)getCameraSDCardRecordModelListWithDate:(NSString *)date successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
 // 获取卡录像列表，返回数据，可自行解析

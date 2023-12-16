@@ -1,13 +1,12 @@
 //
 //  TGHintToneModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2022/6/25.
 //
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-//#import <TGCommonBaseModule/TGCommonBaseDefineHeader.h>
 #import "TGCameraDefine.h"
 #import "TGCameraDeviceModel.h"
 

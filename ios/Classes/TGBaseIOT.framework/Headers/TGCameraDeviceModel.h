@@ -1,6 +1,6 @@
 //
 //  TGCameraDeviceModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2019/1/11.
 //  Copyright © 2019 Darren. All rights reserved.

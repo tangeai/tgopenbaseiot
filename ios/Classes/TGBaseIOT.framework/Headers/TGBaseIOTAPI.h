@@ -1,6 +1,6 @@
 //
 //  TGBaseIOTAPI.h
-//  Pods-TGBaseIOT_Example
+//  TGBaseIOT
 //
 //  Created by liubin on 2022/10/7.
 //
@@ -188,39 +188,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param timeCount 轮询时长，默认150s
 /// @param intervalTime 间隔时长，默认5s
 /// @param processBlock 倒计时进度
-/// @param uuidStr 设备uuid（deviceID）
+/// @param uuidStr 设备uuid类型
 /// @param successBlock 成功返回
 /// @param failureBlock 失败返回 Code 51934 设备已绑定，其他失败
 - (void)tg_configurationNoWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime uuid:(NSString *)uuidStr processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
-
-/// 轮询绑定4G设备或有线设备 （注*要和取消轮询配合使用）参数可选拓展
-/// @param timeCount 轮询时长，默认150s
-/// @param intervalTime 间隔时长，默认5s
-/// @param uuidStr 设备uuid（deviceID）
-/// @param deviceName 设备名称 -----可选参数
-/// @param timeZone 设备时区 -----可选参数
-/// @param typeStr 添加类型 分别为 scan(扫码添加)、4g(4g添加)、lan(有线添加)、device(配网添加) ---可选参数
-/// @param must_be_online 设备是否需要必须在线  ----可选参数
-/// @param must_be_actived 设备是否需要必须激活 -----可选参数
-/// @param processBlock 进度
-/// @param successBlock 成功返回
-/// @param failureBlock 失败返回
-- (void)tg_configurationNoWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime uuid:(NSString *)uuidStr name:(NSString *)deviceName timeZone:(NSString *)timeZone method:(NSString *)typeStr must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
-
 /// 取消轮询
 - (void)tg_cancleConfigurationTimer;
 
-/// 绑定4G设备 （非轮询，推荐使用轮询）
-/// @param typeStr 添加类型 分别为 scan(扫码添加)、4g(4g添加)、lan(有线添加)、device(配网添加) ---可选参数
-/// @param uuidStr uuid
-/// @param deviceName deviceName 设备名称 -----可选参数
-/// @param timeZone 设备时区 -----可选参数
-/// @param must_be_online 设备是否需要必须在线  ----可选参数
-/// @param must_be_actived 设备是否需要必须激活 -----可选参数
-/// @param successBlock 成功回调
-/// @param failureBlock 失败回调
-- (void)tg_configurationNoWiFiDeviceWithType:(NSString *)typeStr uuid:(nonnull NSString *)uuidStr  name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 #pragma mark - information
 

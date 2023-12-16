@@ -1,6 +1,6 @@
 //
 //  TGMoveDetectZoneModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2020/3/2.
 //  Copyright © 2020 Darren. All rights reserved.

@@ -1,13 +1,12 @@
 //
 //  TGNormalEventModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2019/3/6.
 //  Copyright © 2019 Darren. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-//#import <TGCommonBaseModule/TGCommonBaseDefineHeader.h>
 #import <TGBaseIOT/TGCameraDefine.h>
 #import "TGBaseIOTDefine.h"
 

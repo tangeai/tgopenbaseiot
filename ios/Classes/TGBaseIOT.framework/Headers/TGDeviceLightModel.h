@@ -1,6 +1,6 @@
 //
 //  TGDeviceLightModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2022/5/20.
 //

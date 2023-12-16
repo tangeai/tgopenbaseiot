@@ -1,6 +1,6 @@
 //
 //  TGDeviceTrackModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2022/7/21.
 //

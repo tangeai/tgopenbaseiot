@@ -1,6 +1,6 @@
 //
 //  TGMoveDetectPointModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2021/8/4.
 //

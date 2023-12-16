@@ -1,6 +1,6 @@
 //
 //  TGDeviceAlarmSoundModel.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2020/2/28.
 //  Copyright © 2020 Darren. All rights reserved.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-//#import <TGCommonBaseModule/TGCommonBaseDefineHeader.h>
 #import "TGCameraDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN

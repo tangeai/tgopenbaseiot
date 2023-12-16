@@ -1,6 +1,6 @@
 //
 //  TGSocketIOManager.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2019/5/28.
 //  Copyright © 2019 Darren. All rights reserved.
