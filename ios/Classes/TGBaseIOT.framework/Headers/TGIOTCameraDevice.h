@@ -122,6 +122,8 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 
 #pragma mark - sd卡
 // 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像
+- (void)getCameraSDCardRecordModelListWithDate:(NSString *)date cardRecordOrderType:(TGCardRecordOrderType)type successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
+// 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像
 - (void)getCameraSDCardRecordModelListWithDate:(NSString *)date successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
 // 获取卡录像列表，返回数据，可自行解析
 - (void)getCameraSDCardRecordListWithDate:(NSString *)date callBack:(void(^__nullable)(const char *data,int ctrolType,int errorCode))callBack;
@@ -317,11 +319,11 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 //AI人形追踪
 - (void)setAIMoveTrackMode:(int)mode;
 - (void)getAIMoveTrackMode;
-//变焦控制
+
 - (void)getDevicePtzPosWithChannel:(TGPlayChannelType)channel;
 - (void)getDevicePSPWithChannel:(TGPlayChannelType)channel;
 - (void)getDeviceMaxPSPCountWithChannel:(TGPlayChannelType)channel;
-
+//变焦控制
 - (void)deviceShortZoomWithChannel:(TGPlayChannelType)channel direction:(TGZoomTimesUnknownDirection)direction;
 - (void)deviceLongZoomBeginWithChannel:(TGPlayChannelType)channel direction:(TGZoomTimesUnknownDirection)direction;
 - (void)deviceLongZoomEndWithChannel:(TGPlayChannelType)channel direction:(TGZoomTimesUnknownDirection)direction;
@@ -453,6 +455,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 // 图像内云台定位
 - (void)setLocInPicWithChannel:(TGPlayChannelType)channel pos:(PtzPos)pos;
 
+// 聚焦
 - (void)deviceShortFocusWithChannel:(TGPlayChannelType)channel direction:(TGZoomFocusDirection)direction;
 - (void)deviceLongFocusBeginWithChannel:(TGPlayChannelType)channel direction:(TGZoomFocusDirection)direction;
 - (void)deviceLongFocusEndWithChannel:(TGPlayChannelType)channel direction:(TGZoomFocusDirection)direction;

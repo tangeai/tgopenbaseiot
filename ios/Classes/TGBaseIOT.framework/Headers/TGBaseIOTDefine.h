@@ -11,6 +11,11 @@
 #ifndef TGBaseIOTDefine_h
 #define TGBaseIOTDefine_h
 
+typedef NS_ENUM(NSInteger,TGCardRecordOrderType) {
+    TGCardRecordOrderType_Desc,    //降序
+    TGCardRecordOrderType_Asce     //升序
+};
+
 typedef NS_ENUM(NSInteger,TGDeviceRecordType) {
     TGDeviceRecordType_NoRecord,
     TGDeviceRecordType_CloudRecord,
