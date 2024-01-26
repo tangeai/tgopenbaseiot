@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		A8jQJj+ZKDPLcLNk778CjP2i2LA=
+		znWMmGEsSVi4ehCj8Hkm6x1+eyc=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		1mf/LCkJrGXXwSqzJ7hW+U5bGH0=
+		+gwTok0mg2imI5JsgOriyzQERvk=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
@@ -290,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A8jQJj+ZKDPLcLNk778CjP2i2LA=
+			znWMmGEsSVi4ehCj8Hkm6x1+eyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			TcruEHSnXAF3qiwxLqXR2H9taZBTeGaVxcihJKhAENk=
+			Nfc0ojoWyq1tybMk64HZceuT1VlmvrNhIoWI46J0sO0=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -334,11 +334,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1mf/LCkJrGXXwSqzJ7hW+U5bGH0=
+			+gwTok0mg2imI5JsgOriyzQERvk=
 			</data>
 			<key>hash2</key>
 			<data>
-			yBMpTspaEi17WDgqXBlhRBvc4e/orOLMV9fdrg7wzmg=
+			BlNNjDToBr3tyaUz10l6xc6hav+O4/MUVGcQRUaIHww=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
