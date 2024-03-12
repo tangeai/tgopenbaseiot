@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "TGBaseIOTDefine.h"
 #import <DAAudioVideo/DAAudioVideo.h>
+//#import "TGDeviceCapacityModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

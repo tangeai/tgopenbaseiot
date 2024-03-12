@@ -289,6 +289,16 @@ typedef enum{
     TCI_CMD_GET_GSENSOR_REQ                             = 0x0434,
     TCI_CMD_GET_GSENSOR_RESP                            = 0x0435,
     
+    TCI_CMD_SET_ENABLE_DORMANCY_REQ        = 0x044A, ///< 设置允许或禁止休眠. 参数 @ref Tcis_DormancyState
+    TCI_CMD_SET_ENABLE_DORMANCY_RESP       = 0x044B, ///< 设置允许或禁止休眠. 参数 @ref Tcis_DormancyState
+    TCI_CMD_GET_ENABLE_DORMANCY_REQ        = 0x044C, ///< 获取当前休眠开关, 返回 @ref Tcis_DormancyState
+    TCI_CMD_GET_ENABLE_DORMANCY_RESP        = 0x044D, ///< 获取当前休眠开关, 返回 @ref Tcis_DormancyState
+    
+    TCI_CMD_SET_AWAKE_TIME_REQ             = 0x0470,
+    
+    TCI_CMD_GET_AWAKE_TIME_REQ                 = 0x0472,
+    TCI_CMD_GET_AWAKE_TIME_RESP            =  0x0473, ///< 获取设备的主动唤醒时间设置。参数 @ref Tcis_GetAwakeTimeReq, 应答 @ref Tcis_GetAwakeTimeRes
+    
     TCI_CMD_SET_DEVICE_VOLUME_REQ                       = 0x0436,   // 设置设备喇叭音量
     TCI_CMD_SET_DEVICE_VOLUME_RESP                      = 0x0437,
     TCI_CMD_GET_DEVICE_VOLUME_REQ                       = 0x0438,   // 获取设备当前喇叭音量
@@ -308,6 +318,11 @@ typedef enum{
     TCI_CMD_SET_ALARMLIGHT_RESP                         = 0x0443,
     TCI_CMD_GET_ALARMLIGHT_REQ                          = 0x0444,   // 获取报警灯状态
     TCI_CMD_GET_ALARMLIGHT_RESP                         = 0x0445,
+    
+    TCI_CMD_GET_ALARM_BELL             = 0x041A, ///< 取警铃开关状态 see @ref Tcis_SetAlarmBell
+    TCI_CMD_GET_ALARM_BELL_RESP        = 0x041B, ///< 取警铃开关状态 see @ref Tcis_SetAlarmBell
+    TCI_CMD_SET_ALARM_BELL             = 0x0418, ///< 警铃开关 see @ref Tcis_SetAlarmBell
+    TCI_CMD_SET_ALARM_BELL_RESP        = 0x0419, ///< 警铃开关 see @ref Tcis_SetAlarmBell
     
     TCI_CMD_SET_PIR_SENSITIVE_REQ                       = 0x0446,   // 设置Pir灵敏度
     TCI_CMD_SET_PIR_SENSITIVE_RESP                      = 0x0447,
@@ -433,13 +448,13 @@ typedef enum{
     AVIOCTRL_QUALITY_MIN                                = 0x05,     // ex. 160*120, 10fps, 64kbps
 }ENUM_QUALITY_LEVEL;
 
-// AVIOCTRL Record Type
-typedef enum{
-    AVIOTC_RECORDTYPE_OFF                               = 0x00,
-    AVIOTC_RECORDTYPE_ALARM                             = 0x01,
-    AVIOTC_RECORDTYPE_FULLTIME                          = 0x02,
-    AVIOTC_RECORDTYPE_AUTO                              = 0x03,
-}ENUM_RECORD_TYPE;
+typedef enum ENUM_RECORD_TYPE
+{
+    AVIOTC_RECORDTYPE_OFF                = 0x00, ///< 不录像
+    AVIOTC_RECORDTYPE_ALARM              = 0x01, ///< 报警录像
+    AVIOTC_RECORDTYPE_FULLTIME           = 0x02, ///< 全天录像
+    AVIOTC_RECORDTYPE_AUTO               = 0x03, ///< 自动录像
+} ENUM_RECORD_TYPE;
 
 // AVIOCTRL Play Record Command
 typedef enum{
@@ -456,18 +471,18 @@ typedef enum{
 
 // AVIOCTRL Environment Mode
 typedef enum{
-    AVIOCTRL_ENVIRONMENT_INDOOR_50HZ                    = 0x00,
-    AVIOCTRL_ENVIRONMENT_INDOOR_60HZ                    = 0x01,
+    AVIOCTRL_ENVIRONMENT_INDOOR_50HZ                    = 0x00,    // 50Hz 电源
+    AVIOCTRL_ENVIRONMENT_INDOOR_60HZ                    = 0x01,    // 60Hz 电源
     AVIOCTRL_ENVIRONMENT_OUTDOOR                        = 0x02,
     AVIOCTRL_ENVIRONMENT_NIGHT                          = 0x03,
 }ENUM_ENVIRONMENT_MODE;
 
 // AVIOCTRL Video Flip Mode
 typedef enum{
-    AVIOCTRL_VIDEOMODE_NORMAL                           = 0x00,
-    AVIOCTRL_VIDEOMODE_FLIP                             = 0x01,
-    AVIOCTRL_VIDEOMODE_MIRROR                           = 0x02,
-    AVIOCTRL_VIDEOMODE_FLIP_MIRROR                      = 0x03,
+    AVIOCTRL_VIDEOMODE_NORMAL                           = 0x00,     ///< 正常
+    AVIOCTRL_VIDEOMODE_FLIP                             = 0x01,     ///< 上下翻转
+    AVIOCTRL_VIDEOMODE_MIRROR                           = 0x02,     ///< 左右镜像
+    AVIOCTRL_VIDEOMODE_FLIP_MIRROR                      = 0x03,     ///< 旋转180度 
 }ENUM_VIDEO_MODE;
 
 /** PTZ Command Value */
@@ -523,6 +538,44 @@ typedef enum ENUM_PTZCMD
     TCIC_MOTOR_RESET_POSITION          = 35, ///< 云台复位. 本指令要求在复位完成后给一个通用结构的应答
  
 } ENUM_PTZCMD;
+
+/*
+ TCI_CMD_GET_WHITELIGHT_RESP        = 0x8013,
+** @struct SMsgAVIoctrlGetWhiteLightResq
+*/
+typedef struct{
+    unsigned int channel;    // Camera Index
+    unsigned int support;    // 0:不支持，2:支持两种模式，3:支持三种模式； — ???
+    unsigned char mode;      // 当前模式:0 - 关闭（白光不工作）1 - 打开（全彩色）2 - 智能模式（移动侦测触发自动白光）3 - 定时开关(DoubleLight 能力要有 "Timer" 属性
+    unsigned char reserved[3];
+}SMsgAVIoctrlGetWhiteLightResp;
+
+/*
+ TCI_CMD_SET_WHITELIGHT_RESP        = 0x8015,0x8019
+** @struct SMsgAVIoctrlSetWhiteLightResp
+*/
+typedef struct{
+    unsigned int result;    // 1 ok , !1 no ok
+    unsigned char reserved[4];
+}SMsgAVIoctrlSetWhiteLightResp,Tcis_SetDayNightResp;
+
+/*
+ TCI_CMD_SET_LED_STATUS         = 0x0422,0x0424
+** @struct SMsgAVIoctrlSetLedStausReq
+*/
+typedef struct{
+    unsigned int status;    // 0-关闭，1-打开
+    unsigned char reserved[4];
+}SMsgAVIoctrlSetLedStausReq,SMsgAVIoctrlGetLedStausResp;
+
+/*
+ TCI_CMD_SET_ALARMLIGHT         = 0x0442,0x0444
+** @struct SMsgAVIoctrlSetWhiteLightResq
+*/
+typedef struct{
+    unsigned int channel;    // id of light: 0
+    unsigned int state;       // 0:关; 1:开; 2:自动; 3:按定时设置
+}SMsgAVIoctrlSetAlarmLightReq,SMsgAVIoctrlGetAlarmLightResp;
 
 /*
 IOTYPE_USER_IPCAM_START_REQ                 = 0x01FF,
@@ -621,6 +674,17 @@ typedef struct{
     unsigned char reserved[4];
 }SMsgAVIoctrlSetPasswdResp;
 
+
+
+/** 休眠状态
+ TCI_CMD_SET_GSENSOR_REQ                             = 0x0432,
+ TCI_CMD_GET_GSENSOR_REQ                             = 0x0434,
+ */
+typedef struct SMsgAVIoctrlDormancyState {
+    int enable;    ///< 1:允许休眠; 0:禁止休眠
+    int reserved;
+} SMsgAVIoctrlDormancyState;
+
 /*
 IOTYPE_USER_IPCAM_LISTWIFIAP_REQ        = 0x0340,
 ** @struct SMsgAVIoctrlListWifiApReq
@@ -631,7 +695,7 @@ typedef struct{
 
 typedef struct{
     char ssid[32];                 // WiFi ssid
-    char mode;                       // refer to ENUM_AP_MODE
+    char mode;                     // refer to ENUM_AP_MODE
     char enctype;                  // refer to ENUM_AP_ENCTYPE
     char signal;                   // signal intensity 0--100%
     char status;                   // 0 : invalid ssid or disconnected
@@ -1396,7 +1460,7 @@ typedef struct{
 
 typedef struct{
     unsigned int channel;     // Camera Index
-    unsigned char status;        //当前麦克风状态，status: 0- 关, 1- 开
+    unsigned int status;        //当前麦克风状态，status: 0- 关, 1- 开
 }Tcis_SetMicroPhoneReq;
 
 typedef struct{
@@ -1520,12 +1584,12 @@ typedef struct{
             MdPolygon polygons[0];       ///< 多边形数组
         } __attribute__((__packed__)) mp; ///< (flags&0x03)==MD_AT_POLYCON: 检测移动的变长多边形数组
         
-        /*
+        
         struct Fake_RectPolygonVLA {
             struct Fake_MdZoneVLA mz;      ///< 矩形变长数组
             struct Fake_MdPolygonVLA mp;   ///< 多边形变长数组
         } __attribute__((__packed__)) zp;           ///< (flags&0x03)==MD_AT_RECTSWITHPOLYGON 的伪数据结构
-         */
+         
     } u;
 } __attribute__((__packed__)) Tcis_SetMotionDetectReq, Tcis_GetMotionDetectResp;
 
@@ -2538,5 +2602,44 @@ struct Tcis_GetTimerTask {
     uint16_t object;    ///< 定时任务对象类型.  @ref ETGTIMERTARGET
     uint16_t id;        ///< 对象标识, 用于区别同种类型的多个对象. 从0开始编号
 } Tcis_GetTimerTaskReq;
+
+
+/** 多时间段变长数组 */
+struct SMsgAVIoctrlTimeRanges {
+    int n_tr;             ///< 时间段数
+    TIMERANGE tr[1];      ///< 时间段数组
+};
+
+/** 设置低功耗设备主动唤醒时间.
+    @ref TCI_CMD_SET_AWAKE_TIME      =        0x0470
+*/
+/** \see struct Fake_TimeRanges */
+typedef struct SMsgAVIoctrlTimeRanges SMsgAVIoctrlSetAwakeTimeReq;
+
+
+/** 获取低功耗设备主动唤醒时间.
+    @ref TCI_CMD_GET_AWAKE_TIME      =        0x0472
+*/
+typedef struct SMsgAVIoctrlGetAwakeTimeReq {
+    uint32_t reserved;
+}  SMsgAVIoctrlGetAwakeTimeReq;
+
+/** \see struct Fake_TimeRanges */
+typedef struct SMsgAVIoctrlTimeRanges SMsgAVIoctrlAwakeTimeResp;
+
+/** 设置设备警铃命令和获取设备警铃设置命令的参数结构体
+  @ref TCI_CMD_SET_ALARM_BELL             = 0x0418, \n
+  @ref TCI_CMD_GET_ALARM_BELL             = 0x041A,
+  */
+typedef struct SMsgAVIoctrlSetAlarmBell {
+    uint8_t      version;     ///< 0. *** 接收者要检查version的值。当前为0对应本结构定义 *** !!!!
+    uint8_t      reserved[3]; ///< all 0
+
+    /** 事件类型掩码. bit0:所有事件; bit1:移动侦测; bit2:人体检测; ...[参看 TGECEVENT 定义].
+     *  如果bitN为1, 表示相应事件将触发警铃 */
+    uint32_t     event_mask;
+    uint32_t     event_mask2; ///< 0. 用作值大于31的事件掩码
+}   SMsgAVIoctrlSetAlarmBellReq, SMsgAVIoctrlGetAlarmBellResp;
+/** \see Tcis_SetAlarmBell*/
 
 #endif /* TGCameraDefine_h */

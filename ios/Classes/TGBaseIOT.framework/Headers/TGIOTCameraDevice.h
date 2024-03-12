@@ -12,6 +12,7 @@
 #import "TGBaseIOTDefine.h"
 #import <DAAudioVideo/DAAudioVideo.h>
 #import "TGVideoCamera.h"
+#import "TGCommondDefineHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -66,6 +67,9 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 @property (nonatomic, assign) BOOL isChannelZeroStepOneComplete;
 @property (nonatomic, assign) BOOL isChannelOneStepOneComplete;
 
+@property (nonatomic, copy) commondDataResqSuccessBlock commondDataResqSuccessBlock;
+@property (nonatomic, copy) commonDataRespErrorBlock commonDataRespErrorBlock;
+
 + (instancetype)camneraWithDevice:(TGCameraDeviceModel *)device;
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
 
@@ -119,6 +123,13 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)startDeviceLiveSpeakAndVideo:(TGVideoConfigModel *)model;
 // 关闭双向视频
 - (void)stopDeviceLiveSpeakAndVideo;
+
+#pragma mark - 设备基础信息
+
+// 查询设备硬件能力
+- (void)getDeviceFeature;
+// 设备信息
+- (void)getDeviceInfoCMD;
 
 #pragma mark - sd卡
 // 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像
@@ -214,8 +225,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)setSDCardPlaySpeedLevel:(TGCameraPlaySpeedLevel)level;
 
 #pragma mark - deviceSetting 设置
-// 设备信息
-- (void)getDeviceInfoCMD;
+
 // 防闪烁
 - (void)getEnvInfoCMD;
 // 视频清晰度
@@ -247,8 +257,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)connectToWifiWithSSID:(NSString *)ssid passwd:(NSString *)passwd userId:(NSString *)userId bindToken:(NSString *)bindToken;
 // 连接Wifi
 - (void)connectToWifiWithSSID:(NSString *)ssid passwd:(NSString *)passwd userId:(NSString *)userId;
-// 查询设备硬件能力
-- (void)getDeviceFeature;
+
 // 查询设备移动追踪模式
 - (void)getDeviceMoveTrack;
 // 设置设备移动追踪模式
