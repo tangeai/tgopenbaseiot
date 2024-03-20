@@ -42,6 +42,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// 启动log日志
 - (void)tg_startLog;
 
+#pragma mark - Language
+
+/// 设置自定义语言
+/// - Parameter string: 语言参数，若传空@""则恢复为跟随系统设置，其他参数为自定义
+/// 注.语言参数请按照规定填写: en-us (美) zh-cn（中）zh-tw（中文繁体）ja(日) vi(越南) ko(韩) es(西班牙) pt(葡萄牙) ru(俄) tr(土耳其) de(德) it(意) fr(法) pl(波兰) th(泰)
+- (void)tg_setLanguageString:(NSString *)string;
+
+/// 获取语言参数
+- (NSString *)tg_getLanguageString;
+
 #pragma mark - push
 
 /// 上报手机pushid（仅支持阿里云推送）

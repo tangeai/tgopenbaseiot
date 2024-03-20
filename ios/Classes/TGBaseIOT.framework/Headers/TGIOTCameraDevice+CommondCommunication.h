@@ -105,7 +105,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 查询设备夜视模式
 - (void)getDeviceDayNightWithChannel:(int)channel successBlock:(void(^)(TGDeviceGetDayNightModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设置设备夜视模式
-//- (void)setDeviceDayNightWithChannel:(int)channel mode:(int)mode  successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+- (void)setDeviceDayNightWithChannel:(int)channel mode:(int)mode  successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 #pragma mark - 变焦
 
@@ -138,9 +138,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getDeviceMaxTimeSuccessBlock:(void(^)(TGDevicePassivityGetMaxAwakeModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
 
 // 设置主动唤醒时间
-//- (void)setDeviceAwakeTimeWithModel:(TGDeviceAwakeTimeModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
+- (void)setDeviceAwakeTimeWithModel:(TGDeviceAwakeTimeModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
 // 获取设备主动唤醒时间的设置
-//- (void)getDeviceAwakeTimeSuccessBlock:(void(^)(TGDeviceAwakeTimeModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
+- (void)getDeviceAwakeTimeSuccessBlock:(void(^)(TGDeviceAwakeTimeModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
 
 #pragma mark - 录像
 // 设置录像模式
