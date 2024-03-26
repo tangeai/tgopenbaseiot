@@ -83,6 +83,13 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 // 发送自定义指令
 - (void)sendIOCtrl:(int)controlCMD Data:(char *)buffer DataSize:(int)size;
 
+#pragma mark - 缓存设置
+
+// 设置缓冲空间（直播和卡录像）例如 ：100 * 1024 * 1024 ；100M 设置0则不起用缓存，默认0
+- (void)setCacheSize:(NSUInteger)cacheSize;
+// 设置缓冲时间（直播和卡录像）
+- (void)setCacheBufferTime:(NSTimeInterval)time ;
+
 #pragma mark - 实时直播
 
 /**

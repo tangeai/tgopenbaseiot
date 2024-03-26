@@ -232,7 +232,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setAlarmSoundWithModel:(TGDeviceSetAlarmToneModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 播放当前报警声音
 - (void)playCurrentAlarmSoundSuccessBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
-//// 获取警报铃开关
+////// 获取警报铃开关
 //- (void)getAlarmBellSwitchSuccessBlock:(void(^)(TGDeviceAlarmBellModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 //// 设置警报铃开关
 //- (void)setAlarmBellSwitchWithModel:(TGDeviceAlarmBellModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
