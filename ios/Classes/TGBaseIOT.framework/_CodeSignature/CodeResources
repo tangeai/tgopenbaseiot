@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		UGeb2d4z2foYom3WMLbX5aBEMXc=
+		iSmAim0mYFHWY4JFkWM4RQPoxuM=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		U/n2emuG9MZddFxXeT9zF9S+Sow=
+		59QhA1CJ/RuCF+PHRz4pl/+j5IE=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>Headers/TGVideoCamera.h</key>
 		<data>
-		1pyiOx9KBQswy2oSoEOpmdA1Umk=
+		iaBNjAgtcccqbRAW9YQ3I6ApdZs=
 		</data>
 		<key>Headers/TGVideoConfigModel.h</key>
 		<data>
-		53xyEIVlPY4pScUt7UZbroq+8o8=
+		+vYL7jM4gvuTWZ0b5oAQNmyTr2k=
 		</data>
 		<key>Headers/TGWatchPosModel.h</key>
 		<data>
@@ -306,11 +306,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UGeb2d4z2foYom3WMLbX5aBEMXc=
+			iSmAim0mYFHWY4JFkWM4RQPoxuM=
 			</data>
 			<key>hash2</key>
 			<data>
-			QAyV/BAmEhbufu1wMLLqlTItlweM6oziLvuYFaxzPzg=
+			5/nTMnVekFC4UljHtoXoQRolIPcJ3ZmqeNAm9SuvP6s=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -559,11 +559,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U/n2emuG9MZddFxXeT9zF9S+Sow=
+			59QhA1CJ/RuCF+PHRz4pl/+j5IE=
 			</data>
 			<key>hash2</key>
 			<data>
-			M9sUAWrZpKVnN1GghXM3rYLFlBwaOR82EGr1aV/cGcI=
+			uzZ2MbliQyyVlV9/sO3qFtZWkA8BSr8zYyqrjCrN/Rg=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -680,22 +680,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1pyiOx9KBQswy2oSoEOpmdA1Umk=
+			iaBNjAgtcccqbRAW9YQ3I6ApdZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			d3coeOpq/HihVTMsXeJEiUhaxkCZUVsPY4yExXEFsks=
+			myPIMFgRYOnQp5g08wSup0wSsdxWbUp/4ks6QD0EZlQ=
 			</data>
 		</dict>
 		<key>Headers/TGVideoConfigModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			53xyEIVlPY4pScUt7UZbroq+8o8=
+			+vYL7jM4gvuTWZ0b5oAQNmyTr2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			HFL/hBsS1+7QQYdegawPvqMNfDUASdgnFKhRXeXIOdI=
+			CXebiTBsL0ibSk5SgOKcyeQBEBy/x2PEm7l/K6kF93k=
 			</data>
 		</dict>
 		<key>Headers/TGWatchPosModel.h</key>

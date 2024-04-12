@@ -19,7 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGVideoCamera : NSObject
 
 @property (nonatomic, weak) id <TGVideoCameraDelegate>delegate;
-
 //+ (instancetype)shareVideoCamera;
 
 //采集参数设置
@@ -29,8 +28,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)start:(TGVideoConfigModel *)config;
 // 结束采样
 - (void)stop;
+// 切换摄像头
+- (void)switchCamera;
 
 + (BOOL)tg_isHardwareDecodeSupportedH265 ;
+
+
+- (void)setupVideoRecordingWithPath:(NSString *)path;
+- (void)startRecording;
+- (void)stopRecording;
+- (void)appendSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 
 @end
 
