@@ -7,12 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import "TGVideoConfigModel.h"
+#import "TGCameraDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TGVideoCameraDelegate <NSObject>
 
-- (void)videoSessionManagerDidRecordWithData:(void *)data length:(unsigned int)length config:(TGVideoConfigModel *)config;
+- (void)videoSessionManagerDidRecordWithData:(void *)data length:(unsigned int)length config:(TGVideoConfigModel *)config frameFlag:(ENUM_FRAMEFLAG)flag;
 
 @end
 
