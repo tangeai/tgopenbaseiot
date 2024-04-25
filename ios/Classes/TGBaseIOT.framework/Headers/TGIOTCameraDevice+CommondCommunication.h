@@ -205,6 +205,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getMoveDetectWithChannel:(int)channel successBlock:(void(^)(TGDeviceMotionDetectModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 //配置移动侦测
 - (void)setMoveDetectSensitivity:(TGDeviceMotionDetectModel *)model successBlock:(void(^)(TGDeviceMotionDetectRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 设置矩形移动侦测区域
+- (void)setMoveDetectZonesWithModel:(TGDeviceSetMotionDetectReqModel *)detectModel  zoneArray:(NSArray <TGMdZone *>*)zonesArray successBlock:(void(^)(TGDeviceMotionDetectRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 设置多边形侦测区域
+- (void)setMoveDetectPolygonWithModel:(TGDeviceSetMotionDetectReqModel *)detectModel polygonArray:(NSArray <TGMdPlogon *>*)polygonsArray successBlock:(void(^)(TGDeviceMotionDetectRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 获取侦测区域状态
 - (void)getMoveDetectAreaStateWithChannel:(int)channel successBlock:(void(^)(TGDeviceMotionAreaState *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设置侦测区域状态

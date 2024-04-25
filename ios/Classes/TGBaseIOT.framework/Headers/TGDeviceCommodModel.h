@@ -311,19 +311,30 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-
 @interface TGDeviceMotionDetectModel : NSObject
 
 @property (nonatomic, assign) int channel;                      // Camera Index: 0~N-1
-@property (nonatomic, assign) int enabled;                      // 1:enabled; 0:disabled
+@property (nonatomic, assign) int enabled;                      // 是否开启 1:enabled; 0:disabled
 @property (nonatomic, assign) int sensitivity;                  //下面的域根据设备能力设置。如果设备本身不支持，其值会被忽略 1~5
-@property (nonatomic, assign) int hasZone;                      // 1: nZones/zones has valid setting; 0: ignore zones
-@property (nonatomic, assign) int excludeZone;                  // 0: 检测区域内；1: 检测区域外
+@property (nonatomic, assign) int hasZone;                      // 是否有区域 1: nZones/zones has valid setting; 0: ignore zones
+@property (nonatomic, assign) int excludeZone;                  // 是否侦测区域外 0: 检测区域内；1: 检测区域外
 //@property (nonatomic, assign)】】
 @property (nonatomic, assign) int flags;                        // MD_AT_RECTS 低字节为 移动侦测区域表示标志; 最高位为是否支持[区域排除]的标志位
-@property (nonatomic, strong) TGFake_MdZoneVLA *mdZoneVLA;      // (flags&0x03)== MD_AT_RECTS 0
-@property (nonatomic, strong) TGFake_MdPolygonVLA *mdPolygonVLA;   // (flags&0x03)== MD_AT_POLYGON 1
-@property (nonatomic, strong) TGFake_RectPolygonVLA *rectPolygonVLA; // (flags&0x03)== MD_AT_RECTSWITHPOLYGON 2 的伪数据结构
+@property (nonatomic, strong) TGFake_MdZoneVLA *mdZoneVLA;      // 矩形区域 (flags&0x03)== MD_AT_RECTS 0
+@property (nonatomic, strong) TGFake_MdPolygonVLA *mdPolygonVLA;   // 多边形区域 (flags&0x03)== MD_AT_POLYGON 1
+@property (nonatomic, strong) TGFake_RectPolygonVLA *rectPolygonVLA; // 多边形区域+矩形区域 (flags&0x03)== MD_AT_RECTSWITHPOLYGON 2 的伪数据结构
+
+@end
+
+@interface TGDeviceSetMotionDetectReqModel : NSObject
+
+@property (nonatomic, assign) int channel;                      // Camera Index: 0~N-1
+@property (nonatomic, assign) int enabled;                      // 是否开启 1:enabled; 0:disabled
+@property (nonatomic, assign) int sensitivity;                  //下面的域根据设备能力设置。如果设备本身不支持，其值会被忽略 1~5
+@property (nonatomic, assign) int hasZone;                      // 是否有区域 1: nZones/zones has valid setting; 0: ignore zones
+@property (nonatomic, assign) int excludeZone;                  // 是否侦测区域外 0: 检测区域内；1: 检测区域外
+//@property (nonatomic, assign)】】
+@property (nonatomic, assign) int flags;                        // 0 矩形 1 多边形 2 矩形+多边形 MD_AT_RECTS 低字节为 移动侦测区域表示标志; 最高位为是否支持[区域排除]的标志位
 
 @end
 
