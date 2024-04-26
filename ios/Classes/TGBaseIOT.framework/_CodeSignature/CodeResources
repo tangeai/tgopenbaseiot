@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		ZFDuTEHJ9kVEdcby/2HgtgPjdT0=
+		KaWfXlQ/rvBwGgb913y7TY3X95M=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
 		HwJJnh+WhRSA8r7dEDvSNOoZ63I=
+		</data>
+		<key>Headers/TGCameraDeviceCommonTool.h</key>
+		<data>
+		ACc0/YaheBrNbzIdN+Rkio3yQpU=
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
@@ -52,6 +56,10 @@
 		<data>
 		d2pNgGSq1bVfZ/F+8ag7T8KkDQE=
 		</data>
+		<key>Headers/TGCloudVideoCommonTool.h</key>
+		<data>
+		RKj8yxlJCUrp7DA4HnmcSXHR28c=
+		</data>
 		<key>Headers/TGCommondDefineHeader.h</key>
 		<data>
 		AOwBQ5i7CBGapC7Mkuw1iNRGQrQ=
@@ -71,6 +79,10 @@
 		<key>Headers/TGDevicePSPModel.h</key>
 		<data>
 		lVaQnkiS7VVxjccU3e+ztgRb+68=
+		</data>
+		<key>Headers/TGDevicePasswordTool.h</key>
+		<data>
+		au5HqE8KVHT7QMSLrIPvuIwsFhc=
 		</data>
 		<key>Headers/TGDeviceServicePlansModel.h</key>
 		<data>
@@ -123,6 +135,10 @@
 		<key>Headers/TGResolutionModel.h</key>
 		<data>
 		J8GBZbN5RKVX/3NIbcVhWTEsrl4=
+		</data>
+		<key>Headers/TGSocketIOManager.h</key>
+		<data>
+		L00cyMYLY2X2wWoBYYhVRfRpBJk=
 		</data>
 		<key>Headers/TGTimerTaskModel.h</key>
 		<data>
@@ -290,11 +306,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZFDuTEHJ9kVEdcby/2HgtgPjdT0=
+			KaWfXlQ/rvBwGgb913y7TY3X95M=
 			</data>
 			<key>hash2</key>
 			<data>
-			FqphfWhH9EyR5EyK0eH+BwcxCGMsy5QzNbuq/E7xuO4=
+			ZVKQ/9l38KwtOZQJ3P0zUN/UsfF8DkY1vmO4AtevN98=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -328,6 +344,17 @@
 			<key>hash2</key>
 			<data>
 			okNU6eKex5RJL2oL8HUS+Vkd8fauuvAkmP9jD5UX2/w=
+			</data>
+		</dict>
+		<key>Headers/TGCameraDeviceCommonTool.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ACc0/YaheBrNbzIdN+Rkio3yQpU=
+			</data>
+			<key>hash2</key>
+			<data>
+			OAPo0q52IiDMwcS6Dpn7UXEry+qFkJwOUS7DoXgKynM=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceModel.h</key>
@@ -407,6 +434,17 @@
 			4R57hxm4sofl3RzhGYW/VX+yhJuWWGyK5zGgcoDPKu0=
 			</data>
 		</dict>
+		<key>Headers/TGCloudVideoCommonTool.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RKj8yxlJCUrp7DA4HnmcSXHR28c=
+			</data>
+			<key>hash2</key>
+			<data>
+			264S+jV683Vv5OT2F0eWzTajh725lua/Ptv7E3ncLJo=
+			</data>
+		</dict>
 		<key>Headers/TGCommondDefineHeader.h</key>
 		<dict>
 			<key>hash</key>
@@ -460,6 +498,17 @@
 			<key>hash2</key>
 			<data>
 			a26uSV0Mnfjp1H9MbP7hLp0KAdbjJn3o3XxGU4GJXak=
+			</data>
+		</dict>
+		<key>Headers/TGDevicePasswordTool.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			au5HqE8KVHT7QMSLrIPvuIwsFhc=
+			</data>
+			<key>hash2</key>
+			<data>
+			zFzz1SiO6h/rrdXfSnqJqt7A1HPLVfc+8Ms/kuuNH2Y=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceServicePlansModel.h</key>
@@ -603,6 +652,17 @@
 			<key>hash2</key>
 			<data>
 			W2NalO3vDm4tRkYo0gpcy2Sy6Sg4ndtw92m+n9eF1kg=
+			</data>
+		</dict>
+		<key>Headers/TGSocketIOManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L00cyMYLY2X2wWoBYYhVRfRpBJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			uRDR9DvhhKI7WzU6ghKM96QlvqbgVgp6INH3Vod0zfs=
 			</data>
 		</dict>
 		<key>Headers/TGTimerTaskModel.h</key>
