@@ -89,7 +89,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - failureBlock: 失败回调
 - (void)tg_downloadFileWithUrl:(NSString *)url params:(nullable id)params savePath:(NSString *)savePath successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
-
 /// 上传公共API
 /// - Parameters:
 ///   - url: 全路径
@@ -202,7 +201,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param successBlock 成功返回
 /// @param failureBlock 失败返回 Code 51934 设备已绑定，其他失败
 - (void)tg_configurationNoWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime uuid:(NSString *)uuidStr processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
-
 
 /// 轮询绑定4G设备或有线设备 （注*要和取消轮询配合使用）参数可选拓展
 /// @param timeCount 轮询时长，默认150s

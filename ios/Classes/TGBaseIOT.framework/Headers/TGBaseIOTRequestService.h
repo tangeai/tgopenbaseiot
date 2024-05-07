@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)requestlogWithUrl:(NSString *)url params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
-- (void)getHubServiceUrlWithName:(NSString *)name last:(NSString *)last successBlock:(void(^)(void))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)getHubServiceUrlWithName:(nullable NSString *)name last:(nullable NSString *)last successBlock:(void(^)(void))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 #pragma mark - POST
 - (void)requestWithUrl:(NSString *)url needToken:(BOOL)needToken isRetry:(BOOL)isRetry params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;

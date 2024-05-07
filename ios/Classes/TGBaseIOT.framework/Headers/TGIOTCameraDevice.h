@@ -427,7 +427,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)setOSDWithItemDict:(NSMutableDictionary *)itemDict;
 // 获取事件使能状态
 - (void)getSoundEventState;
-// 设置事件使能状态
+// 设置事件使能状态，0关 1开
 - (void)setSoundEventWithState:(int)state;
 // 获取延时摄像设置
 - (void)getTimeLapseState;
