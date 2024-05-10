@@ -359,9 +359,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int nBitsPerSample;               // 采样位宽
 @property (nonatomic, assign) int nChannels;                    // 通道数
 @property (nonatomic, assign) int nExpectedFileFormats;         // 期望的文件格式数
-@property (nonatomic, copy) NSString *ExpectedFileFormats;      // 期望的音频格式 AUDIOFILEFMT
+@property (nonatomic, copy) NSArray *ExpectedFileFormats;      // 期望的音频格式 AUDIOFILEFMT 集合
 @property (nonatomic, assign) int nSupportedAudioCodecs;        // 支持的音频格式数
-@property (nonatomic, copy) NSString *SupportedAudioCodecs;     // 支持的音频格式 TCMEDIA
+@property (nonatomic, copy) NSArray *SupportedAudioCodecs;     // 支持的音频格式 TCMEDIA集合
 @property (nonatomic, assign) int idAlarmTone;                  // 当前报警音标识. 0 - 默认
 @property (nonatomic, assign) int uiFileSizeLmt;                // 文件大小上限(单位KB)。对APP来说，当收到的应答长度>=36时才存在这个信息
 
@@ -584,6 +584,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGDeviceSetMicroRespModel : NSObject
 
 @property (nonatomic, assign) int result;   // 1 ok , !1 no ok
+
+@end
+
+@interface TGDeviceEventState : NSObject
+
+@property (nonatomic, assign) int event;            // ECEVENT
+@property (nonatomic, assign) int enabled;          // 1:enabled; 0:disabled
 
 @end
 

@@ -240,6 +240,14 @@ NS_ASSUME_NONNULL_BEGIN
 //- (void)getAlarmBellSwitchSuccessBlock:(void(^)(TGDeviceAlarmBellModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 //// 设置警报铃开关
 //- (void)setAlarmBellSwitchWithModel:(TGDeviceAlarmBellModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
+#pragma mark - 事件使能状态
+
+// 获取事件使能状态
+- (void)getDeviceEventState:(ECEVENT)event successBlock:(void(^)(TGDeviceEventState *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 设置事件使能状态，0关 1开
+- (void)setDeviceEvent:(ECEVENT)event state:(int)state successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END
