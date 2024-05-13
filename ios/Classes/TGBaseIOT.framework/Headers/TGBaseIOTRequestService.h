@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *socketUrl;
 @property (nonatomic, copy, readonly) NSString *webUrl;
 @property (nonatomic, copy, readonly) NSString *logUrl;
+@property (nonatomic, copy, readonly) NSString *openApiUrl;
 @property (nonatomic, assign, readonly) TGBaseIOTServerEnvType env;
 @property (nonatomic, assign, readonly) BOOL hubServerReady;
 
