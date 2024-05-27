@@ -47,6 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *aiAbilities;
 // 设备属性扩展黑盒，可以是任意数据格式
 @property (nonatomic, strong) id extends;
+// 设备目数
+@property (nonatomic, assign) NSInteger multiChannels; // 目数
 
 #pragma mark - timezone
 

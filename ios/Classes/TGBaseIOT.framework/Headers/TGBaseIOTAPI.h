@@ -12,6 +12,7 @@
 #import "TGDeviceServicePlansModel.h"
 #import "TGPeripheralInfo.h"
 #import "TGCameraDefine.h"
+#import "TGCameraDeviceBaseInforModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -298,12 +299,20 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - failureBlock: 失败回调
 - (void)tg_searchIccId:(NSString *)deviceId successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
-/// 查询设备基础信息
+/// 查询设备基础信息(即将废弃)
 /// - Parameters:
 ///   - deviceId: 设备id
 ///   - successBlock: 成功回调
 ///   - failureBlock: 失败回调
 - (void)tg_getDeviceBasicInfo:(NSString *)deviceId successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+
+/// 查询设备基础信息(建议使用)
+/// - Parameters:
+///   - deviceId: 设备id
+///   - successBlock: TGCameraDeviceBaseInforModel 基础信息model 成功回调
+///   - failureBlock: 失败回调
+- (void)tg_getDeviceBasicInfoModelWithDeviceId:(NSString *)deviceId successBlock:(void(^)(TGCameraDeviceBaseInforModel* result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 /// 查询设备电量
 /// - Parameters:
@@ -758,6 +767,17 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - successBlock: 成功回调
 ///   - failureBlock: 失败回调
 - (void)tg_uploadAppLogWithSuccessBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+/// 通用上报接口
+/// - Parameters:
+///   - time: 起始时间 时间戳1716810884 单位秒
+///   - type: 类型 app_user_view
+///   - logData: json字符串
+///   - deviceId: 设备id
+///   - successBlock: 成功
+///   - failureBlock: 失败
+- (void)tg_uploadCommonLogWithStartTime:(NSString *)time logType:(NSString *)type logData:(NSString *)logData deviceId:(NSString *)deviceId successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
 
 @end
 

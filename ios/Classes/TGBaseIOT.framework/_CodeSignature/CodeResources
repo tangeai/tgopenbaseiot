@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/NSString+TGBaseIOTString.h</key>
+		<data>
+		WGFFAAXT6ed8DK4iQN+ToXJ819o=
+		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		yv9OtWAewiUy5Zx/JOnOpXpnGWw=
+		Ci17QwsJ2MNxo7Lis+FGYxSL2Po=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		nbCTNVAJsYmGznsO5nS+cQBOyRQ=
+		RJRDby+KcjoBmToIytpyJBmhZ7U=
+		</data>
+		<key>Headers/TGBaseIOTReportEventModel.h</key>
+		<data>
+		7Xqw9uJZncWtF7NJFXWMPKIy2cs=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -24,13 +32,17 @@
 		<data>
 		HwJJnh+WhRSA8r7dEDvSNOoZ63I=
 		</data>
+		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
+		<data>
+		yfP1wF7IWYQzQBfz87zGHfqoic0=
+		</data>
 		<key>Headers/TGCameraDeviceCommonTool.h</key>
 		<data>
 		ACc0/YaheBrNbzIdN+Rkio3yQpU=
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		oB5nuUBzpuBTym/N4HDcHMh64Jg=
+		RF1EQwtVVo1w4e4rqSBxGY0oIlI=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
@@ -166,7 +178,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+Mt+0NFTVggiBv1dl2KKYXgUKF0=
+		3Th3HxH2SCZnyVzKAPxUUxIuV00=
 		</data>
 		<key>NTESVerifyCodeResources.bundle/Rectangle@1x.png</key>
 		<data>
@@ -291,26 +303,48 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/NSString+TGBaseIOTString.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WGFFAAXT6ed8DK4iQN+ToXJ819o=
+			</data>
+			<key>hash2</key>
+			<data>
+			hThLeNwwJMHmT8z28muNNhShRTruf+xwizmZi6Szn78=
+			</data>
+		</dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yv9OtWAewiUy5Zx/JOnOpXpnGWw=
+			Ci17QwsJ2MNxo7Lis+FGYxSL2Po=
 			</data>
 			<key>hash2</key>
 			<data>
-			p20tN6YDAj8jUDCawPjgTtFIpnqsR4e6pXkMQGh83ew=
+			penUEUNQAq3mvFO2Qu6hy6P6wl3OGLYF1W23BQOwtw0=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nbCTNVAJsYmGznsO5nS+cQBOyRQ=
+			RJRDby+KcjoBmToIytpyJBmhZ7U=
 			</data>
 			<key>hash2</key>
 			<data>
-			QmY5eWT95r0u1bHyI6owhPWSBvR/QB7znzYC9mn4fv4=
+			hvwEbWmqFRq14RY6D7ZWvPPn61sy7joEBf6s8yLVctA=
+			</data>
+		</dict>
+		<key>Headers/TGBaseIOTReportEventModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7Xqw9uJZncWtF7NJFXWMPKIy2cs=
+			</data>
+			<key>hash2</key>
+			<data>
+			izm6eiMA0z+vpZNcRt/QzstLA+uX8Qa8UfD9EFHfmIY=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -346,6 +380,17 @@
 			okNU6eKex5RJL2oL8HUS+Vkd8fauuvAkmP9jD5UX2/w=
 			</data>
 		</dict>
+		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yfP1wF7IWYQzQBfz87zGHfqoic0=
+			</data>
+			<key>hash2</key>
+			<data>
+			i9qoBcVlr6a2LmA0sgC0VtLQr1JYVLt6JRW/Cc5nobY=
+			</data>
+		</dict>
 		<key>Headers/TGCameraDeviceCommonTool.h</key>
 		<dict>
 			<key>hash</key>
@@ -361,11 +406,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oB5nuUBzpuBTym/N4HDcHMh64Jg=
+			RF1EQwtVVo1w4e4rqSBxGY0oIlI=
 			</data>
 			<key>hash2</key>
 			<data>
-			zBM31R9Q/kuuh7MXkVLTfDCX0XCbRTI783xd1RtsZFo=
+			W8Hzkeom9a/aJ9crMUvQuX5RLzBaQaPumXXrLgpblPM=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
