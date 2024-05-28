@@ -19,13 +19,22 @@ typedef NS_ENUM(NSInteger,TGBaseIOTLogLevel) {
 
 @interface TGBaseIOTReportEventModel : NSObject
 
-@property (nonatomic, assign) TGBaseIOTLogLevel level;
-@property (nonatomic, strong) NSString *deviceId;
-@property (nonatomic, assign) NSString *name;
-@property (nonatomic, assign) NSString *detail;
-@property (nonatomic, assign) NSString *time;
-@property (nonatomic, assign) NSString *className;
+@property (nonatomic, assign) TGBaseIOTLogLevel level;      // 日志级别
+@property (nonatomic, copy) NSString *deviceId;             // 设备id
+@property (nonatomic, assign) NSString *name;               // 事件名称
+@property (nonatomic, assign) NSString *detail;             // 事件描述
+@property (nonatomic, assign) NSString *time;               // 事件时间
+@property (nonatomic, assign) NSString *className;          // 所处的类
 
+
+@end
+
+
+@interface TGBaseIOTReportEventConfigModel : NSObject
+
+@property (nonatomic, copy)  NSString *level;   // 日志级别
+@property (nonatomic, assign) NSInteger exception_log;   // 日志上报开关 1开 0关
+@property (nonatomic, assign) NSInteger preview_stat;    // 日志统计开关 1开 0关
 
 @end
 

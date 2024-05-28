@@ -13,6 +13,7 @@
 #import "TGPeripheralInfo.h"
 #import "TGCameraDefine.h"
 #import "TGCameraDeviceBaseInforModel.h"
+#import "TGBaseIOTReportEventModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -777,6 +778,12 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - successBlock: 成功
 ///   - failureBlock: 失败
 - (void)tg_uploadCommonLogWithStartTime:(NSString *)time logType:(NSString *)type logData:(NSString *)logData deviceId:(NSString *)deviceId successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+/// app查询设备（日志，统计）上报开关
+/// - Parameters:
+///   - successBlock: 成功回调
+///   - failureBlock: 失败回调
+- (void)tg_getAppLogConfigWithSuccessBlock:(void(^)(TGBaseIOTReportEventConfigModel *result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 
 @end
