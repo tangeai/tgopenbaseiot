@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL hubServerReady;
 
 + (instancetype)shareService;
+- (void)setVersionNumber:(NSString *)versionNumber;
 - (void)cleanHubInfo;
 - (void)switchToEnvType:(TGBaseIOTServerEnvType)env;
 - (void)requestWithUrl:(NSString *)url params:(nullable id)params successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
