@@ -134,6 +134,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取AP热点或WiFi
 - (void)tg_searchWiFiOrAP:(void(^)(BOOL isSuccess,NSString * __nullable ssid))ssidCallBack;
 
+/// 手机连接AP设备(增加时效及超时错误)
+/// - Parameters:
+///   - timeCount: 超时时间，单位s 默认20s
+///   - APSsid: AP热点
+///   - hotSsid: 路由wifi名称
+///   - hotSsidPassword：路由wifi密码
+///   - processBlock: 进度
+///   - complteBlock: 如果isHttp返回yes，可直接发起WiFIf轮询绑定，如果no，可使用TGIOTCameraDevice进行连接
+///   - failureBlock: 如果有返回即超时失败需要重新联网
+- (void)tg_connectCameraWithTimeCount:(NSInteger)timeCount APSsid:(NSString *)ssid hotSsid:(NSString *)hotSsid hotSsidPassword:(NSString *)hotSsidPassword processBlock:(void(^)(NSInteger processCount))processBlock complteBlock:(void(^)(BOOL isHttp, TGCameraDeviceModel *deviceModel))complteBlock failureBlock:(void(^)(id error))failureBlock;
+
 /// 手机连接AP设备(建议使用)
 /// - Parameters:
 ///   - APSsid: AP热点

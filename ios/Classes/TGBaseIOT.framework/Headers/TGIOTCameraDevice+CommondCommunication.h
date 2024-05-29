@@ -63,6 +63,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 长按聚焦结束
 - (void)tg_deviceLongFocusEndWithChannel:(int)channel direction:(TGZoomFocusDirection)direction;
 
+// 输入位置定位镜头位置
+- (void)tg_setLocInPicWithChannel:(TGPlayChannelType)channel pos:(PtzPos)pos;
+
 // 获取预置位
 - (void)getDevicePSPWithModel:(TGDeviceGetPresetPointsReqModel *)model successBlock:(void(^)(TGDevicePresetPointsRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设置预置位置

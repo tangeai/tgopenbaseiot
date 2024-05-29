@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		7Y+L62z1JLaFJcX7CTKRqRN+PLI=
+		jH1GPmJbrtL1ftXTNlk0pahWAMo=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		eIuKqaqgo/aRhkgPPxVSCaPMA2w=
+		cJCqOUTFvW8wa2IbEu4dsDvrwm0=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
@@ -318,11 +318,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Y+L62z1JLaFJcX7CTKRqRN+PLI=
+			jH1GPmJbrtL1ftXTNlk0pahWAMo=
 			</data>
 			<key>hash2</key>
 			<data>
-			+iRbaR8ElPOV4/yZr5g91dyzvPVhDvo0hNO8J0xK1Bc=
+			GRPRp0MWtfx5sXEEU1oOTmEIT+6kSDi46Z9WdWhdBfU=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
@@ -593,11 +593,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eIuKqaqgo/aRhkgPPxVSCaPMA2w=
+			cJCqOUTFvW8wa2IbEu4dsDvrwm0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gfsrrzGBKMvYM6nQkKYEkeeRe+10mqw9sJtGiia/PDw=
+			aM9IMhpQ7ZUGb82sT/AuIpFcdlyg5CFC7NKlONwqu04=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>
