@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		jH1GPmJbrtL1ftXTNlk0pahWAMo=
+		G19CIoi82ieIj9t/NsR2JP/Rjs4=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		azK4tTEcn7u6ts6m+L8k2C4T6Lc=
+		J0QYlkl3CAWhRUzncdmgzMiCAQg=
 		</data>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<data>
-		vnB27QHwMvkYLbSlyJgypo1Jl+A=
+		GHfOOmYwdulwJi5M9N9uKy6/QpQ=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		HwJJnh+WhRSA8r7dEDvSNOoZ63I=
+		2gZZnsB2X0FN2PhVk9kkr+CsqZ0=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/TGCardEventModel.h</key>
 		<data>
-		Y1SKICm0MjPim0lnYl/r/W4dXSM=
+		bzkNJVHqv1hdTqPnms8rwCm8jzw=
 		</data>
 		<key>Headers/TGClockTimeModel.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		OPYBTfajNhGVxcaPzEMD42NyvGs=
+		kuUUUM/+rclan1tYsrYU2lFu28U=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		cJCqOUTFvW8wa2IbEu4dsDvrwm0=
+		vOJNZT9EiJWD6SqJNwqsfx0mxao=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
@@ -318,33 +318,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jH1GPmJbrtL1ftXTNlk0pahWAMo=
+			G19CIoi82ieIj9t/NsR2JP/Rjs4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GRPRp0MWtfx5sXEEU1oOTmEIT+6kSDi46Z9WdWhdBfU=
+			QDv8NKc1avf0em0yr6ZxjMQZEJgiAtU4IFoaJRu1WhE=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			azK4tTEcn7u6ts6m+L8k2C4T6Lc=
+			J0QYlkl3CAWhRUzncdmgzMiCAQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			lMWid4BkQqPWNxzz2HU8lwuW0vOwvuv81/uV8aj2esk=
+			4Yrc+eTx/ZuEfvyrShKYpidV8TtDbzSiINReP0UjZ24=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vnB27QHwMvkYLbSlyJgypo1Jl+A=
+			GHfOOmYwdulwJi5M9N9uKy6/QpQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			gtJdwSMZf7Vf/qpGIEGJr0TSeWZnBeSECqBI3rupzZ0=
+			d185JftTNOHNOQD5x2xxZMYUqei0K6H+OZBc21T2AKg=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -373,11 +373,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HwJJnh+WhRSA8r7dEDvSNOoZ63I=
+			2gZZnsB2X0FN2PhVk9kkr+CsqZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			okNU6eKex5RJL2oL8HUS+Vkd8fauuvAkmP9jD5UX2/w=
+			EcMpDvIN0kHjhLOEsUbd46rEDv5bY7DGT4zr9/jfsEo=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y1SKICm0MjPim0lnYl/r/W4dXSM=
+			bzkNJVHqv1hdTqPnms8rwCm8jzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			UMMhIf0sLrxfQc9JUdoMql4Xh5JrkDkhs11BCspp7dM=
+			JGDpRKT4YsxGurRdCWYibA+XuUrROnG9LZYq1CW4g14=
 			</data>
 		</dict>
 		<key>Headers/TGClockTimeModel.h</key>
@@ -516,11 +516,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OPYBTfajNhGVxcaPzEMD42NyvGs=
+			kuUUUM/+rclan1tYsrYU2lFu28U=
 			</data>
 			<key>hash2</key>
 			<data>
-			1DC/OPTd1AawWnaMUnjvuJP3XYi2Ysj5Qa9OGX3d8Ik=
+			K2sXBVzbGh1MlNuLXvgNB1VmFfkVtCHhNEzDtkHjk/w=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -593,11 +593,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cJCqOUTFvW8wa2IbEu4dsDvrwm0=
+			vOJNZT9EiJWD6SqJNwqsfx0mxao=
 			</data>
 			<key>hash2</key>
 			<data>
-			aM9IMhpQ7ZUGb82sT/AuIpFcdlyg5CFC7NKlONwqu04=
+			vN8p/njBV7cmTTKv6ikcwLjRL/jETt4Yqc3Nvq5fEKA=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>

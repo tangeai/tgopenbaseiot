@@ -594,4 +594,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TGDeviceSDDaysModel : NSObject
+
+@property (nonatomic, assign) int year;             // 年
+@property (nonatomic, assign) int month;            // 月1-12
+@property (nonatomic, assign) int day;              // 日1-31
+
+@end
+
+@interface TGDeviceSDVideoAvailableDaysModel : NSObject
+
+@property (nonatomic, assign) int n_day;
+@property (nonatomic, copy) NSArray <TGDeviceSDDaysModel *> *daysArray;
+
+@end
+
 NS_ASSUME_NONNULL_END

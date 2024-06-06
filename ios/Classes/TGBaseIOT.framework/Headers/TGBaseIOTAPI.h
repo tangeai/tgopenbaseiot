@@ -38,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)tg_getUserToken;
 /// 获取用户userId
 - (NSString *)tg_getUserId;
+/// 获取SDK版本号
+- (NSString *)tg_getSDKNumber;
 
 #pragma mark - log
 

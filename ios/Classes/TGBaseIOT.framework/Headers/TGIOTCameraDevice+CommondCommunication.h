@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)formatSDCardSuccessBlock:(void(^)(TGDeviceSDFormatModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 查询SD卡状态
 - (void)getSDCardSatueSuccessBlock:(void(^)(TGDeviceSDStorageModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 获取已存储的卡录像日历
+- (void)tg_getSDCardAvailableDaysForVidoesSuccessBlock:(void(^)(TGDeviceSDVideoAvailableDaysModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 #pragma mark - 画面
 // 获取视频翻转

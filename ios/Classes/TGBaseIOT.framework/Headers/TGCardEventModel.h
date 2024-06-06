@@ -26,12 +26,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) unsigned char flags;
 @property (nonatomic, assign) NSInteger startTs;                //开始时间戳
 @property (nonatomic, assign) NSInteger endTs;                  //结束时间戳
+@property (nonatomic, assign) BOOL isEventImageExist;           //是否存在缩略图
+@property (nonatomic, assign) NSInteger eventTime;                //事件时间戳（与平台事件时间戳一致）
+@property (nonatomic, copy) NSString *eventId;                  //事件id，可通过此id查询事件详情得到缩略图
 
 #pragma mark -- other
 
 @property (nonatomic, assign) BOOL isSelected;                  // 不建议使用
 
 + (instancetype)modelWithSAvExEvent:(SAvExEvent)event;
++ (instancetype)modelWithSAvEvent2:(SAvEvent2)event deviceId:(NSString *)deviceId;
 
 @end
 

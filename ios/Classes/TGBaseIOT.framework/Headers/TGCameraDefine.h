@@ -225,6 +225,8 @@ typedef enum{
     IOTYPE_USER_IPCAM_FORMATEXTSTORAGE_REQ              = 0x0380,   // Format external storage
     IOTYPE_USER_IPCAM_FORMATEXTSTORAGE_RESP             = 0x0381,
     
+    TCI_CMD_LIST_RECORDDAYS                             = 0x800A,   // < 返回SD卡上有录像的日期. req: none; resp: @ref Tcis_DaysList
+    
     TCI_CMD_GET_EXTERNAL_STORAGE_REQ                    = 0x8030,  // 查询设备sd卡状态
     TCI_CMD_GET_EXTERNAL_STORAGE_RESP                   = 0x8031,
     
@@ -848,6 +850,13 @@ typedef struct{
 //    unsigned char second;   // The number of seconds after the minute, in the range 0 to 59.
 //} __attribute__((__packed__)) STimeDay;
 
+/** 日期表示 */
+typedef struct {
+    unsigned short year;  ///< year
+    unsigned char  month; ///< month: 1~12
+    unsigned char  day;   ///< day: 1~31
+} __attribute__((__packed__)) SDay;
+
 typedef struct{
     unsigned short year;    // The number of year.
     unsigned char month;    // The number of months since January, in the range 1 to 12.
@@ -1259,27 +1268,51 @@ typedef struct{
 
 /** 上报事件类型
  */
-typedef NS_ENUM(unsigned char,ECEVENT) {
-    ECEVENT_NONE = 0,                           ///< none
-    ECEVENT_MOTION_DETECTED,                    ///< motion is detected
-    ECEVENT_HUMAN_BODY,                         ///< human body is detected
-    ECEVENT_SOUND,                              ///< sound
-    ECEVENT_PIR,                                ///< pir
-    ECEVENT_SMOKE,                              ///< smoke
-    ECEVENT_TEMPERATURE_L,                      ///< temperature low
-    ECEVENT_TEMPERATURE_H,                      ///< temperature high
-    ECEVENT_HUMIDITY_L,                         ///< humidity low
-    ECEVENT_HUMIDITY_H,                         ///< humidity high
-    ECEVENT_GENERIC_SENSOR,                     ///< 通用传感器类消息
-    ECEVENT_G_SENSOR,                           ///< G-Sensor(碰撞事件)
-    EVEVENT_COLLISION = ECEVENT_G_SENSOR,
-    //ECEVENT_BATTERY_LOW,                      ///< 电池电量低
-    ECEVENT_SET_OFF,                            ///< set off
-    ECEVENT_TRIP_END,                           ///< trip end
-    ECEVENT_SPEED_UP,                           ///< speed burstly up
-    ECEVENT_SPEED_DOWN,                         ///< speed burstly down
-    ECEVENT_MAX
-};
+typedef enum ECEVENT {
+    ECEVENT_NONE = 0,             ///< [] none
+    ECEVENT_MOTION_DETECTED,      ///< [motion] is detected (=1)
+    ECEVENT_HUMAN_BODY,           ///< [body] human body is detected (=2)
+    ECEVENT_SOUND,                ///< [sound] (=3)
+    ECEVENT_PIR,                  ///< [pir](=4)
+    ECEVENT_SMOKE,                ///< [smoke] (=5)
+    ECEVENT_TEMPERATURE_L,        ///< [tempL] temperature low(=6). 参数: MKEVTDATA_Temperatur()
+    ECEVENT_TEMPERATURE_H,        ///< [tempH] temperature high(=7). 参数: MKEVTDATA_Temperatur()
+    ECEVENT_HUMIDITY_L,           ///< [humidL] humidity low(=8). 参数: MKEVTDATA_Humidity()
+    ECEVENT_HUMIDITY_H,           ///< [humidH] humidity high(=9). 参数: MKEVTDATA_Humidity()
+    ECEVENT_GENERIC_SENSOR,       ///< [generic] 通用传感器类消息 (=10)
+    ECEVENT_DR_BEGIN,             ///< 行车记录仪事件范围开始(=11)
+    ECEVENT_G_SENSOR = ECEVENT_DR_BEGIN,   ///< [g-sensor] G-Sensor(碰撞事件)(=11). 参数: NULL or EVTDATA_SERIOUS_COLLISION
+    ECEVENT_COLLISION = ECEVENT_G_SENSOR,  ///< = @ref ECEVENT_G_SENSOR(=11)
+    ECEVENT_SETOFF,                 ///< [set-off] set off car (=12)
+    ECEVENT_PARK,                   ///< [park] car parked(=13)
+    ECEVENT_SPEED_UP,             ///< [speed-up] speed burstly up(=14)
+    ECEVENT_SPEED_DOWN,           ///< [speed-down] speed burstly down(=15)
+    ECEVENT_DR_END = ECEVENT_SPEED_DOWN, ///< 行车记录仪事件范围结束(=15)
+  
+    ECEVENT_CALL,                 ///< [call] (=16)
+    ECEVENT_DOORBELL = ECEVENT_CALL, ///< 保留旧的命名 = ECEVENT_CALL
+    ECEVENT_PASSBY,                ///< [passby] 有人路过(=17)
+    ECEVENT_STAY,                  ///< [stay] 有人停留(=18)
+
+    //ECEVENT_OBJECT,                ///< object recognization
+    //ECEVENT_CAR = ECEVENT_OBJECT,                   ///<
+
+    ECEVENT_LOCK,                 ///< [lock] 门锁消息(大类)(=19). 细分消息在data部分
+
+    ECEVENT_CRY,                  ///< [cry] 检测到哭声(=20)
+    ECEVENT_ENTER,                ///< [enter] 进入区域(=21)
+    //参数: MKEVTDAT_SitPoseSens()。这个在sdk内部处理
+    ECEVENT_SITPOSE,              ///< [bad_posture] sitting pose. 坐姿检测.(=22)
+  
+    ECEVENT_LEAVE,                ///< [leave] 离开区域 "leave". 由sdk生成?(=23)
+    ECEVENT_TUMBLE,               ///< [tumble] 摔倒(=24)
+  
+    ECEVENT_SNAPSHOT,             ///< [snapshot] 手动抓拍(=25)
+    ECEVENT_CALL2,                ///< [call.2]呼叫按键2(=26)
+
+    ECEVENT_MAX,
+    ECEVENT_USER_DEFINED = 255    ///< 自定义事件。使用方式见文档
+} ECEVENT;
 
 /** 上报事件类型.
  * 事件可能需要携带额外参数。参数通过 EVENTPARAM::evt_data 传递，内容与具体事件相关
@@ -1339,13 +1372,25 @@ typedef struct  {
 } SAvExEvent;
 
 typedef struct  {
+    STimeDay        start_time;//事件开始时间
+    unsigned int    file_len;//time length，in second
+    ECEVENT         event;//事件类型
+    unsigned char   flags;//0x01:缩时录像
+    unsigned char   reserved[2];//unsigned char
+    unsigned int  t_event;        ///< 本段录像对应的事件的时间(要与上报给云端的事件时间一致). 没有事件时传0
+} SAvEvent2;
+
+typedef struct  {
     unsigned int  channel;      //Camera Index
     unsigned int  num;          //事件总数
     unsigned char index;
     unsigned char endflag;      //为1表示最后一个包
     unsigned char count;        //本包包含的事件数
-    unsigned char reserved[1];
-    SAvExEvent stExEvent[1];    //事件数组，一次最多发送50条记录
+    unsigned char estype;       ///< 0:录像记录为SAvExEvent数组; 1:录像记录为SAvEvent2数组
+    union {
+            SAvExEvent stExEvent[1];   ///< 录像条目数组 see @ref SAvExEvent. 一次发送最多 50 条记录
+            SAvEvent2  stEvent2[1];    ///< 带事件时间戳的录像条目数组 see @ref SAvEvent2. 一次发送最多 50 条记录
+        };
 } SMsgAVIoctrlExListEventResp;
 
 typedef struct {
@@ -2641,5 +2686,14 @@ typedef struct SMsgAVIoctrlSetAlarmBell {
     uint32_t     event_mask2; ///< 0. 用作值大于31的事件掩码
 }   SMsgAVIoctrlSetAlarmBellReq, SMsgAVIoctrlGetAlarmBellResp;
 /** \see Tcis_SetAlarmBell*/
+
+/** @struct Tcis_DaysList
+* 日期列表.
+* @ref TCI_CMD_LIST_RECORDDAYS = 0x800A
+*/
+typedef struct SMsgAVIoctrlTcis_DaysList {
+    int n_day;   ///< 日期数组大小
+    SDay days[1]; ///< 日期数组
+} SMsgAVIoctrlTcis_DaysListResp;
 
 #endif /* TGCameraDefine_h */
