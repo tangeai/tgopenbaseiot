@@ -1266,7 +1266,8 @@ typedef struct{
     unsigned char reserved[2];
 }SMsgAVIoctrlExListEventReq;
 
-/** 上报事件类型
+/** 上报事件类型.
+ * 事件可能需要携带额外参数。参数通过 EVENTPARAM::evt_data 传递，内容与具体事件相关
  */
 typedef enum ECEVENT {
     ECEVENT_NONE = 0,             ///< [] none
@@ -1274,12 +1275,14 @@ typedef enum ECEVENT {
     ECEVENT_HUMAN_BODY,           ///< [body] human body is detected (=2)
     ECEVENT_SOUND,                ///< [sound] (=3)
     ECEVENT_PIR,                  ///< [pir](=4)
+
     ECEVENT_SMOKE,                ///< [smoke] (=5)
     ECEVENT_TEMPERATURE_L,        ///< [tempL] temperature low(=6). 参数: MKEVTDATA_Temperatur()
     ECEVENT_TEMPERATURE_H,        ///< [tempH] temperature high(=7). 参数: MKEVTDATA_Temperatur()
     ECEVENT_HUMIDITY_L,           ///< [humidL] humidity low(=8). 参数: MKEVTDATA_Humidity()
     ECEVENT_HUMIDITY_H,           ///< [humidH] humidity high(=9). 参数: MKEVTDATA_Humidity()
     ECEVENT_GENERIC_SENSOR,       ///< [generic] 通用传感器类消息 (=10)
+
     ECEVENT_DR_BEGIN,             ///< 行车记录仪事件范围开始(=11)
     ECEVENT_G_SENSOR = ECEVENT_DR_BEGIN,   ///< [g-sensor] G-Sensor(碰撞事件)(=11). 参数: NULL or EVTDATA_SERIOUS_COLLISION
     ECEVENT_COLLISION = ECEVENT_G_SENSOR,  ///< = @ref ECEVENT_G_SENSOR(=11)
@@ -1288,7 +1291,7 @@ typedef enum ECEVENT {
     ECEVENT_SPEED_UP,             ///< [speed-up] speed burstly up(=14)
     ECEVENT_SPEED_DOWN,           ///< [speed-down] speed burstly down(=15)
     ECEVENT_DR_END = ECEVENT_SPEED_DOWN, ///< 行车记录仪事件范围结束(=15)
-  
+
     ECEVENT_CALL,                 ///< [call] (=16)
     ECEVENT_DOORBELL = ECEVENT_CALL, ///< 保留旧的命名 = ECEVENT_CALL
     ECEVENT_PASSBY,                ///< [passby] 有人路过(=17)
@@ -1303,10 +1306,10 @@ typedef enum ECEVENT {
     ECEVENT_ENTER,                ///< [enter] 进入区域(=21)
     //参数: MKEVTDAT_SitPoseSens()。这个在sdk内部处理
     ECEVENT_SITPOSE,              ///< [bad_posture] sitting pose. 坐姿检测.(=22)
-  
+
     ECEVENT_LEAVE,                ///< [leave] 离开区域 "leave". 由sdk生成?(=23)
     ECEVENT_TUMBLE,               ///< [tumble] 摔倒(=24)
-  
+
     ECEVENT_SNAPSHOT,             ///< [snapshot] 手动抓拍(=25)
     ECEVENT_CALL2,                ///< [call.2]呼叫按键2(=26)
 
@@ -1314,84 +1317,42 @@ typedef enum ECEVENT {
     ECEVENT_USER_DEFINED = 255    ///< 自定义事件。使用方式见文档
 } ECEVENT;
 
-/** 上报事件类型.
- * 事件可能需要携带额外参数。参数通过 EVENTPARAM::evt_data 传递，内容与具体事件相关
- */
-//typedef enum ECEVENT {
-//    ECEVENT_NONE = 0,             ///< [] none
-//    ECEVENT_MOTION_DETECTED,      ///< [motion] is detected (=1)
-//    ECEVENT_HUMAN_BODY,           ///< [body] human body is detected (=2)
-//    ECEVENT_SOUND,                ///< [sound] (=3)
-//    ECEVENT_PIR,                  ///< [pir](=4)
-//
-//    ECEVENT_SMOKE,                ///< [smoke] (=5)
-//    ECEVENT_TEMPERATURE_L,        ///< [tempL] temperature low(=6). 参数: MKEVTDATA_Temperatur()
-//    ECEVENT_TEMPERATURE_H,        ///< [tempH] temperature high(=7). 参数: MKEVTDATA_Temperatur()
-//    ECEVENT_HUMIDITY_L,           ///< [humidL] humidity low(=8). 参数: MKEVTDATA_Humidity()
-//    ECEVENT_HUMIDITY_H,           ///< [humidH] humidity high(=9). 参数: MKEVTDATA_Humidity()
-//    ECEVENT_GENERIC_SENSOR,       ///< [generic] 通用传感器类消息 (=10)
-//
-//    ECEVENT_DR_BEGIN,             ///< 行车记录仪事件范围开始(=11)
-//    ECEVENT_G_SENSOR = ECEVENT_DR_BEGIN,   ///< [g-sensor] G-Sensor(碰撞事件)(=11). 参数: NULL or EVTDATA_SERIOUS_COLLISION
-//    ECEVENT_COLLISION = ECEVENT_G_SENSOR,  ///< = @ref ECEVENT_G_SENSOR(=11)
-//    ECEVENT_SETOFF,                 ///< [set-off] set off car (=12)
-//    ECEVENT_PARK,                   ///< [park] car parked(=13)
-//    ECEVENT_SPEED_UP,             ///< [speed-up] speed burstly up(=14)
-//    ECEVENT_SPEED_DOWN,           ///< [speed-down] speed burstly down(=15)
-//    ECEVENT_DR_END = ECEVENT_SPEED_DOWN, ///< 行车记录仪事件范围结束(=15)
-//
-//    ECEVENT_DOORBELL,              ///< [doorbell] (=16)
-//    ECEVENT_PASSBY,                ///< [passby] 有人路过(=17)
-//    ECEVENT_STAY,                  ///< [stay] 有人停留(=18)
-//
-//    //ECEVENT_OBJECT,                ///< object recognization
-//    //ECEVENT_CAR = ECEVENT_OBJECT,                   ///<
-//
-//    ECEVENT_LOCK,                 ///< [lock] 门锁消息(大类)(=19). 细分消息在data部分
-//
-//    ECEVENT_CRY,                  ///< [cry] 检测到哭声(=20)
-//    ECEVENT_ENTER,                ///< [enter] 进入区域(=21)
-//    //参数: MKEVTDAT_SitPoseSens()。这个在sdk内部处理
-//    ECEVENT_SITPOSE,              ///< [bad_posture] sitting pose. 坐姿检测.(=22)
-//
-//    ECEVENT_LEAVE,                ///< [leave] 离开区域 "leave". 由sdk生成?(=23)
-//    ECEVENT_TUMBLE,               ///< [tumble] 摔倒(=24)
-//
-//    ECEVENT_SNAPSHOT,             ///< [snapshot] 手动抓拍(=25)
-//
-//    ECEVENT_MAX,
-//    ECEVENT_USER_DEFINED = 255
-//} ECEVENT;
+/** \brief 录像条目 */
+typedef struct SAvExEvent {
+    STimeDay   start_time;    ///< 录像开始时间
+    unsigned int   file_len;  ///< time length: in second
+    unsigned char event;      ///< 事件类型 @ref ECEVENT
+#define AVE_F_TIMELAPSE    0x01 ///< 缩时录像标志
+    unsigned char flags;      ///< 录像条目其它标志. 0x01:缩时录像
+    unsigned char reserved[2]; ///< 0
+}  __attribute__((__packed__)) SAvExEvent;
 
-typedef struct  {
-    STimeDay        start_time;//事件开始时间
-    unsigned int    file_len;//time length，in second
-    ECEVENT         event;//事件类型
-    unsigned char   flags;//0x01:缩时录像
-    unsigned char   reserved[2];//unsigned char
-} SAvExEvent;
-
-typedef struct  {
-    STimeDay        start_time;//事件开始时间
-    unsigned int    file_len;//time length，in second
-    ECEVENT         event;//事件类型
-    unsigned char   flags;//0x01:缩时录像
-    unsigned char   reserved[2];//unsigned char
+/** \brief 录像条目, 带事件的时间戳 */
+typedef struct SAvEvent2 {
+    STimeDay      start_time;    ///< 录像开始时间
+    unsigned int  file_len;      ///< time length: in second
+    unsigned char event;         ///< 事件类型 @ref ECEVENT
+#define AVE_F_TIMELAPSE    0x01  ///< 缩时录像标志
+    unsigned char flags;         ///< 录像条目其它标志. 0x01:缩时录像
+    unsigned char reserved[2];   ///< =0
     unsigned int  t_event;        ///< 本段录像对应的事件的时间(要与上报给云端的事件时间一致). 没有事件时传0
-} SAvEvent2;
+}  __attribute__((__packed__)) SAvEvent2;
 
-typedef struct  {
-    unsigned int  channel;      //Camera Index
-    unsigned int  num;          //事件总数
-    unsigned char index;
-    unsigned char endflag;      //为1表示最后一个包
-    unsigned char count;        //本包包含的事件数
+/** \brief SD卡录像查询返回结构 */
+/** @ref TCI_CMD_LISTEVENT_RESP
+ * */
+typedef struct Tcis_ExListEventResp {
+    unsigned int  channel;      ///< Camera Index: 0~
+    unsigned int  num;          ///< 录像条目总数
+    unsigned char index;        ///< ignored
+    unsigned char endflag;      ///< 为1是表示是最后一个包
+    unsigned char count;        ///< 本包包含中的事件数
     unsigned char estype;       ///< 0:录像记录为SAvExEvent数组; 1:录像记录为SAvEvent2数组
     union {
-            SAvExEvent stExEvent[1];   ///< 录像条目数组 see @ref SAvExEvent. 一次发送最多 50 条记录
-            SAvEvent2  stEvent2[1];    ///< 带事件时间戳的录像条目数组 see @ref SAvEvent2. 一次发送最多 50 条记录
-        };
-} SMsgAVIoctrlExListEventResp;
+        SAvExEvent stExEvent[1];   ///< 录像条目数组 see @ref SAvExEvent. 一次发送最多 50 条记录
+        SAvEvent2  stEvent2[1];    ///< 带事件时间戳的录像条目数组 see @ref SAvEvent2. 一次发送最多 50 条记录
+    };
+}  __attribute__((__packed__)) SMsgAVIoctrlExListEventResp;
 
 typedef struct {
     char ssid[64];
@@ -2680,7 +2641,7 @@ typedef struct SMsgAVIoctrlSetAlarmBell {
     uint8_t      version;     ///< 0. *** 接收者要检查version的值。当前为0对应本结构定义 *** !!!!
     uint8_t      reserved[3]; ///< all 0
 
-    /** 事件类型掩码. bit0:所有事件; bit1:移动侦测; bit2:人体检测; ...[参看 TGECEVENT 定义].
+    /** 事件类型掩码. bit0:所有事件; bit1:移动侦测; bit2:人体检测; ...[参看 ECEVENT 定义].
      *  如果bitN为1, 表示相应事件将触发警铃 */
     uint32_t     event_mask;
     uint32_t     event_mask2; ///< 0. 用作值大于31的事件掩码

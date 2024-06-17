@@ -104,46 +104,51 @@ typedef enum ENUM_AUDIO_CHANNEL {
  * 事件可能需要携带额外参数。参数通过 EVENTPARAM::evt_data 传递，内容与具体事件相关
  */
 typedef enum TGECEVENT {
-    TGECEVENT_NONE = 0,             ///< none
-    TGECEVENT_MOTION_DETECTED,      ///< motion is detected (=1)
-    TGECEVENT_HUMAN_BODY,           ///< human body is detected (=2)
-    TGECEVENT_SOUND,                ///< sound
-    TGECEVENT_PIR,                  ///< pir
+    TGECEVENT_NONE = 0,             ///< [] none
+    TGECEVENT_MOTION_DETECTED,      ///< [motion] is detected (=1)
+    TGECEVENT_HUMAN_BODY,           ///< [body] human body is detected (=2)
+    TGECEVENT_SOUND,                ///< [sound] (=3)
+    TGECEVENT_PIR,                  ///< [pir](=4)
 
-    TGECEVENT_SMOKE,                ///< smoke (=5)
-    TGECEVENT_TEMPERATURE_L,        ///< temperature low. 参数: MKEVTDATA_Temperatur()
-    TGECEVENT_TEMPERATURE_H,        ///< temperature high. 参数: MKEVTDATA_Temperatur()
-    TGECEVENT_HUMIDITY_L,           ///< humidity low. 参数: MKEVTDATA_Humidity()
-    TGECEVENT_HUMIDITY_H,           ///< humidity high. 参数: MKEVTDATA_Humidity()
-    TGECEVENT_GENERIC_SENSOR,       ///< 通用传感器类消息 (=10)
+    TGECEVENT_SMOKE,                ///< [smoke] (=5)
+    TGECEVENT_TEMPERATURE_L,        ///< [tempL] temperature low(=6). 参数: MKEVTDATA_Temperatur()
+    TGECEVENT_TEMPERATURE_H,        ///< [tempH] temperature high(=7). 参数: MKEVTDATA_Temperatur()
+    TGECEVENT_HUMIDITY_L,           ///< [humidL] humidity low(=8). 参数: MKEVTDATA_Humidity()
+    TGECEVENT_HUMIDITY_H,           ///< [humidH] humidity high(=9). 参数: MKEVTDATA_Humidity()
+    TGECEVENT_GENERIC_SENSOR,       ///< [generic] 通用传感器类消息 (=10)
 
-    TGECEVENT_DR_BEGIN,             ///< 行车记录仪事件范围开始 (=11)
-    TGECEVENT_G_SENSOR = TGECEVENT_DR_BEGIN,   ///< G-Sensor(碰撞事件). 参数: NULL or EVTDATA_SERIOUS_COLLISION
-    TGECEVENT_COLLISION = TGECEVENT_G_SENSOR,  ///< = @ref TGECEVENT_G_SENSOR
-    TGECEVENT_SETOFF,                 ///< set off car (=12)
-    TGECEVENT_PARK,                   ///< car parked
-    TGECEVENT_SPEED_UP,             ///< speed burstly up
-    TGECEVENT_SPEED_DOWN,           ///< speed burstly down
-    TGECEVENT_DR_END = TGECEVENT_SPEED_DOWN, ///< 行车记录仪事件范围结束
+    TGECEVENT_DR_BEGIN,             ///< 行车记录仪事件范围开始(=11)
+    TGECEVENT_G_SENSOR = TGECEVENT_DR_BEGIN,   ///< [g-sensor] G-Sensor(碰撞事件)(=11). 参数: NULL or EVTDATA_SERIOUS_COLLISION
+    TGECEVENT_COLLISION = TGECEVENT_G_SENSOR,  ///< = @ref ECEVENT_G_SENSOR(=11)
+    TGECEVENT_SETOFF,                 ///< [set-off] set off car (=12)
+    TGECEVENT_PARK,                   ///< [park] car parked(=13)
+    TGECEVENT_SPEED_UP,             ///< [speed-up] speed burstly up(=14)
+    TGECEVENT_SPEED_DOWN,           ///< [speed-down] speed burstly down(=15)
+    TGECEVENT_DR_END = TGECEVENT_SPEED_DOWN, ///< 行车记录仪事件范围结束(=15)
 
-    TGECEVENT_DOORBELL,              ///< doorbell (=16)
-    TGECEVENT_PASSBY,                ///< 有人路过
-    TGECEVENT_STAY,                  ///< 有人停留
+    TGECEVENT_CALL,                 ///< [call] (=16)
+    TGECEVENT_DOORBELL = TGECEVENT_CALL, ///< 保留旧的命名 = ECEVENT_CALL
+    TGECEVENT_PASSBY,                ///< [passby] 有人路过(=17)
+    TGECEVENT_STAY,                  ///< [stay] 有人停留(=18)
 
     //TGECEVENT_OBJECT,                ///< object recognization
     //TGECEVENT_CAR = TGECEVENT_OBJECT,                   ///<
 
-    TGECEVENT_LOCK,                 ///< 门锁消息(大类). 细分消息在data部分
+    TGECEVENT_LOCK,                 ///< [lock] 门锁消息(大类)(=19). 细分消息在data部分
 
-    TGECEVENT_CRY,                  ///< 检测到哭声
-    TGECEVENT_ENTER,                ///< 进入区域
-    //TGECEVENT_LEAVE,              ///< 离开区域 "leave". 由sdk生成
-
+    TGECEVENT_CRY,                  ///< [cry] 检测到哭声(=20)
+    TGECEVENT_ENTER,                ///< [enter] 进入区域(=21)
     //参数: MKEVTDAT_SitPoseSens()。这个在sdk内部处理
-    TGECEVENT_SITPOSE,              ///< sitting pose. 坐姿检测.
+    TGECEVENT_SITPOSE,              ///< [bad_posture] sitting pose. 坐姿检测.(=22)
+
+    TGECEVENT_LEAVE,                ///< [leave] 离开区域 "leave". 由sdk生成?(=23)
+    TGECEVENT_TUMBLE,               ///< [tumble] 摔倒(=24)
+
+    TGECEVENT_SNAPSHOT,             ///< [snapshot] 手动抓拍(=25)
+    TGECEVENT_CALL2,                ///< [call.2]呼叫按键2(=26)
 
     TGECEVENT_MAX,
-    TGECEVENT_USER_DEFINED = 255
+    TGECEVENT_USER_DEFINED = 255    ///< 自定义事件。使用方式见文档
 } TGECEVENT;
 
 /** Doorbell call state */
@@ -193,18 +198,18 @@ typedef enum ECBUFFERHINT {
 
 /** 事件上报参数 */
 typedef struct EVENTPARAM {
-    int cbSize;            ///< 本结构大小, =sizeof(EVENTPARAM)。调用者要设置此成员。用于以后结构变化
+    int cbSize;             ///< 本结构大小, =sizeof(EVENTPARAM)。调用者要设置此成员。用于以后结构变化
 
-    TGECEVENT     event;    ///< 事件类型. 参数(evt_data)见事件的说明
-    long int    tHappen;  ///< 事件发生时间
-    int status;           ///< 1:事件开始; 0:事件结束(暂不支持)
+    unsigned char event;    ///< 事件类型. 参数(evt_data)见事件的说明
+    long int tHappen;       ///< 事件发生时间
+    int status;             ///< 1:事件开始; 0:事件结束(暂不支持)
 
-    const char *jpg_pic;  ///< 图片指针。没有图片时为NULL
-    unsigned int pic_len; ///< 图片长度
+    const char *jpg_pic;    ///< 图片指针。没有图片时为NULL
+    unsigned int pic_len;   ///< 图片长度
 
 #define EPF_RELEASE_PIC_IN_SDK         0x01
 #define EPF_ONLY_AIEVENT_IF_SVCFORAI   0x02  // used internally by sdk
-    int    pass_ownership;  ///< 1:jpg_pic由sdk内部释放; 0:应用层自己管理jpg_pic空间
+    int pass_ownership;     ///< 1:jpg_pic由sdk内部释放; 0:应用层自己管理jpg_pic空间
 
     /** 特定事件相关参数.
      *  其值是个预定义常数或cJSON字符串. 
@@ -212,7 +217,7 @@ typedef struct EVENTPARAM {
      *  默认要设置为NULL */
     void *evt_data;
 
-    void *pic_extra;      ///< 图片的额外参数. 目前用于ai
+    void *pic_extra;        ///< 图片的额外参数. 目前用于ai
 } EVENTPARAM;
 
 /**@}*/
