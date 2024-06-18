@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   s.subspec 'BaseIOT' do |baseIOT|
     baseIOT.source_files = 'ios/Classes/BaseIOT/TGBaseIOT.framework/Headers/*.h'
     baseIOT.compiler_flags = '-DLINUX','-D__MAC_OS__'
-    baseIOT.ios.vendored_frameworks   = 'ios/Classes/**/*.framework'
-    baseIOT.ios.vendored_libraries = 'ios/Classes/**/*.a'
+    baseIOT.ios.vendored_frameworks   = 'ios/Classes/BaseIOT/**/*.framework'
+    baseIOT.ios.vendored_libraries = 'ios/Classes/BaseIOT/**/*.a'
     baseIOT.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
     baseIOT.libraries = 'c++','sqlite3.0','z','iconv','xml2'
     baseIOT.dependency 'DAAudioVideo'
@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
   end
   s.subspec 'CloudService' do |cloudService|
     cloudService.requires_arc            = true
-    cloudService.source_files = 'ios/Classes/CloudService/**/*.{h,m}'
-    cloudService.ios.vendored_frameworks = 'TGBaseIOT/Classes/OOS/OOS.framework'
+    cloudService.source_files = 'ios/Classes/CloudService/TGBaseIOTCloudService.framework/Headers/*.h'
+    cloudService.ios.vendored_frameworks = 'ios/Classes/CloudService/OOS.framework','ios/Classes/CloudService/TGBaseIOTCloudService.framework'
     cloudService.dependency 'QCloudCOSXML'
     cloudService.dependency 'QCloudCore'
     cloudService.dependency 'AliyunOSSiOS'

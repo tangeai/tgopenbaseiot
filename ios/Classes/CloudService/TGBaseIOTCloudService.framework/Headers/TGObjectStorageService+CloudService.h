@@ -5,7 +5,7 @@
 //  Created by liubin on 2024/6/18.
 //
 
-#import "TGObjectStorageService.h"
+#import <TGBaseIOT/TGObjectStorageService.h>
 #import <QCloudCOSXML/QCloudCOSXML.h>
 #import <AliyunOSSiOS/AliyunOSSiOS.h>
 #import <OOS/OOS.h>
