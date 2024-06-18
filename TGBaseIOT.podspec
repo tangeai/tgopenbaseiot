@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TGBaseIOT"
-  s.version = "2.3.9"
+  s.version = "2.3.9.01"
   s.summary = "A short description of TGCommonBaseModule."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"liubin"=>"liubin361163@163.com"}
@@ -12,23 +12,33 @@ Pod::Spec.new do |s|
   s.ios.deployment_target    = '12.1'
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__' }
-  s.source_files = 'ios/Classes/TGBaseIOT.framework/Headers/*.h'
-  s.ios.vendored_frameworks   = 'ios/Classes/**/*.framework'
-  s.ios.vendored_libraries = 'ios/Classes/**/*.a'
-  s.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
-  s.libraries = 'c++','sqlite3.0','z','iconv','xml2'
-  s.dependency 'DAAudioVideo'
-  s.dependency 'JSONKit','1.0.0'
-  s.dependency 'ZXingObjC'
-  s.dependency 'Masonry'
-  s.dependency 'AFNetworking'
-  s.dependency 'SVGKit','3.3.0'
-  s.dependency 'CocoaLumberjack'
-  s.dependency 'QCloudCOSXML'
-  s.dependency 'QCloudCore'
-  s.dependency 'AliyunOSSiOS'
-  s.dependency 'NTESVerifyCode'
-  s.dependency 'MJExtension'
-  s.dependency 'Socket.IO-Client-Swift','~> 15.2.0'
-  s.dependency 'BabyBluetooth','~> 0.7.0'
+  s.subspec 'BaseIOT' do |baseIOT|
+    baseIOT.source_files = 'ios/Classes/BaseIOT/TGBaseIOT.framework/Headers/*.h'
+    baseIOT.compiler_flags = '-DLINUX','-D__MAC_OS__'
+    baseIOT.ios.vendored_frameworks   = 'ios/Classes/**/*.framework'
+    baseIOT.ios.vendored_libraries = 'ios/Classes/**/*.a'
+    baseIOT.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
+    baseIOT.libraries = 'c++','sqlite3.0','z','iconv','xml2'
+    baseIOT.dependency 'DAAudioVideo'
+    baseIOT.dependency 'JSONKit','1.0.0'
+    baseIOT.dependency 'ZXingObjC'
+    baseIOT.dependency 'Masonry'
+    baseIOT.dependency 'AFNetworking'
+    baseIOT.dependency 'SVGKit','3.3.0'
+    baseIOT.dependency 'CocoaLumberjack'
+    baseIOT.dependency 'NTESVerifyCode'
+    baseIOT.dependency 'MJExtension'
+    baseIOT.dependency 'Socket.IO-Client-Swift','~> 15.2.0'
+    baseIOT.dependency 'BabyBluetooth','~> 0.7.0'
+  end
+  s.subspec 'CloudService' do |cloudService|
+    cloudService.requires_arc            = true
+    cloudService.source_files = 'ios/Classes/CloudService/**/*.{h,m}'
+    cloudService.ios.vendored_frameworks = 'TGBaseIOT/Classes/OOS/OOS.framework'
+    cloudService.dependency 'QCloudCOSXML'
+    cloudService.dependency 'QCloudCore'
+    cloudService.dependency 'AliyunOSSiOS'
+    cloudService.dependency 'AliyunOSSiOS'
+    cloudService.dependency 'TGBaseIOT/BaseIOT'
+  end
 end

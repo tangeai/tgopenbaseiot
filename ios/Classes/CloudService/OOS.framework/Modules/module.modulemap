@@ -1,0 +1,6 @@
+framework module OOS {
+  umbrella header "OOS.h"
+
+  export *
+  module * { export * }
+}
