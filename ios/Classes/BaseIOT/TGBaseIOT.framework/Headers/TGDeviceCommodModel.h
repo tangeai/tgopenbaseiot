@@ -559,6 +559,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TGGetPtzPosRespModel : NSObject
+
+@property (nonatomic, strong) TGPTZPos *pos;    ///< 位置
+@property (nonatomic, assign) int channel;      ///< 通道
+@property (nonatomic, assign) int psp_num;      ///< 如果是要转到预置位，此为预置位编号，否则为0 [2021.11.2]
+
+@end
+
 #pragma mark - 喇叭音量
 
 @interface TGDeviceVolume : NSObject

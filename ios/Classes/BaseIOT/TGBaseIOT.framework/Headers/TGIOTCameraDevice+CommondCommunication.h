@@ -65,6 +65,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 长按聚焦结束
 - (void)tg_deviceLongFocusEndWithChannel:(int)channel direction:(TGZoomFocusDirection)direction;
 
+// 获取当前坐标
+- (void)tg_getDevicePtzPosWithChannel:(TGPlayChannelType)channel successBlock:(void(^)(TGGetPtzPosRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
 // 输入位置定位镜头位置
 - (void)tg_setLocInPicWithChannel:(TGPlayChannelType)channel pos:(PtzPos)pos;
 
