@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NSString+TGBaseIOTString.h</key>
 		<data>
-		WGFFAAXT6ed8DK4iQN+ToXJ819o=
+		nYy3Xg9yILpJr8NpbfQQY/+i7II=
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		rhrNO9bV1w8F4WRbZUUbnih9K20=
+		15rnjN76DU5NMUaezr1azCSpDbk=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -307,11 +307,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WGFFAAXT6ed8DK4iQN+ToXJ819o=
+			nYy3Xg9yILpJr8NpbfQQY/+i7II=
 			</data>
 			<key>hash2</key>
 			<data>
-			hThLeNwwJMHmT8z28muNNhShRTruf+xwizmZi6Szn78=
+			J8Z4mzIVZqXxSRKHUPhmQ8YAE7AY3RA+YkvcB7SuyPw=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
@@ -516,11 +516,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rhrNO9bV1w8F4WRbZUUbnih9K20=
+			15rnjN76DU5NMUaezr1azCSpDbk=
 			</data>
 			<key>hash2</key>
 			<data>
-			HcObtUu7Ersry7jcGpTaU+0xBlZwi2hzhXTH5UH2FQ0=
+			9Ybzv2TY9PbYV9nHtRycTq329grxWcWfmXHhkeBeJ44=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>

@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSInteger)tgbaseiot_timeIntervalWithTimeString:(NSString *)timeString;
 + (BOOL)tgbaseiot_isEarlyWithDateStr:(NSString *)dateString relativeDateStr:(NSString *)relativeDateStr;
 + (BOOL)tgbaseiot_isLaterWithDateStr:(NSString *)dateString relativeDateStr:(NSString *)relativeDateStr;
-
++ (NSString *)tgbaseiot_changeCharWithBytes:(const void *)bytes length:(NSUInteger)length;
 @end
 
 NS_ASSUME_NONNULL_END

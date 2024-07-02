@@ -287,7 +287,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGMdPlogon : NSObject;
 
-@property (nonatomic, assign) int nPolygons;
+@property (nonatomic, assign) int nPoints;
 @property (nonatomic, strong) NSArray<TGPoint *> *pointArray;
 
 @end
