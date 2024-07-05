@@ -315,7 +315,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)setDeviceMicrophoneMuteState:(int)state;
 //查询设备蜂鸣器开关
 - (void)getDeviceBuzzer;
-//设置设备蜂鸣器开关
+//设置设备蜂鸣器开关 0-关闭 1-开启
 - (void)setDeviceBuzzerMode:(int)mode;
 //获取移动侦测
 - (void)getMoveDetect;

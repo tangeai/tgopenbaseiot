@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NSString+TGBaseIOTString.h</key>
 		<data>
-		nYy3Xg9yILpJr8NpbfQQY/+i7II=
+		3Rbioeg8Z46QPCFIqkzHcwugi5w=
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		t/kuW7avAavKzJ3cWamo0F7VIMk=
+		kYi79i9vdu08PvuPtj7qPkIl/zY=
 		</data>
-		<key>Headers/TGBaseIOTReportEventModel.h</key>
+		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
-		GHfOOmYwdulwJi5M9N9uKy6/QpQ=
+		ObFt6DWz6pGkKE7Z432GKoFz5ys=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		RF1EQwtVVo1w4e4rqSBxGY0oIlI=
+		bWdgPrcGEmCl1K8AVA5oo6cHvvU=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		3dSND7hOXQbXPy9bP5ofd4tDI1w=
+		ZN9g4EQkQcAv44AsUNjZmwYMAlA=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/TGCloudEventModel.h</key>
 		<data>
-		d2pNgGSq1bVfZ/F+8ag7T8KkDQE=
+		G0C2N3ZBZrj/CJpdTULbzm6OZDs=
 		</data>
 		<key>Headers/TGCloudVideoCommonTool.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		3jhdQIyj16koF0g9SqKkmc7iT8Q=
+		XM8iva0QNyeSU4pKHA1krat3R9g=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -180,122 +180,6 @@
 		<data>
 		3Th3HxH2SCZnyVzKAPxUUxIuV00=
 		</data>
-		<key>NTESVerifyCodeResources.bundle/Rectangle@1x.png</key>
-		<data>
-		5HNZYkEvZek3vq2IdAmmRIPcEZo=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/Rectangle@2x.png</key>
-		<data>
-		qFpvYOWlzGjZOtniqVaEBXRwlKU=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/Rectangle@3x.png</key>
-		<data>
-		ENs2m2CxPEDLJF7jg0YUQd4ZhRI=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@1x.png</key>
-		<data>
-		sIWXzJSsBEfkNVBwp0TDgkzymRA=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@2x.png</key>
-		<data>
-		BzuK9pGbmGeABPJW0TvwzAfC8os=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@3x.png</key>
-		<data>
-		pI13qRfOxLTQV8sxdy4/SjQG5rY=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/bg@1x.png</key>
-		<data>
-		OLOexupwzgdpqWfqE0LlDjyrEDo=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/bg@2x.png</key>
-		<data>
-		azBcRvJisT9EZSESNR4WGMfXPU0=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/bg@3x.png</key>
-		<data>
-		4aOQaWmEStPDQPH59H9N6svLtQ8=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/bg_dark@1x.png</key>
-		<data>
-		pwwYSc4bBZBsS2FE4hoQ9F7lJL0=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/bg_dark@2x.png</key>
-		<data>
-		h66UGqfJ6cX0Q9s8i9+3BeK+Jj4=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/bg_dark@3x.png</key>
-		<data>
-		feo1g+jXDsPFhogi5Pc51zjlPy0=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_close2@1x.png</key>
-		<data>
-		W/naGxuc1YgSLPP4nCTCURlHSzQ=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_close2@2x.png</key>
-		<data>
-		H7mMqG4RQViSWbhfORiOyn6gEuo=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_close2@3x.png</key>
-		<data>
-		e0cojzQLvdueJWIMZYYAOw585i8=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_error@1x.png</key>
-		<data>
-		zCUeVIPWg9ZtTq0VXs82NT+WfGs=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_error@2x.png</key>
-		<data>
-		+N8NKE43yrFUwsfEQusuhBamzDY=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_error@3x.png</key>
-		<data>
-		zlL3WDZUQmwZevuGYWjXxx4M104=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_error_dark@1x.png</key>
-		<data>
-		+NWtjtdJohfq5fBDK9UPsrbFSp4=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_error_dark@2x.png</key>
-		<data>
-		9j1MjUdN0gM4N1MvX1kdEeMYQLw=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_error_dark@3x.png</key>
-		<data>
-		LypanagcEd2z4MBloBb7ebzZyds=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_loading@1x.png</key>
-		<data>
-		EZwcded8F4tKEfTwl/5jmvkLVCo=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_loading@2x.png</key>
-		<data>
-		NaPKJxYAGmoCFgE8PKjfXZlbU5M=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/ico_loading@3x.png</key>
-		<data>
-		NAA0talvMqlvAN8Kdx3CzyLKmzI=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/icon_close_dark@1x.png</key>
-		<data>
-		NHQvEZHtkrhp+oHzgEhfs0Wx33c=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/icon_close_dark@2x.png</key>
-		<data>
-		pf6vlzCDey1xD1rqkPmzweISmu8=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/icon_close_dark@3x.png</key>
-		<data>
-		4zbCx7g5YptxgQFfQBxC1OipFyE=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/loading.gif</key>
-		<data>
-		CGPi1gO+FzRgXNKo2eXlqQhv6A0=
-		</data>
-		<key>NTESVerifyCodeResources.bundle/mobile.v2.13.6.html</key>
-		<data>
-		mu3SU07GHtfGS55bztDreExuOqM=
-		</data>
 		<key>README.md</key>
 		<data>
 		b4o4S0FFOnqaiWjuqd9NaH3FnyY=
@@ -307,11 +191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nYy3Xg9yILpJr8NpbfQQY/+i7II=
+			3Rbioeg8Z46QPCFIqkzHcwugi5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			J8Z4mzIVZqXxSRKHUPhmQ8YAE7AY3RA+YkvcB7SuyPw=
+			m4emVIcMnuCEzrQ7JJkAYJxI/+0wYTe0NFL7r96cpbs=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
@@ -329,22 +213,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t/kuW7avAavKzJ3cWamo0F7VIMk=
+			kYi79i9vdu08PvuPtj7qPkIl/zY=
 			</data>
 			<key>hash2</key>
 			<data>
-			oJTXVB0qM020zdGWSwb/rtEM1lXMgVJBWh1tuAzPJEM=
+			3p3vDY9pcqcKWH6iF5tGCXnv0pnMrX9eVn7Dxui66Sw=
 			</data>
 		</dict>
-		<key>Headers/TGBaseIOTReportEventModel.h</key>
+		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GHfOOmYwdulwJi5M9N9uKy6/QpQ=
+			ObFt6DWz6pGkKE7Z432GKoFz5ys=
 			</data>
 			<key>hash2</key>
 			<data>
-			d185JftTNOHNOQD5x2xxZMYUqei0K6H+OZBc21T2AKg=
+			KMAsmpgcspKNURPKXtSYbVXvFQPT4xHUGGSOQL//xIw=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -406,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RF1EQwtVVo1w4e4rqSBxGY0oIlI=
+			bWdgPrcGEmCl1K8AVA5oo6cHvvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			W8Hzkeom9a/aJ9crMUvQuX5RLzBaQaPumXXrLgpblPM=
+			/BPWXBJzcbgTVpn7NIDWWs2E668Bx4DX9lStWJWAF8M=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
@@ -450,11 +334,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3dSND7hOXQbXPy9bP5ofd4tDI1w=
+			ZN9g4EQkQcAv44AsUNjZmwYMAlA=
 			</data>
 			<key>hash2</key>
 			<data>
-			apVj2EN+dilfsAcs2u0+Kzu3YAHmly98I1JHbg6UVuk=
+			/VF1AAzoFs0He+T45+7sLDHlc8j2hhkeU8MA7bapk/A=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -472,11 +356,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d2pNgGSq1bVfZ/F+8ag7T8KkDQE=
+			G0C2N3ZBZrj/CJpdTULbzm6OZDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			4R57hxm4sofl3RzhGYW/VX+yhJuWWGyK5zGgcoDPKu0=
+			l7WnMX7H8Uu/6YdxjnAdfc/vGvR6B7oF6e3TQnOb9e8=
 			</data>
 		</dict>
 		<key>Headers/TGCloudVideoCommonTool.h</key>
@@ -604,11 +488,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3jhdQIyj16koF0g9SqKkmc7iT8Q=
+			XM8iva0QNyeSU4pKHA1krat3R9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			qptFYI8euj02ZQylEHnK4+X4mJ7FDYGfsSTwu1ugaWM=
+			5Bhou5IcExtg0FII7X48K5NbMqthrk+jftlidzqOo1w=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -774,325 +658,6 @@
 			<key>hash2</key>
 			<data>
 			3a72x+JBQTo+KHxjM1DItCrHpOCN9r6p+RwPdPbKSyk=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/Rectangle@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5HNZYkEvZek3vq2IdAmmRIPcEZo=
-			</data>
-			<key>hash2</key>
-			<data>
-			/oj13R5KdfQt3390zE6K5+fAPD1EdfgiQdKAT66mg40=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/Rectangle@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qFpvYOWlzGjZOtniqVaEBXRwlKU=
-			</data>
-			<key>hash2</key>
-			<data>
-			qanIxm1W/GQO1+I8htBxmgypaVK/gb51OlzN+RtsoPI=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/Rectangle@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ENs2m2CxPEDLJF7jg0YUQd4ZhRI=
-			</data>
-			<key>hash2</key>
-			<data>
-			40aOslY4OnVMDv92AuXdvzIEH4S9EAEZZBSeJF3RwtU=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sIWXzJSsBEfkNVBwp0TDgkzymRA=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ut3hFbDrgNc88djRhKVf8phYx/PSXlUzd7AgV9vRMsQ=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BzuK9pGbmGeABPJW0TvwzAfC8os=
-			</data>
-			<key>hash2</key>
-			<data>
-			YjLtFWZIk9Nl/ejQ4rw8dIHG4gOxMpMU6JQzrubmlW4=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/Rectangle_dark@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pI13qRfOxLTQV8sxdy4/SjQG5rY=
-			</data>
-			<key>hash2</key>
-			<data>
-			FMAK0LPqv7FZTi1Zl88ryazxKo1kwXG7wyl2IuufmPw=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/bg@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OLOexupwzgdpqWfqE0LlDjyrEDo=
-			</data>
-			<key>hash2</key>
-			<data>
-			p4g9jW8GHeQQbRGbXSVl9afCMlh3wS/BrxeJEZ4Zrvg=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/bg@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			azBcRvJisT9EZSESNR4WGMfXPU0=
-			</data>
-			<key>hash2</key>
-			<data>
-			G4no3K4VoID150s4yndgezFKsx30FNd06CKu5wcTX40=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/bg@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4aOQaWmEStPDQPH59H9N6svLtQ8=
-			</data>
-			<key>hash2</key>
-			<data>
-			CTRUbn6HFTKuPepjmNLgdNkYjIkjs6K3pi9OPPgR6ww=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/bg_dark@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pwwYSc4bBZBsS2FE4hoQ9F7lJL0=
-			</data>
-			<key>hash2</key>
-			<data>
-			3s0rQ3bzYknMJYlOLn+7R3Ud6YF8afm2NpdtRz4c4o4=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/bg_dark@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h66UGqfJ6cX0Q9s8i9+3BeK+Jj4=
-			</data>
-			<key>hash2</key>
-			<data>
-			gzhcE7AWp+OJNVJjcAv+YKfOSoSJ+MJFw7RdiYfGUFw=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/bg_dark@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			feo1g+jXDsPFhogi5Pc51zjlPy0=
-			</data>
-			<key>hash2</key>
-			<data>
-			Bq5xArg11y6Rm2GngsvY9XSUmy8MlPQC3z2mdMg+XtM=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_close2@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W/naGxuc1YgSLPP4nCTCURlHSzQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			Uy4ANTLuWP1zRSQzDx9qfrk/EVJ+qhzTR/+YklEsOuw=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_close2@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			H7mMqG4RQViSWbhfORiOyn6gEuo=
-			</data>
-			<key>hash2</key>
-			<data>
-			SsgdkeNn4xX6IhM1+59OcAfLdJlRLAGV5OFfbh/3j8Y=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_close2@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			e0cojzQLvdueJWIMZYYAOw585i8=
-			</data>
-			<key>hash2</key>
-			<data>
-			6Y+pA8OoVFmarjqjw1tcuvWcn3qeWzeKb7NWjqjsP9E=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_error@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zCUeVIPWg9ZtTq0VXs82NT+WfGs=
-			</data>
-			<key>hash2</key>
-			<data>
-			DNRotsbr9KNCrzZAUS/a3FjuTEhGmtySWxx653SYYkU=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_error@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+N8NKE43yrFUwsfEQusuhBamzDY=
-			</data>
-			<key>hash2</key>
-			<data>
-			sh6O/9I2/z7xW+b/d/RHFP5j3kfmOwf1Qm3sjVgESs8=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_error@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zlL3WDZUQmwZevuGYWjXxx4M104=
-			</data>
-			<key>hash2</key>
-			<data>
-			efp2AEDLFS0kLdi8xerb5oMrH+xpiw5f+eyA0r7DmGg=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_error_dark@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+NWtjtdJohfq5fBDK9UPsrbFSp4=
-			</data>
-			<key>hash2</key>
-			<data>
-			d7vWBC6IN11/n5cVLG39OfkCReC1AYGD+6A9qMx4Mxw=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_error_dark@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9j1MjUdN0gM4N1MvX1kdEeMYQLw=
-			</data>
-			<key>hash2</key>
-			<data>
-			Okgmr5kLL4BoHxp4/nE/6pUNh2hk/0DY4TVblKt7eT8=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_error_dark@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LypanagcEd2z4MBloBb7ebzZyds=
-			</data>
-			<key>hash2</key>
-			<data>
-			1DMLnNOq8tDCRjdlmUYwNj6UHdhH3o+Jqfev21MmgRo=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_loading@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EZwcded8F4tKEfTwl/5jmvkLVCo=
-			</data>
-			<key>hash2</key>
-			<data>
-			snO5qtu1DcB2rm2yGF6mBNP0BaBT2LOK3jyydOfvM44=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_loading@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NaPKJxYAGmoCFgE8PKjfXZlbU5M=
-			</data>
-			<key>hash2</key>
-			<data>
-			f2ISNLUTn7qyaxTm3u50azmBhRN8Ao82ffYDQbxNn34=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/ico_loading@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NAA0talvMqlvAN8Kdx3CzyLKmzI=
-			</data>
-			<key>hash2</key>
-			<data>
-			URkL/Ivx/06MqZrAlnD80b5Gb2sZgx34jj7rpdAuPqw=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/icon_close_dark@1x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NHQvEZHtkrhp+oHzgEhfs0Wx33c=
-			</data>
-			<key>hash2</key>
-			<data>
-			lMUSLoWbNqHxjWgKw101VFyAIymaEoHg7jhMY4sqdoI=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/icon_close_dark@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pf6vlzCDey1xD1rqkPmzweISmu8=
-			</data>
-			<key>hash2</key>
-			<data>
-			aDXpamTpCPT5k0uFk9RZ18voBLqSssrRVqwWboY4JWc=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/icon_close_dark@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4zbCx7g5YptxgQFfQBxC1OipFyE=
-			</data>
-			<key>hash2</key>
-			<data>
-			yudqx7/EtgauMOyUZ7Ofc5NZGaeXAhI5g4EygAp2OMs=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/loading.gif</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CGPi1gO+FzRgXNKo2eXlqQhv6A0=
-			</data>
-			<key>hash2</key>
-			<data>
-			1MdlQrpWQNKVE76dLcOlMnChq5ku8gB3cbxqkFMEGKc=
-			</data>
-		</dict>
-		<key>NTESVerifyCodeResources.bundle/mobile.v2.13.6.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mu3SU07GHtfGS55bztDreExuOqM=
-			</data>
-			<key>hash2</key>
-			<data>
-			w/WO6mA7yYR8Pb9P7vMQHqYmNlTvccgKciDDdGE/910=
 			</data>
 		</dict>
 		<key>README.md</key>
