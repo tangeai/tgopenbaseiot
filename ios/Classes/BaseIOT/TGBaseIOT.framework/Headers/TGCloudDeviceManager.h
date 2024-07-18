@@ -10,7 +10,7 @@
 #import "TGCloudDownloadModel.h"
 #import "TGCloudEventModel.h"
 #import <DAAudioVideo/DAAudioVideo.h>
-#import "TGCameraDeviceModel.h"
+#import <TGBaseIOT/TGCameraDeviceModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

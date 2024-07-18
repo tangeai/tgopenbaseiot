@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TGCameraDefine.h"
+#import <TGBaseIOT/TGCameraDefine.h>
 #import "TGBaseIOTDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
