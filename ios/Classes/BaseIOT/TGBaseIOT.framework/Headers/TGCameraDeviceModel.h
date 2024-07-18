@@ -81,7 +81,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *p2pType;
 @property (nonatomic, copy) NSString *p2p_platform;
 @property (nonatomic, copy) NSString *p2pStateServer;
-@property (nonatomic, strong) NSArray *webrtcInfo;
+@property (nonatomic, copy) NSArray *webrtcInfo;
+@property (nonatomic, copy) NSString *webrtcInfo2;
 
 #pragma mark - coreImage
 

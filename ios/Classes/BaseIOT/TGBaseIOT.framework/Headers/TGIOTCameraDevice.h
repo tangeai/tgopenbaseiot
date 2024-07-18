@@ -152,7 +152,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 // 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像
 - (void)getCameraSDCardRecordModelListWithDate:(NSString *)date successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
 // 获取卡录像列表，返回数据，可自行解析
-- (void)getCameraSDCardRecordListWithDate:(NSString *)date callBack:(void(^__nullable)(const char *data,int ctrolType,int errorCode))callBack;
+- (void)getCameraSDCardRecordListWithDate:(NSString *)date callBack:(TGSDCardRecordListBlock)callBack;
 // 设置当前时间点的卡录像播放资源
 - (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint;
 // 播放卡录像
@@ -315,7 +315,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)setDeviceMicrophoneMuteState:(int)state;
 //查询设备蜂鸣器开关
 - (void)getDeviceBuzzer;
-//设置设备蜂鸣器开关
+//设置设备蜂鸣器开关 0-关闭 1-开启
 - (void)setDeviceBuzzerMode:(int)mode;
 //获取移动侦测
 - (void)getMoveDetect;

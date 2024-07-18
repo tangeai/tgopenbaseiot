@@ -311,6 +311,11 @@ RTC_OBJC_EXPORT
 - (void)offerForConstraints:(RTC_OBJC_TYPE(RTCMediaConstraints) *)constraints
           completionHandler:(RTCCreateSessionDescriptionCompletionHandler)completionHandler;
 
+- (NSString*)startCall:(NSString *)config
+                      appID:(NSString *)appID
+                   deviceID:(NSString *)deviceID;
+
+
 /** Generate an SDP answer. */
 - (void)answerForConstraints:(RTC_OBJC_TYPE(RTCMediaConstraints) *)constraints
            completionHandler:(RTCCreateSessionDescriptionCompletionHandler)completionHandler;

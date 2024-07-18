@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NSString+TGBaseIOTString.h</key>
 		<data>
-		nYy3Xg9yILpJr8NpbfQQY/+i7II=
+		3Rbioeg8Z46QPCFIqkzHcwugi5w=
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
@@ -14,11 +14,15 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		Kt0WDTVLpXh/Nw/A7SwIl+XpjBA=
+		kYi79i9vdu08PvuPtj7qPkIl/zY=
+		</data>
+		<key>Headers/TGBaseIOTReportEvent.h</key>
+		<data>
+		ObFt6DWz6pGkKE7Z432GKoFz5ys=
 		</data>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<data>
-		GHfOOmYwdulwJi5M9N9uKy6/QpQ=
+		8t+DxJ42asLE3c/iOyh7h09vA7E=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		RF1EQwtVVo1w4e4rqSBxGY0oIlI=
+		bWdgPrcGEmCl1K8AVA5oo6cHvvU=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		3dSND7hOXQbXPy9bP5ofd4tDI1w=
+		ZN9g4EQkQcAv44AsUNjZmwYMAlA=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>Headers/TGCloudEventModel.h</key>
 		<data>
-		d2pNgGSq1bVfZ/F+8ag7T8KkDQE=
+		G0C2N3ZBZrj/CJpdTULbzm6OZDs=
 		</data>
 		<key>Headers/TGCloudVideoCommonTool.h</key>
 		<data>
@@ -114,7 +118,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		3jhdQIyj16koF0g9SqKkmc7iT8Q=
+		uWolaHFJVup7XaTbQS0gNjmRVts=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -158,7 +162,7 @@
 		</data>
 		<key>Headers/TGVideoCamera.h</key>
 		<data>
-		GQ48znLYeFKf6hwKglH0IxbwPp8=
+		BnFNHbxiRKkoBAducHHYSrrdWW8=
 		</data>
 		<key>Headers/TGVideoConfigModel.h</key>
 		<data>
@@ -307,11 +311,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nYy3Xg9yILpJr8NpbfQQY/+i7II=
+			3Rbioeg8Z46QPCFIqkzHcwugi5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			J8Z4mzIVZqXxSRKHUPhmQ8YAE7AY3RA+YkvcB7SuyPw=
+			m4emVIcMnuCEzrQ7JJkAYJxI/+0wYTe0NFL7r96cpbs=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
@@ -329,22 +333,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kt0WDTVLpXh/Nw/A7SwIl+XpjBA=
+			kYi79i9vdu08PvuPtj7qPkIl/zY=
 			</data>
 			<key>hash2</key>
 			<data>
-			l/8blqkMUGwOvBpv1NSOBBA/6EUooLJKjPZmArGEfG8=
+			3p3vDY9pcqcKWH6iF5tGCXnv0pnMrX9eVn7Dxui66Sw=
+			</data>
+		</dict>
+		<key>Headers/TGBaseIOTReportEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ObFt6DWz6pGkKE7Z432GKoFz5ys=
+			</data>
+			<key>hash2</key>
+			<data>
+			KMAsmpgcspKNURPKXtSYbVXvFQPT4xHUGGSOQL//xIw=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GHfOOmYwdulwJi5M9N9uKy6/QpQ=
+			8t+DxJ42asLE3c/iOyh7h09vA7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			d185JftTNOHNOQD5x2xxZMYUqei0K6H+OZBc21T2AKg=
+			dJO7El3rRJ7eX3fCV45LeJ/Ac7TmTDCvPw6XoSBefYE=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -406,11 +421,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RF1EQwtVVo1w4e4rqSBxGY0oIlI=
+			bWdgPrcGEmCl1K8AVA5oo6cHvvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			W8Hzkeom9a/aJ9crMUvQuX5RLzBaQaPumXXrLgpblPM=
+			/BPWXBJzcbgTVpn7NIDWWs2E668Bx4DX9lStWJWAF8M=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
@@ -450,11 +465,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3dSND7hOXQbXPy9bP5ofd4tDI1w=
+			ZN9g4EQkQcAv44AsUNjZmwYMAlA=
 			</data>
 			<key>hash2</key>
 			<data>
-			apVj2EN+dilfsAcs2u0+Kzu3YAHmly98I1JHbg6UVuk=
+			/VF1AAzoFs0He+T45+7sLDHlc8j2hhkeU8MA7bapk/A=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -472,11 +487,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d2pNgGSq1bVfZ/F+8ag7T8KkDQE=
+			G0C2N3ZBZrj/CJpdTULbzm6OZDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			4R57hxm4sofl3RzhGYW/VX+yhJuWWGyK5zGgcoDPKu0=
+			l7WnMX7H8Uu/6YdxjnAdfc/vGvR6B7oF6e3TQnOb9e8=
 			</data>
 		</dict>
 		<key>Headers/TGCloudVideoCommonTool.h</key>
@@ -604,11 +619,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3jhdQIyj16koF0g9SqKkmc7iT8Q=
+			uWolaHFJVup7XaTbQS0gNjmRVts=
 			</data>
 			<key>hash2</key>
 			<data>
-			qptFYI8euj02ZQylEHnK4+X4mJ7FDYGfsSTwu1ugaWM=
+			PYaXc6Me9Mjs7vBdgqrF2WL3lP38I/rXO15AO9NhFrY=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -725,11 +740,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GQ48znLYeFKf6hwKglH0IxbwPp8=
+			BnFNHbxiRKkoBAducHHYSrrdWW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			oH8yVhFToaMq3WOpqRAOS8dr64ORVN4geG4Az3QkwFU=
+			8hwk096j+c9D7IRMNziqfNOQbnIC2Vk1dZVEapq9iWk=
 			</data>
 		</dict>
 		<key>Headers/TGVideoConfigModel.h</key>
