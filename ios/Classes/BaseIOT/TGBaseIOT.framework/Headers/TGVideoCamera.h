@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TGVideoCameraDelegate <NSObject>
 
-- (void)videoSessionManagerDidRecordWithData:(void *)data length:(unsigned int)length config:(TGVideoConfigModel *)config frameFlag:(ENUM_FRAMEFLAG)flag;
+- (void)videoSessionManagerDidRecordWithData:(char *)data length:(unsigned int)length config:(TGVideoConfigModel *)config frameFlag:(ENUM_FRAMEFLAG)flag;
 
 @end
 
@@ -21,10 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <TGVideoCameraDelegate>delegate;
 
-//+ (instancetype)shareVideoCamera;
-
 //采集参数设置
--(int)doCapturePrepare:(TGVideoConfigModel *)config;
+- (int)doCapturePrepare:(TGVideoConfigModel *)config;
 
 // 开始采样
 - (void)start:(TGVideoConfigModel *)config;
@@ -33,12 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 切换摄像头
 - (void)switchCamera;
 
-+ (BOOL)tg_isHardwareDecodeSupportedH265;
-
-- (void)setupVideoRecordingWithPath:(NSString *)path;
+- (BOOL)setupAssetWriterWithURL:(NSURL *)url;
 - (void)startRecording;
 - (void)stopRecording;
-- (void)appendSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 
 @end
 
