@@ -186,13 +186,21 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
  */
 - (void)stopCameraSDCardRecord DEPRECATED_MSG_ATTRIBUTE("Use -stopCameraVideoRecord instead");
 
-
 /**
  * 开始录制视频
  * @param fileName 文件名称
  * @param recordType 录制类型
  */
 - (void)startCameraVideoRecordWithFileName:(NSString *)fileName recordType:(TGVideoRecordType)recordType;
+
+/**
+ * 开始录制指定分辨率的视频
+ * @param fileName 文件名称
+ * @param recordType 录制类型
+ * @param width  宽
+ * @param height 高
+ */
+- (void)startCameraVideoRecordWithFileName:(NSString *)fileName recordType:(TGVideoRecordType)recordType widthPixel:(int)width heightPixel:(int)height;
 
 /**
  * 停止录制
