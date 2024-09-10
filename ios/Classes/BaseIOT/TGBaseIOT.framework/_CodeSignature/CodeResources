@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		WvGWqizR3Rx8fAs2qHRhHSuFWw4=
+		pf0GDhji/XGtlrR2XxIzTSlHSWU=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -27,6 +27,10 @@
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
 		apC2gacHAQda43IkhSBN+wZoFzk=
+		</data>
+		<key>Headers/TGBaseIOTSocketManager.h</key>
+		<data>
+		zeVpRf2Q6Qg7jmEcU7PTIcd96cM=
 		</data>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		15rnjN76DU5NMUaezr1azCSpDbk=
+		vnyedDOpqE8mrm0WKMWmKKcH/is=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -151,10 +155,6 @@
 		<key>Headers/TGResolutionModel.h</key>
 		<data>
 		J8GBZbN5RKVX/3NIbcVhWTEsrl4=
-		</data>
-		<key>Headers/TGSocketIOManager.h</key>
-		<data>
-		L00cyMYLY2X2wWoBYYhVRfRpBJk=
 		</data>
 		<key>Headers/TGTimerTaskModel.h</key>
 		<data>
@@ -333,11 +333,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WvGWqizR3Rx8fAs2qHRhHSuFWw4=
+			pf0GDhji/XGtlrR2XxIzTSlHSWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			iSe2XEZlLF9v2+ABUir6eIgiOPb+Oq+Q4jA+st0AMLc=
+			gAUy/NbaLZbFooV4+7SjO0uRSccFRFW72OEtWN18Q28=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -371,6 +371,17 @@
 			<key>hash2</key>
 			<data>
 			VQx1m/zz33XzNxM4+cFEs2/W/4E9/B1VgiWkVZ5965w=
+			</data>
+		</dict>
+		<key>Headers/TGBaseIOTSocketManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zeVpRf2Q6Qg7jmEcU7PTIcd96cM=
+			</data>
+			<key>hash2</key>
+			<data>
+			XJG4Kv1Hg6K+SOrD481NaUrEkxHeF5Z/5Rosj+efqiI=
 			</data>
 		</dict>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
@@ -531,11 +542,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			15rnjN76DU5NMUaezr1azCSpDbk=
+			vnyedDOpqE8mrm0WKMWmKKcH/is=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Ybzv2TY9PbYV9nHtRycTq329grxWcWfmXHhkeBeJ44=
+			/4AM6hZputJIDFVKy6h12BjnC3AbPl/5rp5K5nfASaE=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -712,17 +723,6 @@
 			<key>hash2</key>
 			<data>
 			W2NalO3vDm4tRkYo0gpcy2Sy6Sg4ndtw92m+n9eF1kg=
-			</data>
-		</dict>
-		<key>Headers/TGSocketIOManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			L00cyMYLY2X2wWoBYYhVRfRpBJk=
-			</data>
-			<key>hash2</key>
-			<data>
-			uRDR9DvhhKI7WzU6ghKM96QlvqbgVgp6INH3Vod0zfs=
 			</data>
 		</dict>
 		<key>Headers/TGTimerTaskModel.h</key>

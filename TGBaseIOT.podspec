@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TGBaseIOT"
-  s.version = "2.3.9.3"
+  s.version = "2.4.0"
   s.summary = "A short description of TGCommonBaseModule."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"liubin"=>"liubin361163@163.com"}
@@ -28,8 +28,9 @@ Pod::Spec.new do |s|
     baseIOT.dependency 'CocoaLumberjack'
     baseIOT.dependency 'NTESVerifyCode'
     baseIOT.dependency 'MJExtension'
-    baseIOT.dependency 'Socket.IO-Client-Swift','~> 15.2.0'
+   # baseIOT.dependency 'Socket.IO-Client-Swift','~> 15.2.0'
     baseIOT.dependency 'BabyBluetooth','~> 0.7.0'
+    baseIOT.dependency 'SocketRocket'
   end
   s.subspec 'CloudService' do |cloudService|
     cloudService.requires_arc            = true

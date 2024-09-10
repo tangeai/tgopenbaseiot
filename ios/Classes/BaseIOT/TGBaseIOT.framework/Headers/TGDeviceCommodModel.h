@@ -167,7 +167,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGDeviceSetRecordingRespModel : NSObject
 
-@property (nonatomic, assign) int result;   // 1 ok , !1 no ok
+@property (nonatomic, assign) int result;   // 0 ok , !0 no ok
 @property (nonatomic, copy) NSString *reserved;
 
 @end

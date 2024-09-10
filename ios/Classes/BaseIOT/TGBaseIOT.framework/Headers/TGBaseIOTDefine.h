@@ -153,13 +153,19 @@ typedef NS_ENUM(NSInteger, TGBluetoothConnectState) {
     TGBluetoothConnectState_DisConnected
 };
 
+typedef NS_ENUM(NSInteger, TGBaseIOTReportStreamingType) {
+    TGBaseIOTStreamingLiveType,
+    TGBaseIOTStreamingSdcardType,
+    TGBaseIOTStreamingCloudType
+};
+
 #define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
 #define TGBaseIOT_SCREENHEIGHT                          (MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
 #define TGBaseIOT_RelativeWidthX(value)                 (TGBaseIOT_SCREENWIDTH * value / 375.0f)
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"23930000"
+#define TGBaseIOTSDKVersion                             @"24000000"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50
@@ -203,5 +209,6 @@ typedef NS_ENUM(NSInteger, TGBluetoothConnectState) {
 #define TGBaseIOT_DidReceiveUploadAppLog                @"TG_DidReceiveUploadAppLog"
 
 #define TGBaseIOT_DeviceEventChangeStatus               @"TGBaseIOT_DeviceEventChangeStatus"
+#define TGBaseIOT_NetWorkChange                         @"TGBASEIOT_NOTICE_NETWORK_STATUS_CHANGED"
 
 #endif /* TGBaseIOTDefine_h */
