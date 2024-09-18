@@ -159,6 +159,14 @@ typedef NS_ENUM(NSInteger, TGBaseIOTReportStreamingType) {
     TGBaseIOTStreamingCloudType
 };
 
+typedef NS_ENUM(NSInteger, TGAddDeviceErrorCode) {
+    TGAddDeviceErrorCode_Unknown,
+    TGAddDeviceErrorCode_InnerError,
+    TGAddDeviceErrorCode_TimeOut
+};
+
+#define TGBaseIOTAddDeviceErrorDomain                   @"com.tange365.TGBaseIOTAddDeviceErrorDomain"
+
 #define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
 #define TGBaseIOT_SCREENHEIGHT                          (MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
 #define TGBaseIOT_RelativeWidthX(value)                 (TGBaseIOT_SCREENWIDTH * value / 375.0f)

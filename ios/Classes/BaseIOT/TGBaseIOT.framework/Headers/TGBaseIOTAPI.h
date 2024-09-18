@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)tg_getUserId;
 /// 获取SDK版本号
 - (NSString *)tg_getSDKNumber;
+/// 退出登录时清除数据
+- (void)tg_clearUserData;
 
 #pragma mark - log
 

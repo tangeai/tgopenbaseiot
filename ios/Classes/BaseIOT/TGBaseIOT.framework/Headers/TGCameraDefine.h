@@ -1774,7 +1774,7 @@ typedef struct PresetPointArray {
     uint16_t n_psp;                 ///< 预置位数组大小
     uint8_t type;                   ///< psp_type预置位类型
     uint8_t channel;                ///<在TCI_CMD_GET_PSP 的应答中，为与请求匹配的通道号。设置时为0，因为请求结构中有定义channel字段
-
+    
     /** 预置位数组 */
     union unionPSP {
         /** 用编号表示的预置位,type=PSP_BY_NO */
@@ -1783,7 +1783,7 @@ typedef struct PresetPointArray {
             uint16_t num;           ///< 预置位编号: 1~n_psp. 0保留
             char name[32];          ///< 预置位名称
         } pspn[0];                  ///< type = @ref PSP_BY_NO, 用编号表示的预置位
-
+        
         /** 用编号表示的预置位, 没有名字. type=PSP_BY_NO_NONAME */
         struct pspn_noname {
             uint16_t flags;         ///< 预置标志. 0 或 @ref PSP_F_DISABLED 或 其它 @ref psp_flags PSP_F_xxx 的组合

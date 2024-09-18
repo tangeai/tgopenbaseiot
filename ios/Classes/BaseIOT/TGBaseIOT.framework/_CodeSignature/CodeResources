@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		G19CIoi82ieIj9t/NsR2JP/Rjs4=
+		C8L4q3e9zIkGnMVYVyjOK0Yrzj4=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		pf0GDhji/XGtlrR2XxIzTSlHSWU=
+		HmjXdwj0AhVeBRXATZ47WSYLk+o=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		usbanw7bQTVHKl/Mwowjvbe0Wzs=
+		X5vNi5QxVxhCtg0AMkbs6t3/OgA=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>Headers/TGVideoCamera.h</key>
 		<data>
-		w+mE9dXtfsko7uqz1TZPQ+XJ6EM=
+		Td0ENyR26SJjQrjJKnctAplhlYc=
 		</data>
 		<key>Headers/TGVideoConfigModel.h</key>
 		<data>
-		vJjLDuEdYqP1GuRCEp85+p4De8o=
+		vRC5N8IklRUc83qki4Q7Mi2ScKg=
 		</data>
 		<key>Headers/TGWatchPosModel.h</key>
 		<data>
@@ -322,22 +322,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G19CIoi82ieIj9t/NsR2JP/Rjs4=
+			C8L4q3e9zIkGnMVYVyjOK0Yrzj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			QDv8NKc1avf0em0yr6ZxjMQZEJgiAtU4IFoaJRu1WhE=
+			eZq1WjSp39ybygTAuqdctsNL5Q3Y2BnuTu0GxmTQfRc=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pf0GDhji/XGtlrR2XxIzTSlHSWU=
+			HmjXdwj0AhVeBRXATZ47WSYLk+o=
 			</data>
 			<key>hash2</key>
 			<data>
-			gAUy/NbaLZbFooV4+7SjO0uRSccFRFW72OEtWN18Q28=
+			XbRWWPdM4n9budVIT2fEGsAZ75w6a8HDegRHPtCwmps=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -399,11 +399,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			usbanw7bQTVHKl/Mwowjvbe0Wzs=
+			X5vNi5QxVxhCtg0AMkbs6t3/OgA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cZUVg0c+YTT4uTk703kGK7dHf3Z8Nrjy+Xf7JAQlMck=
+			5UbBpYd3+/ccY00KMzDJZjx0UXTDak0fEtcSSxsHpt8=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -740,22 +740,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w+mE9dXtfsko7uqz1TZPQ+XJ6EM=
+			Td0ENyR26SJjQrjJKnctAplhlYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			QI1cusdw3mNzebPb9Ywl+/ikGSp16RHuASFaAtxRAv0=
+			+MNsJgOBu7EIxWmtfuJSz7QzBcfxlhmorg487FLfJxc=
 			</data>
 		</dict>
 		<key>Headers/TGVideoConfigModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vJjLDuEdYqP1GuRCEp85+p4De8o=
+			vRC5N8IklRUc83qki4Q7Mi2ScKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			PWn2ZSlYbxoEQqRwe4Tu0g9pVp1kB0pqcf0qxCbPlvM=
+			7tWeoj9ccdvpb3KDQbam0ArenXcFwnI80ENcK+6ZLiw=
 			</data>
 		</dict>
 		<key>Headers/TGWatchPosModel.h</key>

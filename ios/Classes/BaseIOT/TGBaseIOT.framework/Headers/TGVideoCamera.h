@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TGVideoCameraDelegate <NSObject>
 
-- (void)videoSessionManagerDidRecordWithData:(char *)data length:(unsigned int)length config:(TGVideoConfigModel *)config frameFlag:(ENUM_FRAMEFLAG)flag;
+- (void)videoSessionManagerDidRecordWithData:(char *)data length:(unsigned int)length frameId:(uint32_t)frameId config:(TGVideoConfigModel *)config frameFlag:(ENUM_FRAMEFLAG)flag;
 
 @end
 
