@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "TGCameraDefine.h"
 #import "TGCommondDefineHeader.h"
+#import "TGBaseIOTDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -614,6 +615,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) int n_day;
 @property (nonatomic, copy) NSArray <TGDeviceSDDaysModel *> *daysArray;
+
+@end
+
+
+@interface TGDeviceNotificationModel : NSObject
+
+@property (nonatomic, assign) TGDeviceNotificationType notificationType; // 来源
+@property (nonatomic, assign) RTMTYPE type;                 // 消息类型
+@property (nonatomic, assign) unsigned int data1;           // 消息类型相关数据1
+@property (nonatomic, assign) unsigned int data2;           // 消息类型相关数据2
+@property (nonatomic, assign, nullable) unsigned char *buffer;
+@property (nonatomic, assign) unsigned int dataLength;
+@property (nonatomic, assign) unsigned int channel;
+
 
 @end
 

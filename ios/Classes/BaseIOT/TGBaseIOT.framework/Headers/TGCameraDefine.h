@@ -1219,7 +1219,23 @@ typedef enum {
      * - data2: 0
      * - frame_size: 0
      */
-    RTM_GOINGTO_SLEEP = 6
+    RTM_GOINGTO_SLEEP = 6,
+    
+    /** 回放: 事件结束标志
+        * 事件(单文件)(参见 @ref TCIC_RECORD_PLAY_START)回放模式下，当事件(文件)播放结束时发送此标志。
+        * 支持单文件模式时必需发送
+        * - data1: 0
+        * - data2: 0
+        * - extra_len: 0
+        * \n使用辅助宏 @ref TciSendPbEndOfEvent() 发送本消息
+        */
+    RTM_END_OF_EVENT = 7,
+    
+    /** 命令: 取消呼叫小程序. 这个是发给转发服务器的内部消息 */
+    RTM_CANCEL_CALL = 8,
+    
+    /** 用户自定义的消息 */
+    RTM_USER = 255
 } RTMTYPE;
 
 /** \ingroup api_structure
@@ -2656,5 +2672,12 @@ typedef struct SMsgAVIoctrlTcis_DaysList {
     int n_day;   ///< 日期数组大小
     SDay days[1]; ///< 日期数组
 } SMsgAVIoctrlTcis_DaysListResp;
+
+// 通过命令2接收自定义通知事件
+typedef struct RTMSG_t {
+    unsigned int type;       // 取值: @ref RTMTYPE
+    unsigned int data1;      // data1/data2 同 type 有关
+    unsigned int data2;
+}SMsgAVIoctrlRTMSG;
 
 #endif /* TGCameraDefine_h */

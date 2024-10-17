@@ -96,6 +96,10 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 //  默认是开启状态；音视频同步设置，enable=YES，将开始音视频同步，当音视频时差在300s内将音频丢帧 注》对于低功耗设备或者网络差的设备可以不开启此功能，优先保证音频不卡顿，但会造成音频略有延迟
 - (void)videoAndAudioSynchronization:(BOOL)enable;
 
+#pragma mark - 实时性要求
+// 默认是开启状态；即保持实时性，如果设备网络能力较差可以关闭，关闭可以保持流畅性，但直播视频会有延时现象
+- (void)setClosePunctuality:(BOOL)enable;
+
 #pragma mark - 实时直播
 
 /**

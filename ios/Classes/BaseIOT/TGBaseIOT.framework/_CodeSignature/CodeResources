@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		HmjXdwj0AhVeBRXATZ47WSYLk+o=
+		+OB3jDVdWwrILRSXiXUsbbBp/Ro=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		X5vNi5QxVxhCtg0AMkbs6t3/OgA=
+		MJlnxVGZChCqbyI8WgicGH/woxs=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		vnyedDOpqE8mrm0WKMWmKKcH/is=
+		uk7HOL7hjMD0kBurj4aLo8djoNQ=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		fgNQqXoYIMAUbjM3MPBGiOkUKos=
+		5+h4XLpp7+pHzpwa1dL4mRrWOOI=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -333,11 +333,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HmjXdwj0AhVeBRXATZ47WSYLk+o=
+			+OB3jDVdWwrILRSXiXUsbbBp/Ro=
 			</data>
 			<key>hash2</key>
 			<data>
-			XbRWWPdM4n9budVIT2fEGsAZ75w6a8HDegRHPtCwmps=
+			GzAxLgn+PW7BWEuEDrQaOYrEC7+lxOpKVYxSlX+oe8I=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -399,11 +399,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X5vNi5QxVxhCtg0AMkbs6t3/OgA=
+			MJlnxVGZChCqbyI8WgicGH/woxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			5UbBpYd3+/ccY00KMzDJZjx0UXTDak0fEtcSSxsHpt8=
+			VDQFjKImF2nCVZLnONLq0iQR6/RJlbpISrUXWfxX4Yk=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -542,11 +542,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnyedDOpqE8mrm0WKMWmKKcH/is=
+			uk7HOL7hjMD0kBurj4aLo8djoNQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/4AM6hZputJIDFVKy6h12BjnC3AbPl/5rp5K5nfASaE=
+			FMfM5vzxhsxiJZCt+Xq9JGkhaFZRxwxiLei7FdoFlw8=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -630,11 +630,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fgNQqXoYIMAUbjM3MPBGiOkUKos=
+			5+h4XLpp7+pHzpwa1dL4mRrWOOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dddcp4eRl64lw+CAd/dWjwhyxaK4Uv6B7UWA72xcNOI=
+			UBW9q4zsz2dqmFkgTk2qTXSuaiDkHmJ0Y2A5FfF8NTw=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>

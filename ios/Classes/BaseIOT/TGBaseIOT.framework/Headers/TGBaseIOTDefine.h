@@ -165,6 +165,11 @@ typedef NS_ENUM(NSInteger, TGAddDeviceErrorCode) {
     TGAddDeviceErrorCode_TimeOut
 };
 
+typedef NS_ENUM(NSInteger,TGDeviceNotificationType) {
+    TGDeviceNotificationType_command,      //命令通道
+    TGDeviceNotificationType_videoLive     //直播通道
+};
+
 #define TGBaseIOTAddDeviceErrorDomain                   @"com.tange365.TGBaseIOTAddDeviceErrorDomain"
 
 #define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
@@ -173,7 +178,7 @@ typedef NS_ENUM(NSInteger, TGAddDeviceErrorCode) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"24000000"
+#define TGBaseIOTSDKVersion                             @"24010000"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50
