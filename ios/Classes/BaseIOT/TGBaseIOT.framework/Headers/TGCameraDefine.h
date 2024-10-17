@@ -1972,13 +1972,14 @@ typedef struct Tcis_SetMicLevel{
     unsigned char reserved[4];
 } __attribute__((__packed__)) Tcis_SetMicLevelReq, Tcis_GetMicLevelResp;
 
-//typedef enum {
-//    CALLSTATE_MISSED,       // 未接
-//    CALLSTATE_ANSWERED,     // 已接
-//    CALLSTATE_REJECTED,     // 拒接
-//    CALLSTATE_CANCELLED,    // 设备端取消呼叫
-//    CALLSTATE_HANGUP        // 用户结束通话挂断接听
-//} ECALLSTATE;
+/** Doorbell call state */
+typedef enum ECALLSTATE {
+    CALLSTATE_MISSED,      ///< 未接. sdk内部定时
+    CALLSTATE_ANSWERED,    ///< 已接。@ref TCI_CMD_ANSWERTOCALL
+    CALLSTATE_REJECTED,    ///< 拒接。@ref TCI_CMD_ANSWERTOCALL
+    CALLSTATE_CANCELLED,    ///< 设备端取消呼叫(上报 TGECEVENT_DOORBELL 事件 status=0)
+    CALLSTATE_HANGUP       ///< 用户结束通话挂断接听. 仅通知用户
+} ECALLSTATE;
 
 typedef struct Tcis_AnswerToCall {
     int state;   // CALLSTATE_ANSWERED 或 CALLSTATE_REJECTED
