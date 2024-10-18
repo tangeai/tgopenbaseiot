@@ -34,6 +34,9 @@ typedef struct{
 #define TCI_E_INTERNEL         6 ///< 设备内部错误
 #define TCI_E_NOT_ALLOWED      7 ///< 操作不允许
 
+#define TCI_Command_Defeine    2 ///< 自定义命令
+#define TCI_RTMSG_t_dataLength 12 ///< 自定义命令包头长度
+
 /* CODEC ID */
 typedef enum{
     MEDIA_CODEC_UNKNOWN                                 = 0x00,

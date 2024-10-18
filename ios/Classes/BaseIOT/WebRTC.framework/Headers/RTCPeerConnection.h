@@ -311,7 +311,12 @@ RTC_OBJC_EXPORT
 - (void)offerForConstraints:(RTC_OBJC_TYPE(RTCMediaConstraints) *)constraints
           completionHandler:(RTCCreateSessionDescriptionCompletionHandler)completionHandler;
 
-- (NSString*)startCall:(NSString *)config
+- (NSString*)startCallV2:(NSString *)config
+                      appID:(NSString *)appID
+                   deviceID:(NSString *)deviceID
+				   linkParam:(int)linkParam;
+
+- (NSString*)startCallV1:(NSString *)url
                       appID:(NSString *)appID
                    deviceID:(NSString *)deviceID;
 
