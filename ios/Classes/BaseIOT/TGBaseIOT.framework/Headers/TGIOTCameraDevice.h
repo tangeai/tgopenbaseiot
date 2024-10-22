@@ -13,6 +13,7 @@
 #import <DAAudioVideo/DAAudioVideo.h>
 #import "TGVideoCamera.h"
 #import "TGCommondDefineHeader.h"
+#import "TGDeviceCommodModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -45,6 +46,12 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 
 - (void)camera:(TGIOTCameraDevice *)camera didRecordWithRecordType:(TGVideoRecordType)type second:(NSInteger)second;
 - (void)camera:(TGIOTCameraDevice *)camera didStopRecordWithRecordType:(TGVideoRecordType)type filePath:(NSString * _Nonnull)filePath;
+
+/// 通过命令和视频通道获取自定义信息 （需要实时推送的部分信息）
+/// - Parameters:
+///   - manager: 设备交互实例
+///   - model: 自定义信息model
+- (void)camera:(TGIOTCameraDevice *)camera didReceiveNotification:(TGDeviceNotificationModel *)model;
 
 @end
 
