@@ -36,7 +36,12 @@ typedef struct{
 
 #define TCI_Command_Defeine    2 ///< 自定义命令
 #define TCI_RTMSG_t_dataLength 12 ///< 自定义命令包头长度
-
+///<
+///<
+#define IOTYPE_USER_CMD_SET_SCREEN_DISPLAY_REQ             0x0382  // 设置屏幕显示
+#define IOTYPE_USER_CMD_SET_SCREEN_DISPLAY_RESP            0x0383  // 设置屏幕显示
+#define IOTYPE_USER_CMD_GET_SCREEN_DISPLAY_REQ             0x0384  // 获取屏幕显示设置
+#define IOTYPE_USER_CMD_GET_SCREEN_DISPLAY_RESP            0x0385  // 获取屏幕显示设置
 /* CODEC ID */
 typedef enum{
     MEDIA_CODEC_UNKNOWN                                 = 0x00,
@@ -1986,7 +1991,7 @@ typedef enum ECALLSTATE {
 
 typedef struct Tcis_AnswerToCall {
     int state;   // CALLSTATE_ANSWERED 或 CALLSTATE_REJECTED
-    int reserved;
+    int more;
 } Tcis_AnswerToCallReq;
 
 /** OSD内容 */
@@ -2683,5 +2688,17 @@ typedef struct RTMSG_t {
     unsigned int data1;      // data1/data2 同 type 有关
     unsigned int data2;
 }SMsgAVIoctrlRTMSG;
+
+
+/** @name 带屏IPC
+ * @{*/
+/** \struct Tcis_ScreenDisplay
+    @ref TCI_CMD_SET_SCREEN_DISPLAY     =     0x0382  // 设置屏幕显示
+    @ref TCI_CMD_GET_SCREEN_DISPLAY     =     0x0384  // 获取屏幕显示设置
+*/
+typedef struct SMsgAVIoctrlTcis_ScreenDisplay {
+    int disp_off_time;       ///< 非呼叫原因(例如设置)点亮屏幕后转熄屏的时间，单位:秒.
+                             ///<   - \c 0 - 表示永不熄屏
+} SMsgAVIoctrlTcis_ScreenDisplay;
 
 #endif /* TGCameraDefine_h */

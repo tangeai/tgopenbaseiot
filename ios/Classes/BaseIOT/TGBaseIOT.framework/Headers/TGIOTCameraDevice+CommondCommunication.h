@@ -256,6 +256,18 @@ NS_ASSUME_NONNULL_BEGIN
 // 设置事件使能状态，0关 1开
 - (void)setDeviceEvent:(ECEVENT)event state:(int)state successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
+#pragma mark - 通话相关
+// 查询通话
+- (void)getAnswerToCallStatueSuccessBlock:(void(^)(TGDeviceAnswerToCallGetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 设置通话挂断，拒接等
+- (void)setAnswerToCallStatue:(TGDeviceAnswerToCallSetModel *)model successBlock:(void(^)(TGDeviceAnswerToCallSetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
+#pragma mark - 带屏IPC
+// 设置熄屏时间 0为永不熄屏
+- (void)setScreenDisplayWithTime:(int)time successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 获取屏幕熄屏时间
+- (void)getScreenDisplayModelSuccessBlock:(void(^)(TGDeviceScreenDisplayModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

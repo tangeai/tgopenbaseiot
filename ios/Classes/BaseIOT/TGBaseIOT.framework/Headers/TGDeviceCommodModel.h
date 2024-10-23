@@ -632,4 +632,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TGDeviceAnswerToCallSetModel : NSObject
+
+@property (nonatomic, assign) ECALLSTATE state;
+@property (nonatomic, assign) int more;                     // for HANGUP, 0:normal hangup; 1:connection broken
+
+@end
+
+@interface TGDeviceAnswerToCallGetModel : NSObject
+
+@property (nonatomic, assign) int state;                   // 0表示没有呼叫，1=表示有呼叫
+
+@end
+
+@interface TGDeviceScreenDisplayModel : NSObject
+
+@property (nonatomic, assign) int disp_off_time;  ///非呼叫原因(例如设置)点亮屏幕后转熄屏的时间，单位:秒.                             ///<   - \c 0 - 表示永不熄屏
+@end
+
 NS_ASSUME_NONNULL_END
