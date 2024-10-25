@@ -257,10 +257,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setDeviceEvent:(ECEVENT)event state:(int)state successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 #pragma mark - 通话相关
-// 查询通话
+// 查询通话状态
 - (void)getAnswerToCallStatueSuccessBlock:(void(^)(TGDeviceAnswerToCallGetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设置通话挂断，拒接等
-- (void)setAnswerToCallStatue:(TGDeviceAnswerToCallSetModel *)model successBlock:(void(^)(TGDeviceAnswerToCallSetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+- (void)setAnswerToCallStatue:(TGDeviceAnswerToCallSetModel *)model;
 
 #pragma mark - 带屏IPC
 // 设置熄屏时间 0为永不熄屏
