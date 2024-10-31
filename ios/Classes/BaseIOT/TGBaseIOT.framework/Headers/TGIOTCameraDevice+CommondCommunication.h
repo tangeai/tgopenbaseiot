@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 查询设备硬件能力
 - (void)getDeviceFeatureSuccessBlock:(void(^)(TGDeviceBaseInstruction *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 将设备能力加入到Camera的device.featureInfo中
+- (void)loadCameraDeviceFeatureSuccessBlock:(void(^)(TGCameraDeviceModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设备信息
 - (void)getDeviceInfoCMDSuccessBlock:(void(^)(TGDeviceBaseInfor *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设备重启
@@ -258,15 +260,31 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - 通话相关
 // 查询通话状态
-- (void)getAnswerToCallStatueSuccessBlock:(void(^)(TGDeviceAnswerToCallGetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+- (void)tg_getAnswerToCallStatueSuccessBlock:(void(^)(TGDeviceAnswerToCallGetModel *result))successBlock failuerBlock:(void(^)(TGDeviceAnswerToCallGetModel *failuer))failuerBlock;
 // 设置通话挂断，拒接等
-- (void)setAnswerToCallStatue:(TGDeviceAnswerToCallSetModel *)model;
+- (void)tg_setAnswerToCallStatue:(TGDeviceAnswerToCallSetModel *)model;
+// 开启对讲
+- (void)tg_startDeviceLiveSpeakSuccessBlock:(void(^)(TGDeviceAnswerToCallGetModel *result))successBlock failuerBlock:(void(^)(TGDeviceAnswerToCallGetModel *failuer))failuerBlock;
+// 关闭对讲
+- (void)tg_stopDeviceLiveSpeak;
+// 开启双向视频
+- (void)tg_startDeviceLiveSpeakAndVideo:(TGVideoConfigModel *)model;
+// 切换摄像头
+- (void)tg_switchSpeakAndVideoCamera;
+// 关闭双向视频
+- (void)tg_stopDeviceLiveSpeakAndVideo;
 
 #pragma mark - 带屏IPC
 // 设置熄屏时间 0为永不熄屏
 - (void)setScreenDisplayWithTime:(int)time successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 获取屏幕熄屏时间
 - (void)getScreenDisplayModelSuccessBlock:(void(^)(TGDeviceScreenDisplayModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
+#pragma mark - 蜂鸣器
+//查询设备蜂鸣器开关
+- (void)tg_getDeviceBuzzerSuccessBlock:(void(^)(TGDeviceBuzzerGetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+//设置设备蜂鸣器开关 0-关闭 1-开启
+- (void)tg_setDeviceBuzzerMode:(int)mode successBlock:(void(^)(TGDeviceBuzzerSetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 @end
 

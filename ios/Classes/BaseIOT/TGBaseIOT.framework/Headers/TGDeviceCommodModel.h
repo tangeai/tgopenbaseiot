@@ -641,13 +641,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGDeviceAnswerToCallGetModel : NSObject
 
-@property (nonatomic, assign) int state;                   // 0表示没有呼叫，1=表示有呼叫
+@property (nonatomic, assign) int state;                   // 0表示可发起通话，1=表示通话被占用
 
 @end
 
 @interface TGDeviceScreenDisplayModel : NSObject
 
 @property (nonatomic, assign) int disp_off_time;  ///非呼叫原因(例如设置)点亮屏幕后转熄屏的时间，单位:秒.                             ///<   - \c 0 - 表示永不熄屏
+
+@end
+
+@interface TGDeviceBuzzerGetModel : NSObject
+
+@property (nonatomic, assign) int status;  // 当前蜂鸣器状态，status: 0- 关, 1- 开
+@property (nonatomic, assign) int channel;
+
+@end
+
+@interface TGDeviceBuzzerSetModel : NSObject
+
+@property (nonatomic, assign) int result;  // 0失败，1成功
+
 @end
 
 NS_ASSUME_NONNULL_END
