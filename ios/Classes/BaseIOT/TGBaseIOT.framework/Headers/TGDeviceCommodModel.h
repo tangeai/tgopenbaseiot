@@ -622,12 +622,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGDeviceNotificationModel : NSObject
 
 @property (nonatomic, assign) TGDeviceNotificationType notificationType; // 来源
-@property (nonatomic, assign) RTMTYPE type;                 // 消息类型
+@property (nonatomic, assign) RTMTYPE type;                 // 消息类型  RTM_USER = 255
 @property (nonatomic, assign) unsigned int data1;           // 消息类型相关数据1
 @property (nonatomic, assign) unsigned int data2;           // 消息类型相关数据2
-@property (nonatomic, assign, nullable) unsigned char *buffer;
-@property (nonatomic, assign) unsigned int dataLength;
-@property (nonatomic, assign) unsigned int channel;
+@property (nonatomic, assign, nullable) unsigned char *buffer; // 自定义消息数据
+@property (nonatomic, assign) unsigned int dataLength;         // 长度
+@property (nonatomic, assign) unsigned int channel;            // 通道
 
 
 @end

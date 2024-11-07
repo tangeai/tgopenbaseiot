@@ -98,6 +98,10 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)setCacheBufferTime:(NSTimeInterval)time;
 //音视频通话缓冲通道设置 注，默认是16000，如果音视频通话过程卡顿可以调整该参数，参数需>16000,例如设置为16000*1.8；调大后将优先保证音频，缓冲内将丢视频帧；如果>channelBufferSize,将开始音视频上传丢帧
 - (void)setChannelBufferSize:(unsigned int)channelBufferSize;
+// 获取服务器差值
+- (void)getFromServerSynchronizationTime;
+// 获取服务器差值 单位毫米支持正负数
+- (void)makeServerSynchronizationTime:(int)time;
 
 #pragma mark - 音视频同步
 //  默认是开启状态；音视频同步设置，enable=YES，将开始音视频同步，当音视频时差在300s内将音频丢帧 注》对于低功耗设备或者网络差的设备可以不开启此功能，优先保证音频不卡顿，但会造成音频略有延迟

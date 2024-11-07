@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		C8L4q3e9zIkGnMVYVyjOK0Yrzj4=
+		NyDY1Iu/p8DDI2denqtw0Fn/vXc=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		MPTjmcBtvv48M+8MPwypbeWk5BM=
+		amL4LzpBWbfsIelPoDZvZR8G/hA=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		YYa9TO25jWiQ3YTKaEnQwk3u9so=
+		VzCbH8K4oTyl7N4TErHuvqqE51I=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -112,6 +112,10 @@
 		<data>
 		BCN506Fg0yZMT0oQHbsudLZXSEk=
 		</data>
+		<key>Headers/TGDeviceVideoPlayView.h</key>
+		<data>
+		y6xfIWRhDlkpfGIDnqLP4jlw77U=
+		</data>
 		<key>Headers/TGHintToneModel.h</key>
 		<data>
 		KU33JHlVdS+WZw3botcbbfqGNiY=
@@ -122,7 +126,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		Mn6y/P4HLGpS9ys3TZjpS4V31L4=
+		eLdoH7HrbdH7Ppf3g7COY9c0vLw=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -322,22 +326,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C8L4q3e9zIkGnMVYVyjOK0Yrzj4=
+			NyDY1Iu/p8DDI2denqtw0Fn/vXc=
 			</data>
 			<key>hash2</key>
 			<data>
-			eZq1WjSp39ybygTAuqdctsNL5Q3Y2BnuTu0GxmTQfRc=
+			AdV1wxtbRXNO0K/R2oj52BJsIrPhBT8Ka6yWY7aYfPY=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MPTjmcBtvv48M+8MPwypbeWk5BM=
+			amL4LzpBWbfsIelPoDZvZR8G/hA=
 			</data>
 			<key>hash2</key>
 			<data>
-			w7Towgd9Hh5hVc2y6u4ZXp/tszTjDTzx6l0G8NSbuqg=
+			DDgj2iaJBsl4LcdhoWdA7wn0aP3UqW5uifDx0qqdGzY=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -542,11 +546,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YYa9TO25jWiQ3YTKaEnQwk3u9so=
+			VzCbH8K4oTyl7N4TErHuvqqE51I=
 			</data>
 			<key>hash2</key>
 			<data>
-			R8GLApipqY86CFyjLVeG9vOikW2SzifRqbJgZfCdjxU=
+			dIrwkk5G9Nr/mO3M092ofA80+3MIyzgrf8VaP06IuOg=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -604,6 +608,17 @@
 			P7ahZb2JS5bS0M5kbRpT1pdQC8gFVhFopEBapzRJ+fg=
 			</data>
 		</dict>
+		<key>Headers/TGDeviceVideoPlayView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y6xfIWRhDlkpfGIDnqLP4jlw77U=
+			</data>
+			<key>hash2</key>
+			<data>
+			AXUJZQtgF/KKKCLUGlwpEho+NQHnBepbalzetfCLeYk=
+			</data>
+		</dict>
 		<key>Headers/TGHintToneModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -630,11 +645,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mn6y/P4HLGpS9ys3TZjpS4V31L4=
+			eLdoH7HrbdH7Ppf3g7COY9c0vLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			QLwnDUfrVXMFeuggUo2nnjTwLoj2yXYZYMJhXm0Y+N4=
+			eWCSe14aUlyRqtiP3d57sHFSA/oX+4wfODI7Rpt5hns=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>

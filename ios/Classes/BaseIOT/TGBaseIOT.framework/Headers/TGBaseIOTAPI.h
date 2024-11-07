@@ -14,6 +14,7 @@
 #import "TGCameraDefine.h"
 #import "TGCameraDeviceBaseInforModel.h"
 #import "TGBaseIOTReportEventModel.h"
+#import "TGDeviceVideoPlayView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
