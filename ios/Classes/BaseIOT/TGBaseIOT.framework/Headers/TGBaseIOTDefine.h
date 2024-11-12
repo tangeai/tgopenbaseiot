@@ -91,12 +91,15 @@ typedef NS_ENUM(NSInteger, TGPlayChannelType) {
     TGPlayChannelType_LiveChannelZero = 0,
     TGPlayChannelType_LiveChannelOne = 1,
     TGPlayChannelType_LiveChannelTwo = 2,
+    TGPlayChannelType_LiveChannelThree = 3,
     TGPlayChannelType_CloudChannelZero = 0,
     TGPlayChannelType_CloudChannelOne = 1,
     TGPlayChannelType_CloudChannelTwo = 2,
+    TGPlayChannelType_CloudChannelThree = 3,
     TGPlayChannelType_SDCardChannelZero = 0,
     TGPlayChannelType_SDCardChannelOne = 1,
-    TGPlayChannelType_SDCardChannelTwo = 2
+    TGPlayChannelType_SDCardChannelTwo = 2,
+    TGPlayChannelType_SDCardChannelThree = 3
 };
 
 typedef NS_ENUM(NSInteger,TGVideoPlayDirection) {
@@ -116,12 +119,15 @@ typedef NS_ENUM(NSInteger,TGVideoRecordType) {
     TGVideoRecordType_LiveChannelZero,
     TGVideoRecordType_LiveChannelOne,
     TGVideoRecordType_LiveChannelTwo,
+    TGVideoRecordType_LiveChannelThree,
     TGVideoRecordType_CloudChannelZero,
     TGVideoRecordType_CloudChannelOne,
     TGVideoRecordType_CloudChannelTwo,
+    TGVideoRecordType_CloudChannelThree,
     TGVideoRecordType_SDCardChannelZero,
     TGVideoRecordType_SDCardChannelOne,
-    TGVideoRecordType_SDCardChannelTwo
+    TGVideoRecordType_SDCardChannelTwo,
+    TGVideoRecordType_SDCardChannelThree
 };
 
 typedef NS_ENUM(NSInteger,TGPTZViewTurnDirection) {
@@ -178,7 +184,7 @@ typedef NS_ENUM(NSInteger,TGDeviceNotificationType) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"24030000"
+#define TGBaseIOTSDKVersion                             @"24040000"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50
