@@ -112,6 +112,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// 每次添加设备请先 获取bindToken,
 - (void)tg_getNewBindTokenCompleteBlock:(void(^)(BOOL success))success;
 
+/// 获取具体token，适合自定义token的使用
+/// - Parameters:
+///   - successBlock: token
+///   - failureBlock: 失败
+- (void)tg_getNewBindTokenCompleteBlockSuccessBlock:(void(^)(NSString *token))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+/// 设置token，绑定的时候传入
+/// - Parameter token: token
+- (void)tg_setBindToken:(NSString *)token;
+
 /// 检查AP是否可用（建议使用）
 /// - Parameters:
 ///   - controller: 当前VC
