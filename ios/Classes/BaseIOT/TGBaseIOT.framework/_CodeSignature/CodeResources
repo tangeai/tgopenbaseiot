@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		nt9qp3TERWA43qf2ErKCGbd0m4s=
+		qVofqKIdmQ8X5bFdm8/cvfDXx1Q=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
-		ObFt6DWz6pGkKE7Z432GKoFz5ys=
+		1bG2YUt5GNC15ONicBzqUrMzA84=
 		</data>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		KohTLXd+PIhuclofI+qf7aDjmmM=
+		2JQ/3uJtCkI/q94qe97Pa/s0MFI=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		eLdoH7HrbdH7Ppf3g7COY9c0vLw=
+		H0b8bj1PKZF+dj/3/yJfoYbjibg=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -337,22 +337,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nt9qp3TERWA43qf2ErKCGbd0m4s=
+			qVofqKIdmQ8X5bFdm8/cvfDXx1Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			ts5hp5Yau49MMwtSnpytZw6HVybdP06HJh/jQaCYT3Q=
+			cU6oE1nN5ZArfKHlWAKokyJRKP9OuqgHPEqfb7XgGho=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ObFt6DWz6pGkKE7Z432GKoFz5ys=
+			1bG2YUt5GNC15ONicBzqUrMzA84=
 			</data>
 			<key>hash2</key>
 			<data>
-			KMAsmpgcspKNURPKXtSYbVXvFQPT4xHUGGSOQL//xIw=
+			GxZ2V+vhen8i/ylhEcA+S/5lIPuByvphJk3uTALR68s=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
@@ -403,11 +403,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KohTLXd+PIhuclofI+qf7aDjmmM=
+			2JQ/3uJtCkI/q94qe97Pa/s0MFI=
 			</data>
 			<key>hash2</key>
 			<data>
-			cP8KR1uUL8gjBb2re5ueT/YPFoLblJ4uK93eUpv9FnA=
+			aNz2cEMr+z4x2WHHDOeM3YhbGLMD0TqnMo4jRIDEXG0=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -645,11 +645,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eLdoH7HrbdH7Ppf3g7COY9c0vLw=
+			H0b8bj1PKZF+dj/3/yJfoYbjibg=
 			</data>
 			<key>hash2</key>
 			<data>
-			eWCSe14aUlyRqtiP3d57sHFSA/oX+4wfODI7Rpt5hns=
+			xeutlqyWVZ/G2WIYqvL6oO5W5wxtl8i2gPm9Lbh453o=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
