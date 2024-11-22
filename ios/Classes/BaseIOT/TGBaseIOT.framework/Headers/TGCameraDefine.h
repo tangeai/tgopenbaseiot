@@ -25,23 +25,22 @@ typedef struct{
 /** @name 通用错误码
   Tcis_ErrorResp::err 取值, 用于 TciSendCmdRespStatus() 的 status 参数
   @{*/
-#define TCI_OK                 0 ///< 命令成功执行
-#define TCI_E_INPROCESSING     1 ///< 操作进行中
-#define TCI_E_CMDHDR           2 ///< 错误命令头
-#define TCI_E_UNSUPPORTED_CMD  3 ///< 不支持的命令
-#define TCI_E_INVALID_PARAM    4 ///< 无效参数
-#define TCI_E_LACKOF_RESOURCE  5 ///< 资源(内存)不足
-#define TCI_E_INTERNEL         6 ///< 设备内部错误
-#define TCI_E_NOT_ALLOWED      7 ///< 操作不允许
+#define TCI_OK                  0 ///< 命令成功执行
+#define TCI_E_INPROCESSING      1 ///< 操作进行中
+#define TCI_E_CMDHDR            2 ///< 错误命令头
+#define TCI_E_UNSUPPORTED_CMD   3 ///< 不支持的命令
+#define TCI_E_INVALID_PARAM     4 ///< 无效参数
+#define TCI_E_LACKOF_RESOURCE   5 ///< 资源(内存)不足
+#define TCI_E_INTERNEL          6 ///< 设备内部错误
+#define TCI_E_NOT_ALLOWED       7 ///< 操作不允许
 
-#define TCI_Command_Defeine    2 ///< 自定义命令
-#define TCI_RTMSG_t_dataLength 12 ///< 自定义命令包头长度
-///<
-///<
+#define TCI_Command_Define      2 ///< 自定义命令
+
 #define IOTYPE_USER_CMD_SET_SCREEN_DISPLAY_REQ             0x0382  // 设置屏幕显示
 #define IOTYPE_USER_CMD_SET_SCREEN_DISPLAY_RESP            0x0383  // 设置屏幕显示
 #define IOTYPE_USER_CMD_GET_SCREEN_DISPLAY_REQ             0x0384  // 获取屏幕显示设置
 #define IOTYPE_USER_CMD_GET_SCREEN_DISPLAY_RESP            0x0385  // 获取屏幕显示设置
+
 /* CODEC ID */
 typedef enum{
     MEDIA_CODEC_UNKNOWN                                 = 0x00,

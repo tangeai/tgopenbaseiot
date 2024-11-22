@@ -77,7 +77,7 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 @property (nonatomic, copy) commondDataResqSuccessBlock commondDataResqSuccessBlock;
 @property (nonatomic, copy) commonDataRespErrorBlock commonDataRespErrorBlock;
 
-+ (instancetype)camneraWithDevice:(TGCameraDeviceModel *)device;
++ (instancetype)cameraWithDevice:(TGCameraDeviceModel *)device;
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
 
 #pragma mark - deviceConnect 设备连接

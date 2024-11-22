@@ -76,6 +76,12 @@ extern NSString * const TGBASEIOT_EVENT_SOCKET_INOF;
 extern NSString * const TGBASEIOT_EVENT_ACCOUNT_STATUS_CHANGE ;
 extern NSString * const TGBASEIOT_EVENT_APP_TERMINNATE;
 
+#define TGAddReportEvent(...) \
+    [[TGBaseIOTReportEvent shareReportEvent] addReportEvent:__VA_ARGS__ \
+    file:__FILE__ \
+    function:__PRETTY_FUNCTION__ \
+    line:__LINE__]
+
 @interface TGBaseIOTReportEvent : NSObject
 
 + (instancetype)shareReportEvent;
@@ -83,6 +89,8 @@ extern NSString * const TGBASEIOT_EVENT_APP_TERMINNATE;
 /// 埋点方法
 /// - Parameter array: [日志级别，设备id，事件名称，事件描述，所属类对象]
 - (void)addReportEvent:(NSArray *)array;
+
+- (void)addReportEvent:(NSArray *)array file:(const char *)file function:(const char *)function line:(NSUInteger)line;
 
 - (TGBaseIOTReportEventModel *)getReportEvent;
 

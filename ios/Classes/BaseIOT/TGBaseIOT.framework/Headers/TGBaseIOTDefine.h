@@ -173,7 +173,10 @@ typedef NS_ENUM(NSInteger, TGAddDeviceErrorCode) {
 
 typedef NS_ENUM(NSInteger,TGDeviceNotificationType) {
     TGDeviceNotificationType_command,      //命令通道
-    TGDeviceNotificationType_videoLive     //直播通道
+    TGDeviceNotificationType_videoLive,    //直播通道
+    TGDeviceNotificationType_audioLive,
+    TGDeviceNotificationType_videoSdCard,
+    TGDeviceNotificationType_audioSdCard
 };
 
 #define TGBaseIOTAddDeviceErrorDomain                   @"com.tange365.TGBaseIOTAddDeviceErrorDomain"
