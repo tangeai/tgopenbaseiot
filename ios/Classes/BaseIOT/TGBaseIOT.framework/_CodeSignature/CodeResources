@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		GqdDp2pwSTJFDdupu/XVpiJlzBg=
+		/cDh64Odad+zPVrXGiFT/hiheAY=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		qVofqKIdmQ8X5bFdm8/cvfDXx1Q=
+		I8x5Q2eCrvfMb9l6MBMPNWSfQjc=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Headers/TGPeripheralInfo.h</key>
 		<data>
-		hePxrsaggSIoc4WCv3ba+IXMZAQ=
+		20Eatcpc8JH7wcrPQoUnE63lyyk=
 		</data>
 		<key>Headers/TGResolutionModel.h</key>
 		<data>
@@ -326,22 +326,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GqdDp2pwSTJFDdupu/XVpiJlzBg=
+			/cDh64Odad+zPVrXGiFT/hiheAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YI8OIrgnTYrXbGlAsobXH2Twn5Mu5bmNLmbH6T99wwE=
+			NvhwqG0IB5fgkKLT5cZLvrc85+i9k8w7S08Pl8hFPoM=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qVofqKIdmQ8X5bFdm8/cvfDXx1Q=
+			I8x5Q2eCrvfMb9l6MBMPNWSfQjc=
 			</data>
 			<key>hash2</key>
 			<data>
-			cU6oE1nN5ZArfKHlWAKokyJRKP9OuqgHPEqfb7XgGho=
+			I09cSc9SBdLF+7qvRnQ/mm4lOuFDBPt4clSknIxVXrM=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -722,11 +722,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hePxrsaggSIoc4WCv3ba+IXMZAQ=
+			20Eatcpc8JH7wcrPQoUnE63lyyk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XBkEJOzMWpDCjOO6MsF9tJKp0ERUlm3RkoGhCgJRhUQ=
+			syCbSYuo14OR3cMA7e5mU69Ze8bfD0WG56/l2nvz99w=
 			</data>
 		</dict>
 		<key>Headers/TGResolutionModel.h</key>
