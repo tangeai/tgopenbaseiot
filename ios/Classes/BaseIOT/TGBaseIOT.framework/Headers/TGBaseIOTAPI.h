@@ -122,7 +122,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameter token: token
 - (void)tg_setBindToken:(NSString *)token;
 
-/// 检查AP是否可用（建议使用）
+/// 检查本地网络是否可用（建议使用）
 /// - Parameters:
 ///   - controller: 当前VC
 ///   - wifiArrayMsg: 未打开wifi提示 ,不传默认英文，格式[titile,message,confirm,cancel]
