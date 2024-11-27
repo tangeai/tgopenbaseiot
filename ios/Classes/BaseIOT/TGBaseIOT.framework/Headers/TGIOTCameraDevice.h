@@ -53,13 +53,6 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 ///   - model: 自定义信息model
 - (void)camera:(TGIOTCameraDevice *)camera didReceiveNotification:(TGDeviceNotificationModel *)model;
 
-/// 麦克风采集返回的原始数据
-/// - Parameters:
-///   - data: 数据
-///   - length: 长度
-///   - config: 配置项，此项不用设置，直接使用即可
-- (void)tg_audioSessionManagerDidRecordWithData:(void *)data length:(unsigned int)length config:(DAAudioConfigModel *)config;
-
 @end
 
 @interface TGIOTCameraDevice : NSObject
@@ -153,15 +146,6 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)startDeviceLiveSpeak;
 // 关闭对讲
 - (void)stopDeviceLiveSpeak;
-/// 启动自定义语音，启动后将会在代理中返回录制的原始语音数据，需要客户编辑好数据后再传输（tg_setAudioSessionManagerDidRecordWithData）给设备
-/// - Parameter Open: yes打开，no关闭
-- (void)openAudioDeine:(BOOL)Open;
-/// 传输接口，用于自定义语音后把数据传输给设备
-/// - Parameters:
-///   - data: 编辑后的data
-///   - length: 编辑后的长度
-///   - config: 配置，保持和代理中的返回一致即可
-- (void)tg_setAudioSessionManagerDidRecordWithData:(void *)data length:(unsigned int)length config:(DAAudioConfigModel *)config;
 
 // 开启双向视频
 - (void)startDeviceLiveSpeakAndVideo:(TGVideoConfigModel *)model;
