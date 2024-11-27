@@ -198,7 +198,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - writeUUID: 【选填】 自定义writeUUID选项，需要与设备端配合使用，选填，不填将使用默认特征值
 ///   - readUUID: 【选填】 自定义readUUID选项，需要与设备端配合使用，选填，不填将使用默认特征值
 ///   - connectCallBack: 连接结果
-- (void)tg_connectBluetoothDevice:(TGPeripheralInfo *)deviceModel serverUUID:(NSString *)serverUUID writeUUID:(NSString *)writeUUID readUUID:(NSString *)readUUID connectCallBack:(void(^)(TGBluetoothConnectState state, NSError *error))connectCallBack;
+- (void)tg_connectBluetoothDevice:(TGPeripheralInfo *)deviceModel serverUUID:(nullable NSString *)serverUUID writeUUID:(nullable NSString *)writeUUID readUUID:(nullable NSString *)readUUID connectCallBack:(void(^)(TGBluetoothConnectState state, NSError *error))connectCallBack;
 
 /// 断开当前连接蓝牙设备
 - (void)tg_disconnectBluetoothDevice DEPRECATED_MSG_ATTRIBUTE("Use -tg_disconnectBluetoothDeviceSuccessBlock: instead");
@@ -212,7 +212,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param password 设备连接的WiFi密码
 /// @param mtu 蓝牙一次发送数据的最大字节数
 /// @param callBlock 发送回调，【注】result=yes时，response才会有结果，其他情况均为nil
-- (void)tg_bluetoothConfigureNetwork:(NSString *)wifiName wifiPassword:(NSString *)password mtu:(NSInteger)mtu callBlock:(void(^)(BOOL result,SMsgAVIoctrlExPassWordResp *response))callBlock;
+- (void)tg_bluetoothConfigureNetwork:(NSString *)wifiName wifiPassword:(NSString *)password mtu:(NSInteger)mtu callBlock:(void(^)(BOOL result, SMsgAVIoctrlExPassWordResp *response))callBlock;
 
 /// 停止扫描蓝牙设备
 - (void)tg_stopScanPeripheral;
