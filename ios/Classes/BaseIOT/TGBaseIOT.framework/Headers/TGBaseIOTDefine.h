@@ -179,13 +179,6 @@ typedef NS_ENUM(NSInteger,TGDeviceNotificationType) {
     TGDeviceNotificationType_audioSdCard
 };
 
-typedef NS_ENUM(NSInteger,TGAddDeviceBindType) {
-    TGAddDeviceBindType_scan,               //扫码方式
-    TGAddDeviceBindType_4g,                 //4g添加方式
-    TGAddDeviceBindType_lan,                //已联网线设备
-    TGAddDeviceBindType_device              //设备配网添加
-};
-
 #define TGBaseIOTAddDeviceErrorDomain                   @"com.tange365.TGBaseIOTAddDeviceErrorDomain"
 
 #define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
@@ -194,7 +187,7 @@ typedef NS_ENUM(NSInteger,TGAddDeviceBindType) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"24061000"
+#define TGBaseIOTSDKVersion                             @"24040000"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50

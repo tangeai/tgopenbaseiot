@@ -122,7 +122,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameter token: token
 - (void)tg_setBindToken:(NSString *)token;
 
-/// 检查本地网络是否可用（建议使用）
+/// 检查AP是否可用（建议使用）
 /// - Parameters:
 ///   - controller: 当前VC
 ///   - wifiArrayMsg: 未打开wifi提示 ,不传默认英文，格式[titile,message,confirm,cancel]
@@ -201,11 +201,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)tg_connectBluetoothDevice:(TGPeripheralInfo *)deviceModel serverUUID:(nullable NSString *)serverUUID writeUUID:(nullable NSString *)writeUUID readUUID:(nullable NSString *)readUUID connectCallBack:(void(^)(TGBluetoothConnectState state, NSError *error))connectCallBack;
 
 /// 断开当前连接蓝牙设备
-- (void)tg_disconnectBluetoothDevice DEPRECATED_MSG_ATTRIBUTE("Use -tg_disconnectBluetoothDeviceSuccessBlock: instead");
-
-/// 断开当前连接蓝牙设备
-/// @param blueDisConnectBlock 断开返回
-- (void)tg_disconnectBluetoothDeviceSuccessBlock:(void(^)(BOOL success,NSError *error))blueDisConnectBlock;
+- (void)tg_disconnectBluetoothDevice;
 
 /// 给蓝牙发送设备连接的WiFi名称和密码
 /// @param wifiName 设备连接的WiFi名称
@@ -225,16 +221,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param failureBlock 失败返回
 - (void)tg_configurationWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
-/// 轮询绑定4G设备或有线设备 （注*要和取消轮询配合使用）（已废弃，4g和已联网设备不再提供轮询）
+/// 轮询绑定4G设备或有线设备 （注*要和取消轮询配合使用）
 /// @param timeCount 轮询时长，默认150s
 /// @param intervalTime 间隔时长，默认5s
 /// @param processBlock 倒计时进度
 /// @param uuidStr 设备uuid（deviceID）
 /// @param successBlock 成功返回
 /// @param failureBlock 失败返回 Code 51934 设备已绑定，其他失败
-- (void)tg_configurationNoWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime uuid:(NSString *)uuidStr processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -tg_bindNetworkedDeviceWithType: instead");
+- (void)tg_configurationNoWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime uuid:(NSString *)uuidStr processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
-/// 轮询绑定4G设备或有线设备 （注*要和取消轮询配合使用）参数可选拓展（已废弃，4g和已联网设备不再提供轮询）
+/// 轮询绑定4G设备或有线设备 （注*要和取消轮询配合使用）参数可选拓展
 /// @param timeCount 轮询时长，默认150s
 /// @param intervalTime 间隔时长，默认5s
 /// @param uuidStr 设备uuid（deviceID）
@@ -246,12 +242,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param processBlock 进度
 /// @param successBlock 成功返回
 /// @param failureBlock 失败返回
-- (void)tg_configurationNoWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime uuid:(NSString *)uuidStr name:(NSString *)deviceName timeZone:(NSString *)timeZone method:(NSString *)typeStr must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -tg_bindNetworkedDeviceWithType: instead");
+- (void)tg_configurationNoWiFiDeviceWithTime:(NSInteger)timeCount interval:(NSInteger)intervalTime uuid:(NSString *)uuidStr name:(NSString *)deviceName timeZone:(NSString *)timeZone method:(NSString *)typeStr must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived processBlock:(void(^)(NSInteger processCount))processBlock successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 /// 取消轮询
 - (void)tg_cancleConfigurationTimer;
 
-/// 绑定4G设备（已废弃）
+/// 绑定4G设备 （非轮询，推荐使用轮询）
 /// @param typeStr 添加类型 分别为 scan(扫码添加)、4g(4g添加)、lan(有线添加)、device(配网添加) ---可选参数
 /// @param uuidStr uuid
 /// @param deviceName deviceName 设备名称 -----可选参数
@@ -260,18 +256,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param must_be_actived 设备是否需要必须激活 -----可选参数
 /// @param successBlock 成功回调
 /// @param failureBlock 失败回调
-- (void)tg_configurationNoWiFiDeviceWithType:(NSString *)typeStr uuid:(nonnull NSString *)uuidStr  name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -tg_bindNetworkedDeviceWithType: instead");
-
-/// 绑定4G设备或已联网设备
-/// @param bindType 添加类型 -----可选参数，默认TGAddDeviceBindType_scan
-/// @param deviceId deviceId（即前废弃接口的uuid）
-/// @param deviceName deviceName 设备名称 -----可选参数
-/// @param timeZone 设备时区 -----可选参数
-/// @param must_be_online 设备是否需要必须在线  ----可选参数
-/// @param must_be_actived 设备是否需要必须激活 -----可选参数
-/// @param successBlock 成功回调
-/// @param failureBlock 失败回调
-- (void)tg_bindNetworkedDeviceWithType:(TGAddDeviceBindType)bindType deviceId:(nonnull NSString *)deviceId  name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)tg_configurationNoWiFiDeviceWithType:(NSString *)typeStr uuid:(nonnull NSString *)uuidStr  name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 #pragma mark - information
 
