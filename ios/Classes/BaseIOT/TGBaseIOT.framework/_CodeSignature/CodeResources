@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		GqdDp2pwSTJFDdupu/XVpiJlzBg=
+		Uxztt1s7B7UM0RDbOaoaCoDTq8Y=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		qVofqKIdmQ8X5bFdm8/cvfDXx1Q=
+		V8fOnJxjtdcgkjAlHukqp5MI3is=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		H0b8bj1PKZF+dj/3/yJfoYbjibg=
+		+FJSKfi7aD7vCLzsvbPmJytdT8o=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Headers/TGPeripheralInfo.h</key>
 		<data>
-		hePxrsaggSIoc4WCv3ba+IXMZAQ=
+		0mPy6HULeDirKz5sq/zDk3BtMMg=
 		</data>
 		<key>Headers/TGResolutionModel.h</key>
 		<data>
@@ -326,22 +326,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GqdDp2pwSTJFDdupu/XVpiJlzBg=
+			Uxztt1s7B7UM0RDbOaoaCoDTq8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			YI8OIrgnTYrXbGlAsobXH2Twn5Mu5bmNLmbH6T99wwE=
+			sR+4I9zK1u497kQT6KGuOWtDRwsv1adGUC+dK9BKil8=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qVofqKIdmQ8X5bFdm8/cvfDXx1Q=
+			V8fOnJxjtdcgkjAlHukqp5MI3is=
 			</data>
 			<key>hash2</key>
 			<data>
-			cU6oE1nN5ZArfKHlWAKokyJRKP9OuqgHPEqfb7XgGho=
+			CbtJI902QlnT9TpzagYr1Lj7HTCxHGB9aVzNhE1EFkg=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -645,11 +645,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H0b8bj1PKZF+dj/3/yJfoYbjibg=
+			+FJSKfi7aD7vCLzsvbPmJytdT8o=
 			</data>
 			<key>hash2</key>
 			<data>
-			xeutlqyWVZ/G2WIYqvL6oO5W5wxtl8i2gPm9Lbh453o=
+			eqTdfTrEZp7kfKhyW5zMVivdnVlub1SPy3pziaoPVXE=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
@@ -722,11 +722,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hePxrsaggSIoc4WCv3ba+IXMZAQ=
+			0mPy6HULeDirKz5sq/zDk3BtMMg=
 			</data>
 			<key>hash2</key>
 			<data>
-			XBkEJOzMWpDCjOO6MsF9tJKp0ERUlm3RkoGhCgJRhUQ=
+			S2I7MnddyhzXFEO/oKkKLS/0Z3D+lJwE4sVSUeSzBWU=
 			</data>
 		</dict>
 		<key>Headers/TGResolutionModel.h</key>
