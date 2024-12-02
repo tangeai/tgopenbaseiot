@@ -826,7 +826,20 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - failureBlock: 失败回调
 - (void)tg_getAppLogConfigWithSuccessBlock:(void(^)(TGBaseIOTReportEventConfigModel *result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
+/// app通过热点从设备上下载日志
+/// - Parameters:
+/// - apSsid:Ap热点
+///   - successBlock: 成功回调
+///   - failureBlock: 失败回调
+- (void)tg_getDeviceLogFromAP:(NSString *)apSsid successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
+/// app上传通过热点的下载的设备日志
+/// - Parameters:
+/// - deviceId:设备id ---可选  如果是配合（tg_getDeviceLogFromAP）使用，无需传入
+/// - filePath: 返回的路径
+///   - successBlock: 成功回调
+///   - failureBlock: 失败回调
+- (void)tg_uploadDeviceLogWithDeviceId:(nullable NSString *)deviceId filePath:(NSURL *)filePath successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 @end
 
 NS_ASSUME_NONNULL_END
