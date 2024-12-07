@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)downLoadFileWithCloudType:(NSString *)type objectKey:(NSString *)objectKey ossId:(NSString *)ossId block:(void (^)(NSData * _Nonnull, NSError * _Nonnull))block;
 - (void)cancleTask;
 - (void)uploadAppLogWithSuccessBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)uploadDeviceLogWithFilePath:(NSURL *)filePath deviceId:(NSString *)deviceId successBlock:(void (^)(id _Nonnull))successBlock failureBlock:(void (^)(id _Nonnull))failureBlock;
 - (void)getAccessTokenAndInitOSSWithDeviceId:(NSString *)deviceId ossId:(NSString *)ossId callBack:(void(^)(id error))callBack;
 + (void)getUploadAppLogTokenWithSuccessBlock:(void (^)(id _Nonnull))successBlock failureBlock:(void (^)(id _Nonnull))failureBlock;
 
