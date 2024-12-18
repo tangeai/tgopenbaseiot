@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) TGDeviceRecordType type;
 @property (nonatomic, copy) NSString *startTime;                //2019-01-16 16:18:07
 @property (nonatomic, copy) NSString *endTime;                  //2019-01-16 19:24:47
-@property (nonatomic, copy) NSString *tag;                      //卡时间类型
+@property (nonatomic, copy) NSString *tag;                      //卡事件类型
 @property (nonatomic, assign) NSInteger startHmsInterval;       //开始时间距离当天00:00:00的秒数
 @property (nonatomic, assign) NSInteger endHmsInterval;         //结束时间距离当天00:00:00的秒数
 @property (nonatomic, assign) NSInteger recordDuration;         //时长 单位s

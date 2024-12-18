@@ -18,6 +18,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolType,int errorCode);
+typedef void(^TGSDCardRecordFileStartBlock)(NSInteger startTime,DACameraP2PVideoData *videoData);
+typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData *videoData);
 
 @class TGCameraDeviceModel,TGIOTCameraDevice,TGDeviceAlarmSoundModel,DACameraP2PVideoData,DACameraP2PAudioData,TGMoveDetectZoneModel,TGMoveDetectPointModel,TGDevicePSPModel,TGWatchPosModel,DAMP4RecordManager,DAAudioUnitPCMPlayer,DAAudioSessionManager,TGDeviceLightModel,TGHintToneModel,TGDeviceTrackModel,TGMoveDetectPolygonModel,TGResolutionModel,TGTimerTaskModel;
 
@@ -81,8 +83,12 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 @property (nonatomic, assign) BOOL isChannelZeroStepOneComplete;
 @property (nonatomic, assign) BOOL isChannelOneStepOneComplete;
 
-@property (nonatomic, copy) commondDataResqSuccessBlock commondDataResqSuccessBlock;
-@property (nonatomic, copy) commonDataRespErrorBlock commonDataRespErrorBlock;
+@property (nonatomic, strong) NSMutableArray *commondSuccessDataResqArray;
+@property (nonatomic, strong) NSMutableArray *commondFailDataResqArray; 
+
+@property (nonatomic,copy) TGSDCardRecordFileStartBlock sdCardFileStartAction;
+@property (nonatomic,copy) TGSDCardRecordFileEndBlock sdCardFileEndAction;
+@property (nonatomic,copy) NSArray *sdCalendar;
 
 + (instancetype)cameraWithDevice:(TGCameraDeviceModel *)device;
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
@@ -178,6 +184,8 @@ typedef void(^TGSDCardRecordListBlock)(const char * __nullable data,int ctrolTyp
 - (void)getDeviceInfoCMD;
 
 #pragma mark - sd卡
+// 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,array为全部录像
+- (void)getAllCameraSDCardRecordModelListWithDate:(NSString *)date cardRecordOrderType:(TGCardRecordOrderType)type successBlock:(void(^)(NSArray *array))successBlock;
 // 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像
 - (void)getCameraSDCardRecordModelListWithDate:(NSString *)date cardRecordOrderType:(TGCardRecordOrderType)type successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
 // 获取卡录像列表返回以TGCardEventModel为单元的数组，数组为空则无数据,normalArray为全时录像，eventArray为事件录像

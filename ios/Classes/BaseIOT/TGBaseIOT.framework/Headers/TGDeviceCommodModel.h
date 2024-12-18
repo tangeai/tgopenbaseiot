@@ -664,4 +664,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TGDeviceSdCardStartPlayModel : NSObject
+
+@property (nonatomic, assign) int command;  //Play record command. refer to ENUM_PLAYCONTROL
+@property (nonatomic, assign) int result;   // Depends on command
+                                            // when is AVIOCTRL_RECORD_PLAY_START:
+                                            //    result>=0   real channel no used by device for playback
+                                            //    result <0    error
+                                            //            -1    playback error
+                                            //            -2    exceed max allow client amount
+
+@end
+
 NS_ASSUME_NONNULL_END

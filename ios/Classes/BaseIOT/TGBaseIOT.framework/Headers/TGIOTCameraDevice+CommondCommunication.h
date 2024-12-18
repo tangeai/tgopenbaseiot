@@ -36,7 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
 // 查询SD卡状态
 - (void)getSDCardSatueSuccessBlock:(void(^)(TGDeviceSDStorageModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 获取已存储的卡录像日历
-- (void)tg_getSDCardAvailableDaysForVidoesSuccessBlock:(void(^)(TGDeviceSDVideoAvailableDaysModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+- (void)tg_getSDCardAvailableDaysForVidoesSuccessBlock:(void(^)(TGDeviceSDVideoAvailableDaysModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock ;
+
+// 播放某个时间点的卡录像
+//- (void)tg_playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint successBlock:(void(^)(TGDeviceSdCardStartPlayModel *result))successBlock failuerBlock:(void(^)(TGDeviceSdCardStartPlayModel *failuer))failuerBlock;
 
 #pragma mark - 画面
 // 获取视频翻转
