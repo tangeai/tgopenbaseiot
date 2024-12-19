@@ -83,8 +83,8 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 @property (nonatomic, assign) BOOL isChannelZeroStepOneComplete;
 @property (nonatomic, assign) BOOL isChannelOneStepOneComplete;
 
-@property (nonatomic, strong) NSMutableArray *commondSuccessDataResqArray;
-@property (nonatomic, strong) NSMutableArray *commondFailDataResqArray; 
+@property (nonatomic, strong) NSMutableDictionary *commondSuccessDataResqArray;
+@property (nonatomic, strong) NSMutableDictionary *commondFailDataResqArray; 
 
 @property (nonatomic,copy) TGSDCardRecordFileStartBlock sdCardFileStartAction;
 @property (nonatomic,copy) TGSDCardRecordFileEndBlock sdCardFileEndAction;

@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		fRG3ceXzms70nyLJBZfzKKaUkrA=
+		d09ycZaXIP/1j10dtGczCaQu7BM=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/TGCardEventModel.h</key>
 		<data>
-		bzkNJVHqv1hdTqPnms8rwCm8jzw=
+		HTKcBWr3ZAZiNSkLWZRRUi8B+0Y=
 		</data>
 		<key>Headers/TGClockTimeModel.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		VzCbH8K4oTyl7N4TErHuvqqE51I=
+		fK06PjPC40Iv1LmZ2rj9Lufc2Ck=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		7UMumeN0ZzvXECH088rCt+3WTR0=
+		4BkkYH5zlpNDBB8wSmkDrCe8DF4=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		+FJSKfi7aD7vCLzsvbPmJytdT8o=
+		8wdJbEx6GufU603BMHt5VIU8Lzw=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -337,11 +337,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fRG3ceXzms70nyLJBZfzKKaUkrA=
+			d09ycZaXIP/1j10dtGczCaQu7BM=
 			</data>
 			<key>hash2</key>
 			<data>
-			XSD5MawBDvCR5e4jJJ2P5KlOG8Aonz0+EnvydvI/xgI=
+			h78NFEG347+6Za6ZCIyw30wIUSDbSV8NVpCpNlDCkBM=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -458,11 +458,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bzkNJVHqv1hdTqPnms8rwCm8jzw=
+			HTKcBWr3ZAZiNSkLWZRRUi8B+0Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			JGDpRKT4YsxGurRdCWYibA+XuUrROnG9LZYq1CW4g14=
+			3ZMNrrTZaV01EQ0wxCVueoWbE4NhKLJJzJU9bcusMkU=
 			</data>
 		</dict>
 		<key>Headers/TGClockTimeModel.h</key>
@@ -546,11 +546,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VzCbH8K4oTyl7N4TErHuvqqE51I=
+			fK06PjPC40Iv1LmZ2rj9Lufc2Ck=
 			</data>
 			<key>hash2</key>
 			<data>
-			dIrwkk5G9Nr/mO3M092ofA80+3MIyzgrf8VaP06IuOg=
+			38U/mWwAvjTgbi3zhsbmHgjg2XJi2Mm2zI2vJqFmjDE=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -634,22 +634,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7UMumeN0ZzvXECH088rCt+3WTR0=
+			4BkkYH5zlpNDBB8wSmkDrCe8DF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			72InuJy7yacCqzxaja5/KfZnK7miy+iGKfizbR1afLU=
+			Dct5e+Kh9yeHUONQ2PULzHRvaCVQYjPpwDCmaroOtQg=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+FJSKfi7aD7vCLzsvbPmJytdT8o=
+			8wdJbEx6GufU603BMHt5VIU8Lzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			eqTdfTrEZp7kfKhyW5zMVivdnVlub1SPy3pziaoPVXE=
+			J6ty5H3Hl9t+vtL+1F5egfMb1Yy7UrnSV5XPnZPoBi0=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
