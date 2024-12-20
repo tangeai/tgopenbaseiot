@@ -62,6 +62,10 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 ///   - config: 配置项，此项不用设置，直接使用即可
 - (void)tg_audioSessionManagerDidRecordWithData:(void *)data length:(unsigned int)length config:(DAAudioConfigModel *)config;
 
+- (void)camera:(TGIOTCameraDevice *)camera didReceiveVideoCacheStart:(DACameraP2PVideoData *)videoData;
+
+- (void)camera:(TGIOTCameraDevice *)camera didReceiveVideoCacheEnd:(DACameraP2PVideoData *)videoData;
+
 @end
 
 @interface TGIOTCameraDevice : NSObject
@@ -84,11 +88,7 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 @property (nonatomic, assign) BOOL isChannelOneStepOneComplete;
 
 @property (nonatomic, strong) NSMutableDictionary *commondSuccessDataResqArray;
-@property (nonatomic, strong) NSMutableDictionary *commondFailDataResqArray; 
-
-@property (nonatomic,copy) TGSDCardRecordFileStartBlock sdCardFileStartAction;
-@property (nonatomic,copy) TGSDCardRecordFileEndBlock sdCardFileEndAction;
-@property (nonatomic,copy) NSArray *sdCalendar;
+@property (nonatomic, strong) NSMutableDictionary *commondFailDataResqArray;
 
 + (instancetype)cameraWithDevice:(TGCameraDeviceModel *)device;
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
@@ -192,6 +192,12 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)getCameraSDCardRecordModelListWithDate:(NSString *)date successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
 // 获取卡录像列表，返回数据，可自行解析
 - (void)getCameraSDCardRecordListWithDate:(NSString *)date callBack:(TGSDCardRecordListBlock)callBack;
+/// 开启片段模式（实时返回卡列表某个片段的开始及结束监控,支持跨天播放）
+/// - Parameters:
+///   - open: 是否开启，yes 实时返回卡列表某个片段的开始及结束监控,支持跨天播放  no 不支持监控
+///   - startBlock: 片段开始
+///   - endBlock: 片段结束
+- (void)openSdCardFileObserveEnable:(BOOL)open start:(TGSDCardRecordFileStartBlock)startBlock end:(TGSDCardRecordFileEndBlock)endBlock;
 // 设置当前时间点的卡录像播放资源
 - (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint;
 // 播放卡录像
