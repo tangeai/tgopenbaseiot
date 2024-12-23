@@ -144,8 +144,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGDeviceClockTimeModel : NSObject
 
-@property (nonatomic, strong) TGDeviceTimeModel *from;
-@property (nonatomic, strong) TGDeviceTimeModel *to;
+@property (nonatomic, strong) TGDeviceTimeModel *from;      // 起始时间点
+@property (nonatomic, strong) TGDeviceTimeModel *to;        // 结束时间点
+@property (nonatomic, assign) int day_mask;                 // 日期
+@property (nonatomic, assign) int enabled;                  // 开关
 
 @end
 
@@ -673,6 +675,14 @@ NS_ASSUME_NONNULL_BEGIN
                                             //    result <0    error
                                             //            -1    playback error
                                             //            -2    exceed max allow client amount
+
+@end
+
+@interface TGDevicePowerStrategy : NSObject
+
+@property (nonatomic, assign) int strategy;  // 当前工作模式 SMsgAVIoctrlPOWERSTRATEGY
+@property (nonatomic, assign) int rec_len;   // strategy=SMsgAVIoctrlPS_USER_DEFINED时的自定义录像(工作)时长. 非自定义模式时为0
+@property (nonatomic, strong) TGDeviceAwakeTimeModel *timePlans;
 
 @end
 

@@ -146,9 +146,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getDeviceEnableDormancySuccessBlock:(void(^)(TGDeviceGetEnableDormancyModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 // 设置被动唤醒后无操作的最大工作时长
-- (void)setDeviceMaxTime:(int)time successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+- (void)setDeviceMaxTime:(int)time successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock DEPRECATED_MSG_ATTRIBUTE("Use -setDeviceBatteryStrategyWithModel: instead");;
 // 获取被动唤醒后无操作的最大工作时长
-- (void)getDeviceMaxTimeSuccessBlock:(void(^)(TGDevicePassivityGetMaxAwakeModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
+- (void)getDeviceMaxTimeSuccessBlock:(void(^)(TGDevicePassivityGetMaxAwakeModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock DEPRECATED_MSG_ATTRIBUTE("Use -getDeviceBatteryStrategySuccessBlock: instead");;;
 
 // 设置主动唤醒时间
 - (void)setDeviceAwakeTimeWithModel:(TGDeviceAwakeTimeModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
@@ -186,6 +186,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setDeviceFrequencyWithChannel:(int)channel mode:(ENUM_ENVIRONMENT_MODE)mode successBlock:(void(^)(TGDeviceSetFrequencyModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 获取电源频率（防闪烁）
 - (void)getDeviceFrequencyWithChannel:(int)channel successBlock:(void(^)(TGDeviceFrequencyModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 电池策略
+- (void)getDeviceBatteryStrategySuccessBlock:(void(^)(TGDevicePowerStrategy *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 设置电池策略
+- (void)setDeviceBatteryStrategyWithModel:(TGDevicePowerStrategy *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock  failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 #pragma mark - wifi
 
