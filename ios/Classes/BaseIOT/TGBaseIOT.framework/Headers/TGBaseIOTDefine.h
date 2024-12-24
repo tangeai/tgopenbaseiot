@@ -59,8 +59,8 @@ typedef NS_OPTIONS(NSInteger, TGCameraDeviceFlag) {
 };
 
 typedef NS_ENUM(NSInteger, TGDeviceConnectMode) {
-    TGDeviceConnectMode_Remote,
-    TGDeviceConnectMode_Local
+    TGDeviceConnectMode_Remote,                                     // 远程连接
+    TGDeviceConnectMode_Local                                       // 本地连接
 };
 
 typedef NS_ENUM(NSInteger,TGDeviceButtonListFlag) {

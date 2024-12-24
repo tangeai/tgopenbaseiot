@@ -26,6 +26,11 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 @protocol TGIOTCameraDeviceDelegate <NSObject>
 
 @optional
+
+/// 连接状态代理回掉
+/// - Parameters:
+///   - camera: 备交互实例
+///   - sessionStatus: 连接状态
 - (void)camera:(TGIOTCameraDevice *)camera didConnectSessionStatusChanged:(TGConnectSessionStatus)sessionStatus;
 
 /// 接收指令方法
