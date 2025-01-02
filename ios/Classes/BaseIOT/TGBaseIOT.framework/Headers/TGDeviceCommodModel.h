@@ -686,4 +686,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TGFeederConfigModel : NSObject
+
+@property (nonatomic, assign) int max_timers;               // 支持的定时配置数
+@property (nonatomic, assign) int max_servings;             // 最大供食份数
+
+@end
+
+@interface TGFeederTimerModel : NSObject
+@property (nonatomic, strong) TGDeviceTimeModel *clock;     // 喂食时间
+@property (nonatomic, assign) int state;                    // 0：禁止（或单次定时器已执行）；1：有效
+@property (nonatomic, assign) int repeat;                   // weekdays mask. bit0:Sunday; bit1-Monday; ...
+@property (nonatomic, assign) int serving;                  // 食物份数
+
+@end
+
+@interface TGHandFeederModel : NSObject
+@property (nonatomic, assign) int  nServing;                // 投喂份数 >= 1
+
+@end
+
 NS_ASSUME_NONNULL_END

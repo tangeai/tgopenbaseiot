@@ -293,6 +293,15 @@ NS_ASSUME_NONNULL_BEGIN
 //设置设备蜂鸣器开关 0-关闭 1-开启
 - (void)tg_setDeviceBuzzerMode:(int)mode successBlock:(void(^)(TGDeviceBuzzerSetModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
+#pragma mark -- 动物喂食器
+// 查询喂食器配置
+- (void)tg_getQueryFeederConfigurationSuccessBlock:(void(^)(TGFeederConfigModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 配置喂食器时间
+- (void)tg_setFeederTimerWithArray:(nonnull NSArray <TGFeederTimerModel *> *)timerArray successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 获取喂食器配置时间
+- (void)tg_getFeederTimersSuccessBlock:(void(^)(NSArray <TGFeederTimerModel *> *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 手工喂食
+- (void)tg_setFeedByHandWithModel:(TGHandFeederModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 @end
 
 NS_ASSUME_NONNULL_END

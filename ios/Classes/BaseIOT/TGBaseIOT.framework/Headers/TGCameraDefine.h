@@ -46,6 +46,13 @@ typedef struct{
 #define IOTYPE_USER_CMD_GET_POWER_STRATEGY                 0x048E   // 获取电池供电时电源策略
 #define IOTYPE_USER_CMD_GET_POWER_STRATEGY_RETRUE          0x048F   // 获取电池供电时电源策略返回
 
+#define IOTYPE_USER_CMD_FEEDER_GET_CONFIG                  0x0500   // 喂食器配置
+#define IOTYPE_USER_CMD_FEEDER_GET_CONFIG_RETRUE           0x0501   // 返回·喂食器配置
+#define IOTYPE_USER_CMD_FEEDER_SET_TIMERS                  0x0502   // 设置喂食定时.  req: Tcis_FeederTimers; resp: generic
+#define IOTYPE_USER_CMD_FEEDER_GET_TIMERS                  0x0504   // 获取喂食定时器设置. req: none; resp: Tcis_FeederTimers
+#define IOTYPE_USER_CMD_FEEDER_GET_TIMERS_RETRUE           0x0505   // 获取喂食定时器设置 返回数据
+#define IOTYPE_USER_CMD_FEEDER_FEED_FOOD                   0x0506   // 手工喂食
+
 /* CODEC ID */
 typedef enum{
     MEDIA_CODEC_UNKNOWN                                 = 0x00,
@@ -2746,5 +2753,37 @@ typedef struct SMsgAVIoctrlTcis_PowerStrategy {
    */
     SMsgAVIoctrlTIMEPLANS    plans;
 }  __attribute__ ((__packed__)) SMsgAVIoctrlTcis_PowerStrategy;
+
+/** 喂食器配置.
+    * TCMD_FEEDER_GET_CONFIG     = 0x0500 \n
+    * 这个结构可能扩展. App 端要检查收到的数据包的长度
+    */
+typedef struct SMsgAVIoctrlTcis_FeederConfig {
+    int max_timers;       ///< 支持的定时配置数
+    int max_servings;     ///< 最大供食份数
+} __attribute__((__packed__)) SMsgAVIoctrlTcis_FeederConfigReq, SMsgAVIoctrlTcis_FeederConfigResp;
+
+/** 手动喂食.
+* TCMD_FEEDER_FEED_FOOD      = 0x0506
+ */
+typedef struct SMsgAVIoctrlTcis_FeedReq {
+     int      nServing;     ///< 投喂份数
+     int      reserved;     ///< 0
+} __attribute__((__packed__))  SMsgAVIoctrlTcis_FeedReq;
+
+
+typedef struct SMsgAVIoctrlFEEDERTIMER {
+     CLOCKTIME  clock;    ///< 喂食时间
+     uint8_t    state;    ///< 0：禁止（或单次定时器已执行）；1：有效
+     uint8_t    repeat;   ///< weekdays mask. bit0:Sunday; bit1-Monday; ...
+     uint16_t   serving;  ///< 食物份数
+ } __attribute__ ((__packed__)) SMsgAVIoctrlFEEDERTIMER;
+
+ /** 喂食定时设置.
+  */
+typedef struct SMsgAVIoctrlTcis_FeederTimers {
+     int nTimers;
+     SMsgAVIoctrlFEEDERTIMER tiems[10];
+} __attribute__ ((__packed__)) SMsgAVIoctrlTcis_FeederTimersReq, SMsgAVIoctrlTcis_FeederTimersResp;
 
 #endif /* TGCameraDefine_h */

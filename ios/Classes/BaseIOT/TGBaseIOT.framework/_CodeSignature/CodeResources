@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		KL+VMUUVJbc/NOdPcHaBg8eP6pI=
+		aSiYFfVwtgTV45lQpsI0DOTYjRM=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		HqvN+M46aqmJBnMDNFFRZ2bbJy8=
+		mK2zgzWhGkn0pDg9wvja6OCpVkA=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		HXqYYGY0Wl8wXztg3T5wWWy7EAE=
+		CMiu3jnvo1HLsozuC1TdvHFb3As=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		KKUyu9Fo91SW9AMTkrKGyPlTj1c=
+		KqwKUVqQVth9gzuUy3ONkWqEZWY=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
@@ -221,11 +221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KL+VMUUVJbc/NOdPcHaBg8eP6pI=
+			aSiYFfVwtgTV45lQpsI0DOTYjRM=
 			</data>
 			<key>hash2</key>
 			<data>
-			M3MqWZIgb4uQSDM+X1NsAZdvNnq6yXLDTN3ESTOFrt8=
+			C2D2Pxm2BfdFU2XkL1Vsjx9N4JuDRu8argy4EqfTYPQ=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -287,11 +287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HqvN+M46aqmJBnMDNFFRZ2bbJy8=
+			mK2zgzWhGkn0pDg9wvja6OCpVkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			xywmNiccsmtOs0G3oq7mTCYKBDlvSUA0IaDKNDDXeEc=
+			gP2nEhqSSxrHa/QrR4eBkXZj313VdiOedyo9DAD1htg=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -430,11 +430,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HXqYYGY0Wl8wXztg3T5wWWy7EAE=
+			CMiu3jnvo1HLsozuC1TdvHFb3As=
 			</data>
 			<key>hash2</key>
 			<data>
-			R0h5MD6VXLB8mlMPdbcltImha5LOcFj0ceE9ZltgoVA=
+			TjWecb5XnPRt+R4xmFiTowLpykEFcijXKSa4AjpMsPU=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -518,11 +518,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KKUyu9Fo91SW9AMTkrKGyPlTj1c=
+			KqwKUVqQVth9gzuUy3ONkWqEZWY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MAg90dmWPqp9pk8becFmqnY3WTPIeE4hslkfaJKUs8k=
+			xc8lktJ81vnGjFlwcsGoAyy98uwm6z2u7DWa45fclQo=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>
