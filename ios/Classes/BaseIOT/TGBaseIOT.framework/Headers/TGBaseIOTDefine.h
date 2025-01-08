@@ -59,8 +59,8 @@ typedef NS_OPTIONS(NSInteger, TGCameraDeviceFlag) {
 };
 
 typedef NS_ENUM(NSInteger, TGDeviceConnectMode) {
-    TGDeviceConnectMode_Remote,
-    TGDeviceConnectMode_Local
+    TGDeviceConnectMode_Remote,                                     // 远程连接
+    TGDeviceConnectMode_Local                                       // 本地连接
 };
 
 typedef NS_ENUM(NSInteger,TGDeviceButtonListFlag) {
@@ -186,6 +186,12 @@ typedef NS_ENUM(NSInteger,TGAddDeviceBindType) {
     TGAddDeviceBindType_device              //设备配网添加
 };
 
+typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
+    TGCloudManagerErrorType_Ok,
+    TGCloudManagerErrorType_NoFile,
+    TGCloudManagerErrorType_NetworkError
+};
+
 #define TGBaseIOTAddDeviceErrorDomain                   @"com.tange365.TGBaseIOTAddDeviceErrorDomain"
 
 #define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
@@ -194,7 +200,7 @@ typedef NS_ENUM(NSInteger,TGAddDeviceBindType) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"24111000"
+#define TGBaseIOTSDKVersion                             @"24130000"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50

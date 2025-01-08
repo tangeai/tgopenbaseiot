@@ -11,6 +11,7 @@
 #import "TGCloudEventModel.h"
 #import <DAAudioVideo/DAAudioVideo.h>
 #import "TGCameraDeviceModel.h"
+#import "TGBaseIOTDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,11 +20,6 @@ typedef NS_ENUM(NSInteger,TGCloudRecordOrderType) {
     TGCloudRecordOrderType_Asce     //升序
 };
 
-typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
-    TGCloudManagerErrorType_Ok,
-    TGCloudManagerErrorType_NoFile,
-    TGCloudManagerErrorType_NetworkError
-};
 
 @protocol TGCloudDeviceManagerDelegate <NSObject>
 

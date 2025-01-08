@@ -41,6 +41,18 @@ typedef struct{
 #define IOTYPE_USER_CMD_GET_SCREEN_DISPLAY_REQ             0x0384  // 获取屏幕显示设置
 #define IOTYPE_USER_CMD_GET_SCREEN_DISPLAY_RESP            0x0385  // 获取屏幕显示设置
 
+#define IOTYPE_USER_CMD_SET_POWER_STRATEGY                 0x048C   // 设置电池供电时电源策略
+#define IOTYPE_USER_CMD_SET_POWER_STRATEGY_RETRUE          0x048D   // 设置电池供电时电源策略返回
+#define IOTYPE_USER_CMD_GET_POWER_STRATEGY                 0x048E   // 获取电池供电时电源策略
+#define IOTYPE_USER_CMD_GET_POWER_STRATEGY_RETRUE          0x048F   // 获取电池供电时电源策略返回
+
+#define IOTYPE_USER_CMD_FEEDER_GET_CONFIG                  0x0500   // 喂食器配置
+#define IOTYPE_USER_CMD_FEEDER_GET_CONFIG_RETRUE           0x0501   // 返回·喂食器配置
+#define IOTYPE_USER_CMD_FEEDER_SET_TIMERS                  0x0502   // 设置喂食定时.  req: Tcis_FeederTimers; resp: generic
+#define IOTYPE_USER_CMD_FEEDER_GET_TIMERS                  0x0504   // 获取喂食定时器设置. req: none; resp: Tcis_FeederTimers
+#define IOTYPE_USER_CMD_FEEDER_GET_TIMERS_RETRUE           0x0505   // 获取喂食定时器设置 返回数据
+#define IOTYPE_USER_CMD_FEEDER_FEED_FOOD                   0x0506   // 手工喂食
+
 /* CODEC ID */
 typedef enum{
     MEDIA_CODEC_UNKNOWN                                 = 0x00,
@@ -2699,5 +2711,79 @@ typedef struct SMsgAVIoctrlTcis_ScreenDisplay {
     int disp_off_time;       ///< 非呼叫原因(例如设置)点亮屏幕后转熄屏的时间，单位:秒.
                              ///<   - \c 0 - 表示永不熄屏
 } SMsgAVIoctrlTcis_ScreenDisplay;
+
+
+/** \struct TIMEPLAN.  * 时间计划 */
+typedef struct SMsgAVIoctrlTIMEPLAN {
+    TIMERANGE time_range;   ///< 起止时间;如果结束时间<=开始时间;逻辑为跨天
+    unsigned int day_mask;  ///< 重复: bit-mask of week-day.bit0-Sunday;bit1-Monday......
+    int enabled;            ///<  0关闭  1启用
+} __attribute__ ((__packed__))  SMsgAVIoctrlTIMEPLAN;
+
+/** \struct TIMEPLANS 定时计划不定长数组 */
+typedef struct SMsgAVIoctrlTIMEPLANS {
+    unsigned int nItems;   ///< 时间计划个数
+    SMsgAVIoctrlTIMEPLAN items[10];     ///<  时间计划数组, 个数由nItems决定
+} __attribute__ ((__packed__)) SMsgAVIoctrlTIMEPLANS;
+
+ 
+ /** 电源策略.
+*  引入文档 https://tange-ai.feishu.cn/docx/M3DOddPWZoe8Mbxk1vpcf8avnqO
+*/
+typedef enum  {
+    SMsgAVIoctrlPS_PERFORMANCE_FIRST, ///< 性能优先
+    SMsgAVIoctrlPS_POWERSAVING,       ///< 省电模式. 开启ai, 录像不超过10"
+     /** 超级省电模式(关闭本地pir唤醒).
+    * @note App不发送关闭PIR的命令. 固件保留之前的PIR配置, \n
+    *       但实际PIR不生效.
+    */
+    SMsgAVIoctrlPS_SUPER_POWERSAVING, ///< 超级省电模式
+    SMsgAVIoctrlPS_USER_DEFINED,      ///< 用户定义录像时长
+    SMsgAVIoctrlPS_POWER_CONSUMPTION,       ///< 微功耗
+    SMsgAVIoctrlPS_ALWAYS_RECORDING      ///< 常电
+} SMsgAVIoctrlPOWERSTRATEGY;
+
+typedef struct SMsgAVIoctrlTcis_PowerStrategy {
+    int strategy; ///< 当前工作模式 @ref POWERSTRATEGY
+    int rec_len;     ///< strategy=@ref PS_USER_DEFINED时的自定义录像(工作)时长. 非自定义模式时为0
+    /** 定时计划. 仅当strategy不是 @ref PS_SUPER_POWERSAVING 时定时计划才有效。 \n
+   *  在定时范围内, 按当前模式工作, 定时范围外按 PS_SUPER_POWERSAVING 模式工作. \n
+   *  但在 strategy=PS_SUPER_POWERSAVING 时, 设备仍然要响应指令，返回或保存定时 \n
+   *  计划的内容, 以方便APP对编辑操作
+   */
+    SMsgAVIoctrlTIMEPLANS    plans;
+}  __attribute__ ((__packed__)) SMsgAVIoctrlTcis_PowerStrategy;
+
+/** 喂食器配置.
+    * TCMD_FEEDER_GET_CONFIG     = 0x0500 \n
+    * 这个结构可能扩展. App 端要检查收到的数据包的长度
+    */
+typedef struct SMsgAVIoctrlTcis_FeederConfig {
+    int max_timers;       ///< 支持的定时配置数
+    int max_servings;     ///< 最大供食份数
+} __attribute__((__packed__)) SMsgAVIoctrlTcis_FeederConfigReq, SMsgAVIoctrlTcis_FeederConfigResp;
+
+/** 手动喂食.
+* TCMD_FEEDER_FEED_FOOD      = 0x0506
+ */
+typedef struct SMsgAVIoctrlTcis_FeedReq {
+     int      nServing;     ///< 投喂份数
+     int      reserved;     ///< 0
+} __attribute__((__packed__))  SMsgAVIoctrlTcis_FeedReq;
+
+
+typedef struct SMsgAVIoctrlFEEDERTIMER {
+     CLOCKTIME  clock;    ///< 喂食时间
+     uint8_t    state;    ///< 0：禁止（或单次定时器已执行）；1：有效
+     uint8_t    repeat;   ///< weekdays mask. bit0:Sunday; bit1-Monday; ...
+     uint16_t   serving;  ///< 食物份数
+ } __attribute__ ((__packed__)) SMsgAVIoctrlFEEDERTIMER;
+
+ /** 喂食定时设置.
+  */
+typedef struct SMsgAVIoctrlTcis_FeederTimers {
+     int nTimers;
+     SMsgAVIoctrlFEEDERTIMER tiems[10];
+} __attribute__ ((__packed__)) SMsgAVIoctrlTcis_FeederTimersReq, SMsgAVIoctrlTcis_FeederTimersResp;
 
 #endif /* TGCameraDefine_h */
