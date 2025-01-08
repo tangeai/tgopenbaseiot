@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		RJ1Qgt6GrcJKwbAoEvwtbTZ9ULs=
+		NoaXJj4/5JaRytotQpGrtbfgXIU=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		aSiYFfVwtgTV45lQpsI0DOTYjRM=
+		nF3Cc3vnTyFECc1srbjzl3tOK2g=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
-		JJNBGyc+oFh0hF7pu3KTeFFWowc=
+		1bG2YUt5GNC15ONicBzqUrMzA84=
 		</data>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		mK2zgzWhGkn0pDg9wvja6OCpVkA=
+		2JQ/3uJtCkI/q94qe97Pa/s0MFI=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/TGCameraDeviceModel.h</key>
 		<data>
-		5tne7ceR26XF8rZ5GXmewBePszU=
+		bWdgPrcGEmCl1K8AVA5oo6cHvvU=
 		</data>
 		<key>Headers/TGCapZoomUtil.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		CMiu3jnvo1HLsozuC1TdvHFb3As=
+		fK06PjPC40Iv1LmZ2rj9Lufc2Ck=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		KqwKUVqQVth9gzuUy3ONkWqEZWY=
+		4BkkYH5zlpNDBB8wSmkDrCe8DF4=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		VAys/369MPIjPZBcE1mFrHZyosw=
+		qr3X2sBuEhOZ5NaS+uS6sCnjZh4=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -210,33 +210,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RJ1Qgt6GrcJKwbAoEvwtbTZ9ULs=
+			NoaXJj4/5JaRytotQpGrtbfgXIU=
 			</data>
 			<key>hash2</key>
 			<data>
-			UqOHj4HbxW0g8zs4v86FVRFuGGomlo1jZaPtXcyOs64=
+			3HynI0fiyDf3CLmqqaVLhUVYpUDwD0f6Ui0Qtm3EBBk=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aSiYFfVwtgTV45lQpsI0DOTYjRM=
+			nF3Cc3vnTyFECc1srbjzl3tOK2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			C2D2Pxm2BfdFU2XkL1Vsjx9N4JuDRu8argy4EqfTYPQ=
+			MjLBnEfJ3r0RzC/ylE9nyWBTSQnrlPEXykf3LpAlU1Y=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JJNBGyc+oFh0hF7pu3KTeFFWowc=
+			1bG2YUt5GNC15ONicBzqUrMzA84=
 			</data>
 			<key>hash2</key>
 			<data>
-			wiJjEQNt+CwwOerc1KmmXM2TuWHfYP40jIZMvkw3Lek=
+			GxZ2V+vhen8i/ylhEcA+S/5lIPuByvphJk3uTALR68s=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
@@ -287,11 +287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mK2zgzWhGkn0pDg9wvja6OCpVkA=
+			2JQ/3uJtCkI/q94qe97Pa/s0MFI=
 			</data>
 			<key>hash2</key>
 			<data>
-			gP2nEhqSSxrHa/QrR4eBkXZj313VdiOedyo9DAD1htg=
+			aNz2cEMr+z4x2WHHDOeM3YhbGLMD0TqnMo4jRIDEXG0=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -320,11 +320,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5tne7ceR26XF8rZ5GXmewBePszU=
+			bWdgPrcGEmCl1K8AVA5oo6cHvvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			KCZwyc4lYPc4yI0JmEIPBrhuj8WhNl7tsSPub7MlCmU=
+			/BPWXBJzcbgTVpn7NIDWWs2E668Bx4DX9lStWJWAF8M=
 			</data>
 		</dict>
 		<key>Headers/TGCapZoomUtil.h</key>
@@ -430,11 +430,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CMiu3jnvo1HLsozuC1TdvHFb3As=
+			fK06PjPC40Iv1LmZ2rj9Lufc2Ck=
 			</data>
 			<key>hash2</key>
 			<data>
-			TjWecb5XnPRt+R4xmFiTowLpykEFcijXKSa4AjpMsPU=
+			38U/mWwAvjTgbi3zhsbmHgjg2XJi2Mm2zI2vJqFmjDE=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -518,22 +518,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KqwKUVqQVth9gzuUy3ONkWqEZWY=
+			4BkkYH5zlpNDBB8wSmkDrCe8DF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			xc8lktJ81vnGjFlwcsGoAyy98uwm6z2u7DWa45fclQo=
+			Dct5e+Kh9yeHUONQ2PULzHRvaCVQYjPpwDCmaroOtQg=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VAys/369MPIjPZBcE1mFrHZyosw=
+			qr3X2sBuEhOZ5NaS+uS6sCnjZh4=
 			</data>
 			<key>hash2</key>
 			<data>
-			fTWnBPqkYlYNPgPGj2xY2eqfwOLm02wnF8RLBy/4elU=
+			+J7MivxKmjYsWJY3eM6DFOgNqGf/8N/bf5mZhx8xkFE=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>

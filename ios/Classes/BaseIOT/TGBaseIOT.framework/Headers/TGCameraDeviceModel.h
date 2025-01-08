@@ -68,17 +68,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - onlineInfor
 
-@property (nonatomic, assign) BOOL isOnline;                    // 是否在线
-@property (nonatomic, copy) NSString *up_at;                    // 上线时间戳
-@property (nonatomic, copy) NSString *down_at;                  // 下线时间戳
-@property (nonatomic, assign) NSInteger up_time;                // 上线时间戳
-@property (nonatomic, assign) NSInteger down_time;              // 下线时间戳
-@property (nonatomic, assign) BOOL is_alive;                    // 电池设备---是否保活中
-@property (nonatomic, assign) NSInteger live_time;              // 长电设备(在线时值为-1、离线值为0)、低功耗设备(在线时值为进入休眠前的倒计时，离线时值为0)
-@property (nonatomic, copy) NSString *last_heartbeat_data;      // 电池设备---心跳数据
-@property (nonatomic, assign) NSInteger last_heartbeat_time;    // 电池设备---最近心跳时间戳
-@property (nonatomic, assign) NSInteger sleep_login_time;       // 电池设备---最近登录休眠服务器的时间戳
-@property (nonatomic, assign) NSInteger last_offline_time;      // 电池设备---最近退出休眠服务器时间戳
+@property (nonatomic, assign) BOOL isOnline;
+@property (nonatomic, copy) NSString *up_at;
+@property (nonatomic, copy) NSString *down_at;
 
 #pragma mark - connectInfor
 

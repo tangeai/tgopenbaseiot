@@ -144,10 +144,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGDeviceClockTimeModel : NSObject
 
-@property (nonatomic, strong) TGDeviceTimeModel *from;      // 起始时间点
-@property (nonatomic, strong) TGDeviceTimeModel *to;        // 结束时间点
-@property (nonatomic, assign) int day_mask;                 // 日期
-@property (nonatomic, assign) int enabled;                  // 开关
+@property (nonatomic, strong) TGDeviceTimeModel *from;
+@property (nonatomic, strong) TGDeviceTimeModel *to;
 
 @end
 
@@ -675,34 +673,6 @@ NS_ASSUME_NONNULL_BEGIN
                                             //    result <0    error
                                             //            -1    playback error
                                             //            -2    exceed max allow client amount
-
-@end
-
-@interface TGDevicePowerStrategy : NSObject
-
-@property (nonatomic, assign) int strategy;  // 当前工作模式 SMsgAVIoctrlPOWERSTRATEGY
-@property (nonatomic, assign) int rec_len;   // strategy=SMsgAVIoctrlPS_USER_DEFINED时的自定义录像(工作)时长. 非自定义模式时为0
-@property (nonatomic, strong) TGDeviceAwakeTimeModel *timePlans;
-
-@end
-
-@interface TGFeederConfigModel : NSObject
-
-@property (nonatomic, assign) int max_timers;               // 支持的定时配置数
-@property (nonatomic, assign) int max_servings;             // 最大供食份数
-
-@end
-
-@interface TGFeederTimerModel : NSObject
-@property (nonatomic, strong) TGDeviceTimeModel *clock;     // 喂食时间
-@property (nonatomic, assign) int state;                    // 0：禁止（或单次定时器已执行）；1：有效
-@property (nonatomic, assign) int repeat;                   // weekdays mask. bit0:Sunday; bit1-Monday; ...
-@property (nonatomic, assign) int serving;                  // 食物份数
-
-@end
-
-@interface TGHandFeederModel : NSObject
-@property (nonatomic, assign) int  nServing;                // 投喂份数 >= 1
 
 @end
 
