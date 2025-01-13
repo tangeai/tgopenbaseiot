@@ -487,6 +487,7 @@ typedef enum{
     AVIOCTRL_RECORD_PLAY_BACKWARD                       = 0x05,     // now, APP no use
     AVIOCTRL_RECORD_PLAY_SEEKTIME                       = 0x06,     // now, APP no use
     AVIOCTRL_RECORD_PLAY_END                            = 0x07,
+    AVIOCTRL_RECORD_PLAY_CONTINUE                       = 0x08,
     AVIOCTRL_RECORD_PLAY_START                          = 0x10,
 }ENUM_PLAYCONTROL;
 

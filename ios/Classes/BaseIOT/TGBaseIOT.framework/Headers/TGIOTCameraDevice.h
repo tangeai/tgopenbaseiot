@@ -211,6 +211,8 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)pauseCameraSDCardPlay;
 // 继续播放卡录像
 - (void)continueCameraSDCardPlay;
+// 继续播放卡录像(非爱佳设备使用此方法)
+- (void)continueCameraSDCardPlayWithTivs;
 // 停止卡录像播放
 - (void)stopCameraSDCardPlay;
 
