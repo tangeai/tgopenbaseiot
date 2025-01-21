@@ -19,7 +19,11 @@ typedef NS_ENUM(NSInteger,TGCloudRecordOrderType) {
     TGCloudRecordOrderType_Desc,    //降序
     TGCloudRecordOrderType_Asce     //升序
 };
-
+typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
+    TGCloudManagerErrorType_Ok,
+    TGCloudManagerErrorType_NoFile,
+    TGCloudManagerErrorType_NetworkError
+};
 
 @protocol TGCloudDeviceManagerDelegate <NSObject>
 
@@ -49,9 +53,14 @@ typedef NS_ENUM(NSInteger,TGCloudRecordOrderType) {
 
 // 查询某一天的云录像列表，不区分全时还是事件视频类型 (推荐使用)
 - (void)getNoTagDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *allArray))successBlock failureBlock:(void(^)(id error))failureBlock;
-
 // 返回云录像列表（逐渐废弃）
 - (void)getDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *normalArray,NSArray *eventArray))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+/// 绑定数据源（如不调用将默认使用最后一次调用云录像列表的数据）绑定后，云录像操作将使用绑定数据源进行操作
+/// - Parameters:
+///   - dateString:日期（2024-01-01）
+///   - allArray: 云录像列表处理过的云录像集合列表
+- (void)setCloudCardDataSourceWithDateString:(NSString *)dateString allArray:(NSArray *)allArray;
 
 // 开始播放
 - (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval;

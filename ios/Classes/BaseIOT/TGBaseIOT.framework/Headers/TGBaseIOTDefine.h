@@ -186,12 +186,6 @@ typedef NS_ENUM(NSInteger,TGAddDeviceBindType) {
     TGAddDeviceBindType_device              //设备配网添加
 };
 
-typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
-    TGCloudManagerErrorType_Ok,
-    TGCloudManagerErrorType_NoFile,
-    TGCloudManagerErrorType_NetworkError
-};
-
 #define TGBaseIOTAddDeviceErrorDomain                   @"com.tange365.TGBaseIOTAddDeviceErrorDomain"
 
 #define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
