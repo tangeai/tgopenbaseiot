@@ -147,7 +147,8 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)startCameraLiveAudio;
 // 关闭音频直播
 - (void)stopCameraLiveAudio;
-
+// 静音 yes 为静音 no为不静音
+- (void)liveMuteOpen:(BOOL)open;
 /**
  * 指定清晰度播放视频通道1实时视频，请搭配使用stopLiveChannelOneVideo方法停止播放
  * @param resolution 清晰度
