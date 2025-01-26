@@ -29,8 +29,15 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 
 @optional
 
+#pragma mark -- play
 // 播放回调
 - (void)cloudDeviceManagerDidPlayDecoderVideoData:(DACameraP2PVideoData *)videoData;
+// 播放缓存开始回调
+- (void)didReceiveVideoCacheStart:(DACameraP2PVideoData *)videoData;
+// 播放缓存结束回调
+- (void)didReceiveVideoCacheEnd:(DACameraP2PVideoData *)videoData;
+
+#pragma mark -- other
 // 返回门铃录制存储地址
 - (void)cloudDeviceManagerDidDoorbellMsgRecordWithFilePath:(NSString *)filePath;
 // 返回下载地址
@@ -51,22 +58,41 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
 
-// 查询某一天的云录像列表，不区分全时还是事件视频类型 (推荐使用)
+#pragma mark -- 云录像列表
+/// 查询某一天的云录像列表，不区分全时还是事件视频类型 (推荐使用)(内置缓存，请求完成后，调用后云录操作将使用该接口的缓存数据)
+/// - Parameters:
+///   - dateString: 日期
+///   - successBlock: 成功回调
+///   - failureBlock: 失败回调
 - (void)getNoTagDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *allArray))successBlock failureBlock:(void(^)(id error))failureBlock;
-// 返回云录像列表（逐渐废弃）
-- (void)getDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *normalArray,NSArray *eventArray))successBlock failureBlock:(void(^)(id error))failureBlock;
 
+///  查询某一天的云录像列表，不区分全时还是事件视频类型 (推荐使用)（无内置缓存，和绑定数据源搭配使用）
+/// - Parameters:
+///   - dateString: 日期
+///   - successBlock: 成功回调
+///   - failureBlock: 失败回调
+- (void)getNoCacheAndTagDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *allArray))successBlock failureBlock:(void(^)(id error))failureBlock;
 /// 绑定数据源（如不调用将默认使用最后一次调用云录像列表的数据）绑定后，云录像操作将使用绑定数据源进行操作
 /// - Parameters:
 ///   - dateString:日期（2024-01-01）
 ///   - allArray: 云录像列表处理过的云录像集合列表
 - (void)setCloudCardDataSourceWithDateString:(NSString *)dateString allArray:(NSArray *)allArray;
 
-// 开始播放
-- (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval;
+/// 返回云录像列表，区分事件类型（逐渐废弃）
+/// - Parameters:
+///   - dateString: 日期
+///   - successBlock: 成功回调
+///   - failureBlock: 失败回调
+- (void)getDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *normalArray,NSArray *eventArray))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -getNoTagDeviceCloudRecordWithDateString: instead");
 
-//设置升降序播放
+#pragma mark -- 云录像操作
+/// 设置升降序播放，可以设置云录像是升序播放或降序播放
+/// - Parameter order: 顺序参数
 - (void)setUpCloudRecordOrder:(TGCloudRecordOrderType)order;
+
+/// 云录像开始播放方法（此方法仅限云录像），此方法将按云录像的列表逐个自动播放
+/// - Parameter timeInterval: 距离当天00:00:00的秒数
+- (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval;
 
 /// 播放一个start->end的视频  开始播放
 /// - Parameters:
@@ -94,31 +120,39 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - errorCallBack:返回错误
 - (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
-// 下载并播放
+/// 下载并播放一个区间内的片段
+/// - Parameters:
+///   - model: 下载model
+///   - errorCallBack: 回调
 - (void)downloadAndPlayCloudFileWithModel:(TGCloudDownloadModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
-// 停止下载
+/// 停止下载
 - (void)stopDownload;
 
-// 暂停播放
+/// 暂停播放  （注意此方法要和继续播放方法成对调用）
 - (void)pausePlay;
 
-// 继续播放
+/// 继续播放 （注意此方法要和暂停播放方法成对调用）
 - (void)continuePlay;
 
-// 开始播放
+/// 停止播放
 - (void)stopPlay;
-// 禁音
+/// 禁音
 - (void)muteAudio;
-// 取消禁音
+/// 取消禁音
 - (void)cancleMute;
 
-// 开始录像
+/// 开始录制方法
+/// - Parameters:
+///   - fileName: 录制的文件名称
+///   - recordType: 录制类型
 - (void)startRecordWithFileName:(NSString *)fileName recordType:(TGVideoRecordType)recordType;
-// 结束录制
+
+/// 停止录制
 - (void)stopRecord;
 
-// 设置云回放主画面
+#pragma mark -- 其他操作
+/// 设置云回放主画面
 - (void)setCloudPrimaryWithChannel:(TGPlayChannelType)channel;
 
 @end
