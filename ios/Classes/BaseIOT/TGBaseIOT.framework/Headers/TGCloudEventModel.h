@@ -51,6 +51,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - other
 
 @property (nonatomic, assign) BOOL isSelected;                   // 不建议使用
+@property (nonatomic, assign) NSInteger maxDownloadTime;
+@property (nonatomic, assign) NSInteger maxDownloadTs;
 
 /// 初始化
 /// - Parameter info: info (云事件或云录像)
