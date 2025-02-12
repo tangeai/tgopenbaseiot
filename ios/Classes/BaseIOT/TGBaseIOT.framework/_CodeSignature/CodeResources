@@ -66,15 +66,15 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		nZsMOQt6uYQzxPpe6ZEPFyvopXo=
+		tIvCH6vMwkPq7bMk3R50kLrsipg=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
-		C4VFXtNDAgW++erBNA7aO80qJXM=
+		Lbs1De6AtUeVNZDLCd99gQTa8Is=
 		</data>
 		<key>Headers/TGCloudEventModel.h</key>
 		<data>
-		0WvrYV1XaPAMZndLtTuQAR47+zo=
+		o4+NY9RPGCZZkwc2jsoB//FtBOE=
 		</data>
 		<key>Headers/TGCloudVideoCommonTool.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		KqwKUVqQVth9gzuUy3ONkWqEZWY=
+		NijGuAcxaPO813Tn/kx8me94dQg=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
@@ -364,33 +364,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nZsMOQt6uYQzxPpe6ZEPFyvopXo=
+			tIvCH6vMwkPq7bMk3R50kLrsipg=
 			</data>
 			<key>hash2</key>
 			<data>
-			aVZefrwg0F5buVY901cOMazv/WN+wiNPHvCQCaFVNFo=
+			XQEgEwtUt4gQBgzUfFgT6Pd+rrrX+9qBaOpU4LvU6Bc=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C4VFXtNDAgW++erBNA7aO80qJXM=
+			Lbs1De6AtUeVNZDLCd99gQTa8Is=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Rf1eKNPAdIeQmpSljwH9f+7Y2noN/Bh5qHdaS3Ve/U=
+			glzxlr3ilU8RdlK5244B87z9+gKFYI269xB+D88mnDI=
 			</data>
 		</dict>
 		<key>Headers/TGCloudEventModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0WvrYV1XaPAMZndLtTuQAR47+zo=
+			o4+NY9RPGCZZkwc2jsoB//FtBOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EkmZHVMLGrnVFfCaYC0YiPWV/H1BbTAtoe7XzL59Cik=
+			Mt3SjDEqfnlTP8hJvwXDYFWCT2GIHwWim3lM5Hy7/qc=
 			</data>
 		</dict>
 		<key>Headers/TGCloudVideoCommonTool.h</key>
@@ -518,11 +518,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KqwKUVqQVth9gzuUy3ONkWqEZWY=
+			NijGuAcxaPO813Tn/kx8me94dQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			xc8lktJ81vnGjFlwcsGoAyy98uwm6z2u7DWa45fclQo=
+			72LGbWAndLXipb60yE2oY6nQYkt6AfrUGFLexpWhg30=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>

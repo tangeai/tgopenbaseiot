@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, TGCloudPlayScene) {
 @property (nonatomic, assign) NSInteger startHmsInterval;       //开始时间距离当天00:00:00的秒数
 @property (nonatomic, assign) NSInteger endHmsInterval;         //结束时间距离当天00:00:00的秒数
 @property (nonatomic, assign) TGCloudPlayScene scene;
+@property (nonatomic, assign) NSInteger cloudIndex;
 
 @end
 

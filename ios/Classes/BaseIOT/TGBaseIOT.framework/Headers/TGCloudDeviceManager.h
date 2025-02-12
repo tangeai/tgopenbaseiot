@@ -84,6 +84,10 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - successBlock: 成功回调
 ///   - failureBlock: 失败回调
 - (void)getDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *normalArray,NSArray *eventArray))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -getNoTagDeviceCloudRecordWithDateString: instead");
+#pragma mark -- 云录像缩略图
+
+//- (void)makeCloudGifImageWithArray:(NSArray <TGCloudEventModel *> *)cloudArray date:(NSString *)dateString;
+//- (void)showImageWithIndex:(NSInteger)index date:(NSString *)dateString inImageView:(UIImageView *)imageView;
 
 #pragma mark -- 云录像操作
 /// 设置升降序播放，可以设置云录像是升序播放或降序播放

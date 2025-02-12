@@ -75,6 +75,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 输入位置定位镜头位置
 - (void)tg_setLocInPicWithChannel:(TGPlayChannelType)channel pos:(PtzPos)pos;
+// 云台校准
+- (void)tg_resetDevicePTZWithChannel:(TGPlayChannelType)channel;
 
 // 获取预置位
 - (void)getDevicePSPWithModel:(TGDeviceGetPresetPointsReqModel *)model successBlock:(void(^)(TGDevicePresetPointsRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
