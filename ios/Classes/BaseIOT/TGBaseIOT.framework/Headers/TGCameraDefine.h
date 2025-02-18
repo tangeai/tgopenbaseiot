@@ -931,11 +931,15 @@ IOTYPE_USER_IPCAM_RECORD_PLAYCONTROL_REQ     = 0x031A,
 ** @struct SMsgAVIoctrlPlayRecord
 */
 typedef struct{
-    unsigned int channel;    // Camera Index
-    unsigned int command;    // play record command. refer to ENUM_PLAYCONTROL
-    unsigned int Param;        // command param, that the user defined
-    STimeDay stTimeDay;        // Event time from ListEvent
-    unsigned char reserved[4];
+    unsigned int avIndex;       ///< avIndex
+    unsigned int command;       ///< play record command. refer to @ref ENUM_PLAYCONTROL
+    unsigned int Param;         ///< command param. Depend on \c command
+    STimeDay stTimeDay;         ///< Event time from ListEventi @ref STimeDay
+    unsigned int channel;
+    /**< 在 ENUM_PLAYCONTROL::TCIC_RECORD_PLAY_START/ENUM_PLAYCONTROL::TCIC_RECORD_PLAY_STOP 里用于选择视频通道
+         *  - 0 所有通道
+         *  - >0 通道号+1. 例如为1时选择通道0
+         */
     
 } __attribute__((__packed__)) SMsgAVIoctrlPlayRecord;
 

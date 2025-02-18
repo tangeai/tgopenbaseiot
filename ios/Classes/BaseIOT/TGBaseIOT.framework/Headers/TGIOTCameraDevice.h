@@ -206,6 +206,8 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)openSdCardFileObserveEnable:(BOOL)open start:(TGSDCardRecordFileStartBlock)startBlock end:(TGSDCardRecordFileEndBlock)endBlock;
 // 设置当前时间点的卡录像播放资源
 - (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint;
+// 设置当前时间点卡录像播放资源，可设置channel
+- (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint channel:(int)channel;
 // 播放卡录像
 - (void)startCameraSDCardPlay;
 // 暂停卡录像
@@ -280,7 +282,8 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
  */
 - (void)stopLiveVideoWithChannel:(TGPlayChannelType)channel;
 
-
+// 静音 yes 为静音 no为不静音
+- (void)sdMuteOpen:(BOOL)open;
 // 静音
 - (void)cameraSDCardMute;
 // 取消静音

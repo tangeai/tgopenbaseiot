@@ -141,6 +141,8 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 
 /// 停止播放
 - (void)stopPlay;
+/// 该方法仅是未播放声音，录制或下载时不影响声音录入 yes静音 no非静音
+- (void)muteWithAudioOpen:(BOOL)open;
 /// 禁音
 - (void)muteAudio;
 /// 取消禁音

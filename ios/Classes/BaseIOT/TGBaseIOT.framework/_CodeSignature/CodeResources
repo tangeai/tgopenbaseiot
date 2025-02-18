@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		+hmnUdBYMC8Ct3Mji8Bd47dEoEo=
+		NrlV6v7DUu341tlVjT4f9yIkFwU=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		GMEJFNkUs4OV0k/Ey6A8l1IXAQc=
+		lgvBNmMuI6WascZk8rZnaOjTVpo=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		tIvCH6vMwkPq7bMk3R50kLrsipg=
+		UFHbZ3tBByTD/XkFconOHEafxC4=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		tK0fQZnsGFJwYG9Xjwxa1Go+bsw=
+		bxNztLdsHTyvY+kkXV5eHtnEcXg=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -221,11 +221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+hmnUdBYMC8Ct3Mji8Bd47dEoEo=
+			NrlV6v7DUu341tlVjT4f9yIkFwU=
 			</data>
 			<key>hash2</key>
 			<data>
-			pj8kwSNWvvNFUz6OP3dT43GAwINqg0PU5JfAMoA6rvU=
+			dyAJNQpu7jk7gn9FB8ey0pGWJXeMvrcs6uq2fFRFx/k=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -287,11 +287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GMEJFNkUs4OV0k/Ey6A8l1IXAQc=
+			lgvBNmMuI6WascZk8rZnaOjTVpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			7O6OaqlDfoGVxWaVJ6DZ0pcbZTU3e94H3KZ2HwZPYP8=
+			ZoMTocuRLuSYWyiY7cAiz6bBfM92xqKgjlbiK6x2LO4=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -364,11 +364,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tIvCH6vMwkPq7bMk3R50kLrsipg=
+			UFHbZ3tBByTD/XkFconOHEafxC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XQEgEwtUt4gQBgzUfFgT6Pd+rrrX+9qBaOpU4LvU6Bc=
+			C5nInf0WlEPv1BoR7qPZFPfiqxnofBuI6nlkVwSQ++Y=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -529,11 +529,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tK0fQZnsGFJwYG9Xjwxa1Go+bsw=
+			bxNztLdsHTyvY+kkXV5eHtnEcXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TCDEX634+n3qS+KbrF4bxOIwz/v0MIFUIpKwPlmseWQ=
+			wjmtFw3Ihk2i0T2qJCMfbXa7nnYWkU7YP+uekMSMtps=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>
