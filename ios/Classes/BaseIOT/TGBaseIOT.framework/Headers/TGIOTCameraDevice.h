@@ -71,6 +71,10 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 
 - (void)camera:(TGIOTCameraDevice *)camera didReceiveVideoCacheEnd:(DACameraP2PVideoData *)videoData;
 
+- (void)camera:(TGIOTCameraDevice *)camera didReceiveSdVideoCacheStart:(DACameraP2PVideoData *)videoData;
+
+- (void)camera:(TGIOTCameraDevice *)camera didReceiveSdVideoCacheEnd:(DACameraP2PVideoData *)videoData;
+
 @end
 
 @interface TGIOTCameraDevice : NSObject
