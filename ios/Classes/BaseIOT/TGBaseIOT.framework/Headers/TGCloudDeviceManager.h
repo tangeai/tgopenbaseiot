@@ -23,7 +23,8 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
     TGCloudManagerErrorType_Ok,
     TGCloudManagerErrorType_NoFile,
     TGCloudManagerErrorType_NetworkError,
-    TGCloudManagerErrorType_NoPermitted
+    TGCloudManagerErrorType_NoPermitted,
+    TGCloudManagerErrorType_TooBig
 };
 
 @protocol TGCloudDeviceManagerDelegate <NSObject>
@@ -101,7 +102,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 /// 云录像开始播放方法（此方法仅限云录像），此方法将按云录像的列表逐个自动播放
 /// - Parameter timeInterval: 距离当天00:00:00的秒数
 /// - Parameter completeBlock: 播放是否成功回调
-- (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval completeBlock:(void(^)(BOOL success))completeBlock;
+- (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval playNearby:(BOOL)open completeBlock:(void(^)(BOOL success))completeBlock;
 
 /// 播放一个start->end的视频  开始播放
 /// - Parameters:
