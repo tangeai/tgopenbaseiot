@@ -212,6 +212,11 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint;
 // 设置当前时间点卡录像播放资源，可设置channel
 - (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint channel:(int)channel;
+// 设置当前时间点的卡录像播放资源
+- (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint completeBlock:(void(^)(BOOL success))completeBlock;
+// 设置当前时间点卡录像播放资源，可设置channel
+- (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint channel:(int)channel completeBlock:(void(^)(BOOL success))completeBlock;
+
 // 播放卡录像
 - (void)startCameraSDCardPlay;
 // 暂停卡录像

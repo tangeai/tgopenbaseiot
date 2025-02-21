@@ -22,7 +22,8 @@ typedef NS_ENUM(NSInteger,TGCloudRecordOrderType) {
 typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
     TGCloudManagerErrorType_Ok,
     TGCloudManagerErrorType_NoFile,
-    TGCloudManagerErrorType_NetworkError
+    TGCloudManagerErrorType_NetworkError,
+    TGCloudManagerErrorType_NoPermitted
 };
 
 @protocol TGCloudDeviceManagerDelegate <NSObject>
@@ -97,6 +98,10 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 /// 云录像开始播放方法（此方法仅限云录像），此方法将按云录像的列表逐个自动播放
 /// - Parameter timeInterval: 距离当天00:00:00的秒数
 - (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval;
+/// 云录像开始播放方法（此方法仅限云录像），此方法将按云录像的列表逐个自动播放
+/// - Parameter timeInterval: 距离当天00:00:00的秒数
+/// - Parameter completeBlock: 播放是否成功回调
+- (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval completeBlock:(void(^)(BOOL success))completeBlock;
 
 /// 播放一个start->end的视频  开始播放
 /// - Parameters:
@@ -122,13 +127,22 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
 ///   - model: 云事件&云录像model
 ///   - errorCallBack:返回错误
-- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
+- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model channel:(int)channel errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
-/// 下载并播放一个区间内的片段
+/// 下载
+/// - Parameters:
+///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
+///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
+///   - model: 云事件&云录像model
+///   - errorCallBack:返回错误
+- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack DEPRECATED_MSG_ATTRIBUTE("Use -startDownloadWithTimeInterval: endTime: model: channel: errorCallBack: instead");;;
+
+
+/// 已废弃 下载并播放一个区间内的片段 请使用 startDownloadWithTimeInterval
 /// - Parameters:
 ///   - model: 下载model
 ///   - errorCallBack: 回调
-- (void)downloadAndPlayCloudFileWithModel:(TGCloudDownloadModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
+//- (void)downloadAndPlayCloudFileWithModel:(TGCloudDownloadModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack DEPRECATED_MSG_ATTRIBUTE("Use -startDownloadWithTimeInterval: endTime: model: channel: errorCallBack: instead");
 
 /// 停止下载
 - (void)stopDownload;
