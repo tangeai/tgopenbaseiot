@@ -128,8 +128,9 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
 ///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
 ///   - model: 云事件&云录像model
+///   - channels:目数通道集合 @[@"0",@"1",@"2"]
 ///   - errorCallBack:返回错误
-- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model channel:(int)channel errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
+- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model channels:(NSArray *)channelArray errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
 /// 下载
 /// - Parameters:
@@ -137,7 +138,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
 ///   - model: 云事件&云录像model
 ///   - errorCallBack:返回错误
-- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack DEPRECATED_MSG_ATTRIBUTE("Use -startDownloadWithTimeInterval: endTime: model: channel: errorCallBack: instead");;;
+- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack DEPRECATED_MSG_ATTRIBUTE("Use -startDownloadWithTimeInterval: endTime: model: channels: errorCallBack: instead");;;
 
 
 /// 已废弃 下载并播放一个区间内的片段 请使用 startDownloadWithTimeInterval
