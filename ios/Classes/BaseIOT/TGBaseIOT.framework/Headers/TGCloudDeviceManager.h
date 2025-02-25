@@ -38,6 +38,8 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 - (void)didReceiveVideoCacheStart:(DACameraP2PVideoData *)videoData;
 // 播放缓存结束回调
 - (void)didReceiveVideoCacheEnd:(DACameraP2PVideoData *)videoData;
+// 播放缓存结束回调
+- (void)cloudVideoEnd;
 
 #pragma mark -- other
 // 返回门铃录制存储地址

@@ -66,14 +66,16 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 ///   - length: 长度
 ///   - config: 配置项，此项不用设置，直接使用即可
 - (void)tg_audioSessionManagerDidRecordWithData:(void *)data length:(unsigned int)length config:(DAAudioConfigModel *)config;
-
+/// 播放器缓存开始--实时播放
 - (void)camera:(TGIOTCameraDevice *)camera didReceiveVideoCacheStart:(DACameraP2PVideoData *)videoData;
-
+/// 播放器缓存结束--实时播放
 - (void)camera:(TGIOTCameraDevice *)camera didReceiveVideoCacheEnd:(DACameraP2PVideoData *)videoData;
-
+/// sd播放器缓存开始--实时播放
 - (void)camera:(TGIOTCameraDevice *)camera didReceiveSdVideoCacheStart:(DACameraP2PVideoData *)videoData;
-
+/// sd播放器缓存结束--实时播放
 - (void)camera:(TGIOTCameraDevice *)camera didReceiveSdVideoCacheEnd:(DACameraP2PVideoData *)videoData;
+// sd直播播完
+- (void)cameraSdVideoEnd:(TGIOTCameraDevice *)camera;
 
 @end
 
