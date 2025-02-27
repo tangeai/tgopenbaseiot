@@ -110,8 +110,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 /// 启动多目同步 （启动同步会影响出图速度）
 /// - Parameters:
 ///   - open: 同步开关 yes打开 no关闭
-///   - channel: 设备的总目数
-- (void)openGraphicsYnchronization:(BOOL)open channels:(NSInteger)channels;
+- (void)openGraphicsYnchronization:(BOOL)open;
 
 /// 播放一个start->end的视频  开始播放
 /// - Parameters:

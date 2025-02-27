@@ -67,7 +67,17 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - channel: 推送渠道（目前仅支持"aliyun"）
 ///   - successBlock: 成功回调
 ///   - failureBlock: 失败回调
-- (void)initDevicePushId:(NSString *)pushId channel:(NSString *)channel successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)initDevicePushId:(NSString *)pushId channel:(NSString *)channel successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -initDevicePushId:channel:soundArray:successBlock:failureBlock: instead");
+;
+
+/// 上报手机pushid（仅支持阿里云推送）
+/// - Parameters:
+///   - pushId: pushId
+///   - channel: 推送渠道（目前仅支持"aliyun"）
+///   - soundArray :array[string] 支持的自定义铃声列表 仅支持iOS、华为、谷歌，上报完整文件路径，包含文件名、扩展名
+///   - successBlock: 成功回调
+///   - failureBlock: 失败回调
+- (void)initDevicePushId:(NSString *)pushId channel:(NSString *)channel soundArray:(nullable NSArray *)soundArray successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 #pragma mark - parameterConfiguration
 
