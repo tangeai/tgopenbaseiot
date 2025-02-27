@@ -107,6 +107,12 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 /// - Parameter playNearby: 开启后将播放最接近且>timeInterval的录像
 - (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval playNearby:(BOOL)open completeBlock:(void(^)(BOOL success))completeBlock;
 
+/// 启动多目同步 （启动同步会影响出图速度）
+/// - Parameters:
+///   - open: 同步开关 yes打开 no关闭
+///   - channel: 设备的总目数
+- (void)openGraphicsYnchronization:(BOOL)open channels:(NSInteger)channels;
+
 /// 播放一个start->end的视频  开始播放
 /// - Parameters:
 ///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
