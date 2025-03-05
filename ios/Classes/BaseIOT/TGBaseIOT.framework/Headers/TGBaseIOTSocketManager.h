@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol TGBaseIOTSocketManagerDelegate <NSObject>
 
 - (void)tgSocketDidReceiveMessage:(NSString *)message;
+- (void)tgSocketDidReceiveKeyArrayMessage:(NSArray *)messageArray;
 
 @end
 

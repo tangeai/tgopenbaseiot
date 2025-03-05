@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		paIFRVCA90JtXmyeeOUDYvoGGQg=
+		8Q8Yh+vEYHSzMqaYnYi+omaPbG4=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		V/4G8NrXmu9mP2YuZmLFxeSfI8M=
+		80GJEbib28/3rW2qFo2eNWA3wDo=
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/TGBaseIOTSocketManager.h</key>
 		<data>
-		zeVpRf2Q6Qg7jmEcU7PTIcd96cM=
+		zfknPST7q2Vke+3w1H3rAbJvdq0=
 		</data>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
 		<data>
@@ -210,22 +210,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			paIFRVCA90JtXmyeeOUDYvoGGQg=
+			8Q8Yh+vEYHSzMqaYnYi+omaPbG4=
 			</data>
 			<key>hash2</key>
 			<data>
-			fLQ+Uo2/EZMlYK3f7vu3LiPqMaE/lQZ6Th9AGCKWaq4=
+			lblqTBn0t0n/JQymeWA1iyLZ5PSAskTBxgzsEEdhZjA=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V/4G8NrXmu9mP2YuZmLFxeSfI8M=
+			80GJEbib28/3rW2qFo2eNWA3wDo=
 			</data>
 			<key>hash2</key>
 			<data>
-			geaDt4wKDjbCEVIkTYdTLhTZiCWHEBO3QMH+TzFCSCQ=
+			z9P0s0qHDw48+UbDHqFewAphCs3Y3m25m61++U6LNKI=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
@@ -265,11 +265,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zeVpRf2Q6Qg7jmEcU7PTIcd96cM=
+			zfknPST7q2Vke+3w1H3rAbJvdq0=
 			</data>
 			<key>hash2</key>
 			<data>
-			XJG4Kv1Hg6K+SOrD481NaUrEkxHeF5Z/5Rosj+efqiI=
+			V8pv8t+S6c9ThF9qCrESBLQDFAxGOznL6Fcbpe1xgig=
 			</data>
 		</dict>
 		<key>Headers/TGBroadcastDeviceModel.h</key>

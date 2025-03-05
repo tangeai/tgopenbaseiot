@@ -70,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)initDevicePushId:(NSString *)pushId channel:(NSString *)channel successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -initDevicePushId:channel:soundArray:successBlock:failureBlock: instead");
 ;
 
-/// 上报手机pushid（仅支持阿里云推送）
+/// 上报手机pushid
 /// - Parameters:
 ///   - pushId: pushId
 ///   - channel: 推送渠道（目前仅支持"aliyun"）
