@@ -39,12 +39,22 @@ typedef NS_ENUM(NSInteger, TGZoomFocusDirection) {
     TGZoomFocusDirection_Near
 };
 
+typedef NS_ENUM(NSInteger,TGBatteryDeviceStatus) {
+    TGBatteryDeviceStatus_Unknown,
+    TGBatteryDeviceStatus_stopSleep,                              //暂停休眠
+    TGBatteryDeviceStatus_recoverSleep                            //恢复休眠
+};
+
 typedef NS_ENUM(NSInteger,TGConnectSessionStatus) {
     TGConnectSessionStatus_Unknown,
     TGConnectSessionStatus_Connecting,                              //连接中
     TGConnectSessionStatus_ConnectFailed,                           //连接失败
     TGConnectSessionStatus_Connected,                               //连接成功
     TGConnectSessionStatus_ConnectClosed,                           //session已被关闭
+    TGConnectSessionStatus_ConnectOffline,                          //设备离线--预连接
+    TGConnectSessionStatus_ConnectInforNotFound,                    //未找到连接信息--预连接
+    TGConnectSessionStatus_ConnectDeviceInforNotFound,              //未找到设备信息--预连接
+    TGConnectSessionStatus_ConnectNetError                          //网络错误--预连接
 };
 
 //绑定关系（1：主人 ，2：被分享）
