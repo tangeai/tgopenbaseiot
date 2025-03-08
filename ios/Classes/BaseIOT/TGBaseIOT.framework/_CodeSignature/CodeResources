@@ -16,6 +16,10 @@
 		<data>
 		KoqHXFAAuITEpj5M9X9cVvxX9PI=
 		</data>
+		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
+		<data>
+		4+VLs5SL1d7qo4MUZO3tsOuU8m0=
+		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
 		JJNBGyc+oFh0hF7pu3KTeFFWowc=
@@ -226,6 +230,17 @@
 			<key>hash2</key>
 			<data>
 			tRgop9zxd+P34c6StN+ca2febUnSDfBBf/pUcduPShY=
+			</data>
+		</dict>
+		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4+VLs5SL1d7qo4MUZO3tsOuU8m0=
+			</data>
+			<key>hash2</key>
+			<data>
+			xIAu87uVmvezZsJOmYQ9f+roKW1ZC0+XepQbfRrm3kg=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
