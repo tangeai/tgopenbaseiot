@@ -89,25 +89,36 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - failureBlock: 失败回调
 - (void)getDeviceCloudRecordWithDateString:(NSString *)dateString successBlock:(void(^)(NSArray *normalArray,NSArray *eventArray))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -getNoTagDeviceCloudRecordWithDateString: instead");
 #pragma mark -- 云录像缩略图
-/// 生成缩略图方法
-/// - Parameters:
-///   - cloudArray: 云录像列表
-///   - dateString: 日期
-///   - callBack: 回调
-- (void)makeCloudGifImageWithArray:(NSArray <TGCloudEventModel *> *)cloudArray date:(NSString *)dateString callBack:(void(^)(BOOL done))callBack;
 
-/// 展示动图方法
+/// 动图配置
 /// - Parameters:
-///   - index: cloudArray 中的位置
-///   - dateString: 日期
-///   - imageView: 需要展示的图片的ImageView
-- (void)showImageWithIndex:(NSInteger)index date:(NSString *)dateString inImageView:(UIImageView *)imageView;
+///   - intervalTime: 间隔时间（例如10s视频间隔4s取一张图片） 默认4s
+///   - downLoadTime: 下载时长 默认10s，且最大支持10s，用户设置应 < 10s
+///   - imageWidth: 动图宽（建议按分辨率比例换算）
+///   - imageHeight: 动图高（建议按分辨率比例换算）
+//- (void)gifConfig:(NSInteger)intervalTime downLoadTime:(NSInteger)downLoadTime imageWidth:(float)imageWidth imageHeight:(float)imageHeight;
+///// 生成缩略图方法
+///// - Parameters:
+/////   - cloudArray: 云录像列表
+/////   - dateString: 日期
+/////   - callBack: 回调
+//- (void)makeCloudGifImageWithArray:(NSArray <TGCloudEventModel *> *)cloudArray date:(NSString *)dateString callBack:(void(^)(BOOL done))callBack;
+
+//- (void)makeCloudGifImageWithEventModel:(TGCloudEventModel *)eventModel fileName:(NSString *)fileName date:(NSString *)dateString callBack:(void(^)(BOOL done))callBack;
+
+///// 展示动图方法
+///// - Parameters:
+/////   - index: cloudArray 中的位置
+/////   - dateString: 日期
+/////   - imageView: 需要展示的图片的ImageView
+//- (void)showImageWithIndex:(NSInteger)index date:(NSString *)dateString inImageView:(UIImageView *)imageView;
+//- (void)showImageWithFileName:(NSString *)fileName date:(NSString *)dateString inImageView:(UIImageView *)imageView;
 
 /// 清除图片缓存方法(清除指定日期的0-count-1的所有序号的本地图片)
 /// - Parameters:
 ///   - dateString: 日期
 ///   - count: 数量 （会清除0-count-1的所有本地缓存）
-- (void)clearCacheWithDay:(NSString *)dateString count:(NSInteger)count;
+//- (void)clearCacheWithDay:(NSString *)dateString count:(NSInteger)count;
 
 #pragma mark -- 云录像操作
 /// 设置升降序播放，可以设置云录像是升序播放或降序播放
