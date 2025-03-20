@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		KoqHXFAAuITEpj5M9X9cVvxX9PI=
+		pjF2XHTG5qdRIMQ2RzN2miM97sE=
 		</data>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		+qQDI9R5/mYEzMqL0AAqHQA4hw8=
+		WUR51nfOMpHrSAZwMSlMJmoER3g=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		CMiu3jnvo1HLsozuC1TdvHFb3As=
+		qkOZWE8Dns/47Nc0L2BSJlLtKU0=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		NijGuAcxaPO813Tn/kx8me94dQg=
+		ikNIQk7Eat9l2oQZUSuGMQWbhu8=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		I5/9ii8hu+ZI6nSk+idWD+I8ItQ=
+		x0CTJKBxWpwJhSZIo2L5UBaEfsc=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -225,11 +225,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KoqHXFAAuITEpj5M9X9cVvxX9PI=
+			pjF2XHTG5qdRIMQ2RzN2miM97sE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tRgop9zxd+P34c6StN+ca2febUnSDfBBf/pUcduPShY=
+			M2a9vJUK/W1BDdu9JIigp4PV78SNwT4xNUpilwovld0=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
@@ -379,11 +379,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+qQDI9R5/mYEzMqL0AAqHQA4hw8=
+			WUR51nfOMpHrSAZwMSlMJmoER3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			m1yR36MRq0TUo00iFjDmFwS4mO3+OM6wP8zIHu/mH0s=
+			CbXhP0NrV9zFqkysQWgMlauWSF2W2H2+c8a5gDVWLFI=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -445,11 +445,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CMiu3jnvo1HLsozuC1TdvHFb3As=
+			qkOZWE8Dns/47Nc0L2BSJlLtKU0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TjWecb5XnPRt+R4xmFiTowLpykEFcijXKSa4AjpMsPU=
+			/MvOH+MGkEAOr79LDJk1E/Yuzl+RCJBOjIZm5fk9R2U=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -533,22 +533,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NijGuAcxaPO813Tn/kx8me94dQg=
+			ikNIQk7Eat9l2oQZUSuGMQWbhu8=
 			</data>
 			<key>hash2</key>
 			<data>
-			72LGbWAndLXipb60yE2oY6nQYkt6AfrUGFLexpWhg30=
+			/Dgv8pVuADjb34mDcLPtaQ1Jx7J8mQgAq69OcqF3d+4=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I5/9ii8hu+ZI6nSk+idWD+I8ItQ=
+			x0CTJKBxWpwJhSZIo2L5UBaEfsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			IXp2YLixlG6s8ErLlgx6sLwZgp1Yg4kUx8QGGKVZHHM=
+			ANvEXphbUY6hT/QRqYPrwdZQIPpbk+3msaWOPSO/ZGo=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>

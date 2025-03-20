@@ -157,6 +157,10 @@ NS_ASSUME_NONNULL_BEGIN
 // 获取设备主动唤醒时间的设置
 - (void)getDeviceAwakeTimeSuccessBlock:(void(^)(TGDeviceAwakeTimeModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
 
+#pragma mark - 获取i帧
+// 主动获取i帧，主要用于实时和卡录像的录屏的秒录
+- (void)tg_getIFrameWithLiveVideoResolution:(TGResolutionModel *)resolution channel:(TGPlayChannelType)channel successBlock:(void(^)(TGDeviceCommodResultModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
 #pragma mark - 录像
 // 设置录像模式
 - (void)setDeviceRecordWithModel:(TGDeviceRecordingModel *)model successBlock:(void(^)(TGDeviceSetRecordingRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;

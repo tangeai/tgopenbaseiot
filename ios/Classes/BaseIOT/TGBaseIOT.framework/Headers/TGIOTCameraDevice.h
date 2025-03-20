@@ -204,12 +204,15 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)getCameraSDCardRecordModelListWithDate:(NSString *)date successBlock:(void(^)(NSArray *normalArray, NSArray *eventArray))successBlock;
 // 获取卡录像列表，返回数据，可自行解析
 - (void)getCameraSDCardRecordListWithDate:(NSString *)date callBack:(TGSDCardRecordListBlock)callBack;
-/// 开启片段模式（实时返回卡列表某个片段的开始及结束监控,支持跨天播放）
-/// - Parameters:
-///   - open: 是否开启，yes 实时返回卡列表某个片段的开始及结束监控,支持跨天播放  no 不支持监控
-///   - startBlock: 片段开始
-///   - endBlock: 片段结束
-- (void)openSdCardFileObserveEnable:(BOOL)open start:(TGSDCardRecordFileStartBlock)startBlock end:(TGSDCardRecordFileEndBlock)endBlock;
+/// 设置播放模式
+/// - Parameter type: 播放模式
+- (void)setSDCardProductionMode:(TGSDCardPlayModelType)type;
+///// 开启片段模式（实时返回卡列表某个片段的开始及结束监控,支持跨天播放）
+///// - Parameters:
+/////   - open: 是否开启，yes 实时返回卡列表某个片段的开始及结束监控,支持跨天播放  no 不支持监控
+/////   - startBlock: 片段开始
+/////   - endBlock: 片段结束
+//- (void)openSdCardFileObserveEnable:(BOOL)open start:(TGSDCardRecordFileStartBlock)startBlock end:(TGSDCardRecordFileEndBlock)endBlock;
 // 设置当前时间点的卡录像播放资源
 - (void)playDeviceSDCardRecordWithTimePoint:(NSString *)timePoint;
 // 设置当前时间点卡录像播放资源，可设置channel

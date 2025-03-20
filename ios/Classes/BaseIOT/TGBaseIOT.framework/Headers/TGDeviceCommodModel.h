@@ -21,6 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TGDeviceCommodResultModel : NSObject
+
+@property (nonatomic, assign) int result;   // 1 ok , !1 no ok
+@property (nonatomic, copy) NSString *reserved;
+
+@end
+
 @interface TGDeviceBaseInstruction : NSObject
 
 @property (nonatomic, copy) NSDictionary *abilities;

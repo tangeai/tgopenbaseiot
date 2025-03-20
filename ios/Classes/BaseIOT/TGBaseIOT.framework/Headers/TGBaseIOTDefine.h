@@ -57,6 +57,11 @@ typedef NS_ENUM(NSInteger,TGConnectSessionStatus) {
     TGConnectSessionStatus_ConnectNetError                          //网络错误--预连接
 };
 
+typedef NS_ENUM(NSInteger,TGSDCardPlayModelType) {
+    TGSDCardPlayModelType_normal,                                        //普通模式，连续播放
+    TGSDCardPlayModelType_single                                         //单文件模式
+};
+
 //绑定关系（1：主人 ，2：被分享）
 typedef NS_ENUM(NSInteger,TGDeviceBindType) {
     TGDeviceBindType_Master,
