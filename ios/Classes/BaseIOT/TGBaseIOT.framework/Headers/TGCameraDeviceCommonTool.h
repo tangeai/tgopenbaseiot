@@ -18,6 +18,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class TGCameraDeviceCommonTool;
+
+@protocol TGCameraDeviceCommonToolDelegate <NSObject>
+
+- (BOOL)audioTool:(TGCameraDeviceCommonTool *)tool audioPlayWithBytes:(UInt32)dataBytes callBack:(void(^)(UInt32 dataByteSize, unsigned char *data))callBack;
+
+@end
+
 @interface TGCameraDeviceCommonTool : NSObject
 //P2P
 + (DACameraP2PVideoData *)liveVideoDataWithFrameInfo:(FRAMEINFO_t)frameInfo buffer:(CHAR *)buffer;
@@ -37,6 +45,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (int)decoderVideo:(DACameraP2PVideoData *)video device:(TGCameraDeviceModel *)device keyFrame:(BOOL)keyFrame;
 - (void)cleanDecoder;
+
+@property (nonatomic, weak) id <TGCameraDeviceCommonToolDelegate>delegate;
+
++ (DAAudioConfigModel *)modelWithFlags:(unsigned char)flags;
++ (instancetype)audioToolWithConfig:(DAAudioConfigModel *)config;
+- (void)decodeAudioWithAudioData:(DACameraP2PAudioData *)audio callBack:(void(^)(DACameraP2PAudioData *decodeAudio))callBack;
+- (BOOL)startPlayAudio;
+- (void)stopPlayAudio;
+- (BOOL)isAudioPlaying;
 
 @end
 

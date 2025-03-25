@@ -11,12 +11,17 @@
 #ifndef TGBaseIOTDefine_h
 #define TGBaseIOTDefine_h
 
-typedef NS_ENUM(NSInteger,TGCardRecordOrderType) {
+typedef NS_ENUM(NSInteger, TGCardRecordOrderType) {
     TGCardRecordOrderType_Desc,    //降序
     TGCardRecordOrderType_Asce     //升序
 };
 
-typedef NS_ENUM(NSInteger,TGDeviceRecordType) {
+typedef NS_ENUM(NSInteger,TGCloudRecordOrderType) {
+    TGCloudRecordOrderType_Desc,    //降序
+    TGCloudRecordOrderType_Asce     //升序
+};
+
+typedef NS_ENUM(NSInteger, TGDeviceRecordType) {
     TGDeviceRecordType_NoRecord,
     TGDeviceRecordType_CloudRecord,
     TGDeviceRecordType_SDCardRecord
@@ -39,6 +44,9 @@ typedef NS_ENUM(NSInteger, TGZoomFocusDirection) {
     TGZoomFocusDirection_Near
 };
 
+//<<<<<<< HEAD
+//typedef NS_ENUM(NSInteger, TGConnectSessionStatus) {
+//=======
 typedef NS_ENUM(NSInteger,TGBatteryDeviceStatus) {
     TGBatteryDeviceStatus_Unknown,
     TGBatteryDeviceStatus_stopSleep,                              //暂停休眠
@@ -46,6 +54,7 @@ typedef NS_ENUM(NSInteger,TGBatteryDeviceStatus) {
 };
 
 typedef NS_ENUM(NSInteger,TGConnectSessionStatus) {
+//>>>>>>> develop-2.4.1.8
     TGConnectSessionStatus_Unknown,
     TGConnectSessionStatus_Connecting,                              //连接中
     TGConnectSessionStatus_ConnectFailed,                           //连接失败
@@ -63,7 +72,7 @@ typedef NS_ENUM(NSInteger,TGSDCardPlayModelType) {
 };
 
 //绑定关系（1：主人 ，2：被分享）
-typedef NS_ENUM(NSInteger,TGDeviceBindType) {
+typedef NS_ENUM(NSInteger, TGDeviceBindType) {
     TGDeviceBindType_Master,
     TGDeviceBindType_Shared
 };
@@ -78,7 +87,7 @@ typedef NS_ENUM(NSInteger, TGDeviceConnectMode) {
     TGDeviceConnectMode_Local                                       // 本地连接
 };
 
-typedef NS_ENUM(NSInteger,TGDeviceButtonListFlag) {
+typedef NS_ENUM(NSInteger, TGDeviceButtonListFlag) {
     TGDeviceButtonListFlag_Unknown,
     TGDeviceButtonListFlag_AlertMsg,
     TGDeviceButtonListFlag_SimService,
@@ -117,7 +126,7 @@ typedef NS_ENUM(NSInteger, TGPlayChannelType) {
     TGPlayChannelType_SDCardChannelThree = 3
 };
 
-typedef NS_ENUM(NSInteger,TGVideoPlayDirection) {
+typedef NS_ENUM(NSInteger, TGVideoPlayDirection) {
     TGVideoPlayDirection_Portrait,
     TGVideoPlayDirection_LandscapeLeft,
     TGVideoPlayDirection_LandscapeRight
@@ -129,7 +138,7 @@ typedef NS_ENUM(NSInteger, TGBaseIOTServerEnvType) {
     TGBaseIOTServerEnvType_Prerelease
 };
 
-typedef NS_ENUM(NSInteger,TGVideoRecordType) {
+typedef NS_ENUM(NSInteger, TGVideoRecordType) {
     TGVideoRecordType_Unknown,
     TGVideoRecordType_LiveChannelZero,
     TGVideoRecordType_LiveChannelOne,
@@ -145,7 +154,7 @@ typedef NS_ENUM(NSInteger,TGVideoRecordType) {
     TGVideoRecordType_SDCardChannelThree
 };
 
-typedef NS_ENUM(NSInteger,TGPTZViewTurnDirection) {
+typedef NS_ENUM(NSInteger, TGPTZViewTurnDirection) {
     TGPTZViewTurnDirection_Unknown,
     TGPTZViewTurnDirection_Left,
     TGPTZViewTurnDirection_Up,
@@ -153,7 +162,7 @@ typedef NS_ENUM(NSInteger,TGPTZViewTurnDirection) {
     TGPTZViewTurnDirection_Down
 };
 
-typedef NS_ENUM(NSInteger,TGCameraPlaySpeedLevel) {
+typedef NS_ENUM(NSInteger, TGCameraPlaySpeedLevel) {
     TGCameraPlaySpeedLevel_OneTimes         = 1 << 0,
     TGCameraPlaySpeedLevel_TwoTimes         = 1 << 1,
     TGCameraPlaySpeedLevel_FourTimes        = 1 << 2,
@@ -186,7 +195,7 @@ typedef NS_ENUM(NSInteger, TGAddDeviceErrorCode) {
     TGAddDeviceErrorCode_TimeOut
 };
 
-typedef NS_ENUM(NSInteger,TGDeviceNotificationType) {
+typedef NS_ENUM(NSInteger, TGDeviceNotificationType) {
     TGDeviceNotificationType_command,      //命令通道
     TGDeviceNotificationType_videoLive,    //直播通道
     TGDeviceNotificationType_audioLive,
@@ -194,7 +203,7 @@ typedef NS_ENUM(NSInteger,TGDeviceNotificationType) {
     TGDeviceNotificationType_audioSdCard
 };
 
-typedef NS_ENUM(NSInteger,TGAddDeviceBindType) {
+typedef NS_ENUM(NSInteger, TGAddDeviceBindType) {
     TGAddDeviceBindType_scan,               //扫码方式
     TGAddDeviceBindType_4g,                 //4g添加方式
     TGAddDeviceBindType_lan,                //已联网线设备
@@ -209,7 +218,7 @@ typedef NS_ENUM(NSInteger,TGAddDeviceBindType) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"24180000"
+#define TGBaseIOTSDKVersion                             @"24181000"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50

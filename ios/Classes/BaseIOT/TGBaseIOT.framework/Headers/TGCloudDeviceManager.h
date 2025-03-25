@@ -15,10 +15,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger,TGCloudRecordOrderType) {
-    TGCloudRecordOrderType_Desc,    //降序
-    TGCloudRecordOrderType_Asce     //升序
-};
 typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
     TGCloudManagerErrorType_Ok,
     TGCloudManagerErrorType_NoFile,
@@ -55,7 +51,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 
 @property (nonatomic, strong) TGCameraDeviceModel *device;
 @property (nonatomic, weak) id <TGCloudDeviceManagerDelegate>delegate;
-@property (nonatomic, assign) TGCameraPlaySpeedLevel level;                             // 倍速播放 云录像1、2、4、8倍
+@property (nonatomic, assign) TGCameraPlaySpeedLevel level;                           // 倍速播放 云录像1、2、4、8倍
 @property (nonatomic, copy) void(^successDownloadCallback)(NSInteger timeInterval);     // 下载成功
 @property (nonatomic, copy) void(^failedDownloadCallback)(NSInteger timeInterval);      // 下载失败回调
 @property (nonatomic, copy) void(^stopRecordCallback)(NSString *filePath);              // 录制地址回调
@@ -147,7 +143,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
 ///   - model: 云事件&云录像model
 ///   - errorCallBack:返回错误
-- (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval   model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
+- (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
 /// 播放一个start->end的视频  开始播放
 /// - Parameters:
@@ -157,15 +153,15 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - errorCallBack:返回错误
 ///   - successDownLoadBlock 返回该时间段下载成功的所有文件名称
 ///   - failureDownLoadBlock 返回该时间段下载失败的所有报错信息
-- (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval   model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack successDownLoadInfor:(void(^)(NSArray *successInforArray))successDownLoadBlock failureDownLoadErrorInfor:(void(^)(NSArray *failureInforArray))failureDownLoadBlock;
+- (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack successDownLoadInfor:(void(^)(NSArray *successInforArray))successDownLoadBlock failureDownLoadErrorInfor:(void(^)(NSArray *failureInforArray))failureDownLoadBlock;
 
-/// 下载
-/// - Parameters:
-///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
-///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
-///   - model: 云事件&云录像model
-///   - channels:目数通道集合 @[@"0",@"1",@"2"]
-///   - errorCallBack:返回错误
+///// 下载
+///// - Parameters:
+/////   - startHmsInterval: //开始时间距离当天00:00:00的秒数
+/////   - endHmsInterval: //结束时间距离当天00:00:00的秒数
+/////   - model: 云事件&云录像model
+/////   - channels:目数通道集合 @[@"0",@"1",@"2"]
+/////   - errorCallBack:返回错误
 - (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model channels:(NSArray *)channelArray errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
 /// 下载
@@ -174,7 +170,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
 ///   - model: 云事件&云录像model
 ///   - errorCallBack:返回错误
-- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack DEPRECATED_MSG_ATTRIBUTE("Use -startDownloadWithTimeInterval: endTime: model: channels: errorCallBack: instead");;;
+- (void)startDownloadWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack DEPRECATED_MSG_ATTRIBUTE("Use -startDownloadWithTimeInterval: endTime: model: channels: errorCallBack: instead");
 
 
 /// 已废弃 下载并播放一个区间内的片段 请使用 startDownloadWithTimeInterval
@@ -186,18 +182,21 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 /// 停止下载
 - (void)stopDownload;
 
-/// 暂停播放  （注意此方法要和继续播放方法成对调用）
+/// 暂停播放（注意此方法要和继续播放方法成对调用）
 - (void)pausePlay;
 
-/// 继续播放 （注意此方法要和暂停播放方法成对调用）
+/// 继续播放（注意此方法要和暂停播放方法成对调用）
 - (void)continuePlay;
 
 /// 停止播放
 - (void)stopPlay;
+
 /// 该方法仅是未播放声音，录制或下载时不影响声音录入 yes静音 no非静音
 - (void)muteWithAudioOpen:(BOOL)open;
+
 /// 禁音
 - (void)muteAudio;
+
 /// 取消禁音
 - (void)cancleMute;
 
