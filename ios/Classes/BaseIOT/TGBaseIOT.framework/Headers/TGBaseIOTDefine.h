@@ -44,17 +44,13 @@ typedef NS_ENUM(NSInteger, TGZoomFocusDirection) {
     TGZoomFocusDirection_Near
 };
 
-//<<<<<<< HEAD
-//typedef NS_ENUM(NSInteger, TGConnectSessionStatus) {
-//=======
 typedef NS_ENUM(NSInteger,TGBatteryDeviceStatus) {
     TGBatteryDeviceStatus_Unknown,
     TGBatteryDeviceStatus_stopSleep,                              //暂停休眠
     TGBatteryDeviceStatus_recoverSleep                            //恢复休眠
 };
 
-typedef NS_ENUM(NSInteger,TGConnectSessionStatus) {
-//>>>>>>> develop-2.4.1.8
+typedef NS_ENUM(NSInteger, TGConnectSessionStatus) {
     TGConnectSessionStatus_Unknown,
     TGConnectSessionStatus_Connecting,                              //连接中
     TGConnectSessionStatus_ConnectFailed,                           //连接失败
