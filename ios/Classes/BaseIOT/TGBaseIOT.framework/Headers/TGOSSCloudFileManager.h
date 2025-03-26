@@ -37,10 +37,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
 
+// 开始播放
 - (void)startPlayCloudVideoWithModel:(TGOSSDownloadInfoModel *)model callBack:(void(^)(BOOL success, id _Nullable errorInfo))callBack;
+// 暂停播放
+- (void)pausePlay;
+// 恢复播放
+- (void)resumePlay;
+// 停止播放
 - (void)stopPlay;
 
+// 开始录像
 - (void)startRecordWithModel:(TGOSSVideoRecordModel *)recordModel;
+// 停止录像
 - (void)stopRecord;
 
 - (void)muteAudio;

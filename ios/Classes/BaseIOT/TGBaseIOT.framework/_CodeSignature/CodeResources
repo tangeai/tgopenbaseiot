@@ -150,7 +150,7 @@
 		</data>
 		<key>Headers/TGOSSCloudFileManager.h</key>
 		<data>
-		7kOPEsWy1iRKG26YnWyEjE3qask=
+		KP7h1HaycCDxK9zGjL4wxya85DE=
 		</data>
 		<key>Headers/TGOSSCloudRecordModel.h</key>
 		<data>
@@ -159,6 +159,10 @@
 		<key>Headers/TGOSSDownloadInfoModel.h</key>
 		<data>
 		nD9w3lELROszoBQ7CwCpAHDZ0V8=
+		</data>
+		<key>Headers/TGOSSVideoRecordModel.h</key>
+		<data>
+		mTzU6F8EOE6nikvcTE4tvGw45ds=
 		</data>
 		<key>Headers/TGObjectStorageService.h</key>
 		<data>
@@ -607,11 +611,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7kOPEsWy1iRKG26YnWyEjE3qask=
+			KP7h1HaycCDxK9zGjL4wxya85DE=
 			</data>
 			<key>hash2</key>
 			<data>
-			sb2e7g3ox3w8QsqmU36pJdE4SK28K7Snkv6emoEe1Pw=
+			2ownSsBRs/7+EPZkofuxo7X09e8MBwHgEEooD5E7rGs=
 			</data>
 		</dict>
 		<key>Headers/TGOSSCloudRecordModel.h</key>
@@ -634,6 +638,17 @@
 			<key>hash2</key>
 			<data>
 			0f4GRd8c/OCWwCz27FZTdPaU60o3iPpV524jGs2ORHU=
+			</data>
+		</dict>
+		<key>Headers/TGOSSVideoRecordModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mTzU6F8EOE6nikvcTE4tvGw45ds=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y75xawFVPK1j47/nJu0Kh9QKf6sLvEFAsM+FZmW/zd8=
 			</data>
 		</dict>
 		<key>Headers/TGObjectStorageService.h</key>
