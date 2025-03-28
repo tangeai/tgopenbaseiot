@@ -18,7 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol TGOSSCloudFileManagerDelegate <NSObject>
 
 @optional
+// 播放视频代理方法
 - (void)ossCloudFileManagerDidPlayDecoderVideoData:(DACameraP2PVideoData *)videoData;
+// 录像进度代理方法
 - (void)ossCloudFileManagerDidRecordVideoWithDuration:(NSInteger)duration;
 
 @end
@@ -26,13 +28,17 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGOSSCloudFileManager : NSObject
 
 @property (nonatomic, strong) TGCameraDeviceModel *device;
+// 设置倍速播放
 @property (nonatomic, assign) TGCameraPlaySpeedLevel level;
+// 设置主画面
 @property (nonatomic, assign) TGPlayChannelType primaryChannel;
 
 @property (nonatomic, weak) id <TGOSSCloudFileManagerDelegate>delegate;
-
+// 下载成功回调
 @property (nonatomic, copy) void(^successDownloadCallback)(NSInteger timeStamp);
+// 下载失败回调
 @property (nonatomic, copy) void(^failedDownloadCallback)(NSInteger timeStamp);
+// 停止录像回调
 @property (nonatomic, copy) void(^stopRecordCallback)(NSString *filePath);
 
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
@@ -46,13 +52,15 @@ NS_ASSUME_NONNULL_BEGIN
 // 停止播放
 - (void)stopPlay;
 
+// 静音
+- (void)muteAudio;
+// 取消静音
+- (void)cancleMute;
+
 // 开始录像
 - (void)startRecordWithModel:(TGOSSVideoRecordModel *)recordModel;
 // 停止录像
 - (void)stopRecord;
-
-- (void)muteAudio;
-- (void)cancleMute;
 
 @end
 
