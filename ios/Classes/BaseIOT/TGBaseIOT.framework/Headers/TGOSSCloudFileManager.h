@@ -1,6 +1,6 @@
 //
 //  TGOSSCloudFileManager.h
-//  TGIOT
+//  TGBaseIOT
 //
 //  Created by Darren on 2020/11/23.
 //  Copyright © 2020 Darren. All rights reserved.
@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class TGOSSDownloadInfoModel;
+@class TGOSSPlayVideoInfoModel,TGOSSDownloadInfoModel;
 
 @protocol TGOSSCloudFileManagerDelegate <NSObject>
 
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithDevice:(TGCameraDeviceModel *)device;
 
 // 开始播放
-- (void)startPlayCloudVideoWithModel:(TGOSSDownloadInfoModel *)model callBack:(void(^)(BOOL success, id _Nullable errorInfo))callBack;
+- (void)startPlayCloudVideoWithModel:(TGOSSPlayVideoInfoModel *)model callBack:(void(^)(BOOL success, id _Nullable errorInfo))callBack;
 // 暂停播放
 - (void)pausePlay;
 // 恢复播放
@@ -61,6 +61,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)startRecordWithModel:(TGOSSVideoRecordModel *)recordModel;
 // 停止录像
 - (void)stopRecord;
+
+
+// 下载云文件
+- (void)downloadCloudVideoWithModel:(TGOSSDownloadInfoModel *)model callBack:(void(^)(BOOL success, id _Nullable errorInfo))callBack;
+// 停止下载
+- (void)stopDownload;
 
 @end
 

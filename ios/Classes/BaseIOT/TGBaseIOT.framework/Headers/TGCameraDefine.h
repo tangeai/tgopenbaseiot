@@ -2764,31 +2764,31 @@ typedef struct SMsgAVIoctrlTcis_PowerStrategy {
     * 这个结构可能扩展. App 端要检查收到的数据包的长度
     */
 typedef struct SMsgAVIoctrlTcis_FeederConfig {
-    int max_timers;       ///< 支持的定时配置数
-    int max_servings;     ///< 最大供食份数
+   int max_timers;       ///< 支持的定时配置数
+   int max_servings;     ///< 最大供食份数
 } __attribute__((__packed__)) SMsgAVIoctrlTcis_FeederConfigReq, SMsgAVIoctrlTcis_FeederConfigResp;
 
 /** 手动喂食.
 * TCMD_FEEDER_FEED_FOOD      = 0x0506
  */
 typedef struct SMsgAVIoctrlTcis_FeedReq {
-     int      nServing;     ///< 投喂份数
-     int      reserved;     ///< 0
+    int      nServing;     ///< 投喂份数
+    int      reserved;     ///< 0
 } __attribute__((__packed__))  SMsgAVIoctrlTcis_FeedReq;
 
 
 typedef struct SMsgAVIoctrlFEEDERTIMER {
-     CLOCKTIME  clock;    ///< 喂食时间
-     uint8_t    state;    ///< 0：禁止（或单次定时器已执行）；1：有效
-     uint8_t    repeat;   ///< weekdays mask. bit0:Sunday; bit1-Monday; ...
-     uint16_t   serving;  ///< 食物份数
- } __attribute__ ((__packed__)) SMsgAVIoctrlFEEDERTIMER;
+    CLOCKTIME  clock;    ///< 喂食时间
+    uint8_t    state;    ///< 0：禁止（或单次定时器已执行）；1：有效
+    uint8_t    repeat;   ///< weekdays mask. bit0:Sunday; bit1-Monday; ...
+    uint16_t   serving;  ///< 食物份数
+} __attribute__ ((__packed__)) SMsgAVIoctrlFEEDERTIMER;
 
- /** 喂食定时设置.
+/** 喂食定时设置.
   */
 typedef struct SMsgAVIoctrlTcis_FeederTimers {
-     int nTimers;
-     SMsgAVIoctrlFEEDERTIMER tiems[10];
+    int nTimers;
+    SMsgAVIoctrlFEEDERTIMER tiems[10];
 } __attribute__ ((__packed__)) SMsgAVIoctrlTcis_FeederTimersReq, SMsgAVIoctrlTcis_FeederTimersResp;
 
 #endif /* TGCameraDefine_h */

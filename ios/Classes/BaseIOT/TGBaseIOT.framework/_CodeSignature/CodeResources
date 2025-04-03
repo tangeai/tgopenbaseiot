@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		lgvBNmMuI6WascZk8rZnaOjTVpo=
+		5LGmWI4unMNH259lsasrHAOxbBQ=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -148,21 +148,9 @@
 		<data>
 		OmbUhCBRtGGC6c6h+MKBHPZRzwI=
 		</data>
-		<key>Headers/TGOSSCloudFileManager.h</key>
+		<key>Headers/TGOSSPlayVideoInfoModel.h</key>
 		<data>
-		Gb08ujiUD1lqCBSxqJDPjOG0bo0=
-		</data>
-		<key>Headers/TGOSSCloudRecordModel.h</key>
-		<data>
-		DHbDukAnfkD+lnIIai22MT7bFcw=
-		</data>
-		<key>Headers/TGOSSDownloadInfoModel.h</key>
-		<data>
-		nD9w3lELROszoBQ7CwCpAHDZ0V8=
-		</data>
-		<key>Headers/TGOSSVideoRecordModel.h</key>
-		<data>
-		mTzU6F8EOE6nikvcTE4tvGw45ds=
+		oeIUMMY+okjw1zxZYPAg4U3xJ4A=
 		</data>
 		<key>Headers/TGObjectStorageService.h</key>
 		<data>
@@ -314,11 +302,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lgvBNmMuI6WascZk8rZnaOjTVpo=
+			5LGmWI4unMNH259lsasrHAOxbBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZoMTocuRLuSYWyiY7cAiz6bBfM92xqKgjlbiK6x2LO4=
+			eLnNKE+0YapiyE4VksyirIvD11JPAeMz9czj4igNuKQ=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -607,48 +595,15 @@
 			ESesqTK7RvWBR7hqu1Pt/kFNF7UQVOi1IAl2Zy/bTCA=
 			</data>
 		</dict>
-		<key>Headers/TGOSSCloudFileManager.h</key>
+		<key>Headers/TGOSSPlayVideoInfoModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gb08ujiUD1lqCBSxqJDPjOG0bo0=
+			oeIUMMY+okjw1zxZYPAg4U3xJ4A=
 			</data>
 			<key>hash2</key>
 			<data>
-			h+P2tHUmo1WF+RuXCz0bgIPsZ9x4eRXvm2H4ct3qa/E=
-			</data>
-		</dict>
-		<key>Headers/TGOSSCloudRecordModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DHbDukAnfkD+lnIIai22MT7bFcw=
-			</data>
-			<key>hash2</key>
-			<data>
-			mAlNU/zGh+KEnTcmyO/xh/ewv+71Xm2LH8iSPJT1HSo=
-			</data>
-		</dict>
-		<key>Headers/TGOSSDownloadInfoModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nD9w3lELROszoBQ7CwCpAHDZ0V8=
-			</data>
-			<key>hash2</key>
-			<data>
-			0f4GRd8c/OCWwCz27FZTdPaU60o3iPpV524jGs2ORHU=
-			</data>
-		</dict>
-		<key>Headers/TGOSSVideoRecordModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mTzU6F8EOE6nikvcTE4tvGw45ds=
-			</data>
-			<key>hash2</key>
-			<data>
-			Y75xawFVPK1j47/nJu0Kh9QKf6sLvEFAsM+FZmW/zd8=
+			3O6uQyC5SkZYBTE96/hACQ+Urd3JfzmMRnyjnAuyA+s=
 			</data>
 		</dict>
 		<key>Headers/TGObjectStorageService.h</key>
