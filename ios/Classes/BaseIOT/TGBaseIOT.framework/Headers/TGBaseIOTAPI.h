@@ -606,6 +606,15 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - failureBlock: 失败返回
 - (void)tg_getSomeDayCloudEventListWithDeviceId:(NSString *)deviceId date:(NSString *)dateStr successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
+/// 查询单台设备N天的云事件
+/// - Parameters:
+///   - deviceId: 设备id
+///   - startDate: 开始日期字符串 示例：2022-10-24
+///   - endDate: 结束日期字符串 示例：2022-10-24
+///   - successBlock: 成功返回
+///   - failureBlock: 失败返回
+- (void)tg_getDaysCloudEventListWithDeviceId:(NSString *)deviceId startDate:(NSString *)startDateStr endDate:(NSString *)endDateStr successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
 /// 按云事件Id获取云事件 （get请求）
 /// - Parameters:
 ///   - eventId: 云事件id

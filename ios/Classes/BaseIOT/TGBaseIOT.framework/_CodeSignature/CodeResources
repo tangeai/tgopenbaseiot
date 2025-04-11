@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		8Q8Yh+vEYHSzMqaYnYi+omaPbG4=
+		FtAv1V5578HDvbvL11gPPgCUxS4=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
@@ -148,9 +148,25 @@
 		<data>
 		OmbUhCBRtGGC6c6h+MKBHPZRzwI=
 		</data>
+		<key>Headers/TGOSSCloudFileManager.h</key>
+		<data>
+		6cTcRxnwx2pSKhthaQOYIEj5Ypk=
+		</data>
+		<key>Headers/TGOSSCloudRecordModel.h</key>
+		<data>
+		otLg7zO5+CgX+wX6h0BW98pF4jA=
+		</data>
+		<key>Headers/TGOSSDownloadInfoModel.h</key>
+		<data>
+		pWlvCTdeWmYOX6MrMgYMadJ3rYE=
+		</data>
 		<key>Headers/TGOSSPlayVideoInfoModel.h</key>
 		<data>
 		oeIUMMY+okjw1zxZYPAg4U3xJ4A=
+		</data>
+		<key>Headers/TGOSSVideoRecordModel.h</key>
+		<data>
+		NgJkDotM/ofh1DL+x78qbc+/QCs=
 		</data>
 		<key>Headers/TGObjectStorageService.h</key>
 		<data>
@@ -190,7 +206,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U2wbpf1aW6LD6HOBwbl+MAIc1iI=
+		wRtgr6M7KE3Fn+tKvJ5LBRmILbU=
 		</data>
 		<key>README.md</key>
 		<data>
@@ -214,11 +230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8Q8Yh+vEYHSzMqaYnYi+omaPbG4=
+			FtAv1V5578HDvbvL11gPPgCUxS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			lblqTBn0t0n/JQymeWA1iyLZ5PSAskTBxgzsEEdhZjA=
+			hiTrMO14reFxhdf0pvx2GjbzbQukyAxBI2Xgtu9QA0k=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
@@ -595,6 +611,39 @@
 			ESesqTK7RvWBR7hqu1Pt/kFNF7UQVOi1IAl2Zy/bTCA=
 			</data>
 		</dict>
+		<key>Headers/TGOSSCloudFileManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6cTcRxnwx2pSKhthaQOYIEj5Ypk=
+			</data>
+			<key>hash2</key>
+			<data>
+			9uUAncuFpcyyfaIQUHOLzZJc7Quf3sbopYNdur0UT7M=
+			</data>
+		</dict>
+		<key>Headers/TGOSSCloudRecordModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			otLg7zO5+CgX+wX6h0BW98pF4jA=
+			</data>
+			<key>hash2</key>
+			<data>
+			r2l7qpMx50N5Y27XpCPtsZsMj8dTPkbbcHxvzR1D5XA=
+			</data>
+		</dict>
+		<key>Headers/TGOSSDownloadInfoModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pWlvCTdeWmYOX6MrMgYMadJ3rYE=
+			</data>
+			<key>hash2</key>
+			<data>
+			q+H7aeBtiHSQB7YNoiLexQVbdD8naFs6FVf4kz6tJdo=
+			</data>
+		</dict>
 		<key>Headers/TGOSSPlayVideoInfoModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -604,6 +653,17 @@
 			<key>hash2</key>
 			<data>
 			3O6uQyC5SkZYBTE96/hACQ+Urd3JfzmMRnyjnAuyA+s=
+			</data>
+		</dict>
+		<key>Headers/TGOSSVideoRecordModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NgJkDotM/ofh1DL+x78qbc+/QCs=
+			</data>
+			<key>hash2</key>
+			<data>
+			/HiUexQMqdTcVdXj3U2E2/ayFTaau4g6hPZDI6LYVZA=
 			</data>
 		</dict>
 		<key>Headers/TGObjectStorageService.h</key>
