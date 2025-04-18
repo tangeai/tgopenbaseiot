@@ -28,6 +28,10 @@
 		<data>
 		AwfJ57DR+VRSvIpa6ldckiMNgx0=
 		</data>
+		<key>Headers/TGBaseIOTReportType.h</key>
+		<data>
+		4V3jcry95vRYCn/iVze8CEqvTR4=
+		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
 		apC2gacHAQda43IkhSBN+wZoFzk=
@@ -279,6 +283,17 @@
 			<key>hash2</key>
 			<data>
 			RWZIO0XHQ5hhJp7RMadVunHTTlVJhzqeD0KxZYl29A8=
+			</data>
+		</dict>
+		<key>Headers/TGBaseIOTReportType.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4V3jcry95vRYCn/iVze8CEqvTR4=
+			</data>
+			<key>hash2</key>
+			<data>
+			zn3tpDuqMkLIQSJLSMkhKDC6FAFR/Ro7+QmqJC+LMFs=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
