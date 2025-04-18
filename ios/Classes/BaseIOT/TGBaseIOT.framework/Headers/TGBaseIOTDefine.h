@@ -206,6 +206,14 @@ typedef NS_ENUM(NSInteger, TGAddDeviceBindType) {
     TGAddDeviceBindType_device              //设备配网添加
 };
 
+typedef NS_ENUM(NSInteger, TGNoisereDuctionType) {
+    TGNoisereDuctionType_kVeryLowSuppression = 0,               //非常轻度    保留最多环境音，适合音乐或需要背景噪声的场景
+    TGNoisereDuctionType_kLowSuppression = 1,                   //轻度    平衡噪声抑制和语音质量，通用场景
+    TGNoisereDuctionType_kModerateSuppression  = 2,             //中度    较强降噪，适合普通语音通话
+    TGNoisereDuctionType_kHighSuppression = 3,                  //高度    激进降噪，适合高噪声环境（如工厂、街道）
+    TGNoisereDuctionType_kVeryHighSuppression = 4               //非常高度    最大程度抑制噪声（可能损伤语音质量）
+};
+
 #define TGBaseIOTAddDeviceErrorDomain                   @"com.tange365.TGBaseIOTAddDeviceErrorDomain"
 
 #define TGBaseIOT_SCREENWIDTH                           (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height))
@@ -214,7 +222,7 @@ typedef NS_ENUM(NSInteger, TGAddDeviceBindType) {
 #define TGBaseIOT_RelativeHeightX(value)                (TGBaseIOT_SCREENHEIGHT * value / 812.0f)
 #define TGBaseIOT_OEMSVGIconSize50                      (CGSizeMake(TGBaseIOT_RelativeHeightX(50), TGBaseIOT_RelativeHeightX(50)))
 
-#define TGBaseIOTSDKVersion                             @"24181000"
+#define TGBaseIOTSDKVersion                             @"24190000"
 #define TG_CurrentLogLevel                              @"TG_CurrentLogLevel"
 
 #define TG_CameraZoomDefaultStep                        50
@@ -258,6 +266,7 @@ typedef NS_ENUM(NSInteger, TGAddDeviceBindType) {
 #define TGBaseIOT_DidReceiveUploadAppLog                @"TG_DidReceiveUploadAppLog"
 
 #define TGBaseIOT_DeviceEventChangeStatus               @"TGBaseIOT_DeviceEventChangeStatus"
+#define TGBaseIOT_LogJsonChangeStatus               @"TGBaseIOT_LogJsonChangeStatus"
 #define TGBaseIOT_NetWorkChange                         @"TGBASEIOT_NOTICE_NETWORK_STATUS_CHANGED"
 
 #endif /* TGBaseIOTDefine_h */

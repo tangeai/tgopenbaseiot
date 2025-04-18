@@ -188,6 +188,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)tg_broadCastToPortComplteBlock:(void(^)(void))complteBlock receiveCallBlock:(BOOL(^)(NSString *receiveString))receiveCallBlock;
 
+
 /// 生成配网二维码
 /// @param name wifi名称
 /// @param password wifi密码

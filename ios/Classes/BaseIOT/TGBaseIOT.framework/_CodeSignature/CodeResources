@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/NSString+TGBaseIOTString.h</key>
 		<data>
-		3Rbioeg8Z46QPCFIqkzHcwugi5w=
+		ayjM1mEt1cWr34c2e09W+/dcVUk=
 		</data>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<data>
-		FtAv1V5578HDvbvL11gPPgCUxS4=
+		jFtvjJaqlywiXtg4NWTZMpjoL8A=
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		dyMaIrRgfIGJ3aKHb46XGmpzAwc=
+		52FttdZGSchF95Dj08QMSwUxlds=
 		</data>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<data>
-		8t+DxJ42asLE3c/iOyh7h09vA7E=
+		AwfJ57DR+VRSvIpa6ldckiMNgx0=
 		</data>
 		<key>Headers/TGBaseIOTRequestService.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/TGBaseIOTSocketManager.h</key>
 		<data>
-		zfknPST7q2Vke+3w1H3rAbJvdq0=
+		XzMDQEwohXj/Nrt2vlmzHE6X/JY=
 		</data>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		x0CTJKBxWpwJhSZIo2L5UBaEfsc=
+		Z55IkEqLO4sCiJA5+efB3xdOkF0=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wRtgr6M7KE3Fn+tKvJ5LBRmILbU=
+		M31n+TUoRQ1XG5+nHh1R9kmvg7A=
 		</data>
 		<key>README.md</key>
 		<data>
@@ -219,33 +219,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Rbioeg8Z46QPCFIqkzHcwugi5w=
+			ayjM1mEt1cWr34c2e09W+/dcVUk=
 			</data>
 			<key>hash2</key>
 			<data>
-			m4emVIcMnuCEzrQ7JJkAYJxI/+0wYTe0NFL7r96cpbs=
+			lErejg3HZzHJ7YPc1MS93vWwGLLohz7ACsQaQ0apZL8=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTAPI.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FtAv1V5578HDvbvL11gPPgCUxS4=
+			jFtvjJaqlywiXtg4NWTZMpjoL8A=
 			</data>
 			<key>hash2</key>
 			<data>
-			hiTrMO14reFxhdf0pvx2GjbzbQukyAxBI2Xgtu9QA0k=
+			snfJRweTbbEeQMKr1nSDqH8gVdEnv+SC2w3ibFSwVxI=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dyMaIrRgfIGJ3aKHb46XGmpzAwc=
+			52FttdZGSchF95Dj08QMSwUxlds=
 			</data>
 			<key>hash2</key>
 			<data>
-			vIrBwKw2lPKXqQdEInrIbF8esk8s43WRiHxAukdzxEM=
+			LQXlMmZq9UaTMcbPa9dmifxOhouLIphtpAyiGwnvRDU=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
@@ -274,11 +274,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8t+DxJ42asLE3c/iOyh7h09vA7E=
+			AwfJ57DR+VRSvIpa6ldckiMNgx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dJO7El3rRJ7eX3fCV45LeJ/Ac7TmTDCvPw6XoSBefYE=
+			RWZIO0XHQ5hhJp7RMadVunHTTlVJhzqeD0KxZYl29A8=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTRequestService.h</key>
@@ -296,11 +296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zfknPST7q2Vke+3w1H3rAbJvdq0=
+			XzMDQEwohXj/Nrt2vlmzHE6X/JY=
 			</data>
 			<key>hash2</key>
 			<data>
-			V8pv8t+S6c9ThF9qCrESBLQDFAxGOznL6Fcbpe1xgig=
+			Ldf3Kn2OvJMBZfv+d53I/rufDaD0zy++Pk1SXK49kyI=
 			</data>
 		</dict>
 		<key>Headers/TGBroadcastDeviceModel.h</key>
@@ -549,11 +549,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x0CTJKBxWpwJhSZIo2L5UBaEfsc=
+			Z55IkEqLO4sCiJA5+efB3xdOkF0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ANvEXphbUY6hT/QRqYPrwdZQIPpbk+3msaWOPSO/ZGo=
+			lTijfjuvoy7cnlUK3C1UfKHZNg54Z6gs075RLIMMl8c=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>

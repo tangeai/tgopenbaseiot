@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)tgbaseiot_getAppDisplayName;
 + (NSString *)tgbaseiot_deviceModelName;
 + (NSString *)tgbaseiot_localCountryCode;
+// 获取操作系统名称
++ (NSString *)tgbaseiot_getOSName;
+// 获取操作系统版本
++ (NSString *)tgbaseiot_getOSVersion;
 
 + (BOOL)tgbaseiot_isEmptyWithString:(NSString *)string;
 + (NSString *)tgbaseiot_getValueFromDictionary:(NSDictionary *)dictionary WithKey:(NSString *)key;

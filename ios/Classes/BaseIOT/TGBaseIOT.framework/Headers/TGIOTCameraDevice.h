@@ -155,6 +155,9 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)stopCameraLiveAudio;
 // 静音 yes 为静音 no为不静音
 - (void)liveMuteOpen:(BOOL)open;
+/// 音频播放降噪水平设置
+/// @param levelType 降噪水平参数，默认是最高
+- (void)setNoiseReductionLevel:(TGNoisereDuctionType)levelType;
 /**
  * 指定清晰度播放视频通道1实时视频，请搭配使用stopLiveChannelOneVideo方法停止播放
  * @param resolution 清晰度
@@ -564,6 +567,11 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)getTimerTaskWithObject:(unsigned int)object identity:(unsigned int)identity;
 - (void)saveTimerTaskWithTaskArray:(NSArray <TGTimerTaskModel *>*)taskArray object:(unsigned int)object identity:(unsigned int)identity;
 - (void)resetDevicePTZWithChannel:(TGPlayChannelType)channel;
+
+#pragma mark -- debugLog
+// 慎用，启用后直播会重复录制30s到沙盒
+- (void)openDebugLiveLog:(BOOL)debugOpen;
+
 
 @end
 

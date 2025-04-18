@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shareManager;
 - (void)connectWebSocket;
+- (void)connectLocalWertcSocket;
 - (void)closeWebSocket;
 - (void)sendMessage:(NSString *)message;
 
