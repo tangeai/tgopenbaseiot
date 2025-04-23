@@ -271,7 +271,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param must_be_actived 设备是否需要必须激活 -----可选参数
 /// @param successBlock 成功回调
 /// @param failureBlock 失败回调
-- (void)tg_configurationNoWiFiDeviceWithType:(NSString *)typeStr uuid:(nonnull NSString *)uuidStr  name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -tg_bindNetworkedDeviceWithType: instead");
+- (void)tg_configurationNoWiFiDeviceWithType:(NSString *)typeStr uuid:(nonnull NSString *)uuidStr name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock DEPRECATED_MSG_ATTRIBUTE("Use -tg_bindNetworkedDeviceWithType: instead");
 
 /// 扫描已连入同一路由的插入网线的设备（）
 /// @param successBlock 扫描结果 deviceIdArray 扫描后的deviceId集合
@@ -287,7 +287,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param must_be_actived 设备是否需要必须激活 -----可选参数
 /// @param successBlock 成功回调
 /// @param failureBlock 失败回调
-- (void)tg_bindNetworkedDeviceWithType:(TGAddDeviceBindType)bindType deviceId:(nonnull NSString *)deviceId  name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+- (void)tg_bindNetworkedDeviceWithType:(TGAddDeviceBindType)bindType deviceId:(nonnull NSString *)deviceId name:(NSString *)deviceName timeZone:(NSString *)timeZone must_be_online:(BOOL)must_be_online must_be_actived:(BOOL)must_be_actived successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
 #pragma mark - information
 

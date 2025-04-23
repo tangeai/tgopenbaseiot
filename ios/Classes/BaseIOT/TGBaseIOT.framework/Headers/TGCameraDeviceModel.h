@@ -104,10 +104,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableDictionary *customInfo;
 //@property (nonatomic, strong) TGDeviceCapacityModel *capacityModel;
 
+#pragma mark - local
+
+@property (nonatomic, strong) NSString *ipAddress;
+@property (nonatomic, strong) NSString *setWiFi;
+
 #pragma mark - other 以下参数均为定制兼容请勿使用，如需使用请自己实现其方法
 
 @property (nonatomic, strong) NSString *des_key;
-@property (nonatomic, strong) NSString *ipAddress;
 @property (nonatomic, copy) NSString *deviceType;
 @property (nonatomic, assign) BOOL isPreConnect;
 @property (nonatomic, copy, nullable) void(^deviceUpdateProgress)(void);

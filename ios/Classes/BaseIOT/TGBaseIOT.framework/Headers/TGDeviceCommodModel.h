@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGDeviceSDStorageModel : NSObject
 
 @property (nonatomic, assign) int channel;
-@property (nonatomic, assign) int total;                    // 总容量，单位 M, >0: total space size of sdcard (MBytes), 0: 无卡,-1: 卡状态错，需要格式化,-2: SD卡状态为只读(可回放但不能继续写入), -3: 正在格式化
+@property (nonatomic, assign) int total;                    // 总容量，单位 M, >0: total space size of sdcard (MBytes), 0: 无卡,-1: 卡状态错，需要格式化,-2: SD卡状态为只读(可回放但不能继续写入), -3: 正在格式化，-4：正在初始化
 @property (nonatomic, assign) int free;                     // Free space size of sdcard (MBytes)
 @property (nonatomic, copy) NSString *reserved;
 
@@ -710,6 +710,53 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGHandFeederModel : NSObject
 @property (nonatomic, assign) int  nServing;                // 投喂份数 >= 1
+
+@end
+
+@interface TGABPOSModel : NSObject
+
+@property (nonatomic, assign) short x;          // osd区域在画面中的坐标. 解释受alignment的取值影响
+@property (nonatomic, assign) short y;          // osd区域在画面中的坐标. 解释受alignment的取值影响
+@property (nonatomic, assign) uint8_t alignment;// 对齐方式常数的组合(https://device-sdk-docs.tange365.com/TgCloudCmd_8h.html#alignment)
+@property (nonatomic, strong) NSData *reserved;
+
+@end
+
+@interface TGOSDItemModel : NSObject
+@property (nonatomic, assign) uint16_t  itemId; // cis_GetOsdResp::nMaxOsdItems - 1. 毎个条目有唯一id
+@property (nonatomic, assign) uint16_t  flags; // 0 或 OsdItem(https://device-sdk-docs.tange365.com/TgCloudCmd_8h.html#osd_flags) 标志 的组合
+@property (nonatomic, assign) OSType  type;
+@property (nonatomic, assign) int pos;  // flags==0: OSDPOSITION 
+@property (nonatomic, strong) TGABPOSModel *abPos;
+@property (nonatomic, assign) int  len;  //data 中的数据长度
+/*
+ data: 内容与 type 相关。长度填充到4的倍数，使下一个结构4字节边界对齐。例如len = 3, data则填充到4.
+ 举例： item 指向一个 OsdItem ，下一个 OsdItem 为
+
+ (struct OsdItem*)(item->data + ((item->len + 3) & 0xfffc)
+ 或者
+
+ (struct OsdItem*)((long)(item->data + item->len + 3) & ~3L)
+ type=OSDT_DATETIME
+ 为格式字符串(参考strftime())；为空时，取设备默认格式
+ type=OSDT_TEXT
+ 自定义文本. 字符编码参见 Tcis_GetOsdResp::eCharEncoding
+ type=OSDT_BMP32/OSDT_BMP1555
+ 带alpha属性的 bmp 文件
+ */
+@property (nonatomic, strong) NSData  *data;
+@property (nonatomic, strong) NSString  *dataStr;//item->type 是 OSDT_DATETIME 或 OSDT_TEXT时，会将data转化为dataStr
+ 
+@end
+
+@interface TGOSDRespModel : NSObject
+
+@property (nonatomic, assign) int  fSupportedTypes; //支持的OSDTYPE的位组合. 如果支持类型T, 则第T位置1. 例如支持TEXT和BMP32: (1<<OSDT_TEXT) | (1<<OSDT_BMP32)
+@property (nonatomic, assign) uint16_t  eCharEncoding; // 支持OSDT_TEXT时，对应的字符编码 CHAR_ENCODING(https://device-sdk-docs.tange365.com/TgCloudCmd_8h.html#a7dc1cd0b8822d7b766a0be71a1a733bc)
+@property (nonatomic, assign) uint16_t  nMaxTextLength;// OSDT_TEXT 允许的最大字节数. 如果为0的话，默认为32字节
+@property (nonatomic, assign) int  nMaxOsdItems;// 支持最大osd条数
+@property (nonatomic, assign) int nItems;// osd条目数(items大小)
+@property (nonatomic, strong) NSArray <TGOSDItemModel *> *items; //osd条目数组
 
 @end
 

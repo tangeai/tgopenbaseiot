@@ -308,6 +308,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)tg_getFeederTimersSuccessBlock:(void(^)(NSArray <TGFeederTimerModel *> *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 手工喂食
 - (void)tg_setFeedByHandWithModel:(TGHandFeederModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
+#pragma mark -- OSD
+
+// 获取OSD 设置
+- (void)tg_getDeviceOSDSuccessBlock:(void(^)(TGOSDRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+// 设置OSD
+- (void)tg_setOSDWithItemEncoding:(CHAR_ENCODING)chaarCode item:(TGOSDItemModel *)itemModel successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END
