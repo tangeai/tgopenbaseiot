@@ -314,7 +314,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 获取OSD 设置
 - (void)tg_getDeviceOSDSuccessBlock:(void(^)(TGOSDRespModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设置OSD
-- (void)tg_setOSDWithItemEncoding:(CHAR_ENCODING)chaarCode item:(TGOSDItemModel *)itemModel successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+- (void)tg_setOSDWithItemEncoding:(CHAR_ENCODING)charCode item:(TGOSDItemModel *)itemModel successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 @end
 

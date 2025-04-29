@@ -725,8 +725,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGOSDItemModel : NSObject
 @property (nonatomic, assign) uint16_t  itemId; // cis_GetOsdResp::nMaxOsdItems - 1. 毎个条目有唯一id
 @property (nonatomic, assign) uint16_t  flags; // 0 或 OsdItem(https://device-sdk-docs.tange365.com/TgCloudCmd_8h.html#osd_flags) 标志 的组合
-@property (nonatomic, assign) OSType  type;
-@property (nonatomic, assign) int pos;  // flags==0: OSDPOSITION 
+@property (nonatomic, assign) OSDTYPE  type;
+@property (nonatomic, assign) int pos;  // flags==0: OSDPOSITION
 @property (nonatomic, strong) TGABPOSModel *abPos;
 @property (nonatomic, assign) int  len;  //data 中的数据长度
 /*
@@ -752,7 +752,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TGOSDRespModel : NSObject
 
 @property (nonatomic, assign) int  fSupportedTypes; //支持的OSDTYPE的位组合. 如果支持类型T, 则第T位置1. 例如支持TEXT和BMP32: (1<<OSDT_TEXT) | (1<<OSDT_BMP32)
-@property (nonatomic, assign) uint16_t  eCharEncoding; // 支持OSDT_TEXT时，对应的字符编码 CHAR_ENCODING(https://device-sdk-docs.tange365.com/TgCloudCmd_8h.html#a7dc1cd0b8822d7b766a0be71a1a733bc)
+@property (nonatomic, assign) CHAR_ENCODING  eCharEncoding; // 支持OSDT_TEXT时，对应的字符编码 CHAR_ENCODING(https://device-sdk-docs.tange365.com/TgCloudCmd_8h.html#a7dc1cd0b8822d7b766a0be71a1a733bc)
 @property (nonatomic, assign) uint16_t  nMaxTextLength;// OSDT_TEXT 允许的最大字节数. 如果为0的话，默认为32字节
 @property (nonatomic, assign) int  nMaxOsdItems;// 支持最大osd条数
 @property (nonatomic, assign) int nItems;// osd条目数(items大小)
