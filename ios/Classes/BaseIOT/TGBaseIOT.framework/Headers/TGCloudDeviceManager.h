@@ -40,8 +40,12 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 #pragma mark -- other
 // 返回门铃录制存储地址
 - (void)cloudDeviceManagerDidDoorbellMsgRecordWithFilePath:(NSString *)filePath;
-// 返回下载地址
+// 返回下载地址 (逐渐废弃)
 - (void)cloudDeviceManagerDownloadFilePath:(NSString *)filePath;
+// 下载成功
+- (void)cloudDeviceManagerDownloadSuccessFilePath:(NSString *)filePath channel:(NSInteger)channel;
+// 下载失败
+- (void)cloudDeviceManagerDownloadFailChannel:(NSInteger)channel;
 // 录制时长
 - (void)cloudDeviceManagerDidRecordVideoWithDuration:(NSInteger)duration;
 
