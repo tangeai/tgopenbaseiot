@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *region_id;
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *expiration;
+@property (nonatomic, copy) NSString *timeZone;
 
 - (instancetype)initWithDeviceId:(NSString *)deviceId ossId:(NSString *)ossId callBack:(void(^)(id error))callBack;
 - (void)downLoadFileWithObjectKey:(NSString *)objectKey ossId:(NSString *)ossId block:(void(^)(NSData *data,NSError *error))block;
