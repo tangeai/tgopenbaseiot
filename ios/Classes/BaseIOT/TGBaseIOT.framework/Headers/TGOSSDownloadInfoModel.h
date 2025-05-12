@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TGOSSCloudRecordModel.h"
+#import "TGDownloadChannelModel.h"
 #import <TGBaseIOT/TGBaseIOTDefine.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -19,15 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger endTs;
 // 播放文件的ossId
 @property (nonatomic, copy) NSString *ossId;
-// 视频宽度
-@property (nonatomic, assign) int width;
-// 视频高度
-@property (nonatomic, assign) int height;
-// 视频文件名称
-@property (nonatomic, copy) NSString *fileName;
 // 文件丢失时是否继续写数据
 @property (nonatomic, assign) BOOL writeWhenDataLose;
-@property (nonatomic, assign) TGVideoRecordType recordType;
+// 指定下载视频通道
+@property (nonatomic, strong) NSArray <TGDownloadChannelModel *>*channels;
 @property (nonatomic, copy, readonly) NSString *sessionId;
 
 @end

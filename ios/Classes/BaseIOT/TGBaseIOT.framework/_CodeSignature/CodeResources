@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		9WaU2PYF50/jiQprpK0NmtWjgMM=
+		WBMGhGDZMGIT1annPHx72AGpqms=
 		</data>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
 		<data>
@@ -120,6 +120,10 @@
 		<data>
 		y6xfIWRhDlkpfGIDnqLP4jlw77U=
 		</data>
+		<key>Headers/TGDownloadChannelModel.h</key>
+		<data>
+		ey4U0M4+ncoHpEU5bLPxS8uxIkk=
+		</data>
 		<key>Headers/TGHintToneModel.h</key>
 		<data>
 		KU33JHlVdS+WZw3botcbbfqGNiY=
@@ -154,7 +158,7 @@
 		</data>
 		<key>Headers/TGOSSCloudFileManager.h</key>
 		<data>
-		6cTcRxnwx2pSKhthaQOYIEj5Ypk=
+		O2xqiV99UuM8sVRLrpQArYgh2io=
 		</data>
 		<key>Headers/TGOSSCloudRecordModel.h</key>
 		<data>
@@ -162,7 +166,7 @@
 		</data>
 		<key>Headers/TGOSSDownloadInfoModel.h</key>
 		<data>
-		pWlvCTdeWmYOX6MrMgYMadJ3rYE=
+		6oWpIDEDBSJjDsgTvVisNa9BTF0=
 		</data>
 		<key>Headers/TGOSSPlayVideoInfoModel.h</key>
 		<data>
@@ -361,11 +365,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9WaU2PYF50/jiQprpK0NmtWjgMM=
+			WBMGhGDZMGIT1annPHx72AGpqms=
 			</data>
 			<key>hash2</key>
 			<data>
-			O2ME1dnlG8fVvm2OjR8ncTWEsoy7ju3X9A6bt8d090U=
+			IXO3UnDbu4VDNdu++tcisw6rJC/ljQh7iEU9REHe7MY=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
@@ -654,6 +658,17 @@
 			AXUJZQtgF/KKKCLUGlwpEho+NQHnBepbalzetfCLeYk=
 			</data>
 		</dict>
+		<key>Headers/TGDownloadChannelModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ey4U0M4+ncoHpEU5bLPxS8uxIkk=
+			</data>
+			<key>hash2</key>
+			<data>
+			AexSy1TgFroOm10tWwvNpfp0WbqzxP3u86gznnBm/ZE=
+			</data>
+		</dict>
 		<key>Headers/TGHintToneModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -746,11 +761,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6cTcRxnwx2pSKhthaQOYIEj5Ypk=
+			O2xqiV99UuM8sVRLrpQArYgh2io=
 			</data>
 			<key>hash2</key>
 			<data>
-			9uUAncuFpcyyfaIQUHOLzZJc7Quf3sbopYNdur0UT7M=
+			2p91ZXyphnqvui7zeQfwv/MJ+1H2f38N1Y4Ve2kbujc=
 			</data>
 		</dict>
 		<key>Headers/TGOSSCloudRecordModel.h</key>
@@ -768,11 +783,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pWlvCTdeWmYOX6MrMgYMadJ3rYE=
+			6oWpIDEDBSJjDsgTvVisNa9BTF0=
 			</data>
 			<key>hash2</key>
 			<data>
-			q+H7aeBtiHSQB7YNoiLexQVbdD8naFs6FVf4kz6tJdo=
+			ubLwrpdfgfsnYO8eqkS6MIYwfd5FtIJzDKVMvsYPxis=
 			</data>
 		</dict>
 		<key>Headers/TGOSSPlayVideoInfoModel.h</key>

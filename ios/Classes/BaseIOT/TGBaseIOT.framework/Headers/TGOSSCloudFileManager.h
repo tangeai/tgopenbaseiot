@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class TGOSSPlayVideoInfoModel,TGOSSDownloadInfoModel;
+@class TGOSSPlayVideoInfoModel,TGOSSDownloadInfoModel,TGDownloadChannelModel;
 
 @protocol TGOSSCloudFileManagerDelegate <NSObject>
 
@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)ossCloudFileManagerDidPlayDecoderVideoData:(DACameraP2PVideoData *)videoData;
 // 录像进度代理方法
 - (void)ossCloudFileManagerDidRecordVideoWithDuration:(NSInteger)duration;
+// 下载录像代理方法
+- (void)ossCloudFileManagerDidDownloadDoneWithFilePath:(NSString *)filePath channelModel:(TGDownloadChannelModel *)channelModel;
 
 @end
 
