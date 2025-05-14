@@ -161,6 +161,15 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 
 ///// 下载
 ///// - Parameters:
+/////   - startTime: 开始时间戳
+/////   - endTime: 结束时间戳
+/////   - model: 云事件&云录像model
+/////   - channels:目数通道集合 @[@"0",@"1",@"2"]
+/////   - errorCallBack:返回错误
+- (void)startDownloadWithStartTime:(NSInteger)startTime endTime:(NSInteger)endTime model:(TGCloudEventModel *)model channels:(NSArray *)channelArray errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
+
+///// 下载
+///// - Parameters:
 /////   - startHmsInterval: //开始时间距离当天00:00:00的秒数
 /////   - endHmsInterval: //结束时间距离当天00:00:00的秒数
 /////   - model: 云事件&云录像model

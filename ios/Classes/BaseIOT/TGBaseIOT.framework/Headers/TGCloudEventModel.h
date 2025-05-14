@@ -47,6 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger startTs;                 // 起始时间戳
 @property (nonatomic, assign) NSInteger endTs;                   // 结束时间戳
+@property (nonatomic, assign) NSInteger dayTs;                   // 当天的00:00:00的时间戳
 
 #pragma mark - other
 

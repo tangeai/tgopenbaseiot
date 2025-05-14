@@ -77,6 +77,19 @@ extern NSString * const TGBASEIOT_EVENT_SWITCH_RELAY_PPCS;
 extern NSString * const TGBASEIOT_EVENT_SOCKET_INOF;
 extern NSString * const TGBASEIOT_EVENT_ACCOUNT_STATUS_CHANGE ;
 extern NSString * const TGBASEIOT_EVENT_APP_TERMINNATE;
+// 前置声明
+void _TGBASEIOTAddReportEvent(NSInteger level,
+                             NSString *deviceId,
+                             NSString *eventName,
+                             NSString *eventInfor,
+                             id object,
+                             const char *file,
+                             const char *function,
+                             NSUInteger line);
+
+// 宏定义
+#define TGBASEIOTAddReportEvent(level, deviceId, eventName, eventInfor, object) \
+    _TGBASEIOTAddReportEvent(level, deviceId, eventName, eventInfor, object, __FILE__, __PRETTY_FUNCTION__, __LINE__)
 
 #define TGAddReportEvent(...) \
     [[TGBaseIOTReportEvent shareReportEvent] addReportEvent:__VA_ARGS__ \

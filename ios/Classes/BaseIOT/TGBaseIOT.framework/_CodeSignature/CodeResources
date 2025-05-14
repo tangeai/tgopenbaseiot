@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		WBMGhGDZMGIT1annPHx72AGpqms=
+		9tkMvvPNLuqOK/40fPQg/yBb0WA=
 		</data>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/TGBaseIOTReportEvent.h</key>
 		<data>
-		JJNBGyc+oFh0hF7pu3KTeFFWowc=
+		sVFEIuHl8W8bSCZCUehci+Kqf84=
 		</data>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		MoqCGGsffx60cALUor97COX1LrE=
+		bX9d9t//ulgqs3EQhgbbE4LZSqY=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/TGCloudEventModel.h</key>
 		<data>
-		o4+NY9RPGCZZkwc2jsoB//FtBOE=
+		WsJSVDo9R3ODAN1EoJC0Hycye8U=
 		</data>
 		<key>Headers/TGCommondDefineHeader.h</key>
 		<data>
@@ -365,11 +365,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WBMGhGDZMGIT1annPHx72AGpqms=
+			9tkMvvPNLuqOK/40fPQg/yBb0WA=
 			</data>
 			<key>hash2</key>
 			<data>
-			IXO3UnDbu4VDNdu++tcisw6rJC/ljQh7iEU9REHe7MY=
+			dmRh9wq0NO2N7npo28TN8CKI7Q9wh3Im6rJIU9OXrDQ=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
@@ -387,11 +387,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JJNBGyc+oFh0hF7pu3KTeFFWowc=
+			sVFEIuHl8W8bSCZCUehci+Kqf84=
 			</data>
 			<key>hash2</key>
 			<data>
-			wiJjEQNt+CwwOerc1KmmXM2TuWHfYP40jIZMvkw3Lek=
+			NvlGU4PmI2tGu3Ns74QbDNP2+8HSota5Ud/LPiXKmbE=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTReportEventModel.h</key>
@@ -530,11 +530,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MoqCGGsffx60cALUor97COX1LrE=
+			bX9d9t//ulgqs3EQhgbbE4LZSqY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3E33fNN5yHN0U2kQTNI26urnYgCjjAA+YSeCJv6NEes=
+			RteYHwbFyk9HH6xDeTxZvwBe0WbxdkIkvlEgsjhoSxE=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -552,11 +552,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o4+NY9RPGCZZkwc2jsoB//FtBOE=
+			WsJSVDo9R3ODAN1EoJC0Hycye8U=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mt3SjDEqfnlTP8hJvwXDYFWCT2GIHwWim3lM5Hy7/qc=
+			lCNVdmsMniaDfqEliBc8baWt9nw0YoCXLKiXUzDpqMQ=
 			</data>
 		</dict>
 		<key>Headers/TGCommondDefineHeader.h</key>
