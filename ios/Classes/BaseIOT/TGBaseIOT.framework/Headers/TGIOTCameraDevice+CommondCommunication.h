@@ -51,6 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 云台短按操作
 - (void)tg_devicePTZShortTurnToDirectionWithChannel:(int)channel direction:(TGPTZViewTurnDirection)direction;
+// 云台短按操作
+- (void)tg_devicePTZShortTurnWithModel:(TGPTZShortTurnModel *)model;
+
 // 云台长按操作
 - (void)tg_devicePTZLongTurnToDirectionWithChannel:(int)channel direction:(TGPTZViewTurnDirection)direction;
 // 云台长按结束
@@ -120,7 +123,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 查询设备夜视模式
 - (void)getDeviceDayNightWithChannel:(int)channel successBlock:(void(^)(TGDeviceGetDayNightModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 设置设备夜视模式
-- (void)setDeviceDayNightWithChannel:(int)channel mode:(int)mode  successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+- (void)setDeviceDayNightWithChannel:(int)channel mode:(int)mode successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 #pragma mark - 变焦
 

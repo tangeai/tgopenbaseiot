@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 // -1: format command is not supported.
 // otherwise: failed.
 @property (nonatomic, copy) NSString *reserved;
- 
+
 @end
 
 @interface TGDeviceSDStorageModel : NSObject
@@ -638,7 +638,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) unsigned int dataLength;         // 长度
 @property (nonatomic, assign) unsigned int channel;            // 通道
 
-
 @end
 
 @interface TGDeviceAnswerToCallSetModel : NSObject
@@ -757,6 +756,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int  nMaxOsdItems;// 支持最大osd条数
 @property (nonatomic, assign) int nItems;// osd条目数(items大小)
 @property (nonatomic, strong) NSArray <TGOSDItemModel *> *items; //osd条目数组
+
+@end
+
+@interface TGPTZShortTurnModel : NSObject
+
+@property (nonatomic, assign) int x;    // >0: right; <0: left
+@property (nonatomic, assign) int y;    // >0: up; <0:down
+@property (nonatomic, assign) int channel;
 
 @end
 

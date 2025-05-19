@@ -727,7 +727,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - failureBlock: 失败返回
 - (void)tg_verificationCodeWithScene:(NSString *)scene account:(NSString *)account code:(NSString *)code successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
 
-
 /// 注册账户
 /// - Parameters:
 ///   - account: 账号
@@ -865,6 +864,15 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - successBlock: 成功回调
 ///   - failureBlock: 失败回调
 - (void)tg_uploadDeviceLogWithDeviceId:(nullable NSString *)deviceId filePath:(NSURL *)filePath successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
+#pragma mark - sim info
+/// 查询SIM卡信息
+/// - Parameters:
+///   - iccid: 物联网卡iccid
+///   - successBlock: 成功返回
+///   - failureBlock: 失败返回
+- (void)tg_getSimCardInfoWithIccid:(NSString *)iccid successBlock:(void(^)(id result))successBlock failureBlock:(void(^)(id error))failureBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END
