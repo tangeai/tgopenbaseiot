@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
     TGCloudManagerErrorType_NoFile,
     TGCloudManagerErrorType_NetworkError,
     TGCloudManagerErrorType_NoPermitted,
+    TGCloudManagerErrorType_NoDesKey,
     TGCloudManagerErrorType_TooBig
 };
 

@@ -152,10 +152,14 @@ typedef NS_ENUM(NSInteger, TGVideoRecordType) {
 
 typedef NS_ENUM(NSInteger, TGPTZViewTurnDirection) {
     TGPTZViewTurnDirection_Unknown,
-    TGPTZViewTurnDirection_Left,
     TGPTZViewTurnDirection_Up,
+    TGPTZViewTurnDirection_Down,
+    TGPTZViewTurnDirection_Left,
     TGPTZViewTurnDirection_Right,
-    TGPTZViewTurnDirection_Down
+    TGPTZViewTurnDirection_Left_Up,
+    TGPTZViewTurnDirection_Left_Down,
+    TGPTZViewTurnDirection_Right_Up,
+    TGPTZViewTurnDirection_Right_Down
 };
 
 typedef NS_ENUM(NSInteger, TGCameraPlaySpeedLevel) {
