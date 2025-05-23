@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
     TGCloudManagerErrorType_NetworkError,
     TGCloudManagerErrorType_NoPermitted,
     TGCloudManagerErrorType_NoDesKey,
+    TGCloudManagerErrorType_jumpToNext,
     TGCloudManagerErrorType_TooBig
 };
 
@@ -130,7 +131,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 
 /// 云录像开始播放方法（此方法仅限云录像），此方法将按云录像的列表逐个自动播放
 /// - Parameter timeInterval: 距离当天00:00:00的秒数
-- (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval;
+- (void)startPlayWithTimeInterval:(NSTimeInterval)timeInterval DEPRECATED_MSG_ATTRIBUTE("Use -startPlayWithTimeInterval: playNearby: completeBlock: instead");;
 /// 云录像开始播放方法（此方法仅限云录像），此方法将按云录像的列表逐个自动播放
 /// - Parameter timeInterval: 距离当天00:00:00的秒数
 /// - Parameter completeBlock: 播放是否成功回调
@@ -150,7 +151,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - errorCallBack:返回错误
 - (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack;
 
-/// 播放一个start->end的视频  开始播放
+/// 播放一个start->end的视频  开始播放(逐渐废弃)
 /// - Parameters:
 ///   - startHmsInterval: //开始时间距离当天00:00:00的秒数
 ///   - endHmsInterval: //结束时间距离当天00:00:00的秒数
@@ -158,7 +159,7 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 ///   - errorCallBack:返回错误
 ///   - successDownLoadBlock 返回该时间段下载成功的所有文件名称
 ///   - failureDownLoadBlock 返回该时间段下载失败的所有报错信息
-- (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack successDownLoadInfor:(void(^)(NSArray *successInforArray))successDownLoadBlock failureDownLoadErrorInfor:(void(^)(NSArray *failureInforArray))failureDownLoadBlock;
+- (void)startPlayWithTimeInterval:(NSInteger)startHmsInterval endTime:(NSInteger)endHmsInterval model:(TGCloudEventModel *)model errorCallBack:(void(^)(TGCloudManagerErrorType error))errorCallBack successDownLoadInfor:(void(^)(NSArray *successInforArray))successDownLoadBlock failureDownLoadErrorInfor:(void(^)(NSArray *failureInforArray))failureDownLoadBlock DEPRECATED_MSG_ATTRIBUTE("Use -startPlayWithTimeInterval: endTime: model: channels: errorCallBack: instead");
 
 ///// 下载
 ///// - Parameters:
