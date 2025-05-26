@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TGBaseIOTDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +30,8 @@ typedef NS_ENUM(NSInteger, TGCloudPlayScene) {
 @property (nonatomic, assign) NSInteger endHmsInterval;         //结束时间距离当天00:00:00的秒数
 @property (nonatomic, assign) TGCloudPlayScene scene;
 @property (nonatomic, assign) NSInteger cloudIndex;
+@property (nonatomic, assign) TGCloudRecordOrderType recordOrder;
+@property (nonatomic, assign) NSInteger sessionId;
 
 @end
 
