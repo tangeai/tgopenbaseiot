@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TGBaseIOT"
-  s.version = "2.4.1.9.3"
+  s.version = "2.4.1.9.4"
   s.summary = "A short description of TGCommonBaseModule."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"liubin"=>"liubin361163@163.com"}
