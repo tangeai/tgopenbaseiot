@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TGBaseIOTDefine.h</key>
 		<data>
-		4MOEC8fgpbP+o4B2wfDIoo1GgIE=
+		cXpKKhmGo9XnnIBKD0LCmGiThy4=
 		</data>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/TGCameraDefine.h</key>
 		<data>
-		5LGmWI4unMNH259lsasrHAOxbBQ=
+		Al6eoi7yxsHBTByNKQd7xVH3IsE=
 		</data>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/TGCloudDeviceManager.h</key>
 		<data>
-		TZW7WYy1ztBhl8wJqB4L7B5+pBY=
+		+cOwKX9USKIN+4mRfGH4gk+zIVQ=
 		</data>
 		<key>Headers/TGCloudDownloadModel.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/TGCommondDefineHeader.h</key>
 		<data>
-		AOwBQ5i7CBGapC7Mkuw1iNRGQrQ=
+		Vi9QzyQJENQYmqQ38etp+QLsGxA=
 		</data>
 		<key>Headers/TGDeviceAlarmSoundModel.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/TGDeviceCommodModel.h</key>
 		<data>
-		Ruejum6k4tfdkyz8YaRxUqhU+2Q=
+		3uNDgJwjDOmbVyh7xwHKxUnW43Y=
 		</data>
 		<key>Headers/TGDeviceLightModel.h</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Headers/TGIOTCameraDevice+CommondCommunication.h</key>
 		<data>
-		AAiQPcyiyL12LBMBaNMictAbT90=
+		i/MDnXW7S4eebRN5C3z60GqDwRU=
 		</data>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<data>
-		Z55IkEqLO4sCiJA5+efB3xdOkF0=
+		Ioi4FQyQhY/cmp0sBCl10z3cM2g=
 		</data>
 		<key>Headers/TGMagicLogManager.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		M31n+TUoRQ1XG5+nHh1R9kmvg7A=
+		4KEn26xeJTGbDrmf2Let2eCWCZY=
 		</data>
 		<key>NTESVerifyCodeResources.bundle/Rectangle@1x.png</key>
 		<data>
@@ -365,11 +365,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4MOEC8fgpbP+o4B2wfDIoo1GgIE=
+			cXpKKhmGo9XnnIBKD0LCmGiThy4=
 			</data>
 			<key>hash2</key>
 			<data>
-			obxs9wxaZcTANQ0RYXQk5EoJ5k6iBtOJXKXtvOf84So=
+			ey05lQzHZeMw5nRfMMBNte09Lbo99myGaXp6mpE8NDg=
 			</data>
 		</dict>
 		<key>Headers/TGBaseIOTPreConnectDeviceManager.h</key>
@@ -453,11 +453,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5LGmWI4unMNH259lsasrHAOxbBQ=
+			Al6eoi7yxsHBTByNKQd7xVH3IsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			eLnNKE+0YapiyE4VksyirIvD11JPAeMz9czj4igNuKQ=
+			kKvmRgKN3K8GsVPzOyWADLs9TvgJaxBZzH+CeZ104W0=
 			</data>
 		</dict>
 		<key>Headers/TGCameraDeviceBaseInforModel.h</key>
@@ -530,11 +530,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TZW7WYy1ztBhl8wJqB4L7B5+pBY=
+			+cOwKX9USKIN+4mRfGH4gk+zIVQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			mXUq0lFEzb+CZlHTacl0bPQ1nVb+eRa4w+UxdMaQca4=
+			9AgCH8yZBrJfwTCCN2XlqHENXkc3CEWuMaCOLQpfixY=
 			</data>
 		</dict>
 		<key>Headers/TGCloudDownloadModel.h</key>
@@ -563,11 +563,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AOwBQ5i7CBGapC7Mkuw1iNRGQrQ=
+			Vi9QzyQJENQYmqQ38etp+QLsGxA=
 			</data>
 			<key>hash2</key>
 			<data>
-			iU0IPbgsqVmAtjmAknkr99E2tbFgHAgeaL/DDSzSUZc=
+			B7SOdX7gOQ9Nd9SULS1a0YnEwWyr4Jm/pPgQdGXoGPE=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceAlarmSoundModel.h</key>
@@ -585,11 +585,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ruejum6k4tfdkyz8YaRxUqhU+2Q=
+			3uNDgJwjDOmbVyh7xwHKxUnW43Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			GBla3PXUB9HBiUKOUENysdv8ssR8sCa6pC9vhiVx22A=
+			g5Vvsk12IvC+hYfKJbPgxImIfxzfeyG5gMJgZu+kyHs=
 			</data>
 		</dict>
 		<key>Headers/TGDeviceLightModel.h</key>
@@ -684,22 +684,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AAiQPcyiyL12LBMBaNMictAbT90=
+			i/MDnXW7S4eebRN5C3z60GqDwRU=
 			</data>
 			<key>hash2</key>
 			<data>
-			1qSLgOxoVQbfrk1OLybXYkAWzAXhT50lthrnb3miFjU=
+			psy7/nH8pCJILg5iYNfMGmvn5rl2sCkOlm1FdR2HB/c=
 			</data>
 		</dict>
 		<key>Headers/TGIOTCameraDevice.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z55IkEqLO4sCiJA5+efB3xdOkF0=
+			Ioi4FQyQhY/cmp0sBCl10z3cM2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			lTijfjuvoy7cnlUK3C1UfKHZNg54Z6gs075RLIMMl8c=
+			30rbpSJaaySV4ZkP6VJrqf9a/2LXI+nKZ6FuKTLp8aQ=
 			</data>
 		</dict>
 		<key>Headers/TGMagicLogManager.h</key>

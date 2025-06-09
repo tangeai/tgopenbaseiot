@@ -128,7 +128,7 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)makeServerSynchronizationTime:(int)time;
 
 #pragma mark - 音视频同步
-//  默认是开启状态；音视频同步设置，enable=YES，将开始音视频同步，当音视频时差在300s内将音频丢帧 注》对于低功耗设备或者网络差的设备可以不开启此功能，优先保证音频不卡顿，但会造成音频略有延迟
+// 默认是开启状态；音视频同步设置，enable=YES，将开始音视频同步，当音视频时差在300s内将音频丢帧 注》对于低功耗设备或者网络差的设备可以不开启此功能，优先保证音频不卡顿，但会造成音频略有延迟
 - (void)videoAndAudioSynchronization:(BOOL)enable;
 
 #pragma mark - 实时性要求
@@ -362,11 +362,11 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)getDeviceDayNight;
 // 设置设备夜视模式
 - (void)setDeviceDayNight:(int)mode;
-//查询设备白光灯模式
+// 查询设备白光灯模式
 - (void)getDeviceWhiteLight;
-//设置设备白光灯模式
+// 设置设备白光灯模式
 - (void)setDeviceWhiteLight:(int)mode;
-//重启设备
+// 重启设备
 - (void)rebootDevice;
 // 云台短按操作
 - (void)devicePTZShortTurnToDirectionWithChannel:(TGPlayChannelType)channel direction:(TGPTZViewTurnDirection)direction;
@@ -384,21 +384,21 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)getDeviceWatchPosWithChannel:(TGPlayChannelType)channel;
 // 设置守望点
 - (void)setDeviceWatchPosWithModel:(TGWatchPosModel *)model;
-//查询上传云录像清晰度
+// 查询上传云录像清晰度
 - (void)getCloudVideoQuality;
-//设置上传云录像清晰度
+// 设置上传云录像清晰度
 - (void)setCloudVideoQuality:(int)quality;
-//查询设备当前连接的WiFi
+// 查询设备当前连接的WiFi
 - (void)getDeviceCurrentSsid;
-//查询设备麦克风开关
+// 查询设备麦克风开关
 - (void)getMicrophoneMuteState;
-//设置设备麦克风开关
+// 设置设备麦克风开关
 - (void)setDeviceMicrophoneMuteState:(int)state;
-//查询设备蜂鸣器开关
+// 查询设备蜂鸣器开关
 - (void)getDeviceBuzzer;
-//设置设备蜂鸣器开关 0-关闭 1-开启
+// 设置设备蜂鸣器开关 0-关闭 1-开启
 - (void)setDeviceBuzzerMode:(int)mode;
-//获取移动侦测
+// 获取移动侦测
 - (void)getMoveDetect;
 // 移动侦测灵敏度
 - (void)setMoveDetectSensitivity:(int)sensitivity;
@@ -421,14 +421,14 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 - (void)setDefenceAllDay;
 // 设置布放时段
 - (void)setDefenceRegularWithItem:(DEFENCEITEM)item;
-//AI人形追踪
+// AI人形追踪
 - (void)setAIMoveTrackMode:(int)mode;
 - (void)getAIMoveTrackMode;
 
 - (void)getDevicePtzPosWithChannel:(TGPlayChannelType)channel;
 - (void)getDevicePSPWithChannel:(TGPlayChannelType)channel;
 - (void)getDeviceMaxPSPCountWithChannel:(TGPlayChannelType)channel;
-//变焦控制
+// 变焦控制
 - (void)deviceShortZoomWithChannel:(TGPlayChannelType)channel direction:(TGZoomTimesUnknownDirection)direction;
 - (void)deviceLongZoomBeginWithChannel:(TGPlayChannelType)channel direction:(TGZoomTimesUnknownDirection)direction;
 - (void)deviceLongZoomEndWithChannel:(TGPlayChannelType)channel direction:(TGZoomTimesUnknownDirection)direction;
@@ -474,10 +474,10 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 // 设置Pir灵敏度
 - (void)setPIRSensitive:(int)sensitive;
 
-//获取设备拾音器灵敏度
+// 获取设备拾音器灵敏度
 - (void)getDeviceMicSensitivity;
 - (void)setDeviceMicWithSensitivity:(int)sensitivity;
-//获取设备喇叭音量
+// 获取设备喇叭音量
 - (void)getDeviceSpeakerVolume;
 - (void)setDeviceSpeakerVolume:(int)volume;
 
@@ -532,7 +532,7 @@ typedef void(^TGSDCardRecordFileEndBlock)(NSInteger endTime,DACameraP2PVideoData
 // 获取坐姿检测灵敏度
 - (void)getSitDetectSensitive;
 - (void)setSitDetectSensitive:(int)sensitive;
-//获取提示音
+// 获取提示音
 - (void)getDeviceHintTone;
 - (void)setDeviceHintToneWithModel:(TGHintToneModel *)model;
 // 获取设备端运行状态（是否支持该项状态，例如录像状态，如要查询当前状态 可以用 videoData 中的exFlags字段来判断）

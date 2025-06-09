@@ -125,6 +125,10 @@ typedef NS_ENUM(NSInteger, TGCloudManagerErrorType) {
 //- (void)clearCacheWithDay:(NSString *)dateString count:(NSInteger)count;
 
 #pragma mark -- 云录像操作
+
+/// 预录时间（默认5s）不设置的话，一般都会在播放时间上提前5s开始播放
+/// - Parameter time: 预录时间(设置为5的倍数)
+- (void)setCloudPreTime:(NSInteger)time;
 /// 设置升降序播放，可以设置云录像是升序播放或降序播放
 /// - Parameter order: 顺序参数
 - (void)setUpCloudRecordOrder:(TGCloudRecordOrderType)order;

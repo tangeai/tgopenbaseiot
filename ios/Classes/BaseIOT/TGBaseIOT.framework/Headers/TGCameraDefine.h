@@ -368,6 +368,11 @@ typedef enum{
     TCI_CMD_GET_LOCK_STATE_REQ                          = 0x045C,
     TCI_CMD_GET_LOCK_STATE_RESP                         = 0x045D,
     
+    TCI_CMD_SET_IPCONFIG_REQ                            = 0x0460,   // 设置网络配置
+    TCI_CMD_SET_IPCONFIG_RESP                           = 0x0461,
+    TCI_CMD_GET_IPCONFIG_REQ                            = 0x0462,   // 获取网络配置
+    TCI_CMD_GET_IPCONFIG_RESP                           = 0x0463,
+    
     TCI_CMD_SET_PTZ_TRACK_REQ                           = 0x0474,
     TCI_CMD_SET_PTZ_TRACK_RESP                          = 0x0475,
     TCI_CMD_GET_PTZ_TRACK_REQ                           = 0x0476,   // 获取巡航设置
@@ -799,6 +804,25 @@ typedef struct{
  unsigned char signal;  // signal intensity 0--100%
  unsigned char status;  // refer to "status" of SWifiAp
 } __attribute__((__packed__)) SMsgAVIoctrlGetWifiResp2;
+
+
+/** @name 网络IP配置
+ * @{*/
+/** @struct IPCONFIG
+ * 网络IP 配置.
+ */
+typedef struct IPCONFIG {
+    char intf[16];      ///< 活动接口名
+    int  bDhcpEnabled;  ///< 0:手动配置; 1:自动配置; 2:自动配置ip/gateway,手动dns
+    char ip[16];        ///< ip地址
+    char netmask[16];   ///< 子网掩码
+    char gateway[16];   ///< 网关
+    char dns1[16];      ///< dns服务器1
+    char dns2[16];      ///< dns服务器2
+    char mac[20];       ///< 设备MAC. 只读
+} __attribute__((__packed__)) IPCONFIG;
+/**@}*/
+
 
 /*
 IOTYPE_USER_IPCAM_GETRECORD_REQ            = 0x0312,

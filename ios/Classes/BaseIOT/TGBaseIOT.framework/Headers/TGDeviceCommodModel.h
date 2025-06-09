@@ -223,6 +223,22 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int enctype;              // 加密方式 ENUM_AP_ENCTYPE
 @property (nonatomic, assign) int signal;               // signal intensity 0–100%
 @property (nonatomic, assign) int status;               // 0 : invalid ssid or disconnected 1 : connected with default gateway 2 : unmatched password 3 : weak signal and connected
+
+@end
+
+#pragma mark - 网络配置
+
+@interface TGDeviceNetConfigModel : NSObject
+
+@property (nonatomic, copy) NSString *interface;        // 活动接口名
+@property (nonatomic, assign) int dhcpConfig;           // 0:手动配置; 1:自动配置; 2:自动配置ip/gateway,手动dns
+@property (nonatomic, copy) NSString *ipAddress;        // IP地址
+@property (nonatomic, copy) NSString *netMask;          // 子网掩码
+@property (nonatomic, copy) NSString *gateway;          // 网关
+@property (nonatomic, copy) NSString *dns1;             // dns服务器1
+@property (nonatomic, copy) NSString *dns2;             // dns服务器2
+@property (nonatomic, copy) NSString *macAddress;       // Mac地址，只读
+
 @end
 
 @interface TGDeviceWiFiListModel : NSObject

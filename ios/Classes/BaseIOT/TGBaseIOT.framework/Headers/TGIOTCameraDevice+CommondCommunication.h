@@ -97,7 +97,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)createTrackWithModel:(TGDeviceTrackModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 删除巡航
 - (void)deleteTracksWithArray:(NSArray <TGDeviceTrackModel *>*)trackArray successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;;
-//// 设置巡航停留时间
+////  设置巡航停留时间
 //- (void)setTrackStayTimeWithTime:(NSInteger)time channel:(int)channel successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 开始巡航
 - (void)startDeviceTrackWithModel:(TGDeviceTrackModel *)model;
@@ -106,9 +106,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - 灯光
 
-//查询设备白光灯模式
+// 查询设备白光灯模式
 - (void)getDeviceWhiteLightChannel:(int)channel successBlock:(void(^)(TGDeviceGetwhiteLightModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
-//设置设备白光灯模式
+// 设置设备白光灯模式
 - (void)setDeviceWhiteLight:(TGVideoWhiteLightModel)mode channel:(int)channel successBlock:(void(^)(TGDeviceSetWhiteLightModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 获取状态灯
 - (void)getDeviceLedStatusSuccessBlock:(void(^)(TGDeviceLedStatusModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
@@ -215,8 +215,14 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - failuerBlock: 失败
 - (void)connectToWifiWithSSID:(NSString *)ssid passwd:(NSString *)passwd userId:(NSString *)userId change:(BOOL)change successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
-//查询设备当前连接的WiFi
+// 查询设备当前连接的WiFi
 - (void)getDeviceCurrentSsidSuccessBlock:(void(^)(TGDeviceWiFiInforModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
+// 获取设备活动网络IP配置
+- (void)getDeviceNetConfigWithSuccessBlock:(void(^)(TGDeviceNetConfigModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
+
+// 设置设备活动网络IP配置
+- (void)setDeviceNetConfigWithModel:(TGDeviceNetConfigModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 #pragma mark - 移动追踪
 
@@ -262,9 +268,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setAlarmSoundWithModel:(TGDeviceSetAlarmToneModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 // 播放当前报警声音
 - (void)playCurrentAlarmSoundSuccessBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
-////// 获取警报铃开关
+//////  获取警报铃开关
 //- (void)getAlarmBellSwitchSuccessBlock:(void(^)(TGDeviceAlarmBellModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
-//// 设置警报铃开关
+////  设置警报铃开关
 //- (void)setAlarmBellSwitchWithModel:(TGDeviceAlarmBellModel *)model successBlock:(void(^)(TGDeviceCommodModel *result))successBlock failuerBlock:(void(^)(TGDeviceCommodModel *failuer))failuerBlock;
 
 #pragma mark - 事件使能状态
